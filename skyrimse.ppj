@@ -1,0 +1,48 @@
+<?xml version='1.0'?><!-- Game is either sse, tesv, or fo4 -->
+<PapyrusProject xmlns="PapyrusProject.xsd" 
+    Flags="TESV_Papyrus_Flags.flg" 
+    Game="sse" 
+    Output="Scripts" 
+    Optimize="true"
+    Anonymize="true" 
+    Release="false" 
+    Final="false">
+    <Variables>
+        <Variable Name="modname" Value="Custom Scripts"/>
+        <Variable Name="modspath" Value="D:\WabbajackModlists\ADF2\Modlist\mods"/>
+        <Variable Name="modpath" Value="@modspath\@modname"/>
+        <Variable Name="gamepath" Value="E:\SteamLibrary\steamapps\common\Skyrim Special Edition"/>
+    </Variables>
+    <Imports>
+    
+        <Import>@modpath\Source\Scripts</Import>
+        <Import>@modspath\Parasites\Scripts\source</Import>
+        <Import>@modspath\Unforgiving Devices\Scripts\Source</Import>
+        <Import>@modspath\Devious Devices NG\Scripts\Source</Import>
+        <Import>@modspath\Devious Devices for SE-AE-VR\scripts\Source</Import>
+        <Import>@modspath\Mfg Fix\source\scripts</Import>
+        <Import>@modspath\OSL Aroused\Scripts\Source</Import>
+        <Import>@modspath\SexLab Inflation Framework\Scripts\Source</Import>
+        <Import>@modspath\SexLab_Framework_PPLUS_\Source\Scripts</Import>
+        <Import>@modspath\SexLabFrameworkAE_v\scripts\Source</Import>
+        <Import>@modspath\Experience\Scripts\Source</Import>
+        <Import>@modspath\XP32 Maximum Skeleton Special Extended\scripts\source</Import>
+        <Import>@modspath\Project New Reign - Nemesis Unlimited Behavior Engine\scripts\source</Import>
+        <Import>@modspath\Fores New Idles in Skyrim SE - FNIS SE - Creature\source\scripts</Import>
+        <Import>@modspath\Fores New Idles in Skyrim SE - FNIS SE\source\scripts</Import>
+        <Import>@modspath\Race Menu Modders Package\source\scripts</Import>
+        <Import>@modspath\IWant_Widgets_NG_Experimental\Scripts\Source</Import>
+        <Import>@modspath\MCM Helper\Source\Scripts</Import>
+        <Import>@modspath\SkyUI\Scripts\Source</Import>
+        <Import>@modspath\UIExtensions\scripts\source</Import>
+        <Import>@modspath\ConsoleUtilSSE NG\Scripts\Source</Import>
+        <Import>@modspath\PapyrusUtil SE - Modders Scripting Utility Functions\Scripts\Source</Import>
+        <Import>@modspath\powerofthree's Papyrus Extender\Source\scripts</Import>
+        <Import>@modspath\SKSE (Script Extender)\Scripts\Source</Import>
+        <Import>@gamepath\Data\Scripts\Source</Import>
+        
+    </Imports>
+    <Folders>
+        <Folder>@modpath\Source\Scripts</Folder>
+    </Folders>
+</PapyrusProject>
