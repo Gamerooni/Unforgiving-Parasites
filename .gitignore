@@ -1,3 +1,4 @@
-.vscod*
-*.code-workspace
-./Scripts
+.vscode
+.vscode.bak
+.code-workspace
+Scripts/
