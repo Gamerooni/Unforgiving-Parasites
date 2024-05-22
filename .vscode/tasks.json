@@ -14,6 +14,12 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "Spriggit: Deserialize project",
+            "type": "shell",
+            "command": "C:\\Modding\\SpriggitCLI\\Spriggit.CLI.exe deserialize --InputPath \".\\ESP Patch\" --OutputPath \".\\SexLab-Parasited-UD.esp\" --PackageName \"RecordData.yaml\"",
+            "group": "build"
         }
     ]
 }

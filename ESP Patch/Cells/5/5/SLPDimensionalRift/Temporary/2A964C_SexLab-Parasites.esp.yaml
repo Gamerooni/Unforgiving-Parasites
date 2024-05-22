@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 2A964C:SexLab-Parasites.esp
-FormVersion: 43
-Base: 01A01F:Dawnguard.esm
-Scale: 0.92
-Placement:
-  Position: 2638.9966, 8694.973, 7528.949
-  Rotation: -0.17405863, 0.021747785, 4.5875854

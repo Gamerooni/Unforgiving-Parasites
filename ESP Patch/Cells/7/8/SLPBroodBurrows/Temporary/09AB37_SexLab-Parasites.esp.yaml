@@ -1,9 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 09AB37:SexLab-Parasites.esp
-FormVersion: 43
-Base: 00E6CF:Dawnguard.esm
-LightData:
-  FadeOffset: 19
-  ShadowDepthBias: 1
-Placement:
-  Position: 1346.3121, 1450.6222, 300.0952

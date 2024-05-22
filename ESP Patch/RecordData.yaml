@@ -1,27 +1,20 @@
 SpriggitSource:
   PackageName: Spriggit.Yaml.Skyrim
-  Version: 0.10.0
-ModKey: SexLab-Parasites.esp
+  Version: 0.19.0
+ModKey: SexLab-Parasited-UD.esp
 GameRelease: SkyrimSE
 ModHeader:
-  FormVersion: 43
+  Flags:
+  - Light
   Stats:
-    NumRecords: 3190
-    NextFormID: 11585266
-  Author: DeepBlueFrog
-  Description: Forget about diseases.. Skyrim just became more dangerous for adventurers.
+    Version: 1.7
+    NumRecords: 37
+    NextFormID: 2048
+  Author: ''
   MasterReferences:
-  - Master: skyrim.esm
-    FileSize: 0
-  - Master: Update.esm
-    FileSize: 0
-  - Master: Dawnguard.esm
-    FileSize: 0
-  - Master: Dragonborn.esm
+  - Master: Skyrim.esm
     FileSize: 0
   - Master: SexLab.esm
-    FileSize: 0
-  - Master: ZaZAnimationPack.esm
     FileSize: 0
   - Master: SexLabAroused.esm
     FileSize: 0
@@ -29,4 +22,7 @@ ModHeader:
     FileSize: 0
   - Master: Devious Devices - Integration.esm
     FileSize: 0
-  INTV: 1
+  - Master: ZaZAnimationPack.esm
+    FileSize: 0
+  - Master: SexLab-Parasites.esp
+    FileSize: 0

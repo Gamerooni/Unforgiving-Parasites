@@ -10,7 +10,7 @@ import UD_Native
 
 Function InitPost()
     parent.InitPost()
-    UD_ActiveEffectName = "Barb Vib"
+    UD_ActiveEffectName = "Spider Barbs"
     UD_DeviceType = "Spider Penis"
 EndFunction
 
@@ -35,7 +35,7 @@ EndFunction
 
 float Function _getArousalMultiplier()
     int iDexterity = 20 + (libs.PlayerRef.GetActorValue("Pickpocket") as Int) / 5
-    return 1.0 - (libs.Aroused.GetActorArousal(GetWearer()) - iDexterity) / 100.0
+    return fRange(1.0 - (libs.Aroused.GetActorArousal(GetWearer()) - iDexterity) / 70.0, 0.0, 1.0)
 EndFunction
 
 int startMinigameArousal = 0

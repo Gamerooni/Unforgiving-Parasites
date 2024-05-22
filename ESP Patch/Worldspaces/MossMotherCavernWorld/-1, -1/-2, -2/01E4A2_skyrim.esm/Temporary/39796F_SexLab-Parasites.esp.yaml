@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 39796F:SexLab-Parasites.esp
-FormVersion: 43
-Base: 003F90:SexLab-Parasites.esp
-Scale: 1.4
-Placement:
-  Position: -54161.53, -57036.668, 1945.2484
-  Rotation: 0, -0, 5.083189

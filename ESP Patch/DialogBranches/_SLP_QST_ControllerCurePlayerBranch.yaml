@@ -1,8 +1,0 @@
-FormKey: 00F773:SexLab-Parasites.esp
-EditorID: _SLP_QST_ControllerCurePlayerBranch
-FormVersion: 43
-Quest: 000D62:SexLab-Parasites.esp
-Category: Player
-Flags:
-- TopLevel
-StartingTopic: 00F774:SexLab-Parasites.esp

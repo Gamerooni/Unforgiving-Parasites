@@ -1,9 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 09AB26:SexLab-Parasites.esp
-FormVersion: 43
-Base: 1016A1:skyrim.esm
-EnableParent:
-  Reference: 09AB21:SexLab-Parasites.esp
-  Unknown: 0xDB1900
-Placement:
-  Position: 621.3648, 1480.0076, -73.500084

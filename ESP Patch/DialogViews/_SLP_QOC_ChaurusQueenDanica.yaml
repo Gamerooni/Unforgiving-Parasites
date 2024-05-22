@@ -1,9 +1,0 @@
-FormKey: 22ABE1:SexLab-Parasites.esp
-EditorID: _SLP_QOC_ChaurusQueenDanica
-FormVersion: 43
-Quest: 016E2C:SexLab-Parasites.esp
-Branches:
-- 22ABE4:SexLab-Parasites.esp
-TNAMs: []
-ENAM: 0x00000000
-DNAM: 0x00

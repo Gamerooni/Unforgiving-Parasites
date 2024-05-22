@@ -1,7 +1,0 @@
-MutagenObjectType: PlacedNpc
-FormKey: 053CC7:SexLab-Parasites.esp
-FormVersion: 43
-Base: 053CC6:SexLab-Parasites.esp
-Placement:
-  Position: -38410.914, 93965.61, -13917.785
-  Rotation: 0, -0, 1.3000045

@@ -1,9 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 485968:SexLab-Parasites.esp
-FormVersion: 43
-Base: 01920B:Dawnguard.esm
-EnableParent:
-  Reference: 485962:SexLab-Parasites.esp
-  Unknown: 0x000000
-Placement:
-  Position: 3951.1172, -5381.586, 155

@@ -16,3 +16,12 @@ Function OnVibrationStart()
 	libs.SexlabMoan(getWearer())
 	parent.OnVibrationStart()
 EndFunction
+
+float Function getAccesibility()
+	return 0.0
+EndFunction
+
+Function onDeviceMenuInitPost(bool[] aControlFilter)
+    parent.onDeviceMenuInitPost(aControlFilter)
+    UDCDmain.currentDeviceMenu_allowSpecialMenu = False
+EndFunction

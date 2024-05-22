@@ -1,0 +1,36 @@
+FormKey: 00D1A6:SexLab-Parasites.esp
+EditorID: _SLP_gagFaceHugger_scriptInstance
+FormVersion: 43
+ObjectEffect: 00D1A8:SexLab-Parasites.esp
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\gagFaceHugger\FaceHuggerAGND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: armor\KyneBlessing\gagFaceHugger\FaceHuggerAGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - 0x4000
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 007EB8:Devious Devices - Assets.esm
+- 0C27BD:Skyrim.esm
+- 02F16E:SexLab.esm
+- 0FF9FB:Skyrim.esm
+- 0429FB:Devious Devices - Integration.esm
+- 0044FE:SexLab-Parasites.esp
+- 00D1A1:SexLab-Parasites.esp
+- 0012C6:SexLab-Parasites.esp
+- 01EDFA:Devious Devices - Integration.esm
+- 01DDCD:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.
+Armature:
+- 00D1A2:SexLab-Parasites.esp
