@@ -6,10 +6,9 @@ SLP_fcts_parasites Property fctParasites Auto
 ;MUST FILL IN AS CHAOS
 ;MUST FILL IN AS SENTIENT
 
-Function OnEquippedPost(actor akActor)
-	libs.Log("RestraintScript OnEquippedPost BodyHarness")
-
-	fctParasites.applyParasiteByString(akActor, "TentacleMonster" )
+Function InitPostPost()
+    parent.InitPostPost()
+    fctParasites.applyParasiteByString(getWearer(), "TentacleMonster")
 EndFunction
 
 Function OnVibrationStart()

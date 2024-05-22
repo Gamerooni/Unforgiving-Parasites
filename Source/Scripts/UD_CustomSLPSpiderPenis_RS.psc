@@ -14,8 +14,9 @@ Function InitPost()
     UD_DeviceType = "Spider Penis"
 EndFunction
 
-Function OnEquippedPost(actor akActor)
-    fctParasites.applyParasiteByString(akActor, "SpiderPenis" )
+Function InitPostPost()
+    parent.InitPostPost()
+    fctParasites.applyParasiteByString(getWearer(), "SpiderPenis" )
 EndFunction
 
 bool Function struggleMinigame(int type = -1, Bool abSilent = False)

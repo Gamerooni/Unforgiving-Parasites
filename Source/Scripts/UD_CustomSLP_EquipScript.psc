@@ -46,7 +46,7 @@ EndFunction
 Function EquipPreSpiderDong(actor akActor, bool silent=false)
 	string sMsg = ""
 	int loc_arousal = libs.Aroused.GetActorExposure(akActor)
-	if akActor == libs.PlayerRef
+	if IsPlayer(akActor)
 		if loc_arousal < libs.ArousalThreshold("Desire")
 			sMsg = "You force the spider penis into your unwilling opening. Its sharp barbs dig into your insides. It feels cold and foreign."
 		elseif loc_arousal < libs.ArousalThreshold("Horny")
@@ -62,17 +62,63 @@ Function EquipPreSpiderDong(actor akActor, bool silent=false)
 	if !silent
 		libs.NotifyActor(sMsg, akActor, true)
 	EndIf
-
 Endfunction
 
+Function EquipPreSpiderEgg(actor akActor, bool silent=false)
+	string sMsg = ""
+	int loc_arousal = libs.Aroused.GetActorExposure(akActor)
+	if IsPlayer(akActor)
+		if loc_arousal < libs.ArousalThreshold("Desire")
+			sMsg = "The cold, slimy eggs lubricate your unwilling hole as you push them in one by one. Their chilly presence sends a shiver up your spine."
+		elseif loc_arousal < libs.ArousalThreshold("Horny")
+			sMsg = "You slide a couple of eggs into your warm quim at a time. Some disappear deep within you, pleasantly stretching your insides. You feel snug and full."
+		elseif loc_arousal < libs.ArousalThreshold("Desperate")
+			sMsg = "You spread your thighs wide and thrust the eggs into your sloppy, exposed opening. Your insides contract in extasy around the cold eggs and hold them like a vice."
+		else
+			sMsg = "Your body moves on its own. You slam the egg cluster all at once into your burning, throbbing cunt. A wave of cold and blinding pleasure courses through your guts and ribs."
+		endif
+	else
+		sMsg = GetActorName(akActor) + "shudders as you push the eggs deep inside her."
+	endif
+	if !silent
+		libs.NotifyActor(sMsg, akActor, true)
+	EndIf
+EndFunction
+
+Int Function EquipFilterSpiderEgg(actor akActor, bool silent=false)
+	; FTM optimization
+    if silent && akActor != libs.PlayerRef
+        return 0
+    EndIf    
+    
+    if akActor.WornHasKeyword(libs.zad_DeviousBelt)
+        if deviceRendered.HasKeyword(libs.zad_DeviousPlugAnal) && akActor.WornHasKeyword(libs.zad_permitAnal)
+            ; open belts allow putting in anal plugs.
+            return 0
+        EndIf
+        if akActor == libs.PlayerRef && !silent
+            libs.NotifyActor("Fortunately, the belt you are wearing prevents you from filling yourself with spider eggs.", akActor, true)
+        ElseIf  !silent
+            libs.NotifyActor("The belt " + GetActorName(akActor) + " is wearing makes it impossible to fill her with spider eggs.", akActor, true)
+        EndIf
+        if !silent
+            return 2
+        Else
+            return 0
+        EndIf
+    Endif
+    return 0
+EndFunction
+
 Function OnEquippedPre(actor akActor, bool silent=false)
-	UDmain.Print("proprietary onequippedpre called")
     if deviceInventory.haskeyword(fctParasites._SLP_ParasiteTentacleMonster) || deviceInventory.haskeyword(fctParasites._SLP_ParasiteLivingArmor)
         EquipPreTentacle(akActor, silent)
 		;return ; No plug equip
 	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteSpiderPenis)
 		EquipPreSpiderDong(akActor, silent)
 		;return ; We don't want to do the plug equip
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteSpiderEgg)
+		EquipPreSpiderEgg(akActor, silent)
     endif
     Parent.OnEquippedPre(akActor, true)
 EndFunction
@@ -80,6 +126,8 @@ EndFunction
 int Function OnEquippedFilter(actor akActor, bool silent=false)
     if deviceInventory.haskeyword(fctParasites._SLP_ParasiteTentacleMonster) || deviceInventory.haskeyword(fctParasites._SLP_ParasiteLivingArmor)
         return EquipFilterTentacle(akActor, silent)
+	ElseIf deviceInventory.HasKeyword(fctParasites._SLP_ParasiteSpiderEgg)
+		EquipFilterSpiderEgg(akActor, silent)
     endif
     return Parent.OnEquippedFilter(akActor, silent)
 EndFunction

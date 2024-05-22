@@ -5,10 +5,9 @@ SLP_fcts_parasites Property fctParasites Auto
 ;MUST FILL IN CUSTOM SOUND IN ESP
 ;MUST FILL IN AS CHAOS
 
-Function OnEquippedPost(actor akActor)
-	libs.Log("RestraintScript OnEquippedPost BodyHarness")
-
-	fctParasites.applyParasiteByString(akActor, "LivingArmor" )
+Function InitPostPost()
+    parent.InitPostPost()
+    fctParasites.applyParasiteByString(getWearer(), "LivingArmor")
 EndFunction
 
 Function OnVibrationStart()
