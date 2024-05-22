@@ -1,4 +1,5 @@
 .vscode
 .vscode.bak
 .code-workspace
-Scripts/
+Scripts
+!Source/Scripts
