@@ -1,0 +1,106 @@
+FormKey: 22ABE8:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing230
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing230
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing230
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 22ABE7:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: Then we must do this properly.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x4E5420
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x2D2044
+  Text:
+    TargetLanguage: English
+    Value: Before you can even try, you will have to prepare yourself and see if you are worthy.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x4E5420
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x2D2044
+  Text:
+    TargetLanguage: English
+    Value: The ritual is called Kyne's Blessing... it will reveal if you may successfully merge with the Seed Stone and become one with other parasites.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: This is what Lastelle was after.. the gift of Kyne's Blessing is no less than the ability to successfully procreate with any life form.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 5
+  Unknown2: 0x756E63
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x467261
+  Text:
+    TargetLanguage: English
+    Value: Unfortunately, the first step to the ritual is to restore the Gildergreen.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsSexConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    MaleFemaleGender: Female
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 226
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 230
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I want to finish what Lastelle started.

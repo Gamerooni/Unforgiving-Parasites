@@ -1,0 +1,1146 @@
+FormKey: 016E2C:SexLab-Parasites.esp
+EditorID: _SLP_QST_QueenOfChaurus
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_QST_QueenOfChaurus
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DimensionalRiftRef
+      Object: 485961:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_MotherSeed
+      Object: 1CA846:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EggSackInsideMarker
+      Object: 03F89F:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunSancturaryCorruptionMarker
+      Object: 24E2F6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BarnaclesOutfit
+      Object: 009B9B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EggSackOutsideMarker
+      Object: 03F89C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DanicaSanctuaryAltar
+      Object: 2DC3F5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkinBarnaclesArmor
+      Object: 2167DB:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_QOF_PlayerRef
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DanicaRef
+      Object: 01A69F:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_LastelleDeadMarker
+      Object: 1EDFC1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SanctuaryRustedSawRef
+      Object: 24E300:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_WhiterunSanctuaryFollower
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusBody
+      Object: 42A6F7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LastelleAltRef
+      Object: 09AB1C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_SpiderFollower
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_ChaurusStudLastelle
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_ChaurusStudPlayer
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusQueenRift
+      Object: 648389:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_DanicaSanctuaryFollower
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_LastelleRef
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ShroudedGroveMapMarker
+      Object: 0162B1:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SightlessPitMapMarker
+      Object: 0162B3:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_BroodCaveEntranceMarker
+      Object: 02B45C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FrostflowAbyssMapMarker
+      Object: 016253:skyrim.esm
+  FileName: SLP_QST_QueenOfChaurus
+  Fragments:
+  - Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_0
+  - Stage: 11
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_70
+  - Stage: 290
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_54
+  - Stage: 290
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_82
+  - Stage: 22
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_69
+  - Stage: 71
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_22
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_80
+  - Stage: 39
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_13
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_3
+  - Stage: 310
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_56
+  - Stage: 59
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_12
+  - Stage: 395
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_71
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_35
+  - Stage: 69
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_16
+  - Stage: 390
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_67
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_8
+  - Stage: 62
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_73
+  - Stage: 380
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_66
+  - Stage: 254
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_77
+  - Stage: 49
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_11
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_18
+  - Stage: 400
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_68
+  - Stage: 65
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_5
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_14
+  - Stage: 355
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_62
+  - Stage: 360
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_63
+  - Stage: 220
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_31
+  - Stage: 225
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_36
+  - Stage: 280
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_49
+  - Stage: 252
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_40
+  - Stage: 370
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_64
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_15
+  - Stage: 230
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_32
+  - Stage: 45
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_21
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_2
+  - Stage: 260
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_42
+  - Stage: 350
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_61
+  - Stage: 240
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_33
+  - Stage: 110
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_24
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_29
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_9
+  - Stage: 79
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_17
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_7
+  - Stage: 300
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_55
+  - Stage: 300
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_83
+  - Stage: 330
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_59
+  - Stage: 226
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_38
+  - Stage: 130
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_26
+  - Stage: 19
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_4
+  - Stage: 5
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_19
+  - Stage: 120
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_25
+  - Stage: 95
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_85
+  - Stage: 285
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_53
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_44
+  - Stage: 289
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_51
+  - Stage: 150
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_28
+  - Stage: 140
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_27
+  - Stage: 210
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_30
+  - Stage: 320
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_57
+  - Stage: 270
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_46
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_23
+  - Stage: 340
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_60
+  - Stage: 276
+    Unknown2: 1
+    ScriptName: SLP_QST_QueenOfChaurus
+    FragmentName: Fragment_47
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 1
+    Scripts:
+    - Name: SLP_PlayerChaurusQueenAlias
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctOutfits
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_PlayerBroodMaidenStartMarker
+        Object: 01BF32:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numInfections
+        Object: 0044FC:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PlayerAlias
+        Object: 016E2C:SexLab-Parasites.esp
+        Alias: 1
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_ChaurusStudRef
+        Object: 016E2C:SexLab-Parasites.esp
+        Alias: 3
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_PlayerChaurusQueenStorage
+        Object: 01BF30:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_ChaurusStudLastelleRef
+        Object: 016E2C:SexLab-Parasites.esp
+        Alias: 4
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_isPlayerStartBroodMaiden
+        Object: 03A78E:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_isPlayerStartBroodMaiden
+        Object: 03A78E:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_PlayerChaurusQueenQuest
+        Object: 016E2C:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_ChaurusStudWithLastelle
+        Object: 062FD1:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SexLab
+        Object: 000D62:SexLab.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FalmerRace
+        Object: 0131F4:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_PlayerChaurusQueenStartMarker
+        Object: 01BF31:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_isPlayerStartChaurusQueen
+        Object: 03A78F:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_PlayerBroodMaidenStorage
+        Object: 01BF33:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ChaurusRace
+        Object: 0131EB:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_LastelleRef
+        Object: 016E2C:SexLab-Parasites.esp
+        Alias: 2
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_PlayerChaurusQueenSlaver
+        Object: 07C512:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_isPlayerStartQueenOfChaurus
+        Object: 03A78F:SexLab-Parasites.esp
+Name:
+  TargetLanguage: English
+  Value: The Chaurus Queen and the Brood Maiden
+Flags:
+- StartGameEnabled
+- AllowRepeatedStages
+- 0x10
+QuestFormVersion: 77
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lami, the apothecary in Morthal, needs help finding what happened to her daughter. I should ask her about it.
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I should have known that search party was a fool's errand. I lost track of time since these vile creatures enslaved me. That camp by the river feels like ages ago. Already my companions have lost their mind, no doubt from the constant clicking noise of the chaurus. Since they forced some large stone inside me, I can feel it changing my body. I must escape before I lose my mind as well.
+- Index: 11
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I met this strange woman, living naked in the swamp, surrounded by chaurus eggs.
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lami's daughter, Lastelle, has gone missing. She was last seen gathering herbs in the swamps north of Morthal.
+- Index: 19
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found Lastelle in the middle of the swamp. I should talk to her and understand why she is out here on her own.
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: This is so exciting! Now that I left Morthal to join Lastelle, I can finally experience the joys she told me about so many times. I must talk to her about her babies at once and offer myself to their gifts.
+- Index: 21
+- Index: 22
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I lied about Lastelle's fate. It is better that way.
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle needs my help collecting chaurus eggs, scattered around the corpse of their mother.
+- Index: 39
+  LogEntries:
+  - Flags: []
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle asked me to recover a book she forgot at her mother's store in Morthal.
+- Index: 45
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I have Lastelle's book. I should return it to her.
+- Index: 49
+  LogEntries:
+  - Flags: []
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle asked me to find a new chaurus stud for the nest.
+- Index: 59
+  LogEntries:
+  - Flags: []
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle asked me to talk with Danica Purespring in Whiterun and learn more about the chaurus.
+- Index: 62
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Danica will not share what she knows about the chaurus until I have been infected by a parasite myself.
+- Index: 65
+  LogEntries:
+  - Flags: []
+- Index: 69
+  LogEntries:
+  - Flags: []
+- Index: 70
+  LogEntries:
+  - Flags: []
+- Index: 71
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle asked me to bring her any chaurus egg I can find.
+- Index: 79
+  LogEntries:
+  - Flags: []
+- Index: 90
+  LogEntries:
+  - Flags: []
+- Index: 95
+  LogEntries:
+  - Flags: []
+- Index: 100
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle wants more books about the chaurus. I have to ask the Apothecary in Solitude, Angeline, about the Chaurus book she solds to Lastelle's mother.
+- Index: 109
+- Index: 110
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The books came from Dragon's Bridge. I should ask Michel Lylvieve about it.
+- Index: 119
+- Index: 120
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Michel Lylvieve confiscated the book from her own daughter. Julienne will know where it came from.
+- Index: 129
+- Index: 130
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I have to go to Karthwasten and ask about the book there.
+- Index: 139
+- Index: 140
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The book was apparently stolen from a nearby fort by an adventurer. Judging how he died from horrible cuts and posoning, that fort isn't without danger.
+- Index: 145
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found lab notes about spider eggs and pheromones. Not what Lastelle wanted but interesting nonetheless.
+- Index: 149
+- Index: 150
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I must go back to Lastelle with what I found in the fort.
+- Index: 159
+- Index: 200
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle asked me to track the whereabouts of Alicia DuSkrimall, author of the book about the Chaurus, somewhere in Blackreach.
+- Index: 210
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found old notes from an alchemist called Sinderion, annotated years later by Alicia DuSkrimall. I should bring them back to Lastelle as she requested.
+- Index: 220
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Lastelle lost her life trying to do something with the Seed Stone. Maybe Danica PureSpring will know more about what happened to her former apprentice.
+- Index: 225
+  Unknown: 116
+  LogEntries:
+  - Flags: []
+- Index: 226
+  LogEntries:
+  - Flags: []
+- Index: 230
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I have agreed to attempt what Lastelle could not. The first step will be to revive the Eldergleam in Whiterun.
+- Index: 240
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Danica told me about an underground chamber below the Temple, but it is corrupted by poisonous gas. I need to return to her with a creepy face hugger after sleeping in caves. It will help me breathe through the gas.
+- Index: 250
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I must use Nettlebane on the Eldergleam roots to free them of their corruption.
+- Index: 252
+  LogEntries:
+  - Flags: []
+- Index: 254
+  LogEntries:
+  - Flags: []
+- Index: 255
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Sanctuary under the Whiterun Temple is cleared of its corruption. I should ask Danica about what to do next.
+- Index: 260
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Danica said something about Elder Roots. I should ask her more details.
+- Index: 270
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: To learn about the ritual of Kyne's Blessing, I need to talk to the Elder Roots through their avatar, by the waterfall in the Sanctuary.
+- Index: 272
+- Index: 274
+- Index: 276
+  LogEntries:
+  - Flags: []
+- Index: 278
+- Index: 280
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: In order to perform the ritual of Kyne's Blessing, I will have to find a Seed Stone, Glowing mushroom, a Crimson Nirnroot and sleep naked in Blackreach to get myself infected by spores
+- Index: 285
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I must follow Danica down into the Sanctuary
+- Index: 289
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Ritual is over. I should speak to Danica once more.
+- Index: 290
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x85F64B
+      Unknown2: 299
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 016E2C:SexLab-Parasites.esp
+        Stage: 90
+    Entry:
+      TargetLanguage: English
+      Value: The Seed Stone is inside me now. I should wait and let it grow.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x85F64B
+      Unknown2: 299
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 016E2C:SexLab-Parasites.esp
+        Stage: 90
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A strange stone was implanted inside me. I should find out what it does.
+- Index: 300
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x86F64B
+      Unknown2: 299
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 016E2C:SexLab-Parasites.esp
+        Stage: 90
+    Entry:
+      TargetLanguage: English
+      Value: The Seed Stone is causing deep changes inside me. I should talk to Danica about it.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x86F64B
+      Unknown2: 299
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 016E2C:SexLab-Parasites.esp
+        Stage: 90
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: The Seed Stone is causing deep changes inside me. I need to find someone who knows about this urgently.
+- Index: 305
+  LogEntries:
+  - Flags: []
+- Index: 310
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Danica suggested I brew a potion of spider pheromones and find a suitable specimen to mate with.
+- Index: 320
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Seed gave me new powers after mating with a spider. Danica will surely want to know about this.
+- Index: 330
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I must talk to the Elder Roots about my transformation.
+- Index: 340
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I must mate with a chaurus using another pheromone potion.
+- Index: 350
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Seed reacted with a chaurus just like with spiders. The Elder Roots will want to hear about that.
+- Index: 355
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Elder Roots want to see the effect of the Seed. They asked me to speak to them with the Chaurus mask and armor on.
+- Index: 360
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: One of the voices from the Elder Roots asked me to go and speak with it in a cave called Shrouded Grove, north of Whiterun.
+- Index: 370
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Queen asked me to meet her in a cave under Frostflow Lighthouse... her nursery she says.
+- Index: 380
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Once I jump into the Abyss, I must follow a trail of eggs to the Rift. The Queen should be on the other side. I should wear the chaurus armor and mask if I want to speak with her.
+- Index: 390
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: In order to free the Queen and let her die, I must finish the job of that Dwemer scientist and bring the tonal key he was carrying back to Blackreach. There, I have to activate the tonal device inside Silent City and close the Rift.
+- Index: 395
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Rift is open and the Queen made it to this side! Will she let me live now that she is free?
+- Index: 400
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I am now the Queen of the Chaurus.
+- Index: 402
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I talked to the Elder Roots about my experience with the Chaurus Queen
+- Index: 404
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I talked to Danica about my experience with the Chaurus Queen
+- Index: 999
+  Flags:
+  - ShutDownStage
+Objectives:
+- Index: 5
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask Lami about her daughter.
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Escape before the sound of the chaurus drives you mad
+- Index: 11
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the expedition journal from the prisoner cells and bring it back to Lami in Morthal
+- Index: 15
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find what happened to Lastelle in the swamps north of Morthal
+- Index: 19
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask Danica PureSpring in Whiterun about the star shaped stone inside you
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Lastelle and offer to help with her babies
+- Index: 25
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Help Lastelle protect her babies
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Collect scattered chaurus eggs (at least 15)
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Recover a book on Chaurus parasites in the Thaumaturgist Hutt in Morthal
+- Index: 45
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring the book back to Lastelle
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Use the cooking cauldron to prepare a vial of chaurus pheromones and use it to lure a chaurus stud back to Lastelle. Look north of the old shack.
+- Index: 60
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go to Whiterun and talk to Danica about exposure to the chaurus
+- Index: 62
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Get yourself infected by a parasite for Danica
+- Index: 65
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to Lastelle with words from Danica.
+- Index: 70
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring any Chaurus egg you find back to Lastelle (up to 100 eggs)
+- Index: 100
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask the Apothecary in Solitude, Angeline, about the Chaurus book
+- Index: 110
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask Michel Lylvieve about the Chaurus book
+- Index: 120
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask Michel's daughter, Julienne, about the Chaurus book
+- Index: 130
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask Ainethach in Karthwasten, about where the Chaurus book came from.
+- Index: 140
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go to Harmugstahl and explore the fort for clues about the Chaurus book
+- Index: 150
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go back to Lastelle with what you found
+- Index: 200
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go to Blackreach and search for clues about Alicia DuSkrimall
+- Index: 210
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to Lastelle with notes from Sinderion and Alicia DuSkrimall
+- Index: 220
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go to Whiterun and talk to Danica PureSpring about what happened to Lastelle.
+- Index: 230
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Help Danica PureSpring recover Nettlebane and restore the Gildergreen (ask her about the tree first!)
+- Index: 240
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Sleep in caves until you attract both a face hugger and hip hugger for Danica.
+- Index: 250
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go in the Temple underground chamber and release the Gildergreen roots from their corruption
+- Index: 252
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Danica inside the Sanctuary
+- Index: 255
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to Danica
+- Index: 260
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask Danica about the Elder Roots
+- Index: 270
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to the Elder Roots Avatar about Kyne's Blessing
+- Index: 276
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Danica for more details
+- Index: 280
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Collect a Seed Stone, Glowing mushrooms, a Crimson Nirnroot and get yourself infected by Blackreach spores
+- Index: 285
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Follow Danica into the Sanctuary for the Ritual of the Seed Stone
+- Index: 289
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Danica about completing the Ritual
+- Index: 290
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Let the Seed grow for a few days and see what happens
+- Index: 295
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find someone who knows about the stone inside you. Maybe an alchemist?
+- Index: 300
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Danica about your transformation
+- Index: 310
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Brew a spider pheromone potion and mate with a spider
+- Index: 320
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Danica about absorbing spider powers
+- Index: 330
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to the Elder Roots Avatar about your progress
+- Index: 340
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Brew a chaurus pheromone potion and mate with a chaurus
+- Index: 350
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Report back to the Elder Roots about your experience with a chaurus
+- Index: 355
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to the Elder Roots avatar again with your Chaurus mask and armor on
+- Index: 360
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go to the Shrouded Grove north of Whiterun and speak to the Chaurus queen
+- Index: 370
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Go to the nursery in Frostflow Abyss and speak to the Chaurus queen avatar
+- Index: 380
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Jump into the waterfall and follow the egg trail into Blackreach, find the Rift and go through to meet the Queen
+- Index: 390
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Take the tonal key from the corpse and activate the tonal device in Silent City
+Aliases:
+- ID: 1
+  Name: _SLP_QOF_PlayerRef
+  Flags: []
+  ForcedReference: 000014:skyrim.esm
+  VoiceTypes: Null
+- ID: 2
+  Name: _SLP_LastelleRef
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDisabled
+  ForcedReference: 01BF35:SexLab-Parasites.esp
+  Factions:
+  - 03C9A8:skyrim.esm
+  - 02997F:skyrim.esm
+  PackageData:
+  - 03F8A1:SexLab-Parasites.esp
+  - 03F8A0:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 3
+  Name: _SLP_ChaurusStudPlayer
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  - AllowDestroyed
+  Factions:
+  - 01DD09:skyrim.esm
+  - 084D1B:skyrim.esm
+  - 0E1959:SexLab-Parasites.esp
+  PackageData:
+  - 062FD4:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 4
+  Name: _SLP_ChaurusStudLastelle
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  - AllowDestroyed
+  Factions:
+  - 0E1959:SexLab-Parasites.esp
+  - 01DD09:skyrim.esm
+  - 084D1B:skyrim.esm
+  PackageData:
+  - 0680D6:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 5
+  Name: _SLP_SpiderFollower
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  - AllowDestroyed
+  Factions:
+  - 01DD09:skyrim.esm
+  - 084D1B:skyrim.esm
+  PackageData:
+  - 1B642C:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 6
+  Name: _SLP_DanicaSanctuaryFollower
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - Essential
+  - AllowDisabled
+  PackageData:
+  - 309D18:SexLab-Parasites.esp
+  VoiceTypes: Null

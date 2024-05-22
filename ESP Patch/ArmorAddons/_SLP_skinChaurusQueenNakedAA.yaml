@@ -1,0 +1,66 @@
+FormKey: 38353F:SexLab-Parasites.esp
+EditorID: _SLP_skinChaurusQueenNakedAA
+FormVersion: 43
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Forearms
+  - Amulet
+  - Ring
+  - Calves
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Priority:
+  Male: 0
+  Female: 0
+WeightSliderEnabled:
+  Male: True
+  Female: True
+Unknown: 2
+Unknown2: 23
+WorldModel:
+  Male:
+    File: Actors\Character\Character Assets\MaleBody_1.NIF
+    Data: 0x020000000000000000000000
+  Female:
+    File: armor\KyneBlessing\harnessChaurusQueen\Chaurus Base Skin_1.nif
+    Data: 0x020000000000000000000000
+FirstPersonModel:
+  Male:
+    File: Actors\Character\Character Assets\1stPersonMaleBody_1.NIF
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Character\Character Assets\1stPersonFemaleBody_1.nif
+    Data: 0x020000000000000000000000
+SkinTexture:
+  Male: 03EDE8:skyrim.esm
+  Female: 03EDE7:skyrim.esm
+TextureSwapList:
+  Male: 07BBB1:skyrim.esm
+  Female: 07BBB2:skyrim.esm
+AdditionalRaces:
+- 013740:skyrim.esm
+- 08883A:skyrim.esm
+- 013741:skyrim.esm
+- 08883C:skyrim.esm
+- 097A3D:skyrim.esm
+- 013742:skyrim.esm
+- 08883D:skyrim.esm
+- 00E88A:Dawnguard.esm
+- 03CA97:Dragonborn.esm
+- 013743:skyrim.esm
+- 088840:skyrim.esm
+- 013744:skyrim.esm
+- 088844:skyrim.esm
+- 013745:skyrim.esm
+- 088845:skyrim.esm
+- 013746:skyrim.esm
+- 088794:skyrim.esm
+- 013747:skyrim.esm
+- 0A82B9:skyrim.esm
+- 013748:skyrim.esm
+- 088846:skyrim.esm
+- 00377D:Dawnguard.esm
+- 013749:skyrim.esm
+- 088884:skyrim.esm

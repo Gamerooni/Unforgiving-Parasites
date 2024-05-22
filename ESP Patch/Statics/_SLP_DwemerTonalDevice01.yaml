@@ -1,0 +1,13 @@
+FormKey: 4BD4A5:SexLab-Parasites.esp
+EditorID: _SLP_DwemerTonalDevice01
+FormVersion: 43
+ObjectBounds:
+  First: -84, -6, -10
+  Second: 119, 6, 10
+Model:
+  File: clutter\KyneBlessing\Energypod2.nif
+  Data: 0x020000000000000000000000
+MaxAngle: 90
+Unused: '[]'
+DNAMDataTypeState:
+- Break0

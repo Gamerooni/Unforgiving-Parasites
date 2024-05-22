@@ -1,0 +1,15 @@
+FormKey: 01EE73:skyrim.esm
+FormVersion: 43
+Version2: 2
+Flags:
+- HasWater
+Grid:
+  Point: 0, -2
+  Flags: 578725632
+WaterHeight: 155
+Regions:
+- 048C2E:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 1169893176
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1067198710

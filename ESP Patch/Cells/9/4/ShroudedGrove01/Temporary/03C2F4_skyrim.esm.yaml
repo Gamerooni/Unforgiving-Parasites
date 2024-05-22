@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedNpc
+FormKey: 03C2F4:skyrim.esm
+MajorRecordFlagsRaw: 2048
+FormVersion: 43
+Version2: 3
+SkyrimMajorRecordFlags:
+- InitiallyDisabled
+Base: 025D3B:skyrim.esm
+LevelModifier: Easy
+LinkedReferences:
+- Reference: 03C2F5:skyrim.esm
+PersistentLocation: 0192A6:skyrim.esm
+LocationReference: 0192A6:skyrim.esm
+Placement:
+  Position: 1312.7092, 755.7276, -909.98914
+MajorFlags:
+- InitiallyDisabled

@@ -1,0 +1,155 @@
+FormKey: 97C745:SexLab-Parasites.esp
+EditorID: _SLP_SP_SprigganRootArmor
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Spriggan Root Armor
+MenuDisplayObject: 109AC2:skyrim.esm
+EquipmentType: 013F44:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 103
+ChargeTime: 0.5
+CastType: FireAndForget
+Effects:
+- BaseEffect: 97C744:SexLab-Parasites.esp
+  Data:
+    Magnitude: 40
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      MagicEffect: 97C744:SexLab-Parasites.esp
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+- BaseEffect: 104AB5:skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      MagicEffect: 97C744:SexLab-Parasites.esp
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0D7999:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD3:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD2:skyrim.esm
+- BaseEffect: 104ABA:skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      MagicEffect: 97C744:SexLab-Parasites.esp
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0D799A:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD3:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD2:skyrim.esm
+- BaseEffect: 104AB9:skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      MagicEffect: 97C744:SexLab-Parasites.esp
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0D799B:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD3:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD2:skyrim.esm

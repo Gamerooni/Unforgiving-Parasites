@@ -1,0 +1,8 @@
+FormKey: 485963:SexLab-Parasites.esp
+EditorID: _SLP_TRG_DimensionalDoorBlackreach
+FormVersion: 43
+ObjectBounds:
+  First: -564, -691, -212
+  Second: 564, 691, 212
+MarkerColor: '#00CC4C33'
+Flags: []

@@ -1,0 +1,32 @@
+MutagenObjectType: PlacedObject
+FormKey: 192D13:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_BroodCave
+    Flags: Inherited
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EggSack04
+      Object: 192D0E:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EggSack03
+      Object: 192D08:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_GV_ChaurusEggsLastelle
+      Object: 192CF6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EggSack02
+      Object: 192D02:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EggSack01
+      Object: 192CFC:SexLab-Parasites.esp
+Base: 192D12:SexLab-Parasites.esp
+Primitive:
+  Bounds: 688, 588, 774
+  Color: '#00CC4C33'
+  Unknown: 0.15
+  Type: Box
+Placement:
+  Position: 954.0777, -289.5243, 260
+  Rotation: 0, -0, 3.1415954

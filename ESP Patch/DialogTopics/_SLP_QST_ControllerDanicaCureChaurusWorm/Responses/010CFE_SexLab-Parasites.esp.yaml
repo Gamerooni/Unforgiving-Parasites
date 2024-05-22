@@ -1,0 +1,82 @@
+FormKey: 010CFE:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_CureChaurusWorm01
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_CureChaurusWorm01
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_CureChaurusWorm01
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 006028:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: You are blessed, child. You are carrying Chaurus Worms inside your loins.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Don't be alarmed for they are harmless. They will come out on their own when the time is right.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Since you bring troll fat, let me show you how to remove them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0xD4DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    ItemOrList: 03AD72:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xD4DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xD4DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 0012C8:SexLab-Parasites.esp
+  ComparisonValue: 1

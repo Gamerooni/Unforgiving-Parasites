@@ -1,0 +1,16 @@
+MutagenObjectType: PlacedObject
+FormKey: 02615B:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 031897:skyrim.esm
+TeleportDestination:
+  Door: 026359:SexLab-Parasites.esp
+  Position: -32256.139, 89209.734, -13702.076
+  Rotation: 0, -0, -1.5999906
+  Flags:
+  - NoAlarm
+Placement:
+  Position: 1050.1582, -1596.4524, 14.856749
+  Rotation: 0, -0, 3.1415927

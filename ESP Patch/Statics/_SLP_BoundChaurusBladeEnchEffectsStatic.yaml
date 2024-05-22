@@ -1,0 +1,10 @@
+FormKey: A05273:SexLab-Parasites.esp
+EditorID: _SLP_BoundChaurusBladeEnchEffectsStatic
+FormVersion: 43
+Model:
+  File: weapons\KyneBlessing\ChaurusQueen\HiddenBlade.nif
+  Data: 0x020000000000000000000000
+MaxAngle: 90
+Unused: '[]'
+DNAMDataTypeState:
+- Break0

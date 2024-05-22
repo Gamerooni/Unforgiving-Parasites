@@ -1,0 +1,21 @@
+FormKey: 3D45CB:SexLab-Parasites.esp
+EditorID: _SLP_SP_SeedBreedSpider
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Seed Spider Breeding
+MenuDisplayObject: 10F0FF:skyrim.esm
+EquipmentType: 025BEE:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 1B642A:SexLab-Parasites.esp
+  Data:
+    Magnitude: 10
+    Area: 100
+    Duration: 20

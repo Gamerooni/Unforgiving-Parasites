@@ -1,0 +1,13 @@
+FormKey: 73B44B:SexLab-Parasites.esp
+EditorID: _SLP_DD_OnEquipDeviceMSG
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: The idea of being restrained and helpless by another living being makes you horny. You decide to have some fun and coax the creature inside you. When you feel its grip against your skin, you wonder if it was all that smart an idea...
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Ok

@@ -1,0 +1,13 @@
+FormKey: 73B448:SexLab-Parasites.esp
+EditorID: _SLP_DD_EscapeStruggleFailureMSG
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: '...to no avail. The creature resisted all your efforts to struggle free. You are bound just as tight as before. You are also tired enough that you have to give up for the time being and accept being restrained.'
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Ok

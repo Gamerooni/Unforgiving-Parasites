@@ -1,0 +1,33 @@
+FormKey: 03F898:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_Lastelle30
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_Lastelle30
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_Lastelle30
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+Topic: 03F896:SexLab-Parasites.esp
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: Thanks! We don't have much time before the eggs dry out.
+  ScriptNotes: ''
+  Edits: ''
+Prompt:
+  TargetLanguage: English
+  Value: Don't worry.. I am here to help.

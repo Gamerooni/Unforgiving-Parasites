@@ -1,0 +1,11 @@
+FormKey: 00B145:SexLab-Parasites.esp
+EditorID: _SLP_StatueMother
+FormVersion: 43
+ObjectBounds:
+  First: -61, -35, 0
+  Second: 61, 35, 208
+Model:
+  File: clutter\KyneBlessing\StatueMother.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

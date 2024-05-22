@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 4E5CFF:SexLab-Parasites.esp
+FormVersion: 43
+Base: 03CA84:Dragonborn.esm
+EnableParent:
+  Reference: 4DBAF1:SexLab-Parasites.esp
+  Unknown: 0x000000
+Placement:
+  Position: 1379.5687, 9831.749, 3628.1067
+  Rotation: 2.387077, 0.50724167, 2.478598

@@ -1,0 +1,40 @@
+FormKey: 33C728:SexLab-Parasites.esp
+EditorID: _SLP_harnessChaurusQueenSkin
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Chaurus Queen Skin
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\harnessBarnacles\parasH_1.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Hands
+  - Feet
+  - Decapitate
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 0044FE:SexLab-Parasites.esp
+- 0FF9FB:skyrim.esm
+- 02F16E:SexLab.esm
+- 0429FB:Devious Devices - Integration.esm
+- 33C726:SexLab-Parasites.esp
+- 3CA3C1:SexLab-Parasites.esp
+- 0C27BD:skyrim.esm
+- 017C43:Devious Devices - Assets.esm
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: The transformation from the Seed Stone goes deep. The insect-like buds prodding through your chest are a hint at how the Seed is rewiring you inside.
+Armature:
+- 582C47:SexLab-Parasites.esp
+- 582C48:SexLab-Parasites.esp
+- 33C727:SexLab-Parasites.esp
+Value: 450
+Weight: 5

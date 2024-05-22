@@ -1,0 +1,8 @@
+FormKey: 24E301:SexLab-Parasites.esp
+EditorID: _SLP_WhiterunSanctuarySaw
+FormVersion: 43
+ObjectBounds:
+  First: -47, -18, -22
+  Second: 47, 18, 22
+MarkerColor: '#00CC4C33'
+Flags: []

@@ -1,0 +1,150 @@
+FormKey: 2A4461:SexLab-Parasites.esp
+EditorID: _SLP_GreatChaurus
+FormVersion: 43
+ObjectBounds:
+  First: -320, -352, 0
+  Second: 320, 352, 384
+Configuration:
+  Flags:
+  - Essential
+  - Unique
+  - BleedoutOverride
+  MagickaOffset: 100
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 20
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  TemplateFlags:
+  - ModelAnimation
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+Factions:
+- Faction: 000013:skyrim.esm
+  Fluff: 0x000000
+- Faction: 01DD09:skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03ADA1:skyrim.esm
+Voice: 01F152:skyrim.esm
+Template: 01CA03:skyrim.esm
+Race: 4E0BFB:SexLab-Parasites.esp
+ActorEffect:
+- 057B4B:skyrim.esm
+- 009D3C:Dawnguard.esm
+- 04DBA5:skyrim.esm
+- 0252C0:skyrim.esm
+WornArmor: 2A4460:SexLab-Parasites.esp
+FarAwayModel: 040731:skyrim.esm
+AttackRace: 012E82:skyrim.esm
+Perks:
+- Perk: 1046BD:skyrim.esm
+  Rank: 1
+  Fluff: 0x2A074E
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: NoCrime
+  Unused: 100
+Packages:
+- 2AEAA2:SexLab-Parasites.esp
+Class: 02F201:skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Chaurus Queen
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 56
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 56
+  - Key: Block
+    Value: 56
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 82
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 176
+  Magicka: 50
+  Stamina: 114
+  Unused: 19975
+  FarAwayModelDistance: 10000
+  GearedUpWeapons: 1
+  Unused2: 0xEB5400
+CombatStyle: 048C83:skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 02F2F0:skyrim.esm
+DefaultOutfit: 05A0B7:skyrim.esm
+SleepingOutfit: 05A0B7:skyrim.esm
+DefaultPackageList: 09C21B:skyrim.esm
+TextureLighting: '#00808080'

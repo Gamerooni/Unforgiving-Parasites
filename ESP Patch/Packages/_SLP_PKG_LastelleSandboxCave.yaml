@@ -1,0 +1,89 @@
+FormKey: 60B773:SexLab-Parasites.esp
+EditorID: _SLP_PKG_LastelleSandboxCave
+FormVersion: 43
+Type: Package
+PreferredSpeed: Run
+Unknown: 68
+InteruptFlags:
+- HellosToPlayer
+- RandomConversations
+- ObserveCombatBehavior
+- GreetCorpseBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+- AggroRadiusBehavior
+- AllowIdleChatter
+- WorldInteractions
+- 0x400
+- 0x800
+- 0x1000
+- 0x2000
+- 0x4000
+- 0x8000
+ScheduleMonth: -1
+ScheduleDayOfWeek: 255
+ScheduleHour: -1
+ScheduleMinute: -1
+Unknown3: 0x656E63
+PackageTemplate: 01C254:skyrim.esm
+DataInputVersion: 10
+Data:
+- Key: 0
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationFallback
+        Type: NearSelf
+      Radius: 256
+- Key: 1
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 3
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 4
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 5
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 6
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 7
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 14
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 25
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 27
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 29
+  Value:
+    MutagenObjectType: PackageDataFloat
+    Data: 50
+- Key: 31
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+XnamMarker: 0x0A
+OnBegin:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnEnd:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnChange:
+  Topics:
+  - MutagenObjectType: TopicReference

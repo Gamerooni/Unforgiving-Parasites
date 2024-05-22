@@ -1,0 +1,9 @@
+FormKey: 73B45E:SexLab-Parasites.esp
+EditorID: _SLP_PlugsDeflatePumpsFail
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: You desperately try to squeeze the parasite inside of you, but there is no way to access it or remove it from your body in its inflated state. You will have to wait for the pressure to relieve itself...
+INAM: 0x00000000
+Flags:
+- MessageBox

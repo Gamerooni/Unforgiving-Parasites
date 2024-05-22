@@ -1,0 +1,35 @@
+FormKey: 4BD49F:SexLab-Parasites.esp
+EditorID: _SLP_ArmorDwemerCuirass
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Dwemer Explorer Armor
+ObjectEffect: 65C799:SexLab-Parasites.esp
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Dwarven\DwarvenArmorGO.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: Armor\Dwarven\DwarvenArmorGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 06BBD2:skyrim.esm
+- 06BBD7:skyrim.esm
+- 06C0EC:skyrim.esm
+- 08F959:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 4BD49B:SexLab-Parasites.esp
+Value: 4000
+Weight: 45
+ArmorRating: 34

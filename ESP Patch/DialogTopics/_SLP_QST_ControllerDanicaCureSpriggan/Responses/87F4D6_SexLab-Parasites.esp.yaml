@@ -1,0 +1,70 @@
+FormKey: 87F4D6:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_CureSprigganRoots
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_CureSprigganRoots
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_CureSprigganRoots
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: I am sorry child.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: I cannot go against the blessings of Kyne's herself.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x746163
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x652061
+  Text:
+    TargetLanguage: English
+    Value: She has chosen you to become one of her Guardians. Who am I to decide against that?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x53DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x53DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 80ADA7:SexLab-Parasites.esp
+  ComparisonValue: 1

@@ -1,0 +1,29 @@
+FormKey: 006023:SexLab-Parasites.esp
+EditorID: _SLP_ingredientChaurusWorm
+FormVersion: 43
+ObjectBounds:
+  First: -2, -8, 0
+  Second: 2, 8, 4
+Name:
+  TargetLanguage: English
+  Value: Dead Chaurus Worm
+Keywords:
+- 08CDEB:skyrim.esm
+Model:
+  File: armor\KyneBlessing\plugChaurusWorm\worm.nif
+  Data: 0x020000000000000000000000
+Value: 15
+Weight: 0.25
+IngredientValue: 48
+Effects:
+- BaseEffect: 090041:skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 109ADD:skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 073F26:skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 10

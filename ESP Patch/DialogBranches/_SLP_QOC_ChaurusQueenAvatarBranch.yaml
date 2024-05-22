@@ -1,0 +1,8 @@
+FormKey: 48FB6C:SexLab-Parasites.esp
+EditorID: _SLP_QOC_ChaurusQueenAvatarBranch
+FormVersion: 43
+Quest: 016E2C:SexLab-Parasites.esp
+Category: Player
+Flags:
+- TopLevel
+StartingTopic: 48FB6D:SexLab-Parasites.esp

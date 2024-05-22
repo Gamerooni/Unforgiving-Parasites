@@ -1,0 +1,27 @@
+FormKey: 3D45CD:SexLab-Parasites.esp
+EditorID: _SLP_SP_SeedCalm
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Seed Calm
+MenuDisplayObject: 10F0FF:skyrim.esm
+EquipmentType: 025BEE:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: LesserPower
+ChargeTime: 1
+CastType: FireAndForget
+Effects:
+- BaseEffect: 3D45C5:SexLab-Parasites.esp
+  Data:
+    Magnitude: 10
+    Area: 100
+    Duration: 20
+- BaseEffect: 42F800:SexLab-Parasites.esp
+  Data:
+    Magnitude: 10
+    Area: 250
+    Duration: 60

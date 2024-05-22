@@ -1,0 +1,87 @@
+FormKey: 8DA70A:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: Interesting question child.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: The most common forms of infection come from direct contact with certain creatures like spiders and chaurus, but these can be dangerous.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x492077
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x707261
+  Text:
+    TargetLanguage: English
+    Value: I had to treat several infections from aspiring alchemists trying to harvest ingredients like chaurus eggs or creep clusters.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Then you have natural encounters.. certain creatures will latch on to you if you sleep in caves or swim without protection.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 5
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Spend any time out in the wilderness and you are bound to catch something.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x54DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 62
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x54DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 65
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x54DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: How can I get myself infected by a parasite?

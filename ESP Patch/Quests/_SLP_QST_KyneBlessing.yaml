@@ -1,0 +1,279 @@
+FormKey: 00603B:SexLab-Parasites.esp
+EditorID: _SLP_QST_KyneBlessing
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_QST_KyneBlessing
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KyneSanctuaryDoor
+      Object: 003494:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KyneSanctuaryDoorNew
+      Object: 234DED:SexLab-Parasites.esp
+  FileName: SLP_QST_KyneBlessing
+  Fragments:
+  - Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_0
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_12
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_13
+  - Stage: 22
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_5
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_15
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_2
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_14
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_10
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_8
+  - Stage: 99
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_20
+  - Stage: 110
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_7
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_9
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_6
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_11
+  - Stage: 92
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_17
+  - Stage: 21
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_4
+  - Stage: 94
+    Unknown2: 1
+    ScriptName: SLP_QST_KyneBlessing
+    FragmentName: Fragment_19
+Name:
+  TargetLanguage: English
+  Value: Kyne's Blessing
+Flags:
+- StartGameEnabled
+- AllowRepeatedStages
+- 0x10
+QuestFormVersion: 77
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 11
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I heard the stories about these things creeping in the wild but I never thought it would happen to me. Oh Gods... I can feel it crawling deep inside me. The constant throbbing is going to make me lose my mind.
+- Index: 21
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: It's gone, finally! And yet, I can still feel its presence. The sudden void it left behind is almost unbearable.
+- Index: 22
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I am beginning to understand how these critters work. Now that I know how to remove them, they don't sound so bad.I'm wondering if they can be tolerated or even tamed.
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Spider eggs are held together by a thick slime that only Dwemer Oil can dissolve.
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Chaurus worms are thick and fat. Troll fat provides a natural lubricant to numb them and ease them out.
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Face and hip huggers are very stubborn. Removing them by force can be dangerous without the sting of Fire salt to blunt their grip.
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Somehow, multiple voices speak through Tentacle Monsters. Listening to them and doing what they command is the key for a quick removal.
+- Index: 70
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I learned how to remove living armors.
+- Index: 80
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I learned how to remove blackreach spores.
+- Index: 90
+  LogEntries:
+  - Flags: []
+- Index: 92
+  LogEntries:
+  - Flags: []
+- Index: 94
+  LogEntries:
+  - Flags: []
+- Index: 99
+  LogEntries:
+  - Flags: []
+- Index: 100
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I need to find Danica's apprentice, Lastelle, near Morthal
+- Index: 110
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I told Danica I met her apprentice, Lastelle.
+- Index: 200
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I learned the Parasites Repellent recipe
+- Index: 999
+  Flags:
+  - ShutDownStage
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: You are infected by a parasite
+- Index: 11
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find a healer to learn about your parasite infection
+- Index: 12
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Learn how to remove parasites without killing them
+- Index: 14
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Discover how to harvest ingredients from parasites [OBSOLETE]
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring Dwarver Oil to Danica to remove your spider eggs
+- Index: 39
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: I learned how to remove spider eggs
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring Troll Fat to Danica to remove your chaurus worms
+- Index: 49
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: I learned to remove chaurus worms
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring fire salts to Danica to remove the creeper attached to you
+- Index: 59
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: I learned how to remove face and hip huggers
+- Index: 69
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: I learned how to remove tentacle monsters
+- Index: 79
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: I learned to remove living armors
+- Index: 89
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: I learned how to remove Blackreach spores
+- Index: 90
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find another way to cure the Spriggan roots.. maybe Danica's books?
+- Index: 92
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: The Greybeards or an altar in the mountains above Kynesgrove might be the key to removing the roots
+- Index: 94
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find the Sacred Stone of Kyne outside High Hrothgar and pray for a cure
+- Index: 100
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Track down Danica's apprentice, Lastelle, in Morthal.
+- Index: 200
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: I learned how to brew a Parasite repellent potion

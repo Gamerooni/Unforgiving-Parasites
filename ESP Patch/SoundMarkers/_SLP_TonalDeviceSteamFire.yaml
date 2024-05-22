@@ -1,0 +1,7 @@
+FormKey: 4DBAF6:SexLab-Parasites.esp
+EditorID: _SLP_TonalDeviceSteamFire
+FormVersion: 43
+ObjectBounds:
+  First: -27, -27, -12
+  Second: 27, 27, 12
+SoundDescriptor: 0FFA0B:skyrim.esm

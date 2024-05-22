@@ -1,0 +1,55 @@
+FormKey: 0471DC:skyrim.esm
+EditorID: FrostflowAbyss
+FormVersion: 43
+Version2: 15
+Name:
+  TargetLanguage: English
+  Value: Frostflow Abyss
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00020202'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#003A94BE'
+  FogNear: 700
+  FogFar: 7000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00314F56'
+    DirectionalXMinus: '#00284F4F'
+    DirectionalYPlus: '#002D5253'
+    DirectionalYMinus: '#002D4B53'
+    DirectionalZPlus: '#00152525'
+    DirectionalZMinus: '#00447880'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#0014282E'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 01952F:skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019186:skyrim.esm
+Water: 0CC7B7:skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveIceCubeMap_e.dds
+AcousticSpace: 02B3AE:skyrim.esm
+EncounterZone: 03EC24:skyrim.esm
+Music: 05228A:skyrim.esm
+ImageSpace: 089D4E:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 959905512
+PersistentTimestamp: 31514
+PersistentUnknownGroupData: 1065353216
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1066695393

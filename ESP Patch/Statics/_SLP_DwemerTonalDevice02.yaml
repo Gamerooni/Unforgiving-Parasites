@@ -1,0 +1,13 @@
+FormKey: 4BD4A6:SexLab-Parasites.esp
+EditorID: _SLP_DwemerTonalDevice02
+FormVersion: 43
+ObjectBounds:
+  First: -3, -8, -3
+  Second: 3, 4, 3
+Model:
+  File: clutter\KyneBlessing\sensor.nif
+  Data: 0x020000000000000000000000
+MaxAngle: 90
+Unused: '[]'
+DNAMDataTypeState:
+- Break0

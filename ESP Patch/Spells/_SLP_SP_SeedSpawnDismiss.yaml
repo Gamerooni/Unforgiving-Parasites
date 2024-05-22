@@ -1,0 +1,21 @@
+FormKey: 452F16:SexLab-Parasites.esp
+EditorID: _SLP_SP_SeedSpawnDismiss
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Chaurus Brood Dismiss
+MenuDisplayObject: 10F0FF:skyrim.esm
+EquipmentType: 025BEE:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: LesserPower
+ChargeTime: 1
+CastType: FireAndForget
+Effects:
+- BaseEffect: 452F15:SexLab-Parasites.esp
+  Data:
+    Magnitude: 1
+    Duration: 1

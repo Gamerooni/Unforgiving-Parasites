@@ -1,0 +1,48 @@
+FormKey: 00DC7B:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+Topic: 00DC78:SexLab-Parasites.esp
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0xB10007
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: I'm sorry... but this is way out of my league.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0xB10007
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Try the Temple of Kynareth... they may help you with your little problem.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xDDDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xDDDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 0085F4:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Can you help me with this skin issue?

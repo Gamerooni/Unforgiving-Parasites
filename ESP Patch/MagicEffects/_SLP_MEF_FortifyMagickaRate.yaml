@@ -1,0 +1,31 @@
+FormKey: 4FF215:SexLab-Parasites.esp
+EditorID: _SLP_MEF_FortifyMagickaRate
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Regenerate Magicka
+MenuDisplayObject: 0435A5:skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- NoHitEffect
+BaseCost: 5
+Unknown1: 26478
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MagickaRateMult
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:skyrim.esm
+- Type: Charge
+  Sound: 056622:skyrim.esm
+- Type: Ready
+  Sound: 03F363:skyrim.esm
+- Type: Release
+  Sound: 03F361:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

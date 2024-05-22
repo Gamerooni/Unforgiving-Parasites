@@ -8,9 +8,9 @@
     Release="false" 
     Final="false">
     <Variables>
-        <Variable Name="modname" Value="Custom Scripts"/>
+        <Variable Name="modname" Value="CustomParasites"/>
         <Variable Name="modspath" Value="D:\WabbajackModlists\ADF2\Modlist\mods"/>
-        <Variable Name="modpath" Value="@modspath\@modname"/>
+        <Variable Name="modpath" Value="D:\Modding\MO2\mods\CustomParasites"/>
         <Variable Name="gamepath" Value="E:\SteamLibrary\steamapps\common\Skyrim Special Edition"/>
     </Variables>
     <Imports>

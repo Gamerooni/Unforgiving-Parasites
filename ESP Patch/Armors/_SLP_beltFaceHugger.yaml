@@ -1,0 +1,42 @@
+FormKey: 008608:SexLab-Parasites.esp
+EditorID: _SLP_beltFaceHugger
+FormVersion: 43
+ObjectBounds:
+  First: -11, -8, 1
+  Second: 11, 10, 85
+Name:
+  TargetLanguage: English
+  Value: Hip Hugger
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\beltFaceHugger\FaceHuggerAGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - 0x80000
+  - 0x8000000
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 0044FE:SexLab-Parasites.esp
+- 0085F3:SexLab-Parasites.esp
+- 0063CA:Devious Devices - Assets.esm
+- 0429FB:Devious Devices - Integration.esm
+- 02F16E:SexLab.esm
+- 0FF9FB:skyrim.esm
+- 0C27BD:skyrim.esm
+- 003330:Devious Devices - Assets.esm
+- 003331:Devious Devices - Assets.esm
+- 00FACA:Devious Devices - Assets.esm
+- 01DD7C:Devious Devices - Assets.esm
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: These nasty crawlers hug their victim's hips tight while they fill their womb with semen.
+Armature:
+- 0085FA:SexLab-Parasites.esp
+Value: 200
+Weight: 5

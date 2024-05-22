@@ -1,0 +1,13 @@
+FormKey: 73B44E:SexLab-Parasites.esp
+EditorID: _SLP_DD_OnNoKeyMSG
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: Using a key would only poke the creature and make it angry.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Ok

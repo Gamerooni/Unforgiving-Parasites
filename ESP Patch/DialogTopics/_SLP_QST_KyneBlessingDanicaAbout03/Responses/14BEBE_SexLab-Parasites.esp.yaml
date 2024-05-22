@@ -1,0 +1,66 @@
+FormKey: 14BEBE:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Parasitic lifeforms are so fascinating! They are a perfect expression of Kyne's love for all beings.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: The idea of being joined to another living creature for your very subsistance...
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: There are many parasites across Tamriel. Most are minuscule in size and completely harmless. But a few exceptions can cause discomfort or even harm.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x00803F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x700680
+  Text:
+    TargetLanguage: English
+    Value: 'In Skyrim, you need to watch out for Frostbite Spiders and Cave Creepers for example. '
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x0DDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 20
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x0DDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1

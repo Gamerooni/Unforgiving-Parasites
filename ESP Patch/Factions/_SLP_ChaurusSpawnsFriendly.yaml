@@ -1,0 +1,23 @@
+FormKey: 7E7688:SexLab-Parasites.esp
+EditorID: _SLP_ChaurusSpawnsFriendly
+FormVersion: 43
+Relations:
+- Target: 0C6472:skyrim.esm
+- Target: 0A2C8D:skyrim.esm
+- Target: 01DD09:skyrim.esm
+- Target: 068D78:skyrim.esm
+  Reaction: Friend
+- Target: 000DB1:skyrim.esm
+  Reaction: Ally
+- Target: 017964:Dragonborn.esm
+  Reaction: Ally
+- Target: 7E7688:SexLab-Parasites.esp
+  Reaction: Ally
+- Target: 084D1B:skyrim.esm
+  Reaction: Ally
+Flags:
+- HiddenFromPC
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

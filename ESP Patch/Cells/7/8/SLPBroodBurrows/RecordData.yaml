@@ -1,0 +1,52 @@
+FormKey: 026153:SexLab-Parasites.esp
+EditorID: SLPBroodBurrows
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Brood Cavern
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+Lighting:
+  AmbientColor: '#00323961'
+  DirectionalColor: '#0040606A'
+  FogNearColor: '#002E3154'
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#001F1F24'
+    DirectionalXMinus: '#001A1F21'
+    DirectionalYPlus: '#001D2023'
+    DirectionalYMinus: '#001D1D23'
+    DirectionalZPlus: '#000D0E0F'
+    DirectionalZMinus: '#002C2F36'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#002E3154'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0487E6:skyrim.esm
+WaterHeight: 0
+Location: 019150:skyrim.esm
+Water: 048C2B:skyrim.esm
+AcousticSpace: 10EE74:skyrim.esm
+EncounterZone: 03EBF8:skyrim.esm
+Music: 094BDD:skyrim.esm
+ImageSpace: 048C15:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 993581408
+PersistentTimestamp: 31514
+PersistentUnknownGroupData: 1065353216
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1065353216

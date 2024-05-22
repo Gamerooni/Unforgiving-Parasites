@@ -1,0 +1,9 @@
+FormKey: 42A6EC:SexLab-Parasites.esp
+EditorID: _SLP_QOC_ChaurusQueenElderRoots
+FormVersion: 43
+Quest: 016E2C:SexLab-Parasites.esp
+Branches:
+- 42A6ED:SexLab-Parasites.esp
+TNAMs: []
+ENAM: 0x00000000
+DNAM: 0x00

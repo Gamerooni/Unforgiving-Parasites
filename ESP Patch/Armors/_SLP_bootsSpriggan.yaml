@@ -1,0 +1,28 @@
+FormKey: 80ADB4:SexLab-Parasites.esp
+EditorID: _SLP_bootsSpriggan
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Spriggan Legs
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\gagSpriggan\SprigganHusk.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  - 0x800000
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: Fungal growths on your legs.
+Armature:
+- 2A4455:SexLab-Parasites.esp
+Value: 30
+Weight: 4

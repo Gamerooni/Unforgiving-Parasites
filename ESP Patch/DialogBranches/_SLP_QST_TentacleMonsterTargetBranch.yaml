@@ -1,0 +1,8 @@
+FormKey: 70DB35:SexLab-Parasites.esp
+EditorID: _SLP_QST_TentacleMonsterTargetBranch
+FormVersion: 43
+Quest: 6F462E:SexLab-Parasites.esp
+Category: Player
+Flags:
+- TopLevel
+StartingTopic: 70DB36:SexLab-Parasites.esp

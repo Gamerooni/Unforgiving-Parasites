@@ -1,0 +1,7 @@
+MutagenObjectType: PlacedObject
+FormKey: 2B3BBF:SexLab-Parasites.esp
+FormVersion: 43
+Base: 1016A2:skyrim.esm
+Placement:
+  Position: 3917.1384, 6234.51, 7023.8447
+  Rotation: 0, -0, 4.9831886

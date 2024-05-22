@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 02B45C:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+EditorID: _SLP_BroodCaveEntranceMarker
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 00003B:skyrim.esm
+Placement:
+  Position: -32272.164, 89448.05, -13485.33

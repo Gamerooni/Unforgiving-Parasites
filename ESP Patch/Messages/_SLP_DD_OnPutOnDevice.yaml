@@ -1,0 +1,16 @@
+FormKey: 73B44F:SexLab-Parasites.esp
+EditorID: _SLP_DD_OnPutOnDevice
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: You wonder if using a parasite on yourself is a very smart idea. You could of course cajole it first, so you could easily convince it to let you go later. Do you want to
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Push it futher in!
+- Text:
+    TargetLanguage: English
+    Value: Stroke and cajole it

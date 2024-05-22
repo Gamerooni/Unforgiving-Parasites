@@ -1,0 +1,15 @@
+MutagenObjectType: PlacedObject
+FormKey: 0F3B2A:skyrim.esm
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 048AC0:skyrim.esm
+Primitive:
+  Bounds: 813.6865, 643.67285, 784.2429
+  Color: '#000080FF'
+  Unknown: 0.15
+  Type: Box
+LocationReference: 018EE8:skyrim.esm
+Placement:
+  Position: 4184.0625, -5791.186, 547.4656

@@ -1,0 +1,9 @@
+FormKey: 1B131A:SexLab-Parasites.esp
+EditorID: _SLP_QOC_KyneBlessingLastelle
+FormVersion: 43
+Quest: 016E2C:SexLab-Parasites.esp
+Branches:
+- 1B131B:SexLab-Parasites.esp
+TNAMs: []
+ENAM: 0x00000000
+DNAM: 0x00

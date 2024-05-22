@@ -1,0 +1,11 @@
+FormKey: 150FC2:SexLab-Parasites.esp
+EditorID: _SLP_QST_KyneBlessingDanicaAbout05
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: What do you know about Chaurus Worms?
+Branch: 13CBAD:SexLab-Parasites.esp
+Quest: 00603B:SexLab-Parasites.esp
+SubtypeName: CUST
+Timestamp: 31514
+Unknown: 23192

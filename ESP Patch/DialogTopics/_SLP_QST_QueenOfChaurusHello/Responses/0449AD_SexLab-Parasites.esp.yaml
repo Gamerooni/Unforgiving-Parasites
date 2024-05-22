@@ -1,0 +1,42 @@
+FormKey: 0449AD:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_Jorgen01
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_Jorgen01
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_Jorgen01
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 0449AC:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x920D00
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000100
+  Text:
+    TargetLanguage: English
+    Value: Things are not the same since our daughter, Lastelle, ran away. My wife is besides herself.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xECDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 5
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xECDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 0138B6:skyrim.esm
+  ComparisonValue: 1

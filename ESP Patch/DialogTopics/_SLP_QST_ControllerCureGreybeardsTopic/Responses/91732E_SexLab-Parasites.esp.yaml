@@ -1,0 +1,72 @@
+FormKey: 91732E:SexLab-Parasites.esp
+FormVersion: 43
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Ahh the Mark of Kyne.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x61732C
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x506172
+  Text:
+    TargetLanguage: English
+    Value: You are fortunate you know? It is a great honor to be marked by the Goddess.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: Her most devoted servants dedicate their life to her once they are touched. In turn, the Goddess of Storms turns them into Spriggans.. her guadians
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x752063
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206275
+  Text:
+    TargetLanguage: English
+    Value: If you are weary of that path, there is a book about Nord Folklore in our library. It will tell you everything you need to know.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x5ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 80ADA7:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x5ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 02C6C8:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Do you know how to remove these roots?

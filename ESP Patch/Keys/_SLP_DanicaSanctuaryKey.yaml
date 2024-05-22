@@ -1,0 +1,13 @@
+FormKey: 003A29:SexLab-Parasites.esp
+EditorID: _SLP_DanicaSanctuaryKey
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Key to Whiterun Sanctuary
+Model:
+  File: Clutter\Key01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03ED75:skyrim.esm
+PutDownSound: 03ED78:skyrim.esm
+Keywords:
+- 0914EF:skyrim.esm

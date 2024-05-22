@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 0D92C3:skyrim.esm
+MajorRecordFlagsRaw: 32768
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- VisibleWhenDistant
+Base: 022F1F:skyrim.esm
+Placement:
+  Position: -31923.33, 88510.61, -13910.008
+  Rotation: 0, -0, 6.030002

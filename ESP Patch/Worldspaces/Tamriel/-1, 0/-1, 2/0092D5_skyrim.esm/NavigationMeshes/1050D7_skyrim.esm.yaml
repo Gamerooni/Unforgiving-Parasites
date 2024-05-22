@@ -1,0 +1,294 @@
+FormKey: 1050D7:skyrim.esm
+FormVersion: 43
+Version2: 4
+Data:
+  Parent:
+    MutagenObjectType: WorldspaceNavmeshParent
+    Parent: 00003C:skyrim.esm
+    Coordinates: 22, -8
+  Vertices:
+  - -32704, 93184, -13883.719
+  - -32640, 93248, -13898.386
+  - -32768, 93248, -13891.058
+  - -32640, 93184, -13856.463
+  - -32704, 93120, -13853.192
+  - -32768, 93120, -13894.812
+  - -32704, 92992, -13862.115
+  - -32768, 92992, -13900.938
+  - -32640, 92992, -13847.874
+  - -32576, 93184, -13860.6045
+  - -32576, 93248, -13896.219
+  - -32512, 93184, -13898.259
+  - -32512, 92928, -13914.34
+  - -32576, 92928, -13872.29
+  - -32640, 92928, -13865.666
+  - -32320, 93056, -13920.667
+  - -32640, 92672, -13917.658
+  - -32320, 92992, -13890.998
+  - -32256, 92992, -13891.252
+  - -32256, 92672, -13898.643
+  - -32192, 92992, -13891.704
+  - -32384, 93184, -13896.87
+  - -32448, 93248, -13886.357
+  - -32384, 93248, -13927.852
+  - -32320, 93248, -13927.838
+  - -32448, 93312, -13925.239
+  - -32192, 93504, -13929.989
+  - -32384, 93760, -13914.92
+  - -32576, 93760, -13905.094
+  - -32768, 93504, -13917.17
+  - -32768, 93312, -13933.931
+  - -32192, 93312, -13934.2
+  Triangles:
+  - Vertices: 0, 1, 2
+    EdgeLink_0_1: 1
+    EdgeLink_1_2: 36
+    EdgeLink_2_0: 4
+    Flags:
+    - Found
+  - Vertices: 1, 0, 3
+    EdgeLink_1_2: 2
+    EdgeLink_2_0: 10
+    Flags:
+    - Found
+  - Vertices: 3, 0, 4
+    EdgeLink_0_1: 1
+    EdgeLink_1_2: 3
+    EdgeLink_2_0: 9
+    Flags:
+    - Found
+  - Vertices: 0, 5, 4
+    EdgeLink_0_1: 4
+    EdgeLink_1_2: 5
+    EdgeLink_2_0: 2
+    Flags:
+    - Found
+  - Vertices: 5, 0, 2
+    EdgeLink_0_1: 3
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 5, 6, 4
+    EdgeLink_0_1: 6
+    EdgeLink_1_2: 7
+    EdgeLink_2_0: 3
+    Flags:
+    - Found
+  - Vertices: 7, 6, 5
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 5
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 8, 4, 6
+    EdgeLink_0_1: 8
+    EdgeLink_1_2: 5
+    EdgeLink_2_0: 17
+    Flags:
+    - Found
+  - Vertices: 9, 4, 8
+    EdgeLink_0_1: 9
+    EdgeLink_1_2: 7
+    EdgeLink_2_0: 13
+    Flags:
+    - Found
+  - Vertices: 3, 4, 9
+    EdgeLink_0_1: 2
+    EdgeLink_1_2: 8
+    EdgeLink_2_0: 10
+    Flags:
+    - Found
+  - Vertices: 9, 1, 3
+    EdgeLink_0_1: 11
+    EdgeLink_1_2: 1
+    EdgeLink_2_0: 9
+    Flags:
+    - Found
+  - Vertices: 1, 9, 10
+    EdgeLink_0_1: 10
+    EdgeLink_1_2: 12
+    EdgeLink_2_0: 37
+    Flags:
+    - Found
+  - Vertices: 10, 9, 11
+    EdgeLink_0_1: 11
+    EdgeLink_1_2: 13
+    EdgeLink_2_0: 39
+    Flags:
+    - Found
+  - Vertices: 9, 8, 11
+    EdgeLink_0_1: 8
+    EdgeLink_1_2: 14
+    EdgeLink_2_0: 12
+    Flags:
+    - Found
+  - Vertices: 11, 8, 12
+    EdgeLink_0_1: 13
+    EdgeLink_1_2: 15
+    EdgeLink_2_0: 18
+    Flags:
+    - Found
+  - Vertices: 13, 12, 8
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 14
+    EdgeLink_2_0: 16
+    Flags:
+    - Found
+  - Vertices: 13, 8, 14
+    EdgeLink_0_1: 15
+    EdgeLink_1_2: 17
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 8, 6, 14
+    EdgeLink_0_1: 7
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 16
+    Flags:
+    - Found
+  - Vertices: 12, 15, 11
+    EdgeLink_0_1: 19
+    EdgeLink_1_2: 25
+    EdgeLink_2_0: 14
+    Flags:
+    - Found
+  - Vertices: 16, 15, 12
+    EdgeLink_0_1: 20
+    EdgeLink_1_2: 18
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 17, 15, 16
+    EdgeLink_0_1: 21
+    EdgeLink_1_2: 19
+    EdgeLink_2_0: 23
+    Flags:
+    - Found
+  - Vertices: 17, 18, 15
+    EdgeLink_0_1: 22
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 20
+    Flags:
+    - Found
+  - Vertices: 18, 17, 19
+    EdgeLink_0_1: 21
+    EdgeLink_1_2: 23
+    EdgeLink_2_0: 24
+    Flags:
+    - Found
+  - Vertices: 17, 16, 19
+    EdgeLink_0_1: 20
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 22
+    Flags:
+    - Found
+  - Vertices: 19, 20, 18
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 22
+    Flags:
+    - Found
+  - Vertices: 11, 15, 21
+    EdgeLink_0_1: 18
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 26
+    Flags:
+    - Found
+  - Vertices: 11, 21, 22
+    EdgeLink_0_1: 25
+    EdgeLink_1_2: 27
+    EdgeLink_2_0: 39
+    Flags:
+    - Found
+  - Vertices: 22, 21, 23
+    EdgeLink_0_1: 26
+    EdgeLink_1_2: 28
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 24, 23, 21
+    EdgeLink_0_1: 29
+    EdgeLink_1_2: 27
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 23, 24, 25
+    EdgeLink_0_1: 28
+    EdgeLink_1_2: 30
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 26, 25, 24
+    EdgeLink_0_1: 31
+    EdgeLink_1_2: 29
+    EdgeLink_2_0: 40
+    Flags:
+    - Found
+  - Vertices: 26, 27, 25
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 32
+    EdgeLink_2_0: 30
+    Flags:
+    - Found
+  - Vertices: 25, 27, 28
+    EdgeLink_0_1: 31
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 33
+    Flags:
+    - Found
+  - Vertices: 25, 28, 29
+    EdgeLink_0_1: 32
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 34
+    Flags:
+    - Found
+  - Vertices: 25, 29, 30
+    EdgeLink_0_1: 33
+    EdgeLink_2_0: 35
+    Flags:
+    - EdgeLink_1_2
+    - Found
+  - Vertices: 25, 30, 1
+    EdgeLink_0_1: 34
+    EdgeLink_1_2: 36
+    EdgeLink_2_0: 37
+    Flags:
+    - Found
+  - Vertices: 1, 30, 2
+    EdgeLink_0_1: 35
+    EdgeLink_1_2: -1
+    Flags:
+    - Found
+  - Vertices: 1, 10, 25
+    EdgeLink_0_1: 11
+    EdgeLink_1_2: 38
+    EdgeLink_2_0: 35
+    Flags:
+    - Found
+  - Vertices: 22, 25, 10
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 37
+    EdgeLink_2_0: 39
+    Flags:
+    - Found
+  - Vertices: 22, 10, 11
+    EdgeLink_0_1: 38
+    EdgeLink_1_2: 12
+    EdgeLink_2_0: 26
+    Flags:
+    - Found
+  - Vertices: 26, 24, 31
+    EdgeLink_0_1: 30
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  EdgeLinks:
+  - Mesh: 1050DB:skyrim.esm
+    TriangleIndex: 499
+  NavmeshGridDivisor: 2
+  MaxDistanceX: 288
+  MaxDistanceY: 544
+  Min: -32768, 92672, -13934.2
+  Max: -32192, 93760, -13847.874
+  NavmeshGrid: 0x1900000000000100020003000400050006000700080009000A000B000C000D000E000F0010001100120013001400170019001A0027000C000000120013001400150016001700180019001A001B001C0027000F0000000000010004000A000B000C001A00200021002200230024002500260027000E0000001A001B001C001D001E001F0020002100220023002500260027002800

@@ -1,0 +1,99 @@
+FormKey: 0680D7:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_LastelleTasks60
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFollowerAlias
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_ChaurusStudWithLastelle
+      Object: 062FD1:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_LastelleTasks60
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_LastelleTasks60
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 04EBBC:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0xF80100
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000C00
+  Text:
+    TargetLanguage: English
+    Value: Not for now, but I am getting worried about the long term effects of mating with chaurus.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x652075
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206974
+  Text:
+    TargetLanguage: English
+    Value: The eggs inside me feel wonderful and by breasts are warm and heavy with milk, but I want to provide for my babies as long as possible.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: I can't have you ask my mother or she will suspect something. Go to Whiterun and speak to Danica Purespring. She used to be my mentor.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x61732C
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x506172
+  Text:
+    TargetLanguage: English
+    Value: She taught me everything I know about swamp critters but so much was left unsaid. Ask her about voluntary mating with the chaurus for me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF3DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 59
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF3DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 60
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF3DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01BF34:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Do you need anything else for your nest?

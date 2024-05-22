@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0198A5:skyrim.esm
+MajorRecordFlagsRaw: 1024
+EditorID: RorlundREF
+FormVersion: 43
+Version2: 7
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 0132A2:skyrim.esm
+PersistentLocation: 018A5A:skyrim.esm
+LocationReference: 0200A3:skyrim.esm
+LocationRefTypes:
+- 0130F7:skyrim.esm
+Placement:
+  Position: 1561.1422, 133.02277, 0
+  Rotation: 0, -0, 2.7831957
+MajorFlags:
+- Persistent

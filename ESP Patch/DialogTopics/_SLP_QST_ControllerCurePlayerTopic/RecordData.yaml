@@ -1,0 +1,11 @@
+FormKey: 00F774:SexLab-Parasites.esp
+EditorID: _SLP_QST_ControllerCurePlayerTopic
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Do you need help with your parasite?
+Branch: 00F773:SexLab-Parasites.esp
+Quest: 000D62:SexLab-Parasites.esp
+SubtypeName: CUST
+Timestamp: 31514
+Unknown: 23192

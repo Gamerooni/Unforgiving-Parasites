@@ -1,0 +1,84 @@
+FormKey: 1B131F:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_ChaurusBook120
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CaveChaurusRef
+      Object: 17E8E9:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_ChaurusBook120
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_ChaurusBook120
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 1B131E:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 7
+  Unknown2: 0x756E63
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x467261
+  Text:
+    TargetLanguage: English
+    Value: That cursed tome! I was so glad to get rid of it.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 8
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: My daughter Julienne came back from a market trip with it. Like she needs more books to give her ideas to leave us.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 9
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: You may ask her about it but don't let her know you have it with you, please.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x12DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 110
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x12DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 120
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x12DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 019A2E:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I'm trying to find out about where this book about the Chaurus came from.

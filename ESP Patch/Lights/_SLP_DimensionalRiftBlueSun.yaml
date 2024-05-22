@@ -1,0 +1,23 @@
+FormKey: 65258D:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 131072
+EditorID: _SLP_DimensionalRiftBlueSun
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- Dangerous_OffLimits_InteriorCell
+ObjectBounds:
+  First: -38, -40, -74
+  Second: 38, 40, 48
+Time: -1
+Radius: 1024
+Color: '#0027C4F1'
+Flags:
+- Dynamic
+- PortalStrict
+FalloffExponent: 5
+FOV: 90
+NearClip: 10
+FlickerPeriod: 1
+FlickerIntensityAmplitude: 0.3
+FadeValue: 10
+MajorFlags:
+- PortalStrict

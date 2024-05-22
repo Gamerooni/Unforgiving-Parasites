@@ -1,0 +1,13 @@
+FormKey: 73B449:SexLab-Parasites.esp
+EditorID: _SLP_DD_EscapeStruggleMSG
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: You struggle against the creature with all your might and throw your body around to try and loosen the tight restraint enough to escape from it...
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: See what happens!

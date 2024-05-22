@@ -1,0 +1,58 @@
+FormKey: 73B452:SexLab-Parasites.esp
+EditorID: _SLP_DeviceGagMSG
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: This gag will wedge between a subject's lips and force her mouth wide open, leaving her completely unable to speak in an understandable way. This creature may feed on the subjet's fluids or pump it with fluids of its own.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Put it on
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0x31D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Unlock
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x31D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Try to pry to open
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x31D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Call out for help
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x34D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Carry on

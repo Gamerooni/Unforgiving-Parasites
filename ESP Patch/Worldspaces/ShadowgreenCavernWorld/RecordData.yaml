@@ -1,0 +1,31 @@
+FormKey: 02A9D8:skyrim.esm
+EditorID: ShadowgreenCavernWorld
+FormVersion: 43
+Version2: 10
+Name:
+  TargetLanguage: English
+  Value: Shadowgreen Cavern
+FixedDimensionsCenterCell: -1, 0
+InteriorLighting: 0E20F6:skyrim.esm
+EncounterZone: 03EC64:skyrim.esm
+Location: 01929C:skyrim.esm
+Parent:
+  Worldspace: 00003C:skyrim.esm
+  Flags:
+  - UseMapData
+Water: 000018:skyrim.esm
+LodWater: 000018:skyrim.esm
+LodWaterHeight: 0
+LandDefaults:
+  DefaultLandHeight: 1024
+  DefaultWaterHeight: -10000
+WorldMapOffsetScale: 1
+WorldMapCellOffset: -79872, 117760, -12288
+DistantLodMultiplier: 1
+Flags:
+- SmallWorld
+- CannotFastTravel
+- FixedDimensions
+ObjectBoundsMin: -7, -2
+ObjectBoundsMax: 7, 4
+SubCellsTimestamp: 31514

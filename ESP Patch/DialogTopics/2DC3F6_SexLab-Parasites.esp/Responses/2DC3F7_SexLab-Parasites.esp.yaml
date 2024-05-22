@@ -1,0 +1,27 @@
+FormKey: 2DC3F7:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x00803F
+  Text:
+    TargetLanguage: English
+    Value: '[Motions you to follow her]'
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 0F6CCF:skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Unknown1: 0x42DE52
+  Unknown2: 15
+  Data:
+    MutagenObjectType: GetDistanceConditionData
+    Target: 000014:skyrim.esm
+  ComparisonValue: 200

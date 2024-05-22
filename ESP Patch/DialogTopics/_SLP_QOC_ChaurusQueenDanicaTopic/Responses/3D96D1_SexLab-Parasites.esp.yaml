@@ -1,0 +1,67 @@
+FormKey: 3D96D1:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: A5B38F:SexLab-Parasites.esp
+FavorLevel: None
+LinkTo:
+- 3D96D2:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: The Seed is deeply bonded to your very womb.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x002C00
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x00F300
+  Text:
+    TargetLanguage: English
+    Value: I could feel it spread its roots deep inside your body.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x00E400
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x014A01
+  Text:
+    TargetLanguage: English
+    Value: It is not only reshaping your womb but it is fundamentally altering your physiology.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3CDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 305
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3CDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 310
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3CDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: What did you find about the Seed?

@@ -1,0 +1,11 @@
+FormKey: 006027:SexLab-Parasites.esp
+EditorID: _SLP_QST_ControllerDanicaCureChaurusWorm
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: I was attacked by Chaurus and I feel feverish
+Branch: 004A71:SexLab-Parasites.esp
+Quest: 000D62:SexLab-Parasites.esp
+SubtypeName: CUST
+Timestamp: 31514
+Unknown: 23192

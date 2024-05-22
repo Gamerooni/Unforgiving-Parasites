@@ -1,0 +1,35 @@
+FormKey: 6B291A:SexLab-Parasites.esp
+FormVersion: 43
+Flags:
+  ResetHours: 5.9997253
+PreviousDialog: 6B2919:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x4A0007
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: First dragons flying around, and now bug-people! What's next!?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xC1C94D
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013794:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xC1C94D
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 2BDDE4:SexLab-Parasites.esp
+  ComparisonValue: 1

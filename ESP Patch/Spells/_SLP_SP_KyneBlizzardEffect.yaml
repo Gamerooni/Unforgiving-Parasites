@@ -1,0 +1,24 @@
+FormKey: 89DAEA:SexLab-Parasites.esp
+EditorID: _SLP_SP_KyneBlizzardEffect
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Blizzard
+MenuDisplayObject: 09DB72:skyrim.esm
+EquipmentType: 013F45:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoDualCastModification
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0B79FE:skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 10
+- BaseEffect: 0F3936:skyrim.esm
+  Data:
+    Area: 40
+    Duration: 3

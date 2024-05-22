@@ -1,0 +1,115 @@
+FormKey: 48FB71:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing360
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusSound
+      Object: 471534:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing360
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing360
+      FragmentName: Fragment_1
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing360
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+Topic: 42A6EE:SexLab-Parasites.esp
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 18
+  Unknown2: 0xE51109
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Beautiful! It is working.. yesss..
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 19
+  Unknown2: 0x5A0009
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Hurry.. we don't have much time before the others understand I am talking to you directly.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 20
+  Unknown2: 0x00D700
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x006900
+  Text:
+    TargetLanguage: English
+    Value: Meet me in Shrouded Grove.. it's a cave not far from here to the North.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 21
+  Unknown2: 0x001C00
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x005500
+  Text:
+    TargetLanguage: English
+    Value: I can't tell you more there without the others listening in.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4EDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 2BDDE5:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4EDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 2BDDE6:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4EDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 355
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4EDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 360
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4EDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 28AF25:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Here is what the Seed is doing to me.

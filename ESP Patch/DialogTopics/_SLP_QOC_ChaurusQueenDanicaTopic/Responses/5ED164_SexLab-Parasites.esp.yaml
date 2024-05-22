@@ -1,0 +1,97 @@
+FormKey: 5ED164:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing404
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing404
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing404
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 5ED165:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 5
+  Unknown2: 0x657874
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x776561
+  Text:
+    TargetLanguage: English
+    Value: So the Chaurus came from another world?
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 6
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: Fascinating.. and not unheard of. Some scholars have long suspected the same about the Hist Trees in the South.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 7
+  Unknown2: 0x505F54
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6E6542
+  Text:
+    TargetLanguage: English
+    Value: I can see the change in you. You are so much more than you were before.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 8
+  Unknown2: 0x011E01
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x016701
+  Text:
+    TargetLanguage: English
+    Value: 'And to think this had nothing to do with Kyne. '
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 9
+  Unknown2: 0x012601
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x014401
+  Text:
+    TargetLanguage: English
+    Value: You have given me a lot to think about.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3CDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 400
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3CDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 404
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3CDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: (Tell Danica about the Chaurus Queen and her story)

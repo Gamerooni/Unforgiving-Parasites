@@ -1,0 +1,75 @@
+FormKey: 003F94:SexLab-Parasites.esp
+EditorID: _SLP_ScrollChaurusWorm
+FormVersion: 43
+ObjectBounds:
+  First: -13, -10, 0
+  Second: 23, 10, 9
+Name:
+  TargetLanguage: English
+  Value: On Chaurus Worms
+Model:
+  File: clutter\KyneBlessing\Parchment02.nif
+  Data: 0x020000000000000000000000
+BookText:
+  TargetLanguage: English
+  Value: >-
+    [pagebreak]
+
+    <p align="center">
+
+
+    On Chaurus Worms
+
+
+    by
+
+
+    Alicia du'Skrimall
+
+    Master Physician to
+
+    High King Hosgunn the Elder
+
+
+    Year 22 of the Fourth Era
+
+    </p>
+
+
+
+    [pagebreak]
+
+
+    <p align="left">
+
+    <img src='img://Textures/Interface/Books/Illuminated_Letters/T_letter.png'>he Chaurus is one of Skyrim's most dangerous denizens. The Chaurus Worm, however, is a relatively benign parasite, but also one of the most fascinating parasites in the entire world. In truth, there is no direct proof that the Chaurus Worm is related to the Chaurus, but neither is there any evidence in the other direction. Anecdotally, Chaurus Worm parasites are laid in their hosts by the Chaurus, but no reputable sources have confirmed this, so there is no direct correlation between the presence of water and the presence of Chaurus Worms. The method of transmission most subjects speak of seems bizarre and unbelievable.
+
+
+    Similar to the Living Armor parasite type, Chaurus Worms seem to exclusively target females. They are implanted directly into the guts via a process that can only be defined as sexual. The adult Chaurus, before entering its final stage of life as an airborne beast, grasps the female with its legs and proceeds to move its phallus in and out of the female vagina repeatedly until it injects eggs seedlings. In the process, Chaurus Worms find an opportunity to invade the victim's vaginal or anal openings apparently at random. There are no reports of any Chaurus Worms ever invading the oral or other entries into the body, and they do not, unlike the savage Felsaad Hookworm, bore directly into the skin. After this bizarre insemination, the Chaurus will release the victim, who is usually then bound by any nearby Falmer, or if the Chaurus is wild, allowed to go free.
+
+
+    The Chaurus Worm is, as previously stated, benign, for a given value of benign - Chaurus Worms apparently feed off the excretions of its hosts, and a Chaurus Worm will often use its muscular dermis to stimulate the host in question, and stimulates the host more during anal or vaginal sex.
+
+
+    Though possessed of teeth not unlike the painful Modoc Sucker, the Chaurus Worm does not directly attack its host, and even when directly manually manipulated (usually in an attempt to remove the worm), does not defend itself violently. Also unlike the Kwama Forager, the Chaurus Worm will not leave its host voluntarily, unless it is forcibly expelled by a powerful orgasm. This has resulted in a few rare cases of a Chaurus Worm staying in the host body, feeding on fluids or feces and stimulating the host to produce more, for decades.
+
+
+    This is one of the examples of a modified obligate parasite - that is, a parasite that uses a host body in order to survive. And like the Kwama Forager, female hosts do not seem to be necessary to the process, but the Chaurus birthed from the parasite do seem to mature faster and reach larger sizes than those hatched from eggs.
+
+
+    Note that in those instances of the female being impregnated with Chaurus eggs instead of the Chaurus Worm parasite, the eggs do not directly provide stimulation to the vagina, nor do they consume vaginal secretions. However, sexual intercourse is said to provide more intense stimulation when infested with Chaurus eggs. Chaurus eggs, when removed, will hatch smaller Chaurus spawn, who almost invariably respond to their previous host as if said host was a hive member. It is not uncommon for hosts and Chaurus spawn to grow emotionally attached to one another.
+
+
+    See also: Kwama Forager, Spider Egg Cluster
+Keywords:
+- 0937A2:skyrim.esm
+- 0FF9FB:skyrim.esm
+Teaches:
+  MutagenObjectType: BookTeachesNothing
+  RawContent: 4294967295
+Value: 2
+Weight: 1
+InventoryArt: 08ADAF:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

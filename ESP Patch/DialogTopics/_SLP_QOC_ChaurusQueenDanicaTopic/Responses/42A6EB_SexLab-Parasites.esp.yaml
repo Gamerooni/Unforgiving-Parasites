@@ -1,0 +1,106 @@
+FormKey: 42A6EB:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing330
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing330
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing330
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 3D96D1:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: That's remarkable!
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x617420
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6E6564
+  Text:
+    TargetLanguage: English
+    Value: So many people died trying to absorb the Seed. I suspected it was a symbiote but I didn't know for sure until now.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x657874
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x64756E
+  Text:
+    TargetLanguage: English
+    Value: The power you felt after absorbing the spider pheromones and joining with a mate was the Seed imbuing your body with spider attributes.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x657874
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x64756E
+  Text:
+    TargetLanguage: English
+    Value: You may now track a mate, calm them and join with them anytime you want. And you have power over the spawning of eggs as well!
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 5
+  Unknown2: 0x657874
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x776561
+  Text:
+    TargetLanguage: English
+    Value: You must report this to the Elder Roots in the Sanctuary. They will know what to do next.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 90
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 320
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 330
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x3ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I absorbed spider powers!

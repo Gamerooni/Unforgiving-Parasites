@@ -1,0 +1,36 @@
+FormKey: 10F26B:SexLab-Parasites.esp
+EditorID: _SLP_MEF_FalmerBluePotion
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_MEF_FalmerBlue
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FalmerBlueImod
+      Object: 06B108:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+Name:
+  TargetLanguage: English
+  Value: Falmer Growth Hormones
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 078098:skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsDuration
+CastingLight: 00C16E:SexLab-Parasites.esp
+TaperWeight: 1
+SpellmakingArea: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Description:
+  TargetLanguage: English
+  Value: ''

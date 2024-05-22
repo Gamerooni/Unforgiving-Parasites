@@ -1,0 +1,19 @@
+FormKey: 02D4E0:skyrim.esm
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+Version2: 1
+SkyrimMajorRecordFlags:
+- 0x400
+Flags:
+- HasWater
+Grid:
+  Flags: 5465600
+WaterHeight: 3.4028235E+38
+Regions:
+- 048C2E:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 908301712
+PersistentTimestamp: 31514
+PersistentUnknownGroupData: 1065353216
+MajorFlags:
+- Persistent

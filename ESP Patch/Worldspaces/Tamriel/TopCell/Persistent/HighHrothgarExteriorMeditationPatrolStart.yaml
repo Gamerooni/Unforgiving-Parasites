@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedObject
+FormKey: 1094F2:skyrim.esm
+MajorRecordFlagsRaw: 1024
+EditorID: HighHrothgarExteriorMeditationPatrolStart
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 0F688D:skyrim.esm
+LocationReference: 018E34:skyrim.esm
+LinkedReferences:
+- Reference: 10C04E:skyrim.esm
+Patrol:
+  IdleTime: 60
+  Topics:
+  - MutagenObjectType: TopicReference
+Placement:
+  Position: 54541.61, -34473.156, 23528.395
+  Rotation: 0, -0, 1.6000005

@@ -1,0 +1,25 @@
+MutagenObjectType: PlacedObject
+FormKey: 4CC7E0:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_ChaurusQueenScene
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SummonSoundFX
+      Object: 471534:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+Base: 4CC7DF:SexLab-Parasites.esp
+Primitive:
+  Bounds: 910.0388, 314.52637, 764.1592
+  Color: '#00CC4C33'
+  Unknown: 0.15
+  Type: Box
+Placement:
+  Position: 3665.3418, 6474.2993, 7062.3145
+  Rotation: 1.6000017, -0, 0

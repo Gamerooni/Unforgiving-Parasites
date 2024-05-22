@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 03F89E:SexLab-Parasites.esp
+FormVersion: 43
+Base: 00C176:SexLab-Parasites.esp
+LightData:
+  FadeOffset: 2
+  ShadowDepthBias: 1
+EnableParent:
+  Reference: 03F89F:SexLab-Parasites.esp
+  Unknown: 0xDB1900
+Placement:
+  Position: 571.3816, 1381.608, 84.24751

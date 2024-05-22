@@ -1,0 +1,159 @@
+FormKey: 88E7DA:SexLab-Parasites.esp
+EditorID: _SLP_NordFolklore
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_OnReadNordFolklore
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptIntProperty
+      Name: myStage
+      Data: 94
+ObjectBounds:
+  First: -13, -10, 0
+  Second: 13, 10, 14
+Name:
+  TargetLanguage: English
+  Value: Annotated Nord Folklore
+Model:
+  File: clutter\KyneBlessing\Book04.nif
+  Data: 0x020000000000000000000000
+BookText:
+  TargetLanguage: English
+  Value: >+
+    <br/><br/><p align='center'><font size='30'>The Abduction of Idunna</font><br/><font size='10'>or</font><br/><font size='20'>Nord folklore & legends</font><br/><font size='15'>by Erundil</font></p>
+
+    [pagebreak]
+
+    A collection of Eastmarch folklore, legend and local tales that once were told or sung in may a smoky fireside nook.
+
+    [pagebreak]
+
+    A hundred years or more ago one afternoon in harvest time a woman called Idunna Trayer, who lived in Kynesgrove gave her baby suck, rocked it to sleep, then covered up the fire, turned down the brandis, placed fire-hook and furze-prong across the hearth for good luck, and, leaving the child alone, away she hastened over to Brea to help cut the wheat.
+
+
+    It was nearly dark when the last sheaf of wheat was tied up and cut by the reapers throwing their reap-hooks at it. Then it took a good bit longer to cry according to the old custom of the harvest. The hands dividing themselves into three bands. One party calling, three times, as loud as they could cry, "We have it, we have it, we have it!" The second demanding, "What have ye? What have ye? What have ye? And the third replying, "The sheaf! The sheaf! The sheaf!" Then all join, hats in hand, in a "Hip! hip! hip! Hurrah!"
+
+
+    The last sheaf was then decorated with flowers and hung over the board. Idunna, thinking about her babe all alone, didn't stop for the harvest carouse, but got a good drink of beer, and her cake, to take home and hastened away. When she opened her door, she saw, by the moonlight, that the cradle was overturned. Straw and rags were on the floor, but no child was in sight.
+
+
+    Idunna groped round the room a long time then, not finding any live embers among the ashes, she took the tinder-box and struck a light. "The more haste the worst speed." It was a long time before she got the wick lit in the iron lamp and headed out into the wood.
+
+
+    In searching all the holes and corners, she came to the wood-corner and there among turves, ferns, and furze, she found the "child," fast asleep. Being very tired, she took up the child and went to bed. Next morning, when she looked at the babe, by daylight, it seemed to her that there was something strange about it, she didn't know what, it was hearty now, for it seemed never satisfied unless it was all the time sucking and it would screach like a raven if it hadn't its will.
+
+
+    The poor woman couldn't do her chores, and had no rest of her life with the squalling, sucklin brat. Yet, with all its sucking, it seemed wasting to skin and bone. So it kept on all the winter the more it suck the leaner it became.
+
+
+    Many of the neighbours shook their heads when they saw it, and said they feared the "forest people" had played her a trick that afternoon when she went to "sheaf-cutting." "Whether or no," said they, "you can do nothing better, Idunna, than to bathe it in the Forest Grove Well as soon as Second Seed comes round."
+
+
+    Accordingly, the first Middas in Second Seed she took it on her back and trudged away to Forest Grove Uny Well.
+
+
+    Three times she put it through the water from west to east, then dragged it three times round the well against the sun. Whether the bath made it any better or not she couldn't tell in one week. The following Middas, however, the troublesome creature seemed to expect the jaunt, and to enjoy it as it rode away on her shoulder over hill and moor to the spring, where it had the same dunking again.
+
+
+    The third Middas was a wet day yet, not to spoil the spell, Idunna took the brat, placed it astride on her shoulder, held one foot in her hand, whilst he grasped her hair to keep himself steady, as they beat over the moors against wind and rain. The thing seemed to enjoy the storm, and crowed, like a cock, when the wind roared the loudest.
+
+
+    They had nearly passed round Forest Grove Carn Brea and were coming by some large rocks, near the open moor, when she heard a shrill voice, seemingly above her head, call out,
+
+
+    "Tredrill! Tredrill! Thy Earth Mother greets thee and child well."
+
+
+    Idunna was surprised to hear the shrill voice and nobody in sight. When she stopped an instant to look round, the thing on her shoulder cried out in a voice as shrill and loud,
+
+
+    "Tredrill! Tredrill! Be it Lady Kyne's will, I ride on Dowdy's back to the Forest Grove Well, depart I shall when suckled my fill"
+
+
+    Frightened out of her senses, to hear the miserable little object talk of Lady Kyne, the poor woman tried to cast it on the ground but cling to her it did. It grew to man's estate. Covering her alike roots do a stone and subject Idunna to fits, screechan and suckan. There she lay sprawling, until she took courage and called for help. The women of the hamlet all ran out to see what could be the matter. As soon as they recovered from the site, and Idunna her breath, she told them what she had heard and how her child thing became a man.
+
+
+    "Ah," exclaimed one, "didn't I tell thee, months ago, that thee wert nussan a forest people's brat, ever since the harvest night, when thy child was spirited away, and that thing left in her place."
+
+
+    "Shure enow," said another, "anybody of common sense might see that. Only look at the thing there, sprawling upon her. Did one ever see a Nord child like that? Lady Kyne's will it is. Try n' cast Hircine's child aside again and thrice the fool you be."
+
+
+    Idunna nursed Kyne's child with great care, but there was always something queer about it, as there always is about one that has been in the Divine's power. If only for a few days. It was constantly screechan and suckan and causing her fits, and a whim would take her, every now and then, to leave her work and wander away over hills and moors for days together.
+
+
+    When about thrice more harvests had pased she was missed for several days. When they opened Idunna's home upon the hearth they did find it shaped relief of southern mountains and forest and runes.
+
+
+    <p align='center'><font face='$DaedricFont'>The Changeling of Brea Vean
+
+
+    Traditions and Hearthside Stories of West Cornwall Vol Two by William Bottrell
+
+
+    Modified by J'bezorg and Alicia DySkrymall  
+
+    </font></p>
+
+    [pagebreak]
+
+    <font face='$HandwrittenFont'><br/><br/><br/>
+
+    Kynesgrove is a wellspring of Kyne.
+
+    Drink for it or praise her at the Sacred Stone on our grounds.
+
+
+    <font face='$SkyrimBooks_UnreadableFont'>12 123112 12312 1235 13</font>
+
+    <font face='$SkyrimBooks_UnreadableFont'>23 122312 14512 1245 1 23</font>
+
+    <font face='$SkyrimBooks_UnreadableFont'>45 1234512 122345 1 23</font>
+
+
+    In darkness, your light shines through,
+
+    Warrior Goddess, for you we strike true.
+
+    When hope is lost and war rages on,
+
+    Warrior Goddess, hear our blessed song!
+
+    With a Nord's death, fallen in battle,
+
+    Warrior Goddess, guide us through shadow.
+
+    Grant us courage to fight and sharpen our swords,
+
+    Warrior Goddess, mother of Nords!
+
+
+    <font face='$SkyrimBooks_UnreadableFont'>23 312 12512 145 1 23</font>
+
+    Dark clouds gather in the sky above.
+
+
+    Kyne weeps for joy at the beauty of the world.
+
+
+    Tears warm the ground and blossoms grow.
+
+
+    The sacred stone reveals the flowers of her tears.
+     </font>
+
+Keywords:
+- 0937A2:skyrim.esm
+- 0FF9FB:skyrim.esm
+Teaches:
+  MutagenObjectType: BookTeachesNothing
+  RawContent: 4294967295
+Value: 2
+Weight: 1
+InventoryArt: 08ADAF:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

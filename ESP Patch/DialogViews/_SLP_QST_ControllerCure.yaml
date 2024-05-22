@@ -1,0 +1,9 @@
+FormKey: 004A70:SexLab-Parasites.esp
+EditorID: _SLP_QST_ControllerCure
+FormVersion: 43
+Quest: 000D62:SexLab-Parasites.esp
+Branches:
+- 004A71:SexLab-Parasites.esp
+TNAMs: []
+ENAM: 0x00000000
+DNAM: 0x00

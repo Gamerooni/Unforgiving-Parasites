@@ -1,0 +1,22 @@
+FormKey: 4FF211:SexLab-Parasites.esp
+EditorID: _SLP_ChaurusQueenSkinEnch
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Chaurus Queen Skin
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 4FF217:SexLab-Parasites.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 4FF218:SexLab-Parasites.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 4FF219:SexLab-Parasites.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 00DC77:SexLab-Parasites.esp
+  Data:
+    Magnitude: 50

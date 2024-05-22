@@ -1,0 +1,13 @@
+FormKey: 73B44A:SexLab-Parasites.esp
+EditorID: _SLP_DD_EscapeStruggleSuccessMSG
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: Success! Your struggles have loosed the creature's grip enough that you can slip out of it and regain your freedom!
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Ok

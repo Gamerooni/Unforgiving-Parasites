@@ -1,0 +1,32 @@
+FormKey: 6A35FB:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 134217728
+EditorID: _SLP_DwemerExplorerSuitContainer
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x8000000
+ObjectBounds:
+  First: -53, -32, 0
+  Second: 53, 32, 56
+Name:
+  TargetLanguage: English
+  Value: Chest
+Model:
+  File: Clutter\Dwemer\DweContainer01.nif
+  Data: 0x020000000000000000000000
+Items:
+- Item:
+    Item: 4BD4A0:SexLab-Parasites.esp
+    Count: 1
+- Item:
+    Item: 4BD49F:SexLab-Parasites.esp
+    Count: 1
+- Item:
+    Item: 4BD4A1:SexLab-Parasites.esp
+    Count: 1
+- Item:
+    Item: 4BD4A2:SexLab-Parasites.esp
+    Count: 1
+Flags:
+- Respawns
+MajorFlags:
+- NavMeshGenerationBoundingBox

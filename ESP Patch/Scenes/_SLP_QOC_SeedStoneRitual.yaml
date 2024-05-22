@@ -1,0 +1,163 @@
+FormKey: 2DC3F5:SexLab-Parasites.esp
+EditorID: _SLP_QOC_SeedStoneRitual
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_QOC_SeedStoneRitualScene
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MUSCombatBoss
+      Object: 05221E:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_WhiterunSanctuaryPlayerAltarEffect
+      Object: 2E660A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DanicaPureSpring
+      Object: 01A69F:skyrim.esm
+  ScriptFragments:
+    FileName: SLP_QOC_SeedStoneRitualScene
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_QOC_SeedStoneRitualScene
+      FragmentName: Fragment_0
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_QOC_SeedStoneRitualScene
+      FragmentName: Fragment_1
+    PhaseFragments:
+    - Flags:
+      - OnCompletion
+      Unknown: 16777216
+      ScriptName: SLP_QOC_SeedStoneRitualScene
+      FragmentName: Fragment_2
+    - Flags:
+      - OnStart
+      Index: 2
+      Unknown: 16777216
+      ScriptName: SLP_QOC_SeedStoneRitualScene
+      FragmentName: Fragment_7
+    - Flags:
+      - OnCompletion
+      Index: 1
+      Unknown: 16777216
+      ScriptName: SLP_QOC_SeedStoneRitualScene
+      FragmentName: Fragment_3
+Flags: []
+Phases:
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: GetInCellConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      Cell: 00331E:SexLab-Parasites.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 2DC3F5:SexLab-Parasites.esp
+      SceneActionIndex: 3
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 2DC3F5:SexLab-Parasites.esp
+      SceneActionIndex: 4
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 2DC3F5:SexLab-Parasites.esp
+      SceneActionIndex: 10
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+Actors:
+- ID: 6
+  Flags: []
+  BehaviorFlags:
+  - DeathEnd
+  - CombatEnd
+  - DialoguePause
+Actions:
+- Name: ''
+  ActorID: 6
+  Index: 1
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 0
+  EndPhase: 0
+  Topic: 2DC3F6:SexLab-Parasites.esp
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 6
+  Index: 2
+  StartPhase: 0
+  EndPhase: 0
+  TimerSeconds: 3
+- Type: Package
+  Name: ''
+  ActorID: 6
+  Index: 3
+  StartPhase: 1
+  EndPhase: 1
+  Packages:
+  - 2DC3F9:SexLab-Parasites.esp
+- Type: Timer
+  Name: ''
+  ActorID: 6
+  Index: 4
+  StartPhase: 1
+  EndPhase: 1
+  TimerSeconds: 10
+- Type: Package
+  Name: ''
+  ActorID: 6
+  Index: 5
+  StartPhase: 2
+  EndPhase: 2
+  Packages:
+  - 2DC3FA:SexLab-Parasites.esp
+- Name: ''
+  ActorID: 6
+  Index: 7
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 2
+  EndPhase: 2
+  Topic: 2DC3FB:SexLab-Parasites.esp
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 6
+  Index: 10
+  StartPhase: 2
+  EndPhase: 2
+  TimerSeconds: 240
+Quest: 016E2C:SexLab-Parasites.esp
+LastActionIndex: 10
+VNAM: 0x03000000030000000300000003000000

@@ -1,0 +1,25 @@
+FormKey: 4FF216:SexLab-Parasites.esp
+EditorID: _SLP_MEF_FortifyMagicka
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 074F67:skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- NoHitEffect
+BaseCost: 7
+Unknown1: 29793
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Magicka
+DualCastScale: 1
+Description:
+  TargetLanguage: English
+  Value: Increases your Magicka by <mag> points.

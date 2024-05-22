@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 2A961C:SexLab-Parasites.esp
+FormVersion: 43
+Base: 088247:skyrim.esm
+Radius: 749.7663
+Emittance: 01A880:Dawnguard.esm
+Placement:
+  Position: -1642.4568, 11462.751, 12920.626

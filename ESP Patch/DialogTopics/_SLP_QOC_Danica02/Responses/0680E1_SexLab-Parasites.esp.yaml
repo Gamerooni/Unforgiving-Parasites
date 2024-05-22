@@ -1,0 +1,39 @@
+FormKey: 0680E1:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: 0680E0:SexLab-Parasites.esp
+FavorLevel: None
+LinkTo:
+- 0680DA:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x205468
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x736E92
+  Text:
+    TargetLanguage: English
+    Value: I believe the chaurus may be using women as vessels to protect their eggs until they mature.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Unknown1: 0xFADD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 005ABB:SexLab-Parasites.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown1: 0xFADD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 008601:SexLab-Parasites.esp
+Prompt:
+  TargetLanguage: English
+  Value: Why are they mating with humans?

@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedObject
+FormKey: 0FDA6C:skyrim.esm
+FormVersion: 43
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrapPoisonGas
+    Flags: Inherited
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: isInitiallyActive
+Base: 09F290:skyrim.esm
+ActivateParents:
+  Parents:
+  - Reference: 0FDA6B:skyrim.esm
+LocationReference: 0E9DA7:skyrim.esm
+Placement:
+  Position: -1137.0063, -2582.1099, 489.8376

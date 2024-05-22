@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 03F89F:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 3072
+EditorID: _SLP_EggSackInside
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+- InitiallyDisabled
+Base: 00003B:skyrim.esm
+Placement:
+  Position: 657.7569, 1346.5735, -32.786903

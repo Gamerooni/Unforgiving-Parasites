@@ -1,0 +1,8 @@
+FormKey: 13CBAD:SexLab-Parasites.esp
+EditorID: _SLP_QST_KyneBlessingDanicaAboutBranch
+FormVersion: 43
+Quest: 00603B:SexLab-Parasites.esp
+Category: Player
+Flags:
+- TopLevel
+StartingTopic: 13CBAE:SexLab-Parasites.esp

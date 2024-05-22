@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 4C76B1:SexLab-Parasites.esp
+EditorID: _SLP_TonalDeviceContainer
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_DwemerTonalDeviceContainer
+Base: 4C76B0:SexLab-Parasites.esp
+Scale: 1.2
+Placement:
+  Position: 986.4618, 10420.616, 3043.721
+  Rotation: 1.3332795, 0.03490833, 6.2308254

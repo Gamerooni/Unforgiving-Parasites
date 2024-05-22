@@ -1,0 +1,102 @@
+FormKey: 150FCA:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_DanicaApprentice100
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_DanicaApprentice100
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_DanicaApprentice100
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: I can teach you if you are truly interested, but I need your help first.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x75732E
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x636820
+  Text:
+    TargetLanguage: English
+    Value: I already have an apprentice. Her name is Lastelle. She is the daughter of the Apothecary in Morthal.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x4E5420
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x2D2044
+  Text:
+    TargetLanguage: English
+    Value: She had to go back home urgently months ago. I have not heard from her since, and I am getting concerned.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x617461
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x707473
+  Text:
+    TargetLanguage: English
+    Value: Would you mind checking in on her first and let me know how she is?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x16DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 30
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x16DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 40
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x16DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 50
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x16DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 100
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x16DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Can you teach me more about parasites?

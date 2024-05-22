@@ -1,0 +1,158 @@
+FormKey: 276B13:SexLab-Parasites.esp
+EditorID: _SLP_QOC_DanicaSanctuaryCorruption
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_QOC_DanicaSanctuaryScene
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SanctuaryMarker
+      Object: 26C910:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DanicaPureSpring
+      Object: 01A69F:skyrim.esm
+  ScriptFragments:
+    FileName: SLP_QOC_DanicaSanctuaryScene
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_QOC_DanicaSanctuaryScene
+      FragmentName: Fragment_0
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_QOC_DanicaSanctuaryScene
+      FragmentName: Fragment_1
+    PhaseFragments:
+    - Flags:
+      - OnStart
+      Unknown: 16777216
+      ScriptName: SLP_QOC_DanicaSanctuaryScene
+      FragmentName: Fragment_7
+    - Flags:
+      - OnCompletion
+      Unknown: 16777216
+      ScriptName: SLP_QOC_DanicaSanctuaryScene
+      FragmentName: Fragment_2
+    - Flags:
+      - OnCompletion
+      Index: 2
+      Unknown: 16777216
+      ScriptName: SLP_QOC_DanicaSanctuaryScene
+      FragmentName: Fragment_6
+    - Flags:
+      - OnCompletion
+      Index: 1
+      Unknown: 16777216
+      ScriptName: SLP_QOC_DanicaSanctuaryScene
+      FragmentName: Fragment_5
+Flags: []
+Phases:
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 276B13:SexLab-Parasites.esp
+      SceneActionIndex: 9
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: GetInSameCellConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      Target: 28AF26:SexLab-Parasites.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: GetInSameCellConditionData
+      Target: 28AF26:SexLab-Parasites.esp
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 276B13:SexLab-Parasites.esp
+      SceneActionIndex: 6
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 016E2C:SexLab-Parasites.esp
+      Stage: 255
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+Actors:
+- ID: 6
+  Flags: []
+  BehaviorFlags:
+  - DeathEnd
+  - CombatEnd
+  - DialoguePause
+Actions:
+- Name: ''
+  ActorID: 6
+  Index: 3
+  StartPhase: 1
+  EndPhase: 1
+  Topic: 276B14:SexLab-Parasites.esp
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Fear
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 6
+  Index: 4
+  StartPhase: 1
+  EndPhase: 1
+  TimerSeconds: 10
+- Type: Package
+  Name: ''
+  ActorID: 6
+  Index: 5
+  StartPhase: 2
+  EndPhase: 2
+  Packages:
+  - 2DC3FA:SexLab-Parasites.esp
+- Type: Timer
+  Name: ''
+  ActorID: 6
+  Index: 6
+  StartPhase: 2
+  EndPhase: 2
+  TimerSeconds: 240
+- Name: ''
+  ActorID: 6
+  Index: 8
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 0
+  EndPhase: 0
+  Topic: 27BC17:SexLab-Parasites.esp
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 6
+  Index: 9
+  StartPhase: 0
+  EndPhase: 0
+  TimerSeconds: 3
+Quest: 016E2C:SexLab-Parasites.esp
+LastActionIndex: 9
+VNAM: 0x03000000030000000300000003000000

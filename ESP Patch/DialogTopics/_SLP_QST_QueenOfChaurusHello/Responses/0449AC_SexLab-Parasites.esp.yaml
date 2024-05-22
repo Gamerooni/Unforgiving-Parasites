@@ -1,0 +1,42 @@
+FormKey: 0449AC:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_Lami01
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_Lami01
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_Lami01
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x920D00
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000100
+  Text:
+    TargetLanguage: English
+    Value: I miss my little Lastelle so much. I hope she is alright.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF0DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 5
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF0DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 0135EF:skyrim.esm
+  ComparisonValue: 1

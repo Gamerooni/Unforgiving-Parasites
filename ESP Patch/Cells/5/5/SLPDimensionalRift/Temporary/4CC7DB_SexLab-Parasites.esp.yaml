@@ -1,0 +1,7 @@
+MutagenObjectType: PlacedObject
+FormKey: 4CC7DB:SexLab-Parasites.esp
+FormVersion: 43
+Base: 0195DD:Dragonborn.esm
+Placement:
+  Position: 4777.9937, 4893.542, 11166.972
+  Rotation: 2.000002, 0.80000156, 0

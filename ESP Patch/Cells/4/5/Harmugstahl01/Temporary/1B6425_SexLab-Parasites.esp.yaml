@@ -1,0 +1,16 @@
+MutagenObjectType: PlacedObject
+FormKey: 1B6425:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultSetStageOnCloseBookNotAlias
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 145
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 016E2C:SexLab-Parasites.esp
+Base: 1B6424:SexLab-Parasites.esp
+Placement:
+  Position: 5852.7095, -6087.2505, -315.13034

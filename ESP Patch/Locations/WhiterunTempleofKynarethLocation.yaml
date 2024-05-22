@@ -1,0 +1,90 @@
+FormKey: 01F87D:skyrim.esm
+EditorID: WhiterunTempleofKynarethLocation
+FormVersion: 43
+Version2: 12
+ActorCellStaticReferences:
+- LocationRefType: 0130FC:skyrim.esm
+  Marker: 003323:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F9:skyrim.esm
+  Marker: 003324:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 01DBF9:skyrim.esm
+  Marker: 003325:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 01BDF1:skyrim.esm
+  Marker: 003326:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 045696:skyrim.esm
+  Marker: 003331:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 043566:skyrim.esm
+  Marker: 003332:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 04356C:skyrim.esm
+  Marker: 003333:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 043565:skyrim.esm
+  Marker: 003334:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 043569:skyrim.esm
+  Marker: 003335:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F7:skyrim.esm
+  Marker: 0034C2:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F7:skyrim.esm
+  Marker: 0034C1:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F7:skyrim.esm
+  Marker: 0034C3:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F7:skyrim.esm
+  Marker: 00339F:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F7:skyrim.esm
+  Marker: 00338F:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F7:skyrim.esm
+  Marker: 00338D:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F7:skyrim.esm
+  Marker: 00338E:SexLab-Parasites.esp
+  Location: 00331E:SexLab-Parasites.esp
+  Grid: 32767, 32767
+ActorCellMarkerReference:
+- 00339F:SexLab-Parasites.esp
+- 00338F:SexLab-Parasites.esp
+- 00338D:SexLab-Parasites.esp
+- 00338E:SexLab-Parasites.esp
+ActorCellEnablePoint:
+- Actor: 0034C2:SexLab-Parasites.esp
+  Ref: 24E2F6:SexLab-Parasites.esp
+- Actor: 0034C1:SexLab-Parasites.esp
+  Ref: 24E2F6:SexLab-Parasites.esp
+- Actor: 0034C3:SexLab-Parasites.esp
+  Ref: 24E2F6:SexLab-Parasites.esp
+Name:
+  TargetLanguage: English
+  Value: Temple of Kynareth
+Keywords:
+- 0130DC:skyrim.esm
+- 01CD56:skyrim.esm
+ParentLocation: 018A56:skyrim.esm
+WorldLocationMarkerRef: 01F89C:skyrim.esm
+WorldLocationRadius: 0

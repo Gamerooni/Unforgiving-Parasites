@@ -1,0 +1,25 @@
+FormKey: 50E526:SexLab-Parasites.esp
+EditorID: _SLP_SP_ChaurusSpit
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Acid Spit
+MenuDisplayObject: 10F0FF:skyrim.esm
+EquipmentType: 025BEE:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: LesserPower
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 50E525:SexLab-Parasites.esp
+  Data:
+    Magnitude: 25
+    Duration: 5
+- BaseEffect: 06F6FD:skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 2

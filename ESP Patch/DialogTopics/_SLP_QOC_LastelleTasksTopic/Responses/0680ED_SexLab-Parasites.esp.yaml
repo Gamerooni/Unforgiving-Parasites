@@ -1,0 +1,84 @@
+FormKey: 0680ED:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_LastelleTasks70
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CaveChaurusRef
+      Object: 17E8E9:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_LastelleTasks70
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_LastelleTasks70
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 0680D8:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: I will be alright for now. I have shelter for my babies and plenty of food from mushrooms and other plants in this cave.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x65636F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x672061
+  Text:
+    TargetLanguage: English
+    Value: Thank you so much for your help!
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x505F54
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x737465
+  Text:
+    TargetLanguage: English
+    Value: Come closer... we have a gift for you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF4DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 69
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF4DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 70
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF4DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01BF34:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Do you need anything else for your nest?

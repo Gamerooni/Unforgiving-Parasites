@@ -1,0 +1,43 @@
+FormKey: 7A0877:SexLab-Parasites.esp
+EditorID: _SLP_MEF_ParasiteRepellentFX
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_MEF_ParasiteRepellent
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SexLab
+      Object: 000D62:SexLab.esm
+Name:
+  TargetLanguage: English
+  Value: Parasite Repellent Effect
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 078098:skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+TaperWeight: 1
+HitShader: 0B93D8:skyrim.esm
+SpellmakingArea: 200
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Explosion: 04CBB8:skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+ImageSpaceModifier: 084B37:skyrim.esm
+CastingSoundLevel: VeryLoud
+Description:
+  TargetLanguage: English
+  Value: ''

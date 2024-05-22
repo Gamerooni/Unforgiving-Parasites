@@ -1,0 +1,8 @@
+FormKey: A05272:SexLab-Parasites.esp
+EditorID: _SLP_BoundChaurusBladeEnchEffects
+FormVersion: 43
+Model:
+  File: weapons\KyneBlessing\ChaurusQueen\HiddenBlade.nif
+  Data: 0x020000000000000000000000
+Type:
+- MagicHitEffect

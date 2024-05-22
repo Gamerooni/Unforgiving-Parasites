@@ -1,0 +1,14 @@
+MutagenObjectType: PlacedObject
+FormKey: 25850B:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 25850A:SexLab-Parasites.esp
+Primitive:
+  Bounds: 128, 128, 128
+  Color: '#00CC4C33'
+  Unknown: 0.15
+  Type: Box
+Placement:
+  Position: -9.201698, 1259.8712, 83.28604

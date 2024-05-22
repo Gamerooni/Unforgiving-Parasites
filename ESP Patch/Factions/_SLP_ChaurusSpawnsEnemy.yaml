@@ -1,0 +1,30 @@
+FormKey: 95903C:SexLab-Parasites.esp
+EditorID: _SLP_ChaurusSpawnsEnemy
+FormVersion: 43
+Relations:
+- Target: 04359B:skyrim.esm
+  Reaction: Enemy
+- Target: 03E096:skyrim.esm
+  Reaction: Enemy
+- Target: 0435A0:skyrim.esm
+  Reaction: Enemy
+- Target: 04359A:skyrim.esm
+  Reaction: Enemy
+- Target: 0FBBF3:skyrim.esm
+  Reaction: Enemy
+- Target: 03E691:skyrim.esm
+  Reaction: Enemy
+- Target: 0435A2:skyrim.esm
+  Reaction: Enemy
+- Target: 01DD0F:skyrim.esm
+  Reaction: Enemy
+- Target: 95903C:SexLab-Parasites.esp
+  Reaction: Ally
+- Target: 02997E:skyrim.esm
+  Reaction: Enemy
+Flags:
+- HiddenFromPC
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

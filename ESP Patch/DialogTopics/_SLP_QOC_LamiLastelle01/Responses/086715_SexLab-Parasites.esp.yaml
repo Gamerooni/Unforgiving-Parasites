@@ -1,0 +1,54 @@
+FormKey: 086715:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_Lami22
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_Lami22
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_Lami22
+      FragmentName: Fragment_0
+Flags: {}
+Topic: 06D20B:SexLab-Parasites.esp
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Thank you for being honest with me. She loved the swamps so much. I was afraid something would happen to her that way.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x01DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 22
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x01DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 30
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x01DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 0135EF:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: (lie) I found her clothes in the swamps. I am afraid she is lost.

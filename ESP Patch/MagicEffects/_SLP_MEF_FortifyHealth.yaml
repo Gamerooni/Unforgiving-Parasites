@@ -1,0 +1,25 @@
+FormKey: 4FF218:SexLab-Parasites.esp
+EditorID: _SLP_MEF_FortifyHealth
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Fortify Health
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 074F62:skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- NoHitEffect
+BaseCost: 7.5
+Unknown1: 12
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+DualCastScale: 1
+Description:
+  TargetLanguage: English
+  Value: Increases your health by <mag> points.

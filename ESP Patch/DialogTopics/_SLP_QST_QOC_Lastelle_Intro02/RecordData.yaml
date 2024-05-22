@@ -1,0 +1,11 @@
+FormKey: 03F894:SexLab-Parasites.esp
+EditorID: _SLP_QST_QOC_Lastelle_Intro02
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Help me with eggs
+Branch: 03568A:SexLab-Parasites.esp
+Quest: 016E2C:SexLab-Parasites.esp
+SubtypeName: CUST
+Timestamp: 31514
+Unknown: 23192

@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 0EEF66:skyrim.esm
+FormVersion: 43
+Version2: 1
+Base: 020670:skyrim.esm
+Lock:
+  Level: Novice
+  Unused: 0x000000
+  Unused2: 0x0000000000000000000000
+Placement:
+  Position: -28835.695, 90833.69, -13975.4795
+  Rotation: 0.12730573, -0.15467106, 0.09832258

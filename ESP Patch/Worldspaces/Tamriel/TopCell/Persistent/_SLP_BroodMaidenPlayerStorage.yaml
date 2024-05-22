@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 01BF33:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+EditorID: _SLP_BroodMaidenPlayerStorage
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 01BF2F:SexLab-Parasites.esp
+Placement:
+  Position: -32359.914, 88790.21, -13648.648
+  Rotation: 0, -0.9999982, 0

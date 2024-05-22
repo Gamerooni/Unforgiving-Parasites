@@ -1,0 +1,16 @@
+FormKey: 65C79B:SexLab-Parasites.esp
+EditorID: _SLP_DwemerSuitHelmetEnch
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Dwemer Tonal Helmet
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 00C16F:SexLab-Parasites.esp
+  Data:
+    Magnitude: 200
+- BaseEffect: 66699F:SexLab-Parasites.esp
+  Data:
+    Magnitude: 20

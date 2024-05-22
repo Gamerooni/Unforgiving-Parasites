@@ -1,0 +1,20 @@
+MutagenObjectType: PlacedObject
+FormKey: 02617F:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WICommentTriggerScript
+    Flags: Inherited
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CommentKeyword
+      Object: 04C6D2:skyrim.esm
+Base: 04C6EA:skyrim.esm
+Primitive:
+  Bounds: 743.22864, 892.4055, 774
+  Color: '#0042C43C'
+  Unknown: 0.15
+  Type: Box
+Placement:
+  Position: 997.89923, 492.0042, 260
+  Rotation: 0, -0, 3.1415954

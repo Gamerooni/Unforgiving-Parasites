@@ -1,0 +1,39 @@
+FormKey: 0680E6:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x3C0509
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: (suddenly looks nervous) I.. I don't know why anyone would do such a thing.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x652075
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206974
+  Text:
+    TargetLanguage: English
+    Value: Now please leave me be, I have a lot to do today.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF8DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 30
+Prompt:
+  TargetLanguage: English
+  Value: Do you know anyone who would mate with the chaurus willingly?

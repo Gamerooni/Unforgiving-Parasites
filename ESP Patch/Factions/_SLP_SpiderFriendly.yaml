@@ -1,0 +1,16 @@
+FormKey: 7E7687:SexLab-Parasites.esp
+EditorID: _SLP_SpiderFriendly
+FormVersion: 43
+Relations:
+- Target: 017964:Dragonborn.esm
+  Reaction: Ally
+- Target: 02997F:skyrim.esm
+  Reaction: Ally
+- Target: 7E7687:SexLab-Parasites.esp
+  Reaction: Ally
+Flags:
+- HiddenFromPC
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

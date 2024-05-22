@@ -1,0 +1,32 @@
+FormKey: 02997E:skyrim.esm
+EditorID: FalmerFaction
+FormVersion: 43
+Version2: 9
+Name:
+  TargetLanguage: English
+  Value: Falmer
+Relations:
+- Target: 796673:SexLab-Parasites.esp
+  Reaction: Enemy
+- Target: 05ADD2:skyrim.esm
+  Reaction: Ally
+- Target: 0B2D37:skyrim.esm
+  Reaction: Friend
+- Target: 0AA784:skyrim.esm
+  Reaction: Friend
+- Target: 03E096:skyrim.esm
+  Reaction: Ally
+- Target: 03C9A8:skyrim.esm
+  Reaction: Ally
+- Target: 0330B1:skyrim.esm
+  Reaction: Friend
+- Target: 02997F:skyrim.esm
+  Reaction: Friend
+- Target: 02997E:skyrim.esm
+  Reaction: Ally
+Flags:
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

@@ -1,0 +1,93 @@
+FormKey: 24E305:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing250a
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_WhiterunSanctuaryFollower
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FireSalts
+      Object: 03AD5E:skyrim.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing250a
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing250a
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 22ABEA:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x505F54
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6E6542
+  Text:
+    TargetLanguage: English
+    Value: I went there before to see what was wrong, but I could never stay long enough to fix it.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x756E63
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x467261
+  Text:
+    TargetLanguage: English
+    Value: 'There seems to be a foreing object lodged in one of the roots. '
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x021A02
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x023102
+  Text:
+    TargetLanguage: English
+    Value: You must use Nettlebane to dislodge it.. any other instrument will be perceived as a threat.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 00D1A1:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 250
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 255
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x24DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: MM? (point at the Sanctuary)

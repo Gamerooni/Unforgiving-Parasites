@@ -1,0 +1,40 @@
+FormKey: 11436E:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_HelloFalmerBlue
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FalmerBlue
+      Object: 10F267:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_HelloFalmerBlue
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_HelloFalmerBlue
+      FragmentName: Fragment_0
+Flags:
+  ResetHours: 5.9997253
+PreviousDialog: 37933C:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x4A0007
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: (hissing)
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x496143
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0131F4:skyrim.esm
+  ComparisonValue: 1

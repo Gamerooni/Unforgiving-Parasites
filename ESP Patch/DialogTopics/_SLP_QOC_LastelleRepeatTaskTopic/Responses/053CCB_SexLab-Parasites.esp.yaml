@@ -1,0 +1,118 @@
+FormKey: 053CCB:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_LastelleTasksChaurusStud
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyMudcrabRef
+      Object: 0F5D5F:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusLastelleFollowerAlias
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFollowerAlias
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_ChaurusStudWithLastelle
+      Object: 062FD1:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_LastelleTasksChaurusStud
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_LastelleTasksChaurusStud
+      FragmentName: Fragment_0
+Flags: {}
+Topic: 03F8A3:SexLab-Parasites.esp
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0xF80100
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000C00
+  Text:
+    TargetLanguage: English
+    Value: It is about my chaurus stud... it has gone missing.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: How will I keep breeding their eggs without a male in my nest?
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Would you mind finding me another one?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF7DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnType: QuestAlias
+    Unknown3: 3
+    Race: 0131EB:skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF7DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetDeadConditionData
+    RunOnType: QuestAlias
+    Unknown3: 4
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0xF7DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 053CC8:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF7DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 50
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF7DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 59
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF7DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01BF34:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: You look sad Lastelle... what's wrong?

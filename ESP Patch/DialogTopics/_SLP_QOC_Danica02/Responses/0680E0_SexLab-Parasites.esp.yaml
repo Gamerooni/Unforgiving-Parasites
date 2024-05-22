@@ -1,0 +1,46 @@
+FormKey: 0680E0:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 0680DA:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x205468
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x736E92
+  Text:
+    TargetLanguage: English
+    Value: Ah yes.. that's a mystery.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: They have their own reproductive cycle among themselves but I have treated my fair share of worms and eggs in women unfortunate to mate with them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF8DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 005ABB:SexLab-Parasites.esp
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF8DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 008601:SexLab-Parasites.esp
+Prompt:
+  TargetLanguage: English
+  Value: Is it true they can mate with humans?

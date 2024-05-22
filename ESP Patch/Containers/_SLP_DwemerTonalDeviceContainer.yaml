@@ -1,0 +1,19 @@
+FormKey: 4C76B0:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 134217728
+EditorID: _SLP_DwemerTonalDeviceContainer
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x8000000
+ObjectBounds:
+  First: -27, -36, 0
+  Second: 27, 36, 41
+Name:
+  TargetLanguage: English
+  Value: Tonal Key Receptacle
+Model:
+  File: Clutter\Dwemer\DweContainter02.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Respawns
+MajorFlags:
+- NavMeshGenerationBoundingBox

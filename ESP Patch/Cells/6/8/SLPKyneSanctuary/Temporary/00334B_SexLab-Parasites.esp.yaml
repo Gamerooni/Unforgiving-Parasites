@@ -1,0 +1,19 @@
+MutagenObjectType: PlacedObject
+FormKey: 00334B:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultAddMusicSCRIPT
+    Flags: Inherited
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myMusic
+      Object: 05221E:skyrim.esm
+Base: 04DCAE:skyrim.esm
+Primitive:
+  Bounds: 512, 512, 732
+  Color: '#0041D926'
+  Unknown: 0.15
+  Type: Box
+Placement:
+  Position: 258.36322, 237.6488, 181

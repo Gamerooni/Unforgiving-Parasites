@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedNpc
+FormKey: 07C512:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 077410:SexLab-Parasites.esp
+Placement:
+  Position: -1443.8065, 1162.7969, 6019.3823
+MajorFlags:
+- Persistent

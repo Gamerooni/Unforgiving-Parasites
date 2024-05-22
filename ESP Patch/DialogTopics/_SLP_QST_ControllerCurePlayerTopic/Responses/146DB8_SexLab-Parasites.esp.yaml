@@ -1,0 +1,44 @@
+FormKey: 146DB8:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: 146DB9:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x642068
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x697468
+  Text:
+    TargetLanguage: English
+    Value: MMMMMMMMM! MM! MM!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEADD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 00D1A1:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEADD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 50
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEADD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    ItemOrList: 03AD5E:skyrim.esm
+Prompt:
+  TargetLanguage: English
+  Value: I wish I could help with that face hugger but I have to find Fire Salts first.

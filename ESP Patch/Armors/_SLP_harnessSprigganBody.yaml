@@ -1,0 +1,37 @@
+FormKey: 80ADAE:SexLab-Parasites.esp
+EditorID: _SLP_harnessSprigganBody
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Spriggan Body
+ObjectEffect: 0B7A30:skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\gagSpriggan\SprigganHusk.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - 0x10000000
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 0044FE:SexLab-Parasites.esp
+- 0FF9FB:skyrim.esm
+- 02F16E:SexLab.esm
+- 0429FB:Devious Devices - Integration.esm
+- 0A9B1F:skyrim.esm
+- 80ADAA:SexLab-Parasites.esp
+- 80ADA7:SexLab-Parasites.esp
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: Fungal layer growing through your skin
+Armature:
+- 2A4457:SexLab-Parasites.esp
+Value: 450
+Weight: 5
+ArmorRating: 50

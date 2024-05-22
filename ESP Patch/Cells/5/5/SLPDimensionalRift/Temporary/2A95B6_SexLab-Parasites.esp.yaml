@@ -1,0 +1,13 @@
+MutagenObjectType: PlacedObject
+FormKey: 2A95B6:SexLab-Parasites.esp
+FormVersion: 43
+Base: 000021:skyrim.esm
+Primitive:
+  Bounds: 131.75879, 748.27734, 298.71484
+  Color: '#00FFFF00'
+  Unknown: 0.15
+  Type: Box
+CollisionLayer: 22
+Placement:
+  Position: 3292.3257, 11211.084, 8509.255
+  Rotation: 0, -0, 3.2900047

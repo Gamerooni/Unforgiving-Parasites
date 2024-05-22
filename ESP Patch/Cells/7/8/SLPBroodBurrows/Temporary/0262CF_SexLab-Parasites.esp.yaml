@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 0262CF:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 512
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x200
+Base: 03A1EC:skyrim.esm
+Placement:
+  Position: 978.6532, 2433.936, 562.14056
+  Rotation: 3.1415927, -0.06660048, 2.4415944

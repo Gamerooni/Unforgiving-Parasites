@@ -1,0 +1,35 @@
+FormKey: 0B03AF:skyrim.esm
+EditorID: FloraCreepCluster
+FormVersion: 43
+Version2: 10
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_CreepClusterHarvest
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreepyCluster
+      Object: 0B2183:skyrim.esm
+ObjectBounds:
+  First: -88, -97, -12
+  Second: 88, 97, 15
+Name:
+  TargetLanguage: English
+  Value: Creep Cluster
+Model:
+  File: Plants\FloraCreepCluster01.nif
+  Data: 0x0200000002000000000000007884244564647300134C1EFA27FC1A9A64647300134C1EFA
+PNAM: 0x00000000
+ActivateTextOverride:
+  TargetLanguage: English
+  Value: Harvest
+FNAM: 0x0000
+Ingredient: 0B2183:skyrim.esm
+HarvestSound: 0FB974:skyrim.esm
+Production:
+  Spring: 100
+  Summer: 100
+  Fall: 100
+  Winter: 100

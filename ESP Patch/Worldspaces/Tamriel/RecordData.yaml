@@ -1,0 +1,28 @@
+FormKey: 00003C:skyrim.esm
+EditorID: Tamriel
+FormVersion: 43
+Version2: 14
+Name:
+  TargetLanguage: English
+  Value: Skyrim
+Climate: 000812:skyrim.esm
+Water: 000018:skyrim.esm
+LodWater: 000018:skyrim.esm
+LodWaterHeight: -14000
+LandDefaults:
+  DefaultLandHeight: -27000
+  DefaultWaterHeight: -14000
+MapData:
+  NorthwestCellCoords: -30, 15
+  SoutheastCellCoords: 40, -40
+  CameraMinHeight: 50000
+  CameraMaxHeight: 80000
+  CameraInitialPitch: 50
+WorldMapOffsetScale: 1
+DistantLodMultiplier: 1
+ObjectBoundsMin: -57, -43
+ObjectBoundsMax: 62, 51
+Music: 01BA72:skyrim.esm
+HdLodDiffuseTexture: data\textures\landscape\mountains\mountainslab02.dds
+HdLodNormalTexture: data\textures\landscape\mountains\mountainslab02_n.dds
+SubCellsTimestamp: 31514

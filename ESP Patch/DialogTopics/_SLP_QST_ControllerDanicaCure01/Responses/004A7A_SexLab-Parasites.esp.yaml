@@ -1,0 +1,62 @@
+FormKey: 004A7A:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: Blessings of Kynareth, child.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: Talk to Danica Pure-Spring... she can help with matters of divine unions.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x180007
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: I can only help with diseases and injuries.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xCAB552
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 0ECC44:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xCAB552
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xCAB552
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 0044FE:SexLab-Parasites.esp
+  ComparisonValue: 1

@@ -1,0 +1,86 @@
+FormKey: 004A7C:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_CureSpiderEgg01
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_CureSpiderEgg01
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_CureSpiderEgg01
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+Topic: 004A72:SexLab-Parasites.esp
+PreviousDialog: 004A85:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: You were right to come to me.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: Spider eggs can be very tricky to remove safely, both for the host and the eggs.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x180007
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Lie down and try to relax... this will stretch a bit.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0xDD0A45
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    ItemOrList: 0F11C0:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xDD0A45
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xDD0A45
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 0012C7:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I have been attacked by Spiders and my stomach feels full

@@ -1,0 +1,36 @@
+FormKey: 2A445C:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 4
+EditorID: _SLP_PriestSolitudeCuirass
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- NotPlayable
+Name:
+  TargetLanguage: English
+  Value: Divines Priest Robe
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\priests_solitude\m\gnd\cuirassgnd.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: armor\KyneBlessing\priests_solitude\f\gnd\cuirass_gnd.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 08F959:skyrim.esm
+- 0A8657:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 2A445A:SexLab-Parasites.esp
+Value: 640
+Weight: 12
+ArmorRating: 49
+MajorFlags:
+- NonPlayable

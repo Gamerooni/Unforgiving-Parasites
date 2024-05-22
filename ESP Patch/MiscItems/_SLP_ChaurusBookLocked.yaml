@@ -1,0 +1,14 @@
+FormKey: 049AB1:SexLab-Parasites.esp
+EditorID: _SLP_ChaurusBookLocked
+FormVersion: 43
+ObjectBounds:
+  First: -13, -10, 0
+  Second: 13, 10, 14
+Name:
+  TargetLanguage: English
+  Value: On Chaurus Biology (locked)
+Model:
+  File: clutter\KyneBlessing\Book04.nif
+  Data: 0x020000000000000000000000
+Value: 5
+Weight: 2

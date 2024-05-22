@@ -1,0 +1,31 @@
+FormKey: 4BD4A0:SexLab-Parasites.esp
+EditorID: _SLP_ArmorDwemerBoots
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Dwemer Boots
+ObjectEffect: 6669A2:SexLab-Parasites.esp
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Dwarven\DwarvenBootsGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 06BBD2:skyrim.esm
+- 06BBD7:skyrim.esm
+- 06C0ED:skyrim.esm
+- 08F959:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 4BD49D:SexLab-Parasites.esp
+Value: 850
+Weight: 10
+ArmorRating: 13

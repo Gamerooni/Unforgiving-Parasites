@@ -1,0 +1,37 @@
+FormKey: 99AD53:SexLab-Parasites.esp
+EditorID: _SLP_MEF_BoundChaurusBladeFX
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Ench Bound Chaurus Blade FX
+MenuDisplayObject: 10AB43:skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Conjuration
+ResistValue: ResistFire
+Unknown1: 31333
+TaperWeight: 0.2
+EnchantShader: 10CC64:skyrim.esm
+TaperCurve: 2
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EnchantArt: 0E3F0B:skyrim.esm
+Sounds:
+- Sound: 03F269:skyrim.esm
+- Type: Charge
+  Sound: 056B75:skyrim.esm
+- Type: Ready
+  Sound: 076560:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

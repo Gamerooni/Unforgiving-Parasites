@@ -1,0 +1,41 @@
+FormKey: 912228:SexLab-Parasites.esp
+EditorID: _SLP_SP_SprigganDefenseCloak
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Spriggan Cloak
+MenuDisplayObject: 04E264:skyrim.esm
+EquipmentType: 013F44:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+ChargeTime: 0.5
+CastType: FireAndForget
+Effects:
+- BaseEffect: 912227:SexLab-Parasites.esp
+  Data:
+    Magnitude: 10
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      MagicEffect: 912227:SexLab-Parasites.esp
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Flags:
+    - OR
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: IsInCombatConditionData

@@ -1,0 +1,37 @@
+FormKey: 99AD57:SexLab-Parasites.esp
+EditorID: _SLP_MEF_BoundChaurusClaw
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Bound Chaurus Claw
+MenuDisplayObject: 10AB43:skyrim.esm
+Keywords:
+- 0A9B1E:skyrim.esm
+Flags:
+- NoMagnitude
+- NoArea
+- 0x40000
+- PowerAffectsDuration
+BaseCost: 1.75
+MagicSkill: Alteration
+Unknown1: 8293
+CastingLight: 03BA90:skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectBoundArchetype
+  Association: 99AD50:SexLab-Parasites.esp
+CastType: FireAndForget
+CastingArt: 03CDFC:skyrim.esm
+SkillUsageMultiplier: 10
+DualCastScale: 1
+Sounds:
+- Sound: 03F269:skyrim.esm
+- Type: Charge
+  Sound: 056B75:skyrim.esm
+- Type: Ready
+  Sound: 076560:skyrim.esm
+- Type: Release
+  Sound: 03F2B1:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Creates a chaurus claw for <dur> seconds. Sheathe it to dispel.

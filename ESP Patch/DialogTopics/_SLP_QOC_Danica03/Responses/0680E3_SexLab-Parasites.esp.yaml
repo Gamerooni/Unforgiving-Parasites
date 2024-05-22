@@ -1,0 +1,64 @@
+FormKey: 0680E3:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 0680DA:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x652075
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206974
+  Text:
+    TargetLanguage: English
+    Value: As with any parasites, long term exposure to chaurus eggs and worms can take its toll on a female's body.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x205468
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x736E92
+  Text:
+    TargetLanguage: English
+    Value: I wouldn't recommend it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF6DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 20
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Unknown1: 0xF6DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 005ABB:SexLab-Parasites.esp
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF6DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 20
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown1: 0xF6DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 008601:SexLab-Parasites.esp
+Prompt:
+  TargetLanguage: English
+  Value: What are long term effects of mating with the chaurus?

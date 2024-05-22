@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 003392:SexLab-Parasites.esp
+FormVersion: 43
+Base: 0346CF:skyrim.esm
+Radius: 247.49326
+LightData:
+  FadeOffset: 3.3112597
+  ShadowDepthBias: 22.010551
+Placement:
+  Position: 898.6573, 606.20776, -40.49286
+  Rotation: 0, -0, 0.95000017

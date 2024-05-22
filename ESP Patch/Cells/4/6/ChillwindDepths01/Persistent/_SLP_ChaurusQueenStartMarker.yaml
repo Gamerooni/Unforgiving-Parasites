@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 01BF31:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+EditorID: _SLP_ChaurusQueenStartMarker
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 00003B:skyrim.esm
+Placement:
+  Position: -1582.3934, 1395.2628, 6006.7705

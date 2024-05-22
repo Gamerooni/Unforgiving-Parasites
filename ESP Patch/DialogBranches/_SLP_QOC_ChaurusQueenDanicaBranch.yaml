@@ -1,0 +1,8 @@
+FormKey: 22ABE4:SexLab-Parasites.esp
+EditorID: _SLP_QOC_ChaurusQueenDanicaBranch
+FormVersion: 43
+Quest: 016E2C:SexLab-Parasites.esp
+Category: Player
+Flags:
+- TopLevel
+StartingTopic: 22ABE5:SexLab-Parasites.esp

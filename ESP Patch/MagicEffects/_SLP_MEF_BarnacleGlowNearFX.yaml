@@ -1,0 +1,31 @@
+FormKey: 00C177:SexLab-Parasites.esp
+EditorID: _SLP_MEF_BarnacleGlowNearFX
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Blackreach spore glow near
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 0A9B1E:skyrim.esm
+Flags:
+- FXPersist
+- Painless
+MagicSkill: Alteration
+Unknown1: 29537
+CastingLight: 00C176:SexLab-Parasites.esp
+Archetype:
+  MutagenObjectType: MagicEffectLightArchetype
+  Association: 00C176:SexLab-Parasites.esp
+HitEffectArt: 0ABF10:skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:skyrim.esm
+- Type: Charge
+  Sound: 03F37A:skyrim.esm
+- Type: Ready
+  Sound: 03F37A:skyrim.esm
+- Type: Release
+  Sound: 0571B2:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Soft glow from strange spores.

@@ -1,0 +1,20 @@
+MutagenObjectType: PlacedObject
+FormKey: 1C5744:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_SeedBookRead
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 150
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 016E2C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptIntProperty
+      Name: preReqStage
+      Data: 100
+Base: 1C5743:SexLab-Parasites.esp
+Placement:
+  Position: -514.8044, -2214.7185, 150.25748
+  Rotation: 0, -0, 5.583187

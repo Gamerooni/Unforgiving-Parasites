@@ -1,0 +1,24 @@
+FormKey: 759A66:SexLab-Parasites.esp
+EditorID: _SLP_MEF_FortifySpeech
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Fortify Speech
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 074F6F:skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 40
+Unknown1: 8302
+EnchantShader: 092DEE:skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeechcraftModifier
+DualCastScale: 1
+Description:
+  TargetLanguage: English
+  Value: Speechcraft is <mag>% better.

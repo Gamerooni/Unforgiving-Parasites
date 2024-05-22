@@ -1,0 +1,10 @@
+FormKey: 13CBAC:SexLab-Parasites.esp
+EditorID: _SLP_QST_KyneBlessingDanica
+FormVersion: 43
+Quest: 00603B:SexLab-Parasites.esp
+Branches:
+- 13CBAD:SexLab-Parasites.esp
+- 150FC8:SexLab-Parasites.esp
+TNAMs: []
+ENAM: 0x00000000
+DNAM: 0x00

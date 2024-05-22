@@ -1,0 +1,42 @@
+FormKey: 912227:SexLab-Parasites.esp
+EditorID: _SLP_MEF_SprigganDefenseCloakFFSelf
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Spriggan Needles
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 0B62E4:skyrim.esm
+Flags:
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 3.2
+Unknown1: 16991
+CastingLight: 0FFF49:skyrim.esm
+TaperWeight: 0.3
+HitShader: 084B39:skyrim.esm
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 013B7E:Dawnguard.esm
+CastType: FireAndForget
+CastingArt: 1090FA:skyrim.esm
+HitEffectArt: 09AA39:skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03F2C1:skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:skyrim.esm
+- Type: Release
+  Sound: 03EDD4:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: For <dur> seconds, opponents in melee range take <8> points poison damage per second. Targets on fire take extra damage.

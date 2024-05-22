@@ -1,0 +1,13 @@
+FormKey: 6EA42A:SexLab-Parasites.esp
+EditorID: AMBSteamCrackSoulCairnWhispers2DLPSDDUPLICATE001
+FormVersion: 43
+Type: Standard
+Category: 07F80B:skyrim.esm
+SoundFiles:
+- Data\Sound\FX\DLC01\AMB\AMB_Steam_SoulCrack_Whispers_LP.wav
+OutputModel: 07E5DD:skyrim.esm
+LoopAndRumble:
+  Loop: Loop
+PercentFrequencyVariance: 0.0392156862745098
+Priority: -128
+StaticAttenuation: 12.78

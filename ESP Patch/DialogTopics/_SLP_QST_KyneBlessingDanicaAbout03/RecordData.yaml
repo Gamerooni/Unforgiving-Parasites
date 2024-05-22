@@ -1,0 +1,11 @@
+FormKey: 14BEBD:SexLab-Parasites.esp
+EditorID: _SLP_QST_KyneBlessingDanicaAbout03
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: What can you tell me about parasites in general?
+Branch: 13CBAD:SexLab-Parasites.esp
+Quest: 00603B:SexLab-Parasites.esp
+SubtypeName: CUST
+Timestamp: 31514
+Unknown: 23192

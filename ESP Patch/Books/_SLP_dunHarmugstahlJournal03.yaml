@@ -1,0 +1,85 @@
+FormKey: 1C5743:SexLab-Parasites.esp
+EditorID: _SLP_dunHarmugstahlJournal03
+FormVersion: 43
+ObjectBounds:
+  First: -6, -9, 0
+  Second: 6, 8, 1
+Name:
+  TargetLanguage: English
+  Value: Experiment log - 4E 200
+Model:
+  File: Clutter\Books\JournalLowPoly01.nif
+  Data: 0x020000000000000000000000
+BookText:
+  TargetLanguage: English
+  Value: >-
+    <font face='$HandwrittenFont'><div align="left">
+
+    <b>Experiment log - 4E 200</b><br>
+
+    Home at last! I can hardly believe it has been two years already. Yet I must write down my symptoms before they fade.
+
+    Two years in the underworld of Blackreach has taken its toll. 
+
+    My head is bald and my skin  bluish pale and my eyes are extremely sensitive to light. Even the firepits of the fort are torture.
+
+    My breasts are distorted beyond recognition and keep secreting a stick, sweet milky fluid. I doubt it is still milk. I will have to analyze what it is later.
+
+    Surprisingly I have gained weight. I am sure the glowing substance my captors kept smearing me with is the culprit.
+
+    Months of frequent mating with falmers and chaurus alike has stretched my sex and numbed my skin. I can easily fit my hand inside my vagina now.
+
+    The trek from the bowels of Mount Anthor was an ordeal. I had to beg and steal and... I'm so tired....  I must rest now.
+
+    <br>(...)
+
+    Two weeks of cold sweats and extreme exhaustion. The withdrawal cramps make me feel like a caged skooma whore.
+
+    What was it that addicted me so much? the glowing waters of Blackreach? was that even water? the spores? the glowing ointment from the shamans?
+
+    Oh I wish I had a chaurus stud to mount me right now!
+
+    <br>(...)
+
+    A month I have been back and the blue tint of my skin is fading. I am not so optimistic about my hair. I wonder if I would have transformed into a falmer myself .. or a grotesque approximation of one.
+
+    The empty void in my hole isn't fading unfortunately. 
+
+    What was I thinking letting myself be abducted by the falmers of the Sightless Pit? 
+
+    I am fortunate my hypothesis was right. The falmers seem incapable of reproducing by themselves and will stop at nothing to abduct Mer specimens to turn into one of their own through constant exposure to poisonous substances. Unfortunately for me, their pet chaurus seem fond of Mer females as well.
+
+    At least I came back with my prize. The Seed Stone. Although looking at it now, I am still stumped as to how to use it.
+
+    Finding it was so unexpected. I went in looking for answers about the chaurus biology and instead I found what could be the foundation to so much more!
+
+    <br>(...)
+
+    My experiments with spiders seem so childish by now. I was so obsessed with the effect of spider eggs on my body that I wanted more. I tried every form of parasite I could find.. from simple intestinal worms to full body tentacle creatures. Until I found chaurus eggs... and worms.... and the chaurus themselves. Such fascinating beings!
+
+    My time in Blackreach allowed me to observe them up close... intimately. And the more I learned baout them, the more questions came up. Like.. where do the eggs come from? 
+
+    All chaurus I could find have been male... every single one. They are incapable of producing eggs and yet, they keep carrying eggs from the depths of Blackreach over large distances.
+
+    I came to the conclusion that not unlike ants, chaurus must have a Queen somewhere. The Seed Stone seems link to that Queen somehow.
+
+    Falmer shamans seem to treasure Seed Stones above all else, which makes me wonder if they don't have a deeper relationship to the chaurus than as pets or cattle.
+
+    It's a shame I had to leave my research notes about the Seed Stone behind. They should be safe in Sinderion's field laboratory. Something has been keeping the falmers away from that small building for decades. 
+
+    <br>
+
+    ~ AdS
+Keywords:
+- 0937A2:skyrim.esm
+- 0FF9FB:skyrim.esm
+Type: NoteOrScroll
+Teaches:
+  MutagenObjectType: BookTeachesNothing
+  RawContent: 4294967295
+Value: 5
+Weight: 1
+InventoryArt: 0B7E3D:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

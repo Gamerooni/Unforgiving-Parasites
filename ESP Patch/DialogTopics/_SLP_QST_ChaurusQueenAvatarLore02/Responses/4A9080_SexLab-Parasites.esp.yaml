@@ -1,0 +1,55 @@
+FormKey: 4A9080:SexLab-Parasites.esp
+FormVersion: 43
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: The Elder Roots as you call them.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x746572
+  Text:
+    TargetLanguage: English
+    Value: They were there in my mind when I woke to this place... or perhaps my mind was in theirs. That was so long ago.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x00F000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x015701
+  Text:
+    TargetLanguage: English
+    Value: It took all my energy to not lose myself in them.. for the sake of my children.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0xE51109
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: There was so much to do to protect them... come to my nursery. I will show you what must be done.
+  ScriptNotes: ''
+  Edits: ''
+Prompt:
+  TargetLanguage: English
+  Value: The Other voices?

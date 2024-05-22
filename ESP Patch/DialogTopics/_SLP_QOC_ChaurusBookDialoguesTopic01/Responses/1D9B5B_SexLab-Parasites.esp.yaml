@@ -1,0 +1,123 @@
+FormKey: 1D9B5B:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_ChaurusBook200c
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CaveChaurusRef
+      Object: 17E8E9:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_ChaurusBook200c
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_ChaurusBook200c
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 1D9B5A:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 6
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: 'How intriguing. I wonder what it was... '
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 7
+  Unknown2: 0x756E63
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x467261
+  Text:
+    TargetLanguage: English
+    Value: She went to Blackreach after writing this. Maybe for the last time if that's all you found.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 8
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Few have returned from Blackreach to tell the tale. And fewer still even know how to get to that wretched place
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 9
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: I know I asked a lot already... can you follow her trail and see if she left anything behind?
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 10
+  Unknown2: 0x4E5420
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x2D2044
+  Text:
+    TargetLanguage: English
+    Value: In the meantime I will see what I can find about this 'seed stone'.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x20DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    ItemOrList: 1C5743:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x20DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    ItemOrList: 1CA846:SexLab-Parasites.esp
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x20DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 150
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x20DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 200
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x20DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01BF34:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I found lab notes and something called a Seed Stone, but I lost it.

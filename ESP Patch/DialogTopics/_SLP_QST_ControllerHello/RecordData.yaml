@@ -1,0 +1,10 @@
+FormKey: 004A75:SexLab-Parasites.esp
+EditorID: _SLP_QST_ControllerHello
+FormVersion: 43
+Priority: 90
+Quest: 000D62:SexLab-Parasites.esp
+Category: Misc
+Subtype: Hello
+SubtypeName: HELO
+Timestamp: 31514
+Unknown: 23192

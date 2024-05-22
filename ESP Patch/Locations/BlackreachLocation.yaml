@@ -1,0 +1,12 @@
+FormKey: 018EE8:skyrim.esm
+EditorID: BlackreachLocation
+FormVersion: 43
+Version2: 12
+Name:
+  TargetLanguage: English
+  Value: Blackreach
+Keywords:
+- 0130EF:skyrim.esm
+- 0130DB:skyrim.esm
+- 0130E4:skyrim.esm
+ParentLocation: 01676B:skyrim.esm

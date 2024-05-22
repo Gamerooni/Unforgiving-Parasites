@@ -1,0 +1,151 @@
+FormKey: 00182F:SexLab-Parasites.esp
+EditorID: _SLP_plugParasiteMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: After carefully examining the parasites you decide to...
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Slide them in
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x36D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003331:Devious Devices - Assets.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x36D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x36D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 017C43:Devious Devices - Assets.esm
+- Text:
+    TargetLanguage: English
+    Value: Slide them in
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 017C43:Devious Devices - Assets.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003331:Devious Devices - Assets.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+- Text:
+    TargetLanguage: English
+    Value: Slide them in
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003331:Devious Devices - Assets.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Pull them out
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 017C43:Devious Devices - Assets.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003331:Devious Devices - Assets.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+- Text:
+    TargetLanguage: English
+    Value: Pull them out
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x38D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 017C43:Devious Devices - Assets.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x38D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003331:Devious Devices - Assets.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x38D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+- Text:
+    TargetLanguage: English
+    Value: Pull them out
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x38D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003331:Devious Devices - Assets.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x38D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Squeeze them
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x38D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0063CA:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Carry on

@@ -1,0 +1,94 @@
+FormKey: 42A6F9:SexLab-Parasites.esp
+EditorID: _SLP_MEF_SeedSpawnChaurusSelf
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_MEF_SeedSpawnChaurus
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DismissSpawns
+      Object: 452F16:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteChaurusQueen
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SwampFungalPod01
+      Object: 07E8B7:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FireflyThorax
+      Object: 04DA73:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DwarvenOil
+      Object: 0F11C0:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusEgg
+      Object: 03AD56:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusMask
+      Object: 42A6F5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusArmor
+      Object: 42A6F3:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderSpawnOil
+      Object: 02749D:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderSpawnGlow
+      Object: 027490:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderSpawnMind
+      Object: 016E1C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CallSpawns
+      Object: 45D11B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusBlade
+      Object: 99AD54:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusClaw
+      Object: 99AD58:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+Name:
+  TargetLanguage: English
+  Value: Seed Spawn Chaurus
+MenuDisplayObject: 0435A5:skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+Unknown1: 2
+HitShader: 0038F8:Dawnguard.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+Projectile: 02C3ED:Dragonborn.esm
+Explosion: 01AADE:Dawnguard.esm
+CastType: FireAndForget
+CastingArt: 046006:skyrim.esm
+ImpactData: 046008:skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: VeryLoud
+Sounds:
+- Sound: 03F2C1:skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:skyrim.esm
+- Type: Release
+  Sound: 03EDD4:skyrim.esm
+- Type: OnHit
+  Sound: 023F0C:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Hatch Chaurus eggs in your inventory into chaurus followers and a chance at special weaponized spiders (Glow, Mind, Oil)

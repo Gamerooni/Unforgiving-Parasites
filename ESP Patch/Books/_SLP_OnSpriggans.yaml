@@ -1,0 +1,120 @@
+FormKey: 8989E0:SexLab-Parasites.esp
+EditorID: _SLP_OnSpriggans
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_OnReadSprigganBook
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptIntProperty
+      Name: myStage
+      Data: 92
+ObjectBounds:
+  First: -35, -28, 0
+  Second: 35, 28, 7
+Name:
+  TargetLanguage: English
+  Value: Annotated Spriggan Guide
+Model:
+  File: clutter\KyneBlessing\Parchment01.nif
+  Data: 0x020000000000000000000000
+BookText:
+  TargetLanguage: English
+  Value: >-
+    <br/><br/><p align='center'><font size='30'>Field Guide to Spriggans</font><br/><font size='10'>or</font><br/><font size='20'>A guide to spriggans</font><br/><font size='15'>by Phrastus of Elinhir</font></p>
+
+    [pagebreak]
+
+    A collection of Eastmarch folklore, legend and local tales that once were told or sung in may a smoky fireside nook.
+
+    [pagebreak]
+
+
+    We come now to consideration of the spriggan, the elusive, feminine nature spirit of the deep woods. Of course, we all know the name from the taunting children's joke that goes:
+
+
+    "Guess what?"
+
+    "What?"
+
+    "Spriggan butt!"
+
+
+    ...But beyond this juvenile jest, what can scholarship tell us about these half-flora/half-fauna creatures? Unfortunately, though I have consulted all the standard sources, the academics of Tamriel have little to say about the spriggans' whys and wherefores.
+
+
+    From both legend and from authenticated stories of personal encounters, we know that spriggans are somehow mystically tied to certain copses or thickets, verdant groves which they fiercely defend against trespassers. Spriggan sap is said to be venomous, and they are known to be able to magically heal themselves when wounded, making them dangerous opponents.
+
+
+    In addition, spriggans have some sort innate connection to the animals and plants that inhabit their sacred groves, and there are many verified accounts of animals fighting at their sides against intruders. These allies include not just animals that are naturally aggressive, such as bears or swarms of hornets, but even usually timid creatures like deer and elk.
+
+
+    Whether these animal allies defend spriggans out of love or friendship, or whether they are magically summoned by an innate spell ability on the part of the spriggan, is an open question, and a matter of some debate among those who study mystizoology. There is no doubt, however, that spriggans are creatures of a magical nature, as is clearly evidenced by the powerful qualities of the so-called "taproots" that are harvested from their bodies when slain. These taproots are prized by alchemists for their undeniable arcane properties, which enable the concoction of complex potions from powerful reagents that are otherwise immiscible.
+
+
+    As to their origins, that is a mystery that so far none have solved. We find accounts of "Spryggain Groaves" dating all the way back to the beginning of the First Era, as well as mention of "tree-daughters" in the ancient myths of Y'ffre and the Earth Bones. Their common name seems to derive from "sprig," the Nedic term for a fresh green twig or offshoot, but beyond that everything about their origins is obscure.
+
+
+    They do not seem to follow a natural reproductive cycle. There is no record of a scholar observing the mating or birth of spriggans. Plenty have tried and disappeared in the process.
+
+
+    However, there have been frequent accounts of a "spriggan like" affliction. Symptoms appear as growth on the hand and feet of the victims, extending to the full body for the most advanced cases. Few victims have survived the process, and those who did have fled into the woods and were never seen again.
+
+
+    From a purely physical standpoint spriggans certainly come in several forms, with reports of a variety of barks and foliage. This may represent different strains or sub-species, or it may simply be a reflection of the spriggan's mystical connection with its local flora. Spriggans seem to resemble the plants of the groves wherein they live, even reflecting the seasonal nature of those who reside in the deciduous forests of northern Tamriel. In the opinion of this scholar, the so-called spring, summer, autumn, and winter spriggans are all the same creatures merely undergoing seasonal metamorphosis.
+
+
+    Some have gone so far as to assert that spriggans have a hierarchy, with lesser members of the species owing allegiance to the greater, who are sometimes termed "spriggan matron" or even "spriggan earth mother." Here is where we must draw the line between scholarship and storytelling: though a spriggan's form outwardly resembles that of a human female, there is no evidence whatsoever that they can engage in intelligent behavior, or that they can organize into hierarchical groups. The creatures of the natural world, even those that are quasi-magical, behave entirely according to instinct, and to endow them with human emotion or thought is mere sentimentalism. If you're partial to that sort of fanciful twaddle, I refer you to the works of Lady Cinnabar of Taneth, who produces it in great reams.
+
+
+    [pagebreak]
+
+    <font face='$HandwrittenFont'><br/><br/><br/>
+
+
+    <font face='$SkyrimBooks_UnreadableFont'>12 123112 12312 1235 13</font>
+
+    Are Spriggans really guardians of Kyne?
+
+
+    Is this the reason of the ancient altar to the Goddes up in the mountains above Kynesgrove?
+
+
+    <font face='$SkyrimBooks_UnreadableFont'>23 122312 14512 1245 1 23</font>
+
+    <font face='$SkyrimBooks_UnreadableFont'>45 1234512 122345 1 23</font>
+
+
+    Kyne is considered by some to lead those Divines. She is one of the Hearth Gods, watching over the present cycle of the world.  
+
+
+    Kyne is called the Kiss at the End, for most Nords agree that Kyne leads the dead to Sovngarde. She is revered as the Goddess of Storm, called upon to bring rain and snow in dry times. She protects her faithful from the raging gales and blizzards that regularly sweep across the Skyrim expanse. Other names applied to Kyne include Widow of Shor and the Mother of Nords.
+
+
+    Warriors favor Kyne, as they call upon her for strength in battle and victory in conflict.
+
+
+    <font face='$SkyrimBooks_UnreadableFont'>23 312 12512 145 1 23</font>
+
+
+    thu'um, or Storm Voice, given to Nords by Kyne?
+
+
+    Maybe the Greybeards would know.
+
+
+    </font>
+Keywords:
+- 0937A2:skyrim.esm
+- 0FF9FB:skyrim.esm
+Teaches:
+  MutagenObjectType: BookTeachesNothing
+  RawContent: 4294967295
+Value: 2
+Weight: 1
+InventoryArt: 08ADAF:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

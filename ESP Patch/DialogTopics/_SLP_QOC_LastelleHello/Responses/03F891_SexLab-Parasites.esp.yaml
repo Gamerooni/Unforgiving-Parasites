@@ -1,0 +1,105 @@
+FormKey: 03F891:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_Lastelle19a
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_Lastelle19a
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_Lastelle19a
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 03568C:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Do not worry... I am perfectly fine.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x007D00
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x00EC00
+  Text:
+    TargetLanguage: English
+    Value: You just surprised me as I am trying to care for my children.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: You came right on time... I desperately need your help.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEBDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 03A78E:SexLab-Parasites.esp
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEBDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00603B:SexLab-Parasites.esp
+    Stage: 100
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEBDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 11
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEBDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 19
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEBDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 21
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEBDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 30
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEBDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01BF34:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Are you alright?

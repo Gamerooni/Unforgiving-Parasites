@@ -1,0 +1,43 @@
+FormKey: 38D744:SexLab-Parasites.esp
+EditorID: _SLP_MEF_SeedFlareSelf
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Mother Seed Flare
+MenuDisplayObject: 0435A5:skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+ResistValue: PoisonResist
+Unknown1: 14934
+HitShader: 015372:Dawnguard.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 014455:Dragonborn.esm
+Explosion: 0200CB:Dragonborn.esm
+CastType: FireAndForget
+CastingArt: 046006:skyrim.esm
+ImpactData: 046008:skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: VeryLoud
+Sounds:
+- Sound: 03F2C1:skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:skyrim.esm
+- Type: Release
+  Sound: 03EDD4:skyrim.esm
+- Type: OnHit
+  Sound: 03A477:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: <mag> points of damage for <dur> seconds.

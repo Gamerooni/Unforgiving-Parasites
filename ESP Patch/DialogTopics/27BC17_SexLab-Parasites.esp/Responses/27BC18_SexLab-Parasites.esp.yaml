@@ -1,0 +1,18 @@
+FormKey: 27BC18:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x00803F
+  Text:
+    TargetLanguage: English
+    Value: '[Motions you to follow her]'
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 0F6CCF:skyrim.esm

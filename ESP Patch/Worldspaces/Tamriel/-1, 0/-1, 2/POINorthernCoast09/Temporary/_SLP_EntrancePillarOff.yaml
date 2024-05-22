@@ -1,0 +1,13 @@
+MutagenObjectType: PlacedObject
+FormKey: 026358:SexLab-Parasites.esp
+EditorID: _SLP_EntrancePillarOff
+FormVersion: 43
+Base: 028A75:skyrim.esm
+EnableParent:
+  Reference: 02B45C:SexLab-Parasites.esp
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Placement:
+  Position: -31449.273, 89833.37, -13897.629
+  Rotation: -2.9253187, 0.17207775, 5.6708283

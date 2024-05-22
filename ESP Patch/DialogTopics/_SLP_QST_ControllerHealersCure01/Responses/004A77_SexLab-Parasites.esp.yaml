@@ -1,0 +1,51 @@
+FormKey: 004A77:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 004A8A:SexLab-Parasites.esp
+- 004A8B:SexLab-Parasites.esp
+- 006025:SexLab-Parasites.esp
+- 00659E:SexLab-Parasites.esp
+- 00DC78:SexLab-Parasites.esp
+- 00DC7C:SexLab-Parasites.esp
+- 0BE245:SexLab-Parasites.esp
+- 87F4D3:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: How may I help?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xD3B552
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xD3B552
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 04E509:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0xD3B552
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 0044FE:SexLab-Parasites.esp
+  ComparisonValue: 1

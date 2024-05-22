@@ -1,0 +1,15 @@
+FormKey: 00C16E:SexLab-Parasites.esp
+EditorID: _SLP_FXLightBlueGlowFar
+FormVersion: 43
+Time: -1
+Radius: 400
+Color: '#007AE9F5'
+Flags:
+- Dynamic
+FalloffExponent: 1
+FOV: 90
+NearClip: 100
+FlickerPeriod: 0.16666667
+FlickerIntensityAmplitude: 0.6
+FlickerMovementAmplitude: 1
+FadeValue: 1

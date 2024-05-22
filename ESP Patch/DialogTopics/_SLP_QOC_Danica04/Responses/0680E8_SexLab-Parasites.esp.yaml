@@ -1,0 +1,77 @@
+FormKey: 0680E8:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_Lastelle65
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_Lastelle65
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_Lastelle65
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 0680E7:SexLab-Parasites.esp
+FavorLevel: None
+LinkTo:
+- 0680E9:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x3C0509
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: It is a whispered secret among the few who experienced the chaurus that their gift can be quite pleasurable.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x652075
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206974
+  Text:
+    TargetLanguage: English
+    Value: The worm parasites they carry can be used to harvest a brightly colored fluid to help with lactation and survival inside caves.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: And their eggs... by the Gods... carrying their eggs is a glorious experience and an honor.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF6DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 60
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xF6DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 65
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown1: 0xF6DD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0044FC:SexLab-Parasites.esp
+Prompt:
+  TargetLanguage: English
+  Value: Why would anyone who would mate with the chaurus willingly?

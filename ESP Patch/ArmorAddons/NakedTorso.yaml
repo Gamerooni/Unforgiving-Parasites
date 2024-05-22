@@ -1,0 +1,56 @@
+FormKey: 000D67:skyrim.esm
+EditorID: NakedTorso
+FormVersion: 43
+Version2: 15
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Forearms
+  - Amulet
+  - Ring
+  - Calves
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Priority:
+  Male: 0
+  Female: 0
+WeightSliderEnabled:
+  Male: True
+  Female: True
+Unknown: 2
+Unknown2: 23
+WorldModel:
+  Male:
+    File: Actors\Character\Character Assets\MaleBody_1.NIF
+    Data: 0x02000000060000000000000037FBB636646473000FD3010CD2B0412D646473000FD3010C76F00CEC646473000FD3010C224CE083646473000FD3010CF042E4F4646473000FD3010C7DA1F730646473000FD3010C
+  Female:
+    File: Actors\Character\Character Assets\FemaleBody_1.nif
+    Data: 0x020000000600000000000000628B0C5E6464730066BB204C450088BA6464730066BB204CE403E00A6464730066BB204C295389986464730066BB204CA5325E9C6464730066BB204CAF0C34576464730066BB204C
+FirstPersonModel:
+  Male:
+    File: Actors\Character\Character Assets\1stPersonMaleBody_1.NIF
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Character\Character Assets\1stPersonFemaleBody_1.nif
+    Data: 0x020000000000000000000000
+SkinTexture:
+  Male: 03EDE8:skyrim.esm
+  Female: 03EDE7:skyrim.esm
+TextureSwapList:
+  Male: 07BBB1:skyrim.esm
+  Female: 07BBB2:skyrim.esm
+AdditionalRaces:
+- 013741:skyrim.esm
+- 08883C:skyrim.esm
+- 097A3D:skyrim.esm
+- 00E88A:Dawnguard.esm
+- 03CA97:Dragonborn.esm
+- 013744:skyrim.esm
+- 088844:skyrim.esm
+- 013746:skyrim.esm
+- 088794:skyrim.esm
+- 013747:skyrim.esm
+- 0A82B9:skyrim.esm
+- 013748:skyrim.esm
+- 088846:skyrim.esm

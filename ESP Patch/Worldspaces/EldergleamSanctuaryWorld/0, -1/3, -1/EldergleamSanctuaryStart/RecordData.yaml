@@ -1,0 +1,18 @@
+FormKey: 03A9EC:skyrim.esm
+EditorID: EldergleamSanctuaryStart
+FormVersion: 43
+Version2: 8
+Flags:
+- HasWater
+Grid:
+  Point: 29, -6
+  Flags: 578725632
+WaterHeight: 3.4028235E+38
+Location: 0192AC:skyrim.esm
+AcousticSpace: 01989F:skyrim.esm
+Music: 094BDD:skyrim.esm
+ImageSpace: 0A2687:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 1181485592
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1065353216

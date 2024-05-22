@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 0D92C2:skyrim.esm
+EditorID: _SLP_EntrancePillarOn
+FormVersion: 43
+Version2: 1
+Base: 028A75:skyrim.esm
+EnableParent:
+  Reference: 02B45C:SexLab-Parasites.esp
+  Unknown: 0x000000
+Placement:
+  Position: -31817.979, 89205.34, -13475.477
+  Rotation: -2.6878355, -1.404138, 4.0353475

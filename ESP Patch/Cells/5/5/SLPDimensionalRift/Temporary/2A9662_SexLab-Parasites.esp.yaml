@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 2A9662:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 512
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x200
+Base: 019C93:Dawnguard.esm
+Scale: 0.37
+Placement:
+  Position: 4027.8733, 8378.381, 13024.524
+  Rotation: -1.5066439, -0.7510668, 0.91381055

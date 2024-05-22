@@ -1,0 +1,10 @@
+FormKey: 99AD4E:SexLab-Parasites.esp
+EditorID: _SLP_1stPersonChaurusClaw
+FormVersion: 43
+Model:
+  File: weapons\KyneBlessing\ChaurusQueen\HiddenClaw.nif
+  Data: 0x020000000000000000000000
+MaxAngle: 90
+Unused: '[]'
+DNAMDataTypeState:
+- Break0

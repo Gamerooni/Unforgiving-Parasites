@@ -1,0 +1,52 @@
+MutagenObjectType: PlacedObject
+FormKey: 4D69EF:SexLab-Parasites.esp
+EditorID: _SLP_DwemerTonalDeviceButton
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_DwemerTonalDeviceButton
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunBlackreachDragonQST
+      Object: 080B66:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusQueenInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusQueenRift
+      Object: 648389:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UnrelentingForceSpell
+      Object: 013E09:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DwemerTonalDeviceRef
+      Object: 4C76AF:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DwemerTonalDeviceEffectsRef
+      Object: 4DBAF1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SilentCityOrbShoutTriggerRef
+      Object: 080B2C:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SilentCityOrbRef
+      Object: 0DB9D7:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusQueenDragon
+      Object: 07EAC5:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+Base: 01BA5A:skyrim.esm
+Placement:
+  Position: 985.8682, 10441.469, 3018.5059
+  Rotation: 0, -0, 2.9429219

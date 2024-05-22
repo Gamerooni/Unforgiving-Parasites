@@ -1,0 +1,71 @@
+FormKey: 00DC75:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_CureFaceHugger02a
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_CureFaceHugger02a
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_CureFaceHugger02a
+      FragmentName: Fragment_0
+Flags: {}
+Topic: 00ABD0:SexLab-Parasites.esp
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6C6179
+  Text:
+    TargetLanguage: English
+    Value: These critters are harmless but this one sure looks uncomfortable!
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x180007
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: I can help, if you bring me some fire salts.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x01DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    ItemOrList: 03AD5E:skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x01DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x01DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 00D1A1:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: (Point at the critter around your face)

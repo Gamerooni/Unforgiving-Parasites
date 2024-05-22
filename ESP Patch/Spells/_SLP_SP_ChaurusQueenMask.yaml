@@ -1,0 +1,21 @@
+FormKey: 42A6F5:SexLab-Parasites.esp
+EditorID: _SLP_SP_ChaurusQueenMask
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Chaurus Mask
+MenuDisplayObject: 109AC2:skyrim.esm
+EquipmentType: 025BEE:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoDualCastModification
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 42A6F2:SexLab-Parasites.esp
+  Data:
+    Magnitude: 1
+    Duration: 1

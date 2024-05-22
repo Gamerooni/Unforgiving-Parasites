@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedObject
+FormKey: 485961:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+EditorID: _SLP_DimensionalRiftDoor
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 031897:skyrim.esm
+TeleportDestination:
+  Door: 2A9591:SexLab-Parasites.esp
+  Position: 3887.388, 334.14954, 6933.009
+  Rotation: -0.060000263, -0, 0
+EnableParent:
+  Reference: 485962:SexLab-Parasites.esp
+  Unknown: 0x000000
+Placement:
+  Position: 4164.5054, -5742.102, 271.39902
+  Rotation: 0, -0, 3.1000054

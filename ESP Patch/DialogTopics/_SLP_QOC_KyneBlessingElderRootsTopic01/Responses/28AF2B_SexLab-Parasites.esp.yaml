@@ -1,0 +1,87 @@
+FormKey: 28AF2B:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing272
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing272
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing272
+      FragmentName: Fragment_0
+Flags: {}
+Topic: 22ABE3:SexLab-Parasites.esp
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 6
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: 'Not even a hello for us? This one is rude!! '
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 7
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: But it saved you .. us.. behave now, and hear it out.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 8
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: The Seed Stone? Not a Stone of course... but very much a Seed. Plant it in a fertile womb and so much will grow!
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 9
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: Don't forget to tell it about the vessel. It has to be strong.. stronger than most! or poof! wormfood.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x34DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 270
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x34DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 272
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x34DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 28AF25:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I would like to know more about the Seed Stones and Kyne's Blessing

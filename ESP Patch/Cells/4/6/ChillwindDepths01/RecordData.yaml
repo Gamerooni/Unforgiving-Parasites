@@ -1,0 +1,57 @@
+FormKey: 03E908:skyrim.esm
+EditorID: ChillwindDepths01
+FormVersion: 43
+Version2: 8
+Name:
+  TargetLanguage: English
+  Value: Chillwind Depths
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00213038'
+  DirectionalColor: '#006D9AA7'
+  FogNearColor: '#00234856'
+  FogFar: 7000
+  DirectionalRotationZ: 90
+  FogClipDistance: 7000
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002D3F4E'
+    DirectionalXMinus: '#00243F47'
+    DirectionalYPlus: '#0029414B'
+    DirectionalYMinus: '#00293C4B'
+    DirectionalZPlus: '#00131E21'
+    DirectionalZMinus: '#003E5F74'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00516D7D'
+  FogMax: 0.8
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0ED010:skyrim.esm
+WaterHeight: 0
+Location: 019154:skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveIceCubeMap_e.dds
+SkyAndWeatherFromRegion: 0C5858:skyrim.esm
+AcousticSpace: 01989F:skyrim.esm
+EncounterZone: 03EBFB:skyrim.esm
+Music: 094BDD:skyrim.esm
+ImageSpace: 0B9E1E:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 974963792
+PersistentTimestamp: 31514
+PersistentUnknownGroupData: 1065353216
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1065353216

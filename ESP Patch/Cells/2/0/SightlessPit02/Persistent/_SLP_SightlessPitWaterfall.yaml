@@ -1,0 +1,15 @@
+MutagenObjectType: PlacedObject
+FormKey: 1E8E82:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+EditorID: _SLP_SightlessPitWaterfall
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 031897:skyrim.esm
+TeleportDestination:
+  Door: 1E8E83:SexLab-Parasites.esp
+  Position: 14927.003, 21050.504, 2232.6597
+  Rotation: 0, -0, 3.1000035
+Placement:
+  Position: -7357.9673, -10700.168, 2116.5933
+  Rotation: 1.8, -0, 0

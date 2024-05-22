@@ -1,0 +1,16 @@
+FormKey: 73B45A:SexLab-Parasites.esp
+EditorID: _SLP_GagPreEquipMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: You carefully examine the face covering creature. Fully aware that wearing it would render you unable to communicate properly or take it off again without the right ingredients you decide to...
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Put it on.
+- Text:
+    TargetLanguage: English
+    Value: Put it away.

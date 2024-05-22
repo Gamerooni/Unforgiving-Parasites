@@ -1,0 +1,24 @@
+FormKey: 624C7A:SexLab-Parasites.esp
+FormVersion: 43
+Data:
+  Parent:
+    MutagenObjectType: WorldspaceNavmeshParent
+    Parent: 00003C:skyrim.esm
+    Coordinates: 21, -8
+  Vertices:
+  - -31731.162, 88000.445, -13603.378
+  - -31780.682, 88000.055, -13587.288
+  - -31808, 87936, -13619.226
+  Triangles:
+  - Vertices: 0, 1, 2
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  NavmeshGridDivisor: 1
+  MaxDistanceX: 76.83789
+  MaxDistanceY: 64.44531
+  Min: -31808, 87936, -13619.226
+  Max: -31731.162, 88000.445, -13587.288
+  NavmeshGrid: 0x010000000000

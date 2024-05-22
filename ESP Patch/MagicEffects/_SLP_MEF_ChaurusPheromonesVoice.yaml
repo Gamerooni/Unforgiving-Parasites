@@ -1,0 +1,88 @@
+FormKey: 60156B:SexLab-Parasites.esp
+EditorID: _SLP_MEF_ChaurusPheromonesVoice
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VoiceCharmFactionScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bMakePlayerTeammate
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CharmFaction
+      Object: 09E0C9:skyrim.esm
+  - Name: SLP_MEF_CharmChaurus
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_numCharmChaurus
+      Object: 053CC8:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_SP_SeedCalm
+      Object: 3D45CD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_SP_SeedTrack
+      Object: 3D45C7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFollowerAlias
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_SP_SeedChaurusBreeding
+      Object: 3D45C9:SexLab-Parasites.esp
+Name:
+  TargetLanguage: English
+  Value: Chaurus Pheromones (Voice)
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 078098:skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsDuration
+Unknown1: 65535
+TaperWeight: 1
+HitShader: 10F266:SexLab-Parasites.esp
+SpellmakingArea: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Explosion: 04CBB8:skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+ImageSpaceModifier: 084B37:skyrim.esm
+CastingSoundLevel: VeryLoud
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 86
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 86
+  Data:
+    MutagenObjectType: GetPlayerTeammateConditionData
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 86
+  Data:
+    MutagenObjectType: GetDeadConditionData
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Unknown2: 86
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 01F152:skyrim.esm
+  ComparisonValue: 1

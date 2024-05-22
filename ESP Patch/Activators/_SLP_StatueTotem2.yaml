@@ -1,0 +1,11 @@
+FormKey: 003F8F:SexLab-Parasites.esp
+EditorID: _SLP_StatueTotem2
+FormVersion: 43
+ObjectBounds:
+  First: -13, -17, 0
+  Second: 13, 17, 144
+Model:
+  File: clutter\KyneBlessing\Totem02.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

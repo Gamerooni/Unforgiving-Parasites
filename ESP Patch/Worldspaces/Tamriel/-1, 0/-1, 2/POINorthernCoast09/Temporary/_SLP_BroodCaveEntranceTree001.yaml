@@ -1,0 +1,13 @@
+MutagenObjectType: PlacedObject
+FormKey: 2B8CDB:SexLab-Parasites.esp
+EditorID: _SLP_BroodCaveEntranceTree001
+FormVersion: 43
+Base: 0B8A76:skyrim.esm
+EnableParent:
+  Reference: 02B45C:SexLab-Parasites.esp
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Placement:
+  Position: -31823.629, 89458.12, -13659.635
+  Rotation: 2.76155, -0.64802045, 2.895583

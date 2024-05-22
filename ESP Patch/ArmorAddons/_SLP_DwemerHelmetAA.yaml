@@ -1,0 +1,52 @@
+FormKey: 4BD49C:SexLab-Parasites.esp
+EditorID: _SLP_DwemerHelmetAA
+FormVersion: 43
+BodyTemplate:
+  FirstPersonFlags:
+  - Circlet
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Priority:
+  Male: 10
+  Female: 10
+WeightSliderEnabled:
+  Male: False
+  Female: False
+DetectionSoundValue: 233
+Unknown2: 23
+WorldModel:
+  Male:
+    File: armor\KyneBlessing\DwemerArmor\helmet_circlet.nif
+    Data: 0x020000000000000000000000
+  Female:
+    File: armor\KyneBlessing\DwemerArmor\helmet_circlet.nif
+    Data: 0x020000000000000000000000
+AdditionalRaces:
+- 013740:skyrim.esm
+- 08883A:skyrim.esm
+- 013741:skyrim.esm
+- 08883C:skyrim.esm
+- 097A3D:skyrim.esm
+- 013742:skyrim.esm
+- 08883D:skyrim.esm
+- 00E88A:Dawnguard.esm
+- 03CA97:Dragonborn.esm
+- 067CD8:skyrim.esm
+- 0A82BA:skyrim.esm
+- 013743:skyrim.esm
+- 088840:skyrim.esm
+- 013744:skyrim.esm
+- 088844:skyrim.esm
+- 013745:skyrim.esm
+- 088845:skyrim.esm
+- 10760A:skyrim.esm
+- 013746:skyrim.esm
+- 088794:skyrim.esm
+- 013747:skyrim.esm
+- 0A82B9:skyrim.esm
+- 013748:skyrim.esm
+- 088846:skyrim.esm
+- 00377D:Dawnguard.esm
+- 013749:skyrim.esm
+- 088884:skyrim.esm

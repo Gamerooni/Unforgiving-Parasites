@@ -1,0 +1,52 @@
+FormKey: 015215:skyrim.esm
+EditorID: ShroudedGrove01
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Shrouded Grove Cave
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00162729'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2829'
+    DirectionalXMinus: '#00232826'
+    DirectionalYPlus: '#00282928'
+    DirectionalYMinus: '#00282628'
+    DirectionalZPlus: '#00131312'
+    DirectionalZMinus: '#003C3C3D'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 08E78E:skyrim.esm
+WaterHeight: 0
+Location: 0192A6:skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:skyrim.esm
+AcousticSpace: 02B3AE:skyrim.esm
+EncounterZone: 03EC6D:skyrim.esm
+Music: 05228A:skyrim.esm
+ImageSpace: 089D4E:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 1002876656
+PersistentTimestamp: 31514
+PersistentUnknownGroupData: 1065353216
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1065353216

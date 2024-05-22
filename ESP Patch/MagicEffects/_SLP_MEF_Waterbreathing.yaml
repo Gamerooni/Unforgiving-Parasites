@@ -1,0 +1,22 @@
+FormKey: 4FF213:SexLab-Parasites.esp
+EditorID: _SLP_MEF_Waterbreathing
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Waterbreathing
+MenuDisplayObject: 109AC2:skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- NoHitEffect
+BaseCost: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: WaterBreathing
+DualCastScale: 1
+Description:
+  TargetLanguage: English
+  Value: Can swim underwater without drowning.

@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 2E6609:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+EditorID: _SLP_WhiterunSanctuaryPlayerAltarMarker
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 00003B:skyrim.esm
+Placement:
+  Position: 303.74756, 875.2287, -145.79643

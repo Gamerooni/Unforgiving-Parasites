@@ -1,0 +1,40 @@
+FormKey: 019150:skyrim.esm
+EditorID: _SLP_BroodCavernLocation
+FormVersion: 43
+Version2: 12
+ActorCellStaticReferences:
+- LocationRefType: 0130FC:skyrim.esm
+  Marker: 026158:SexLab-Parasites.esp
+  Location: 026153:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 0130F9:skyrim.esm
+  Marker: 026159:SexLab-Parasites.esp
+  Location: 026153:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 01BDF1:skyrim.esm
+  Marker: 02615A:SexLab-Parasites.esp
+  Location: 026153:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 043569:skyrim.esm
+  Marker: 026169:SexLab-Parasites.esp
+  Location: 026153:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 043566:skyrim.esm
+  Marker: 02616A:SexLab-Parasites.esp
+  Location: 026153:SexLab-Parasites.esp
+  Grid: 32767, 32767
+- LocationRefType: 04356C:skyrim.esm
+  Marker: 02616B:SexLab-Parasites.esp
+  Location: 026153:SexLab-Parasites.esp
+  Grid: 32767, 32767
+Name:
+  TargetLanguage: English
+  Value: Brood Cavern
+Keywords:
+- 0130EF:skyrim.esm
+- 0130DB:skyrim.esm
+- 0130DE:skyrim.esm
+- 0F5E80:skyrim.esm
+ParentLocation: 018EE8:skyrim.esm
+WorldLocationMarkerRef: 01621B:skyrim.esm
+WorldLocationRadius: 0

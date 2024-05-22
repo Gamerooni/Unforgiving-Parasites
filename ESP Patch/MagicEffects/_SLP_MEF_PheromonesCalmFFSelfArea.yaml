@@ -1,0 +1,95 @@
+FormKey: 42F800:SexLab-Parasites.esp
+EditorID: _SLP_MEF_PheromonesCalmFFSelfArea
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatTopicToSay
+      Object: 0E0C9B:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB884:skyrim.esm
+  - Name: VoiceCharmFactionScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bMakePlayerTeammate
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CharmFaction
+      Object: 08F3E8:skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Pheromones Harmony
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 078098:skyrim.esm
+- 0424EE:skyrim.esm
+- 08BB92:skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 4.25
+Unknown1: 29537
+CastingLight: 07331B:skyrim.esm
+TaperWeight: 1
+HitShader: 073321:skyrim.esm
+SpellmakingArea: 250
+SpellmakingCastingTime: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Calm
+Explosion: 0225AF:skyrim.esm
+CastType: FireAndForget
+CastingArt: 0225B0:skyrim.esm
+HitEffectArt: 07331C:skyrim.esm
+ImpactData: 073320:skyrim.esm
+SkillUsageMultiplier: 0.8
+DualCastScale: 1
+EquipAbility: 0225BF:skyrim.esm
+Sounds:
+- Sound: 07BBAB:skyrim.esm
+- Type: Charge
+  Sound: 087588:skyrim.esm
+- Type: Ready
+  Sound: 07C720:skyrim.esm
+- Type: Release
+  Sound: 07BBAE:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Creatures and people up to level <mag> nearby won't fight for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Unknown2: 86
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 01F152:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Unknown2: 86
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 009400:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 86
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 01F21D:skyrim.esm
+  ComparisonValue: 1

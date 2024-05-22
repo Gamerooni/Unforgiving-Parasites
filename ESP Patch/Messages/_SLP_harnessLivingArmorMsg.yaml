@@ -1,0 +1,84 @@
+FormKey: 00860D:SexLab-Parasites.esp
+EditorID: _SLP_harnessLivingArmorMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: After carefully examining the slimy tentacles, you decide to...
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Let them wrap around
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x2ED752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 017C43:Devious Devices - Assets.esm
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x2ED752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 02AFA3:Devious Devices - Assets.esm
+- Text:
+    TargetLanguage: English
+    Value: Apply fire salts to force it out
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Unknown1: 0x2FD752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 03AD5E:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x2FD752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 00603B:SexLab-Parasites.esp
+      Stage: 70
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x2FD752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0085F5:SexLab-Parasites.esp
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Pull it away
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x2ED752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0085F5:SexLab-Parasites.esp
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Unknown1: 0x2ED752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 017C43:Devious Devices - Assets.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Unknown1: 0x2ED752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 02AFA3:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Carry on

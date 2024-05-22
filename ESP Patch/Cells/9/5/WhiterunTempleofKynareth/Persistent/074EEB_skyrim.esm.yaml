@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedObject
+FormKey: 074EEB:skyrim.esm
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+Version2: 13
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 0252C7:skyrim.esm
+TeleportDestination:
+  Door: 052756:skyrim.esm
+  Position: 23241.031, -3403.5884, -2966.383
+  Rotation: 0, -0, -2.3561945
+NavigationDoorLink:
+  NavMesh: 0D4866:skyrim.esm
+  TeleportMarkerTriangle: 72
+LocationReference: 01F87D:skyrim.esm
+Placement:
+  Position: 1106.7827, 255.72108, 130.92542

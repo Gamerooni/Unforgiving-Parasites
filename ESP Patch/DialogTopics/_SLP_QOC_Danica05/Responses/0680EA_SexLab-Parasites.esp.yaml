@@ -1,0 +1,55 @@
+FormKey: 0680EA:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 0680EB:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: Not so loud... more than I can remember.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x6E2774
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206D75
+  Text:
+    TargetLanguage: English
+    Value: It was... a long time ago. I wanted to study the chaurus so much.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: I offered myself to a falmer tribe, in a cave just outside of Whiterun.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x6E2774
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206D75
+  Text:
+    TargetLanguage: English
+    Value: They seemed eager to use a female as receptacle for chaurus eggs. I carried hundreds of eggs to term while I was theirs.
+  ScriptNotes: ''
+  Edits: ''
+Prompt:
+  TargetLanguage: English
+  Value: How many times have you carried eggs for them?

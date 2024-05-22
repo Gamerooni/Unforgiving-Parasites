@@ -1,0 +1,64 @@
+FormKey: 5ED165:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing360a
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing360a
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing360a
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: A5B390:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 5
+  Unknown2: 0x657874
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x776561
+  Text:
+    TargetLanguage: English
+    Value: Beautiful .. Kyne's breath is truly in you.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 6
+  Unknown2: 0x00C300
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x019601
+  Text:
+    TargetLanguage: English
+    Value: Do not delay.. the Elder Roots will want to know about this.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x35DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 355
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x35DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 360
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x35DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I absorbed more powers from a chaurus

@@ -1,0 +1,8 @@
+FormKey: 004A71:SexLab-Parasites.esp
+EditorID: _SLP_QST_ControllerDanicaCure
+FormVersion: 43
+Quest: 000D62:SexLab-Parasites.esp
+Category: Player
+Flags:
+- TopLevel
+StartingTopic: 004A72:SexLab-Parasites.esp

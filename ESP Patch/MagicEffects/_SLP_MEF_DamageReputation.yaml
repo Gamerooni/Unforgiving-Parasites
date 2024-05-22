@@ -1,0 +1,36 @@
+FormKey: 00DC77:SexLab-Parasites.esp
+EditorID: _SLP_MEF_DamageReputation
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Damage Reputation
+MenuDisplayObject: 0435A5:skyrim.esm
+Keywords:
+- 0A9B1F:skyrim.esm
+- 0A9B1E:skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 5
+Unknown1: 26478
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Speech
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:skyrim.esm
+- Type: Charge
+  Sound: 056622:skyrim.esm
+- Type: Ready
+  Sound: 03F363:skyrim.esm
+- Type: Release
+  Sound: 03F361:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Wearing a parasite out in the open doesn't do much for your reputation.

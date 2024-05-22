@@ -1,0 +1,22 @@
+FormKey: 3D96D5:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 3D96D6:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x746572
+  Text:
+    TargetLanguage: English
+    Value: With time maybe... or with help. Let me pray to Kyne for guidance.
+  ScriptNotes: ''
+  Edits: ''
+Prompt:
+  TargetLanguage: English
+  Value: Can I control it?

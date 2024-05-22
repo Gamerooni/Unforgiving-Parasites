@@ -1,0 +1,20 @@
+MutagenObjectType: PlacedObject
+FormKey: 2A9603:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: AudioRepeaterActivator01Script
+    Flags: Inherited
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoundDescriptor
+      Object: 0141F0:Dawnguard.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: delayMax
+      Data: 5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: delayMin
+      Data: 4
+Base: 013F13:Dawnguard.esm
+Placement:
+  Position: 1923.5562, 10653, 11136.378

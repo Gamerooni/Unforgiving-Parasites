@@ -1,0 +1,19 @@
+FormKey: 00D1A8:SexLab-Parasites.esp
+EditorID: _SLP_FaceHuggerGagEnch
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Creepy crawler (face)
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 4FF213:SexLab-Parasites.esp
+  Data:
+    Magnitude: 10
+- BaseEffect: 4FF21B:SexLab-Parasites.esp
+  Data:
+    Magnitude: 500
+- BaseEffect: 00DC77:SexLab-Parasites.esp
+  Data:
+    Magnitude: 100

@@ -1,0 +1,33 @@
+FormKey: 001830:SexLab-Parasites.esp
+EditorID: _SLP_plugParasiteRemoveMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: The parasite is securely attached to you and doesn't move an inch. Unless you want to wait until they hatch you'll just have to...
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: drink a potion
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Unknown1: 0x36D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      RunOnType: Reference
+      Reference: 000014:skyrim.esm
+      ItemOrList: 0EBA02:skyrim.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: cast a spell
+- Text:
+    TargetLanguage: English
+    Value: use brute force
+- Text:
+    TargetLanguage: English
+    Value: leave them on

@@ -1,0 +1,19 @@
+FormKey: 2A4460:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 4
+EditorID: _SLP_SkinGreatChaurus
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- NotPlayable
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 012E82:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 2A445F:SexLab-Parasites.esp
+MajorFlags:
+- NonPlayable

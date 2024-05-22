@@ -1,0 +1,50 @@
+FormKey: A1967E:SexLab-Parasites.esp
+EditorID: _SLP_TestChaurusClaw
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Test Chaurus Claw
+Model:
+  File: weapons\KyneBlessing\ChaurusQueen\HiddenClaw.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F42:skyrim.esm
+BlockBashImpact: 0183FF:skyrim.esm
+AlternateBlockMaterial: 018401:skyrim.esm
+Keywords:
+- 01E713:skyrim.esm
+- 0C27BD:skyrim.esm
+- 08F958:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:skyrim.esm
+FirstPersonModel: 99AD4E:SexLab-Parasites.esp
+AttackFailSound: 03C730:skyrim.esm
+EquipSound: 03C72E:skyrim.esm
+UnequipSound: 03C72F:skyrim.esm
+BasicStats:
+  Value: 144
+  Weight: 4
+  Damage: 10
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0xD19A17
+  Speed: 1.3
+  Reach: 0.7
+  Unused2: 148
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 5
+  Unused: 25
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0xEB1900
+DetectionSoundLevel: Normal

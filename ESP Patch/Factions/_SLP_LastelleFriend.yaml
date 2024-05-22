@@ -1,0 +1,14 @@
+FormKey: 0E1959:SexLab-Parasites.esp
+EditorID: _SLP_LastelleFriend
+FormVersion: 43
+Relations:
+- Target: 000DB1:skyrim.esm
+  Reaction: Friend
+- Target: 03C9A8:skyrim.esm
+  Reaction: Friend
+Flags:
+- HiddenFromPC
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

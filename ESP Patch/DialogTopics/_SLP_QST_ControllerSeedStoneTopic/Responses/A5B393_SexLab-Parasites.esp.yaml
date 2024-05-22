@@ -1,0 +1,94 @@
+FormKey: A5B393:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_Lore19
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_Lore19
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_Lore19
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: I have seen that kind of star shaped stone before.. Falmers seem to be carrying them.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: You can find them sometimes inside Chaurus eggs sacks but it is dangerous to go poking around them.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x61732C
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x506172
+  Text:
+    TargetLanguage: English
+    Value: Talk to Danica PureSpring in Whiterun. She is an expert about the falmers.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x5ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 90
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x5ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 95
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x5ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 305
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x5ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05091C:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x5ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+Prompt:
+  TargetLanguage: English
+  Value: Do you know anything about a star shaped stone and the Falmers?

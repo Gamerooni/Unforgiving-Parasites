@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 8BC101:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+EditorID: _SLP_ChaurusPheromoneLastelleMarker
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 00003B:skyrim.esm
+Placement:
+  Position: -31137.639, 86744.53, -13920

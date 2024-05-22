@@ -1,0 +1,9 @@
+FormKey: 0BF211:skyrim.esm
+EditorID: FavorJobsChopWoodView
+FormVersion: 43
+Quest: 0BF20F:skyrim.esm
+Branches:
+- 0BF212:skyrim.esm
+TNAMs: []
+ENAM: 0x00000000
+DNAM: 0x01

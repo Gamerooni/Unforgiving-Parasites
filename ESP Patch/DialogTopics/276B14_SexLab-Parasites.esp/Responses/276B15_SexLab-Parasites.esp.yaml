@@ -1,0 +1,18 @@
+FormKey: 276B15:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x6E6374
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x6F6C6C
+  Text:
+    TargetLanguage: English
+    Value: '[Points at an object lodged at the base of the glowing roots]'
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 0B8F1E:skyrim.esm

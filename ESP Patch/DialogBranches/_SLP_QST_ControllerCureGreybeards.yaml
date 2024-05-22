@@ -1,0 +1,8 @@
+FormKey: 91732C:SexLab-Parasites.esp
+EditorID: _SLP_QST_ControllerCureGreybeards
+FormVersion: 43
+Quest: 000D62:SexLab-Parasites.esp
+Category: Player
+Flags:
+- TopLevel
+StartingTopic: 91732D:SexLab-Parasites.esp

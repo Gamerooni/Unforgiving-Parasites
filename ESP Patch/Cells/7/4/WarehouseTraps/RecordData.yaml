@@ -1,0 +1,49 @@
+FormKey: 0243DF:skyrim.esm
+EditorID: WarehouseTraps
+FormVersion: 43
+Version2: 14
+Name:
+  TargetLanguage: English
+  Value: Warehouse Traps
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00284359'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00387E69'
+  FogNear: 128
+  FogFar: 2000
+  DirectionalRotationXY: 180
+  DirectionalFade: 1
+  FogClipDistance: 2000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00387E69'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 0300E2:skyrim.esm
+WaterHeight: 0
+Location: 0E9DA7:skyrim.esm
+EncounterZone: 0E9DA8:skyrim.esm
+ImageSpace: 0A2687:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 990788504
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1065353216

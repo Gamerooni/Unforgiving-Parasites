@@ -1,0 +1,45 @@
+FormKey: 03F895:SexLab-Parasites.esp
+FormVersion: 43
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 03F896:SexLab-Parasites.esp
+- 058DCE:SexLab-Parasites.esp
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x53706F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x53706F
+  Text:
+    TargetLanguage: English
+    Value: It looks like she was attacked by a large mudcrab while she was laying her eggs and defended her nest to the very end.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x011201
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x011601
+  Text:
+    TargetLanguage: English
+    Value: Can you help me collect her eggs? They have been scattered around the mound in the shuffle.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x005D00
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x007000
+  Text:
+    TargetLanguage: English
+    Value: I will collect what I can of her fuilds and build an egg sack for her babies.
+  ScriptNotes: ''
+  Edits: ''
+Prompt:
+  TargetLanguage: English
+  Value: What happened?

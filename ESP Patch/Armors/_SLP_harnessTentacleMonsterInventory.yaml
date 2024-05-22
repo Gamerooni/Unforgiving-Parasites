@@ -1,0 +1,176 @@
+FormKey: 006034:SexLab-Parasites.esp
+EditorID: _SLP_harnessTentacleMonsterInventory
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TentacleMonsterScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_OnEquipDeviceMSG
+      Object: 73B44B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_KeyBreakMSG
+      Object: 063011:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_UnEquipFailMsg
+      Object: 083630:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: KeyBreakChance
+      Data: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Lockpick
+      Object: 00000A:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 006034:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: CutDeviceEscapeChance
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceKey
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeStruggleMSG
+      Object: 73B449:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceQuest
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: LockPickEscapeChance
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeCutMSG
+      Object: 063004:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_KeyBreakJamMSG
+      Object: 063012:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviousDevice
+      Object: 017C43:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_RepairLockFailureMSG
+      Object: 06300B:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeCutFailureMSG
+      Object: 063005:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_OnPutOnDevice
+      Object: 73B44F:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeStruggleFailureMSG
+      Object: 73B448:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviceEscapeMsg
+      Object: 73B451:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_OnNoKeyMSG
+      Object: 73B44E:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_OnLeaveItNotWornMSG
+      Object: 73B44C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceRendered
+      Object: 006033:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviceRemoveMsg
+      Object: 001830:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviceMsg
+      Object: 006037:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeCutSuccessMSG
+      Object: 73B445:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_RepairLockMSG
+      Object: 063009:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_EquipConflictFailMsg
+      Object: 73B456:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: BaseEscapeChance
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeLockPickMSG
+      Object: 063001:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeDeviceMSG
+      Object: 73B446:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptBoolProperty
+      Name: DisableLockManipulation
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: LockJamChance
+      Data: 33
+    - MutagenObjectType: ScriptStringProperty
+      Name: deviceName
+      Data: Tentacle Monster
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Aroused
+      Object: 04290F:SexLabAroused.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: JammedLock
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_EquipRequiredFailMsg
+      Object: 08362F:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: CatastrophicFailureChance
+      Data: 100
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_RepairLockNotJammedMSG
+      Object: 063008:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_OnLeaveItWornMSG
+      Object: 73B44D:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_OnNotEnoughKeysMSG
+      Object: 06300E:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeLockPickSuccessMSG
+      Object: 063003:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeLockPickFailureMSG
+      Object: 73B447:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_EscapeStruggleSuccessMSG
+      Object: 73B44A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviceMsgMagic
+      Object: 001831:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_UnlockFailJammedMSG
+      Object: 063007:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DD_RepairLockSuccessMSG
+      Object: 06300A:Devious Devices - Integration.esm
+Name:
+  TargetLanguage: English
+  Value: Tera Anemone Intinere
+WorldModel:
+  Male:
+    Model:
+      File: ZaZ-UltimateDataPack\ZaZ - Furniture\FuroTubReused\AoZaZFuroTents1.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: ZaZ-UltimateDataPack\ZaZ - Furniture\FuroTubReused\AoZaZFuroTents2.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 02F16E:SexLab.esm
+- 0FF9FB:skyrim.esm
+- 0C27BD:skyrim.esm
+- 02B5F0:Devious Devices - Integration.esm
+- 0044FE:SexLab-Parasites.esp
+- 006031:SexLab-Parasites.esp
+- 0429FB:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: Commonly known as the Tentacle Monster, this parasite preys on unsuspecting victims near Chaurus egg sacs.
+Value: 450
+Weight: 1

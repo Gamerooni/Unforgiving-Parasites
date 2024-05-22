@@ -1,0 +1,11 @@
+FormKey: 003F91:SexLab-Parasites.esp
+EditorID: _SLP_StatueGoddess
+FormVersion: 43
+ObjectBounds:
+  First: -35, -32, 0
+  Second: 35, 32, 137
+Model:
+  File: clutter\KyneBlessing\StatueGoddess.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

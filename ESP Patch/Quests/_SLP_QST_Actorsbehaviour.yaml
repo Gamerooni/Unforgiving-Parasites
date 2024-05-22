@@ -1,0 +1,28 @@
+FormKey: ABB6DB:SexLab-Parasites.esp
+EditorID: _SLP_QST_Actorsbehaviour
+FormVersion: 43
+Flags:
+- StartGameEnabled
+- AllowRepeatedStages
+- 0x10
+QuestFormVersion: 77
+Aliases:
+- Name: _SLP_ActorDanica
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDisabled
+  ForcedReference: 01A69F:skyrim.esm
+  PackageData:
+  - ABB6DA:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 1
+  Name: _SLP_ActorGreybeard
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDisabled
+  ForcedReference: 0886B3:skyrim.esm
+  PackageData:
+  - ABB6DC:SexLab-Parasites.esp
+  VoiceTypes: Null

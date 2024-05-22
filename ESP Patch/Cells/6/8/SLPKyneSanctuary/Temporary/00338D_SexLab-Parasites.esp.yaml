@@ -1,0 +1,20 @@
+MutagenObjectType: PlacedNpc
+FormKey: 00338D:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 2560
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x200
+- InitiallyDisabled
+Base: 01E7A0:skyrim.esm
+LevelModifier: Easy
+LinkedReferences:
+- Reference: 00332C:SexLab-Parasites.esp
+LocationReference: 0192AC:skyrim.esm
+LocationRefTypes:
+- 0130F7:skyrim.esm
+Placement:
+  Position: 868.2826, 1386.1018, -905.7812
+  Rotation: 0, -0, 5.6081886
+MajorFlags:
+- StartsDead
+- InitiallyDisabled

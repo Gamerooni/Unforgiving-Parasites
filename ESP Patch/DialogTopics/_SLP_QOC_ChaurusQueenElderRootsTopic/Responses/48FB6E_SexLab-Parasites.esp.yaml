@@ -1,0 +1,107 @@
+FormKey: 48FB6E:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing355
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusSound
+      Object: 05C304:skyrim.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing355
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing355
+      FragmentName: Fragment_1
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing355
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 42A6EF:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 14
+  Unknown2: 0x6F6E64
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x746820
+  Text:
+    TargetLanguage: English
+    Value: 'Yes.. not surprising at all. '
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 15
+  Unknown2: 0x6F6E64
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x746820
+  Text:
+    TargetLanguage: English
+    Value: We have no memory of the Seed before the Dwemers capital city became Silent.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 16
+  Unknown2: 0x6F6E64
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x746820
+  Text:
+    TargetLanguage: English
+    Value: In their hubris, the Dwemers unleashed a cataclysm that turned their empire at the time into Fal'Zhardum Din, the Blackest Kingdom Reaches.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 17
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: Or Blackreach as it is known now.... yes.. yes.. enough with the History lessons. We want to see the Seed at work. Show us please?
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 18
+  Unknown2: 0xE51109
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Take some chaurus eggs and show us the full effect!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 350
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 355
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4ADE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 28AF25:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I tried the Seed with a Chaurus and it worked

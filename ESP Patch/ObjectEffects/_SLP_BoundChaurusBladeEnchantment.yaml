@@ -1,0 +1,16 @@
+FormKey: 99AD51:SexLab-Parasites.esp
+EditorID: _SLP_BoundChaurusBladeEnchantment
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Bound Chaurus Blade FX
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 06F6FC:skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 1

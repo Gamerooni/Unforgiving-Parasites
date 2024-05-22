@@ -1,0 +1,45 @@
+MutagenObjectType: PlacedObject
+FormKey: 24E300:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 536871936
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+- 0x20000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TRG_WhiterunSantuarySource
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunSancturaryCorruptionActivator
+      Object: 25850B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Nettlebane
+      Object: 01C492:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunSancturaryCorruptionMarker
+      Object: 24E2F6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CorruptionOffSpell
+      Object: 0E0CCF:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DanicaPureSpring
+      Object: 01A69F:skyrim.esm
+  - Name: defaultDisableHavokOnLoad
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: havokOnHit
+    - MutagenObjectType: ScriptBoolProperty
+      Name: havokOnActivate
+Base: 0F5D0A:skyrim.esm
+EnableParent:
+  Reference: 24E2F6:SexLab-Parasites.esp
+  Unknown: 0xDB1900
+Placement:
+  Position: 69.19041, 1256.8612, -48.360516
+  Rotation: 0.33904663, -0.5050411, 1.7117493

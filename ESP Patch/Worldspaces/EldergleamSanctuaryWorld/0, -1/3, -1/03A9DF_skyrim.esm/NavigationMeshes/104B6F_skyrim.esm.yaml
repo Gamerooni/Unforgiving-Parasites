@@ -1,0 +1,44 @@
+FormKey: 104B6F:skyrim.esm
+FormVersion: 43
+Version2: 3
+Data:
+  Parent:
+    MutagenObjectType: WorldspaceNavmeshParent
+    Parent: 03A9D6:skyrim.esm
+    Coordinates: -5, 29
+  Vertices:
+  - 122730.78, -16450.355, -1489.7894
+  - 122623.72, -16384, -1463.9297
+  - 122581.11, -16439.242, -1454.8218
+  - 122713.336, -16384, -1475.2148
+  - 122520.07, -16384, -1425.1897
+  Triangles:
+  - Vertices: 0, 1, 2
+    EdgeLink_0_1: 1
+    EdgeLink_1_2: 2
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 1, 0, 3
+    EdgeLink_1_2: -1
+    Flags:
+    - EdgeLink_2_0
+    - Found
+  - Vertices: 1, 4, 2
+    EdgeLink_0_1: 1
+    EdgeLink_1_2: -1
+    Flags:
+    - EdgeLink_0_1
+    - Found
+    CoverFlags: 16640
+    IsCover: True
+  EdgeLinks:
+  - Mesh: 082A00:skyrim.esm
+  - Mesh: 082A00:skyrim.esm
+    TriangleIndex: 11
+  NavmeshGridDivisor: 1
+  MaxDistanceX: 210.71094
+  MaxDistanceY: 66.35547
+  Min: 122520.07, -16450.355, -1489.7894
+  Max: 122730.78, -16384, -1425.1897
+  NavmeshGrid: 0x03000000000001000200

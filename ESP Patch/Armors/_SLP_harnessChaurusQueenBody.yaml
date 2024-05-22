@@ -1,0 +1,47 @@
+FormKey: 2BDDE7:SexLab-Parasites.esp
+EditorID: _SLP_harnessChaurusQueenBody
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Chaurus Queen Body
+ObjectEffect: 0B7A30:skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\harnessBarnacles\parasH_1.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Hands
+  - Forearms
+  - Feet
+  - Calves
+  - 0x20000
+  - 0x10000000
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 0044FE:SexLab-Parasites.esp
+- 0FF9FB:skyrim.esm
+- 02F16E:SexLab.esm
+- 0429FB:Devious Devices - Integration.esm
+- 2BDDE4:SexLab-Parasites.esp
+- 0A9B1F:skyrim.esm
+- 3CA3C1:SexLab-Parasites.esp
+- 0C27BD:skyrim.esm
+- 017C43:Devious Devices - Assets.esm
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: Thick protective chitin scales growing around your body.
+Armature:
+- 2A444E:SexLab-Parasites.esp
+- 2A444D:SexLab-Parasites.esp
+- 2A444C:SexLab-Parasites.esp
+- 34BA2E:SexLab-Parasites.esp
+Value: 450
+Weight: 5
+ArmorRating: 50

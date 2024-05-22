@@ -1,0 +1,11 @@
+FormKey: 003F90:SexLab-Parasites.esp
+EditorID: _SLP_StatueTree
+FormVersion: 43
+ObjectBounds:
+  First: -430, -339, -21
+  Second: 441, 174, 446
+Model:
+  File: clutter\KyneBlessing\treeheart.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

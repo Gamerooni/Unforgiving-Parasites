@@ -1,0 +1,84 @@
+FormKey: 192CF2:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_LastelleTasks70a
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CaveChaurusRef
+      Object: 17E8E9:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_LastelleTasks70a
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_LastelleTasks70a
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 0680ED:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x505F54
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x737465
+  Text:
+    TargetLanguage: English
+    Value: I feel at home now.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x652075
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206974
+  Text:
+    TargetLanguage: English
+    Value: My only wish is to produce eggs myself... but I know I can't. And I can't go out and save more eggs when I have these babies to care for right here.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 5
+  Unknown2: 0x65636F
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x672061
+  Text:
+    TargetLanguage: English
+    Value: Can you help me save more babies? If you come across more Chaurus eggs in your travels, can you harvest the nests and bring them back to me?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEDDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 70
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEDDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 71
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xEDDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01BF34:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: How are you feeling?

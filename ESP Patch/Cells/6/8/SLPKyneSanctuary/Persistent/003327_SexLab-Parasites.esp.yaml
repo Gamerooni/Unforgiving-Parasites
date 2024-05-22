@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedObject
+FormKey: 003327:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 031897:skyrim.esm
+TeleportDestination:
+  Door: 234DED:SexLab-Parasites.esp
+  Position: -576.6797, 100.58156, 60.328537
+  Rotation: 0, -0, -0.041592207
+NavigationDoorLink:
+  NavMesh: 00331F:SexLab-Parasites.esp
+  TeleportMarkerTriangle: 237
+Placement:
+  Position: 259.94727, -1605.0281, 449.75037
+  Rotation: 0, -0, 3.1415927

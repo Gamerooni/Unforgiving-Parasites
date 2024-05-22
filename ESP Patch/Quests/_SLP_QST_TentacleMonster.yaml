@@ -1,0 +1,205 @@
+FormKey: 6F462E:SexLab-Parasites.esp
+EditorID: _SLP_QST_TentacleMonster
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_QST_TentacleMonster
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_TargetCityAlias
+      Object: 6F462E:SexLab-Parasites.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_TargetTownAlias
+      Object: 6F462E:SexLab-Parasites.esp
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_TargetInnAlias
+      Object: 6F462E:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias__SLP_TargetSettlementAlias
+      Object: 6F462E:SexLab-Parasites.esp
+      Alias: 5
+  FileName: SLP_QST_TentacleMonster
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SLP_QST_TentacleMonster
+    FragmentName: Fragment_4
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SLP_QST_TentacleMonster
+    FragmentName: Fragment_6
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: SLP_QST_TentacleMonster
+    FragmentName: Fragment_7
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SLP_QST_TentacleMonster
+    FragmentName: Fragment_0
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SLP_QST_TentacleMonster
+    FragmentName: Fragment_2
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SLP_QST_TentacleMonster
+    FragmentName: Fragment_5
+Name:
+  TargetLanguage: English
+  Value: Listen to the voices and Obey
+Flags:
+- AllowRepeatedStages
+QuestFormVersion: 72
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x4E414D
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 006031:SexLab-Parasites.esp
+  ComparisonValue: 1
+Stages:
+- Index: 5
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 30
+  LogEntries:
+  - Flags: []
+- Index: 40
+  LogEntries:
+  - Flags: []
+- Index: 50
+  LogEntries:
+  - Flags: []
+- Index: 100
+  Flags:
+  - ShutDownStage
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Seduce a woman in <Alias=_SLP_TargetTownAlias>
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Offer a drink to a woman in <Alias=_SLP_TargetInnAlias>
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring the tentacles to a woman in <Alias=_SLP_TargetCityAlias>
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Charm a woman in <Alias=_SLP_TargetSettlementAlias>
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: The slimy creature inserts itself into a new host
+Aliases:
+- ID: 3
+  Type: Location
+  Name: _SLP_TargetInnAlias
+  Flags:
+  - AllowReuseInQuest
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 01CB87:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 10F63C:skyrim.esm
+    ComparisonValue: 1
+- ID: 5
+  Type: Location
+  Name: _SLP_TargetSettlementAlias
+  Flags:
+  - AllowReuseInQuest
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 013167:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 10F63C:skyrim.esm
+    ComparisonValue: 1
+- ID: 1
+  Type: Location
+  Name: _SLP_TargetTownAlias
+  Flags:
+  - AllowReuseInQuest
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 013166:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 10F63C:skyrim.esm
+    ComparisonValue: 1
+- ID: 4
+  Type: Location
+  Name: _SLP_TargetCityAlias
+  Flags:
+  - AllowReuseInQuest
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 013168:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 21085
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 10F63C:skyrim.esm
+    ComparisonValue: 1

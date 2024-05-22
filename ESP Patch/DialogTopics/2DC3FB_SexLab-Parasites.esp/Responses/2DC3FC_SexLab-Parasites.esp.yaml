@@ -1,0 +1,68 @@
+FormKey: 2DC3FC:SexLab-Parasites.esp
+FormVersion: 43
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x00803F
+  Text:
+    TargetLanguage: English
+    Value: '[Coats the seed stone with glowing mushrooms and Crimsom Nirnroot, and starts praying]'
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 06F300:skyrim.esm
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: Elders of the the Grove. Guardians of Kyne. Hear my prayer.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 06F300:skyrim.esm
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x746572
+  Text:
+    TargetLanguage: English
+    Value: 'You are many and you are one, all attached at the root, and we, too, are joined to that root. '
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 06F300:skyrim.esm
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x617469
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x746572
+  Text:
+    TargetLanguage: English
+    Value: "We walk in Kyne's name, to see the world where you cannot walk. "
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 06F300:skyrim.esm
+- EmotionValue: 50
+  ResponseNumber: 5
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: You call us or send us away. When we are named, we take of your Seed, and we are changed.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 06F300:skyrim.esm

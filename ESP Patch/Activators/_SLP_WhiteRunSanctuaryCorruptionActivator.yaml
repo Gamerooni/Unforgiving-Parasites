@@ -1,0 +1,8 @@
+FormKey: 25850A:SexLab-Parasites.esp
+EditorID: _SLP_WhiteRunSanctuaryCorruptionActivator
+FormVersion: 43
+ObjectBounds:
+  First: -64, -64, -64
+  Second: 64, 64, 64
+MarkerColor: '#00CC4C33'
+Flags: []

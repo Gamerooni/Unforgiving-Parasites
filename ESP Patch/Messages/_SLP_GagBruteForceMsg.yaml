@@ -1,0 +1,13 @@
+FormKey: 73B457:SexLab-Parasites.esp
+EditorID: _SLP_GagBruteForceMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: You desperately tug at the creature around your head with all your strength and let out a frustrated groan once you realize that your efforts are in vain.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Give up

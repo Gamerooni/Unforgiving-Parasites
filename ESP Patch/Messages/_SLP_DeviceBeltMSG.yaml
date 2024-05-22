@@ -1,0 +1,75 @@
+FormKey: 73B450:SexLab-Parasites.esp
+EditorID: _SLP_DeviceBeltMSG
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: The creature locks tightly around a woman's hips and crotch, completely preventing access to her private parts. Its grip is tight and cannot be released without the proper ingredients, making her helpless and vulnerable. This parasite is very lively and may cause extreme arousal.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Insert it
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0x31D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Unlock
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x32D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Pry it open
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x31D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Tug
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x33D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x33D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 05226C:Devious Devices - Integration.esm
+- Text:
+    TargetLanguage: English
+    Value: Masturbate
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x33D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 003330:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Carry on

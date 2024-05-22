@@ -1,0 +1,37 @@
+FormKey: 80ADAB:SexLab-Parasites.esp
+EditorID: _SLP_gagSpriggan
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Spriggan Mask
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\gagSpriggan\SprigganHusk.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: armor\KyneBlessing\gagSpriggan\SprigganHusk.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - 0x4000
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 0044FE:SexLab-Parasites.esp
+- 0FF9FB:skyrim.esm
+- 0429FB:Devious Devices - Integration.esm
+- 02F16E:SexLab.esm
+- 80ADA7:SexLab-Parasites.esp
+- 80ADA6:SexLab-Parasites.esp
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: Spriggan fungal growth on the face.
+Armature:
+- 2A4454:SexLab-Parasites.esp
+Value: 50
+Weight: 1

@@ -1,0 +1,94 @@
+FormKey: 04EBBC:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_LastelleTasks59
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFollowerLastelleAlias
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFollowerAlias
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_ChaurusStudWithLastelle
+      Object: 062FD1:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_LastelleTasks59
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_LastelleTasks59
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 04EBBB:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0xF80100
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000C00
+  Text:
+    TargetLanguage: English
+    Value: Wonderful!The eggs feel already so wonderful inside me.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x652075
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x206974
+  Text:
+    TargetLanguage: English
+    Value: I can't wait to have him fertilize them! It will be so glorious to be surrounded with little ones.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xECDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 062FD1:SexLab-Parasites.esp
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xECDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnType: QuestAlias
+    Unknown3: 3
+    Race: 0131EB:skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xECDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 50
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xECDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 59
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xECDD52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01BF34:SexLab-Parasites.esp
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I found the chaurus male you wanted

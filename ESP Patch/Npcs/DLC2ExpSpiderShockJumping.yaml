@@ -1,0 +1,188 @@
+FormKey: 01DFED:Dragonborn.esm
+EditorID: DLC2ExpSpiderShockJumping
+FormVersion: 43
+Version2: 9
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2EncExplodingSpiderSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageShock
+      Object: 01CEAF:skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: iElementalResist
+      Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderCrumbleExplosion
+      Object: 02096C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion4
+      Object: 0285E6:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFrost
+      Object: 01CEAE:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion1
+      Object: 0285E3:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion5
+      Object: 0285E7:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion6
+      Object: 0285E8:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion3
+      Object: 0285E5:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFire
+      Object: 01CEAD:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion2
+      Object: 0285E4:Dragonborn.esm
+  - Name: DLC2EncExpSpiderGenericControlSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderQuest
+      Object: 017962:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderFriendFaction
+      Object: 017964:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderCrumbleExplosion
+      Object: 02096C:Dragonborn.esm
+ObjectBounds:
+  First: -47, -67, 0
+  Second: 47, 67, 89
+Configuration:
+  Flags:
+  - AutoCalcStats
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 1
+  SpeedMultiplier: 150
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - AIPackages
+  - Inventory
+  - DefPackList
+  - AttackData
+Factions:
+- Faction: 017960:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 02997F:skyrim.esm
+  Fluff: 0x000000
+- Faction: 95903C:SexLab-Parasites.esp
+  Fluff: 0x000000
+Voice: 01F21D:skyrim.esm
+Template: 014490:Dragonborn.esm
+Race: 014449:Dragonborn.esm
+ActorEffect:
+- 026D90:Dragonborn.esm
+- 032794:Dragonborn.esm
+WornArmor: 01DFEE:Dragonborn.esm
+AttackRace: 014449:Dragonborn.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Keywords:
+- 000EDF:skyrim.esm
+Class: 044CCB:skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Jumping Shock Spider
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1
+  Magicka: 4
+  Stamina: 25
+  Unused: 19973
+  GearedUpWeapons: 1
+  Unused2: 0xEB5400
+CombatStyle: 014448:Dragonborn.esm
+NAM5: 255
+Height: 0.8
+Weight: 20
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 038A33:skyrim.esm
+DefaultOutfit: 053900:skyrim.esm
+DefaultPackageList: 0EB249:skyrim.esm
+TextureLighting: '#00808080'

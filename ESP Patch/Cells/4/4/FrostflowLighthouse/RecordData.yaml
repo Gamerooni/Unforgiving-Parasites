@@ -1,0 +1,52 @@
+FormKey: 015274:skyrim.esm
+EditorID: FrostflowLighthouse
+FormVersion: 43
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Frostflow Lighthouse
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00282417'
+  DirectionalColor: '#001B2836'
+  FogNearColor: '#004A5559'
+  FogNear: 4000
+  FogFar: 12000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#00343A61'
+    DirectionalZMinus: '#00353D60'
+    Specular: '#00698189'
+    Scale: 1
+  FogFarColor: '#00698189'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0195D3:skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019186:skyrim.esm
+AcousticSpace: 04075D:skyrim.esm
+EncounterZone: 03EC24:skyrim.esm
+Music: 05228A:skyrim.esm
+ImageSpace: 0A2687:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 961801976
+PersistentTimestamp: 31514
+PersistentUnknownGroupData: 1065353216

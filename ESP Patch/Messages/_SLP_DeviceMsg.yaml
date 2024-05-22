@@ -1,0 +1,22 @@
+FormKey: 73B454:SexLab-Parasites.esp
+EditorID: _SLP_DeviceMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: After carefully examining the creature you decide to...
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Insert it
+- Text:
+    TargetLanguage: English
+    Value: Pull it
+- Text:
+    TargetLanguage: English
+    Value: Try to tug at it
+- Text:
+    TargetLanguage: English
+    Value: Carry on

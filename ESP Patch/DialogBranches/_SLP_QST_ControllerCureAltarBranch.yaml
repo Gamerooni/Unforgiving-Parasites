@@ -1,0 +1,8 @@
+FormKey: 8989E5:SexLab-Parasites.esp
+EditorID: _SLP_QST_ControllerCureAltarBranch
+FormVersion: 43
+Quest: 000D62:SexLab-Parasites.esp
+Category: Player
+Flags:
+- TopLevel
+StartingTopic: 8989E6:SexLab-Parasites.esp

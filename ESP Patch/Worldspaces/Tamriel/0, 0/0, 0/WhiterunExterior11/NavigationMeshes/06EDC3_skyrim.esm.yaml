@@ -1,0 +1,259 @@
+FormKey: 06EDC3:skyrim.esm
+FormVersion: 43
+Version2: 13
+Data:
+  Parent:
+    MutagenObjectType: WorldspaceNavmeshParent
+    Parent: 00003C:skyrim.esm
+    Coordinates: 0, 6
+  Vertices:
+  - 26880, 4096, -2160
+  - 26880, 3712, -2168
+  - 26496, 3840, -2251.912
+  - 27264, 4096, -2016
+  - 27392, 3968, -1973.2012
+  - 26368, 3968, -2324.3584
+  - 27008, 4096, -2088
+  - 26496, 3712, -2247.1572
+  - 26880, 3584, -2113.9346
+  - 27390.627, 4096, -1959.4926
+  - 27324.508, 4096, -1988.9982
+  - 26880, 3456, -2098.211
+  - 27136, 3968, -2032
+  - 27008, 3712, -2104
+  - 26624, 3840, -2171.7031
+  - 27008, 3584, -2120
+  - 26752, 3968, -2142.8936
+  - 26624, 3712, -2132.837
+  - 27520, 4096, -1901.7588
+  - 26624, 3456, -2047.9414
+  - 26752, 3840, -2160.3838
+  - 26496, 3968, -2207.204
+  - 26496, 3584, -2119.3936
+  - 26368, 3840, -2357.6162
+  - 26368, 3712, -2285.6992
+  - 26709.334, 3456, -2064.698
+  - 27072, 4032, -2060
+  Triangles:
+  - Vertices: 25, 11, 8
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 7
+    EdgeLink_2_0: 29
+    Flags:
+    - Found
+    CoverFlags: 16399
+    IsCover: True
+  - Vertices: 20, 0, 16
+    EdgeLink_0_1: 5
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 2
+    Flags:
+    - Found
+    CoverFlags: 16512
+    IsCover: True
+  - Vertices: 16, 14, 20
+    EdgeLink_0_1: 14
+    EdgeLink_1_2: 22
+    EdgeLink_2_0: 1
+    Flags:
+    - Found
+  - Vertices: 4, 3, 12
+    EdgeLink_0_1: 9
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 19
+    Flags:
+    - Found
+    CoverFlags: 17664
+    IsCover: True
+  - Vertices: 10, 4, 9
+    EdgeLink_0_1: 9
+    EdgeLink_1_2: 25
+    Flags:
+    - EdgeLink_2_0
+    - Found
+  - Vertices: 0, 20, 1
+    EdgeLink_0_1: 1
+    EdgeLink_1_2: 6
+    EdgeLink_2_0: 15
+    Flags:
+    - Found
+  - Vertices: 20, 17, 1
+    EdgeLink_0_1: 22
+    EdgeLink_1_2: 8
+    EdgeLink_2_0: 5
+    Flags:
+    - Found
+  - Vertices: 11, 15, 8
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 17
+    Flags:
+    - Found
+    CoverFlags: 16399
+    IsCover: True
+  - Vertices: 17, 8, 1
+    EdgeLink_0_1: 26
+    EdgeLink_1_2: 27
+    EdgeLink_2_0: 6
+    Flags:
+    - Found
+  - Vertices: 3, 4, 10
+    EdgeLink_0_1: 3
+    EdgeLink_1_2: 4
+    EdgeLink_2_0: 1
+    Flags:
+    - EdgeLink_2_0
+    - Found
+  - Vertices: 26, 6, 13
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 21
+    EdgeLink_2_0: 30
+    Flags:
+    - Found
+    CoverFlags: 16392
+    IsCover: True
+  - Vertices: 17, 22, 19
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 26
+    Flags:
+    - Found
+    CoverFlags: 16930
+    IsCover: True
+  - Vertices: 7, 14, 2
+    EdgeLink_0_1: 18
+    EdgeLink_1_2: 16
+    EdgeLink_2_0: 13
+    Flags:
+    - Found
+  - Vertices: 2, 24, 7
+    EdgeLink_0_1: 28
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 12
+    Flags:
+    - Found
+  - Vertices: 14, 16, 21
+    EdgeLink_0_1: 2
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 16
+    Flags:
+    - Found
+    CoverFlags: 16512
+    IsCover: True
+  - Vertices: 1, 13, 0
+    EdgeLink_0_1: 27
+    EdgeLink_1_2: 21
+    EdgeLink_2_0: 5
+    Flags:
+    - Found
+  - Vertices: 2, 14, 21
+    EdgeLink_0_1: 12
+    EdgeLink_1_2: 14
+    EdgeLink_2_0: 23
+    Flags:
+    - Found
+  - Vertices: 15, 13, 8
+    EdgeLink_0_1: 24
+    EdgeLink_1_2: 27
+    EdgeLink_2_0: 7
+    Flags:
+    - Found
+  - Vertices: 14, 7, 17
+    EdgeLink_0_1: 12
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 22
+    Flags:
+    - Found
+  - Vertices: 12, 13, 4
+    EdgeLink_0_1: 30
+    EdgeLink_1_2: 24
+    EdgeLink_2_0: 3
+    Flags:
+    - Found
+  - Vertices: 2, 5, 23
+    EdgeLink_0_1: 23
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 28
+    Flags:
+    - Found
+  - Vertices: 13, 6, 0
+    EdgeLink_0_1: 10
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 15
+    Flags:
+    - Found
+  - Vertices: 17, 20, 14
+    EdgeLink_0_1: 6
+    EdgeLink_1_2: 2
+    EdgeLink_2_0: 18
+    Flags:
+    - Found
+  - Vertices: 2, 21, 5
+    EdgeLink_0_1: 16
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 20
+    Flags:
+    - Found
+    CoverFlags: 16512
+    IsCover: True
+  - Vertices: 13, 15, 4
+    EdgeLink_0_1: 17
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 19
+    Flags:
+    - Found
+    CoverFlags: 17344
+    IsCover: True
+  - Vertices: 9, 4, 18
+    EdgeLink_0_1: 4
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 2
+    Flags:
+    - EdgeLink_2_0
+    - Found
+    CoverFlags: 17344
+    IsCover: True
+  - Vertices: 8, 17, 19
+    EdgeLink_0_1: 8
+    EdgeLink_1_2: 11
+    EdgeLink_2_0: 29
+    Flags:
+    - Found
+  - Vertices: 13, 1, 8
+    EdgeLink_0_1: 15
+    EdgeLink_1_2: 8
+    EdgeLink_2_0: 17
+    Flags:
+    - Found
+  - Vertices: 24, 2, 23
+    EdgeLink_0_1: 13
+    EdgeLink_1_2: 20
+    EdgeLink_2_0: -1
+    Flags:
+    - Found
+  - Vertices: 8, 19, 25
+    EdgeLink_0_1: 26
+    EdgeLink_1_2: -1
+    Flags:
+    - Found
+    CoverFlags: 16384
+  - Vertices: 13, 12, 26
+    EdgeLink_0_1: 19
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 10
+    Flags:
+    - Found
+    CoverFlags: 18880
+    IsCover: True
+  EdgeLinks:
+  - Mesh: 0E93BA:skyrim.esm
+    TriangleIndex: 1
+  - Mesh: 0E93BA:skyrim.esm
+    TriangleIndex: 59
+  - Mesh: 0E93BA:skyrim.esm
+    TriangleIndex: 66
+  NavmeshGridDivisor: 2
+  MaxDistanceX: 576
+  MaxDistanceY: 320
+  Min: 26368, 3456, -2357.6162
+  Max: 27520, 4096, -1901.7588
+  NavmeshGrid: 0x10000000000005000600070008000B000C000D000F001100120016001A001B001C001D000900000007000A000F0011001300150018001B001E000F00000001000200050006000C000D000E000F001000120014001500160017001C000A0000000300040009000A000F0013001500180019001E00

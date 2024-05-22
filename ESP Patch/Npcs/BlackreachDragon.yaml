@@ -1,0 +1,171 @@
+FormKey: 07EAC7:skyrim.esm
+EditorID: BlackreachDragon
+FormVersion: 43
+Version2: 7
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_ChaurusQueenEnd
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DimensionalRiftRef
+      Object: 485962:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusBody
+      Object: 42A6F7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+ObjectBounds:
+  First: -320, -352, 0
+  Second: 320, 352, 384
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - BleedoutOverride
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 50
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - AIData
+  - ModelAnimation
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 2000
+Factions:
+- Faction: 000013:skyrim.esm
+  Fluff: 0x000000
+- Faction: 032D9C:skyrim.esm
+  Fluff: 0x000000
+- Faction: 796674:SexLab-Parasites.esp
+  Fluff: 0x000000
+DeathItem: 4E0BFC:SexLab-Parasites.esp
+Voice: 01F152:skyrim.esm
+Template: 0F811C:skyrim.esm
+Race: 4E0BFB:SexLab-Parasites.esp
+ActorEffect:
+- 057B4B:skyrim.esm
+- 009D3C:Dawnguard.esm
+- 053474:skyrim.esm
+- 1093B2:skyrim.esm
+- 0252C0:skyrim.esm
+- 04DBA5:skyrim.esm
+FarAwayModel: 040731:skyrim.esm
+AttackRace: 012E82:skyrim.esm
+Items:
+- Item:
+    Item: 4E0BFD:SexLab-Parasites.esp
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 02F201:skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Vulthuryol
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 100
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 3071
+  Magicka: 150
+  Stamina: 264
+  Unused: 13805
+  FarAwayModelDistance: 10000
+  GearedUpWeapons: 1
+  Unused2: 0xEB5400
+CombatStyle: 048C83:skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 02F2F0:skyrim.esm
+DefaultOutfit: 10E3C6:skyrim.esm
+SleepingOutfit: 10E3C6:skyrim.esm
+DefaultPackageList: 09C21B:skyrim.esm
+TextureLighting: '#00808080'

@@ -1,0 +1,34 @@
+FormKey: 2DC3FA:SexLab-Parasites.esp
+EditorID: _SLP_PKG_DanicaPraySanctuaryAltar
+FormVersion: 43
+Flags:
+- UnlockDoorsAtPackageStart
+- UnlockDoorsAtPackageEnd
+Type: Package
+PreferredSpeed: Run
+Unknown: 67
+ScheduleMonth: -1
+ScheduleDayOfWeek: 255
+ScheduleHour: -1
+ScheduleMinute: -1
+Unknown3: 0x000000
+PackageTemplate: 0283F0:skyrim.esm
+DataInputVersion: 1
+Data:
+- Key: 1
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 004A7F:SexLab-Parasites.esp
+XnamMarker: 0x02
+OnBegin:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnEnd:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnChange:
+  Topics:
+  - MutagenObjectType: TopicReference

@@ -1,0 +1,79 @@
+FormKey: 1B642D:SexLab-Parasites.esp
+EditorID: _SLP_SpiderPheromonesPotion
+FormVersion: 43
+ObjectBounds:
+  First: -3, -3, 0
+  Second: 3, 3, 15
+Name:
+  TargetLanguage: English
+  Value: Spider Pheromones
+Keywords:
+- 08CDEC:skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonDamageHealth01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:skyrim.esm
+PutDownSound: 03EDC0:skyrim.esm
+Weight: 0.5
+Value: 500
+Flags:
+- NoAutoCalc
+ConsumeSound: 0B6435:skyrim.esm
+Effects:
+- BaseEffect: 1B642A:SexLab-Parasites.esp
+  Data:
+    Magnitude: 100
+    Area: 200
+    Duration: 600
+- BaseEffect: 07E8DC:skyrim.esm
+  Data:
+    Magnitude: 100
+    Area: 250
+    Duration: 600
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 02997F:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 01397A:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013796:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 035D59:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013797:skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0xD92B01
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:skyrim.esm
+- BaseEffect: 09E0BD:skyrim.esm
+  Data:
+    Magnitude: 100
+    Area: 250
+    Duration: 3600
+- BaseEffect: 109D12:skyrim.esm
+  Data: {}

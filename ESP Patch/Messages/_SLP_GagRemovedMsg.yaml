@@ -1,0 +1,9 @@
+FormKey: 73B45B:SexLab-Parasites.esp
+EditorID: _SLP_GagRemovedMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: After fiddling around a bit with the creatures extremities, you finally manage to coax it to let you go. You pull the mouth piece out from between your lips and wipe away the drool on your chin, relieved to be able to speak again.
+INAM: 0x00000000
+Flags:
+- MessageBox

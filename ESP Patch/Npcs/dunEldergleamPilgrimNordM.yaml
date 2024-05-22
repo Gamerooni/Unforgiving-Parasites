@@ -1,0 +1,172 @@
+FormKey: 015CC4:skyrim.esm
+EditorID: dunEldergleamPilgrimNordM
+FormVersion: 43
+Version2: 10
+Configuration:
+  Flags:
+  - AutoCalcStats
+  MagickaOffset: -25
+  StaminaOffset: -25
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 0.5
+  CalcMinLevel: 5
+  CalcMaxLevel: 15
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - SpellList
+  - AIPackages
+  - ModelAnimation
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: -15
+Factions:
+- Faction: 01FC74:skyrim.esm
+  Fluff: 0x000000
+- Faction: 0522B6:skyrim.esm
+  Fluff: 0x000000
+- Faction: 0D86C8:skyrim.esm
+  Fluff: 0x000000
+Voice: 013AE6:skyrim.esm
+Template: 073FBE:skyrim.esm
+Race: 013746:skyrim.esm
+Items:
+- Item:
+    Item: 00000F:skyrim.esm
+    Count: 6
+- Item:
+    Item: 0165C5:skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C2B:skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Class: 01CE17:skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Sond
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 28
+  - Key: TwoHanded
+    Value: 34
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 26
+  - Key: Smithing
+    Value: 20
+  - Key: HeavyArmor
+    Value: 18
+  - Key: LightArmor
+    Value: 26
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 20
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 79
+  Magicka: 25
+  Stamina: 41
+  GearedUpWeapons: 1
+  Unused2: 0xA77E22
+HeadParts:
+- 05140E:skyrim.esm
+HairColor: 0A042C:skyrim.esm
+CombatStyle: 03BE1B:skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 11E5A5:SexLab-Parasites.esp
+DefaultPackageList: 021E81:skyrim.esm
+CrimeFaction: 0522B6:skyrim.esm
+TextureLighting: '#00A7867A'
+TintLayers:
+- Index: 1
+  Color: '#00A7867A'
+  InterpolationValue: 1
+  Preset: 77
+- Index: 3
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: 98
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 103
+- Index: 10
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 135
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 138
+- Index: 12
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 143

@@ -1,0 +1,61 @@
+FormKey: 45D11A:SexLab-Parasites.esp
+EditorID: _SLP_MEF_PheromonesCallFFSelfArea
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_MEF_SeedSpawnCall
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SummonSoundFX
+      Object: 471534:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteChaurusQueen
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusQueenSpawnFaction
+      Object: 796673:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: arPortalFX
+      Object: 0EBEB5:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pocketDimensionRef
+      Object: 452F14:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+Name:
+  TargetLanguage: English
+  Value: Pheromones Call Brood
+MenuDisplayObject: 0435A5:skyrim.esm
+Flags:
+- PowerAffectsMagnitude
+- Painless
+CastingLight: 07331B:skyrim.esm
+TaperWeight: 1
+HitShader: 073321:skyrim.esm
+SpellmakingArea: 250
+SpellmakingCastingTime: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+Explosion: 0BECAF:skyrim.esm
+CastType: FireAndForget
+CastingArt: 0225B0:skyrim.esm
+HitEffectArt: 07331C:skyrim.esm
+ImpactData: 073320:skyrim.esm
+DualCastScale: 1
+EquipAbility: 044F59:skyrim.esm
+Sounds:
+- Sound: 07BBAB:skyrim.esm
+- Type: Charge
+  Sound: 087588:skyrim.esm
+- Type: Ready
+  Sound: 07C720:skyrim.esm
+- Type: Release
+  Sound: 07BBAE:skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Call Chaurus spawns

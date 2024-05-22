@@ -1,0 +1,42 @@
+FormKey: 008605:SexLab-Parasites.esp
+EditorID: _SLP_harnessBarnacles
+FormVersion: 43
+ObjectBounds:
+  First: -5, 5, 117
+  Second: 0, 9, 124
+Name:
+  TargetLanguage: English
+  Value: Blackreach Spores
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\harnessBarnacles\parasH_1.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Circlet
+  - 0x10000000
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 0044FE:SexLab-Parasites.esp
+- 0085F4:SexLab-Parasites.esp
+- 02F16E:SexLab.esm
+- 0429FB:Devious Devices - Integration.esm
+- 0FF9FB:skyrim.esm
+- 0C27BD:skyrim.esm
+- 003330:Devious Devices - Assets.esm
+- 003DFA:Devious Devices - Assets.esm
+- 017C43:Devious Devices - Assets.esm
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: These strange spores sprout on the skin after long term exposure to the toxic atmosphere of Blackreach or deep caves.
+Armature:
+- 0085FB:SexLab-Parasites.esp
+- 009B9A:SexLab-Parasites.esp
+Value: 450
+Weight: 5

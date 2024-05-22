@@ -4,6 +4,7 @@ SLP_fcts_parasites Property fctParasites Auto
 
 ;MUST FILL IN CUSTOM SOUND IN ESP
 ;MUST FILL IN AS CHAOS
+;MUST FILL IN CUSTOM SOUND EVENTS FOR FAILURE/SUCCESS
 
 import UD_Native
 

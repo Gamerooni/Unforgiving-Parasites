@@ -1,0 +1,44 @@
+FormKey: 2BDDE1:SexLab-Parasites.esp
+EditorID: _SLP_harnessChaurusQueenArmor
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Chaurus Queen Armor
+ObjectEffect: 100E5E:skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\harnessBarnacles\parasH_1.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Hands
+  - Forearms
+  - Feet
+  - Calves
+  - 0x20000
+  - 0x10000000
+  ActsLike44: True
+Race: 000019:skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 0044FE:SexLab-Parasites.esp
+- 0FF9FB:skyrim.esm
+- 02F16E:SexLab.esm
+- 0429FB:Devious Devices - Integration.esm
+- 2BDDE5:SexLab-Parasites.esp
+- 0A9B1F:skyrim.esm
+- 3CA3C1:SexLab-Parasites.esp
+- 0C27BD:skyrim.esm
+- 017C43:Devious Devices - Assets.esm
+- 05AEA8:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: A thin protective layer of strands of chitin woven together with mucus oozing through your skin.
+Armature:
+- 2A4449:SexLab-Parasites.esp
+- 36A036:SexLab-Parasites.esp
+Value: 450
+Weight: 5
+ArmorRating: 30

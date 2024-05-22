@@ -1,0 +1,7 @@
+FormKey: 471534:SexLab-Parasites.esp
+EditorID: _SLP_ChaurusWarningCall
+FormVersion: 43
+ObjectBounds:
+  First: -27, -27, -12
+  Second: 27, 27, 12
+SoundDescriptor: 1090A6:skyrim.esm

@@ -1,0 +1,27 @@
+FormKey: 01BF2F:SexLab-Parasites.esp
+EditorID: _SLP_PlayerBroodMaidenStorage
+FormVersion: 43
+ObjectBounds:
+  First: -12, -24, 0
+  Second: 12, 22, 46
+Name:
+  TargetLanguage: English
+  Value: Personal keepsakes
+Model:
+  File: Clutter\Containers\MiscPouch.nif
+  Data: 0x020000000000000000000000
+Items:
+- Item:
+    Item: 03452F:skyrim.esm
+    Count: 1
+- Item:
+    Item: 01BE1A:skyrim.esm
+    Count: 1
+- Item:
+    Item: 0B858A:skyrim.esm
+    Count: 1
+- Item:
+    Item: 09E29A:skyrim.esm
+    Count: 1
+OpenSound: 0B2DD0:skyrim.esm
+CloseSound: 0B2DD1:skyrim.esm

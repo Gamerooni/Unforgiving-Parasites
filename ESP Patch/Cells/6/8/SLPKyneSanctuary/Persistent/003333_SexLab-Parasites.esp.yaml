@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedObject
+FormKey: 003333:SexLab-Parasites.esp
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+SkyrimMajorRecordFlags:
+- 0x400
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultDisableOnResetIfLocWasCleared
+Base: 00003B:skyrim.esm
+LocationRefTypes:
+- 04356C:skyrim.esm
+LocationReference: 0192AC:skyrim.esm
+LinkedReferences:
+- Reference: 003332:SexLab-Parasites.esp
+Placement:
+  Position: 783.13965, -289.9873, 569.40234

@@ -1,0 +1,17 @@
+FormKey: A4C08B:SexLab-Parasites.esp
+EditorID: _SLP_ChaurusFaction
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Chaurus Faction
+Relations:
+- Target: 7E7688:SexLab-Parasites.esp
+  Reaction: Ally
+- Target: 03C9A8:skyrim.esm
+  Reaction: Ally
+Flags:
+- HiddenFromPC
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

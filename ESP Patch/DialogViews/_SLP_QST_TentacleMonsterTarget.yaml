@@ -1,0 +1,9 @@
+FormKey: 70DB34:SexLab-Parasites.esp
+EditorID: _SLP_QST_TentacleMonsterTarget
+FormVersion: 43
+Quest: 6F462E:SexLab-Parasites.esp
+Branches:
+- 70DB35:SexLab-Parasites.esp
+TNAMs: []
+ENAM: 0x00000000
+DNAM: 0x00

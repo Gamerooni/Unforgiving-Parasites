@@ -1,0 +1,99 @@
+FormKey: 24E306:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_KyneBlessing260
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_WhiterunSanctuaryFollower
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FireSalts
+      Object: 03AD5E:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyRef
+      Object: 0F5D5F:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_KyneBlessing260
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_KyneBlessing260
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 24E305:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 7
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: '[Danica uses fire salts to expell the creepers]'
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 8
+  Unknown2: 0x4E5420
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x2D2044
+  Text:
+    TargetLanguage: English
+    Value: You did it! The Sanctuary is cleared and the Elder Roots is saved from corruption.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 9
+  Unknown2: 0x011502
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x00B600
+  Text:
+    TargetLanguage: English
+    Value: To think this was caused by something as small as a saw falling through the cracks from the street above.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x2DDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:skyrim.esm
+    Keyword: 00D1A1:SexLab-Parasites.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x2DDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 255
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x2DDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 260
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x2DDE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013BA5:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: MMMM! (point at the huggers)

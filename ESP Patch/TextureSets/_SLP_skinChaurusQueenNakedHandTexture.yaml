@@ -1,0 +1,10 @@
+FormKey: 582C4A:SexLab-Parasites.esp
+EditorID: _SLP_skinChaurusQueenNakedHandTexture
+FormVersion: 43
+Diffuse: armor\KyneBlessing\harnessChaurusQueen\Base Skin\femalehands_1.dds
+NormalOrGloss: armor\KyneBlessing\harnessChaurusQueen\Base Skin\femalehands_1_msn.dds
+GlowOrDetailMap: armor\KyneBlessing\harnessChaurusQueen\Base Skin\femalehands_1_sk.dds
+BacklightMaskOrSpecular: armor\KyneBlessing\harnessChaurusQueen\Base Skin\femalehands_1_s.dds
+Flags:
+- FaceGenTextures
+- HasModelSpaceNormalMap

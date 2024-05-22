@@ -1,0 +1,106 @@
+FormKey: 1B1321:SexLab-Parasites.esp
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_TIF_ChaurusBook140
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CaveChaurusRef
+      Object: 17E8E9:SexLab-Parasites.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: SLP_TIF_ChaurusBook140
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SLP_TIF_ChaurusBook140
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Goodbye
+PreviousDialog: 1B1320:SexLab-Parasites.esp
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 7
+  Unknown2: 0x756E63
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x467261
+  Text:
+    TargetLanguage: English
+    Value: Ah yes... I remember. Sad story that one.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 8
+  Unknown2: 0x436F6D
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x745370
+  Text:
+    TargetLanguage: English
+    Value: 'A traveler came down the mountain one night. Feverish.. covered with nasty bites and scratches. '
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 9
+  Unknown2: 0x657252
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x534C50
+  Text:
+    TargetLanguage: English
+    Value: He didn't see the morning.. On account of the poison you see.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 10
+  Unknown2: 0x61732C
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x506172
+  Text:
+    TargetLanguage: English
+    Value: He mumbled something about Harmugstahl.. it's a fort on the other side of the mountain, by the water. Maybe he found the book there.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 11
+  Unknown2: 0x61732C
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x506172
+  Text:
+    TargetLanguage: English
+    Value: I would stay clear of that place if I were you. Whatever killed him is probably still there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x21DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 130
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x21DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 016E2C:SexLab-Parasites.esp
+    Stage: 140
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x21DE52
+  Unknown2: 21141
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013B69:skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Do you remember selling a book about the Chaurus? where did it come from?

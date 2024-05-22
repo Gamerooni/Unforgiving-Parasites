@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 03B810:skyrim.esm
+MajorRecordFlagsRaw: 1024
+FormVersion: 43
+Version2: 3
+SkyrimMajorRecordFlags:
+- 0x400
+Base: 000032:skyrim.esm
+LocationReference: 0192A6:skyrim.esm
+Placement:
+  Position: -233.35611, -183.29332, -221.47766
+  Rotation: 0, -0, 0.8000019

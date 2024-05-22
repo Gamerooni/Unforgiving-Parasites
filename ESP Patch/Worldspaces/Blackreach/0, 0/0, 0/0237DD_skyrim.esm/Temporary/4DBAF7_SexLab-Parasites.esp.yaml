@@ -1,0 +1,9 @@
+MutagenObjectType: PlacedObject
+FormKey: 4DBAF7:SexLab-Parasites.esp
+FormVersion: 43
+Base: 4DBAF6:SexLab-Parasites.esp
+EnableParent:
+  Reference: 4DBAF1:SexLab-Parasites.esp
+  Unknown: 0x000000
+Placement:
+  Position: 1098.9103, 10444.062, 3017.8528

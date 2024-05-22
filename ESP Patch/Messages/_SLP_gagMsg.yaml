@@ -1,0 +1,72 @@
+FormKey: 73B458:SexLab-Parasites.esp
+EditorID: _SLP_gagMsg
+FormVersion: 43
+Description:
+  TargetLanguage: English
+  Value: This creature will wedge between a subject's lips and force her mouth wide open, leaving her completely unable to speak in an understandable way. It may be susceptible to the right ingredients.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Put it on
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x35D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+- Text:
+    TargetLanguage: English
+    Value: Poke it with a key
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Unknown1: 0x36D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: GetKeywordItemCountConditionData
+      Keyword: 026F5E:Devious Devices - Integration.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x36D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Force it open
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x37D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Call out for help
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x35D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: Remain gagged
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x35D752
+    Unknown2: 86
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 007EB8:Devious Devices - Assets.esm
+    ComparisonValue: 1

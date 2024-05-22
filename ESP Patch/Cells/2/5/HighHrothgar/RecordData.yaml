@@ -1,0 +1,38 @@
+FormKey: 087764:skyrim.esm
+EditorID: HighHrothgar
+FormVersion: 43
+Version2: 2
+Name:
+  TargetLanguage: English
+  Value: High Hrothgar
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00231E14'
+  DirectionalColor: '#00465159'
+  FogNearColor: '#00403C31'
+  FogFar: 6000
+  FogClipDistance: 8000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00261E14'
+    DirectionalXMinus: '#001F1E13'
+    DirectionalYPlus: '#00231F14'
+    DirectionalYMinus: '#00231C14'
+    DirectionalZPlus: '#00100E09'
+    DirectionalZMinus: '#00352D1E'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00383838'
+  FogMax: 1
+WaterHeight: -2.1474836E+09
+Location: 018E34:skyrim.esm
+Owner: 02C6C8:skyrim.esm
+AcousticSpace: 1052E7:skyrim.esm
+Music: 06D542:skyrim.esm
+ImageSpace: 09F363:skyrim.esm
+Timestamp: 31514
+UnknownGroupData: 956827224
+TemporaryTimestamp: 31514
+TemporaryUnknownGroupData: 1065353216

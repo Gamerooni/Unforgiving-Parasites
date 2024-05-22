@@ -1,0 +1,20 @@
+MutagenObjectType: PlacedObject
+FormKey: 003A2B:SexLab-Parasites.esp
+EditorID: _SLP_TrapPoisonGas
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrapPoisonGas
+    Flags: Inherited
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: isInitiallyActive
+      Data: True
+Base: 09F290:skyrim.esm
+Emittance: 02EE05:skyrim.esm
+Scale: 3.58
+EnableParent:
+  Reference: 24E2F6:SexLab-Parasites.esp
+  Unknown: 0xDB1900
+Placement:
+  Position: 147.67685, 1029.9567, 225.55324

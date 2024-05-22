@@ -1,0 +1,1543 @@
+FormKey: 000D62:SexLab-Parasites.esp
+EditorID: _SLP_QST_Controller
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_fcts_parasiteTentacleMonster
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numTentacleMonsterInfections
+      Object: 006030:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessTentacleMonsterInventory
+      Object: 006034:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessTentacleMonsterRendered
+      Object: 006032:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TentacleMonsterQuest
+      Object: 6F462E:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TentacleMonsterInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteTentacleMonster
+      Object: 006031:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasiteSpiderEgg
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderPenisInventory
+      Object: 004A81:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteSpiderEgg
+      Object: 0012C7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SmallSpiderEgg
+      Object: 09151B:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderEggInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderEggInventory
+      Object: 00182C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderPenisRendered
+      Object: 004A80:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteSpiderPenis
+      Object: 004A84:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StomachRot
+      Object: 004A6C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numSpiderEggInfections
+      Object: 0044FD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderEggRendered
+      Object: 00182B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasiteLivingArmor
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numLivingArmorInfections
+      Object: 0085F8:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteLivingArmor
+      Object: 0085F5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LivingArmorInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessLivingArmorInventory
+      Object: 008604:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessLivingArmorRendered
+      Object: 008602:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasiteFaceHugger
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerGagRendered
+      Object: 00D1A5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numFaceHuggerInfections
+      Object: 0085F7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteFaceHuggerGag
+      Object: 00D1A1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FaceHuggerInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerRendered
+      Object: 008608:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerInventory
+      Object: 00860A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteFaceHugger
+      Object: 0085F3:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerGagInventory
+      Object: 00D1A7:SexLab-Parasites.esp
+  - Name: SLP_fcts_outfits
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PriestRiftenOutfit
+      Object: 00D712:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DanicaPureSpringREF
+      Object: 01A69F:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ArmorCuirass
+      Object: 06C0EC:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PriestWindhelmOutfit
+      Object: 00E1E5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SilanaPetreiaREF
+      Object: 0198A7:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MaramalRef
+      Object: 019DD5:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PriestSolitudeOutfit
+      Object: 2A445E:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ClothingBody
+      Object: 0A8657:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: JoraREF
+      Object: 01B11F:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DinyaBaluRef
+      Object: 019DD6:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PriestWhiterunOutfit
+      Object: 00A105:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RorlundREF
+      Object: 0198A5:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LortheimREF
+      Object: 01B120:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AcolyteJenssenREF
+      Object: 0D3E7A:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FreirREF
+      Object: 0198A6:skyrim.esm
+  - Name: SLP_fcts_utils
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFaction
+      Object: 03C9A8:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_SpiderFriendlyFaction
+      Object: 7E7687:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganEarthMotherRace
+      Object: 013B77:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusReaperRace
+      Object: 0A5601:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_SprigganFriendlyFaction
+      Object: 7E7689:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganSwarmRace
+      Object: 09AA44:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusRace
+      Object: 0131EB:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderFaction
+      Object: 02997F:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganBurntRace
+      Object: 01B644:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: slaUtil
+      Object: 04290F:SexLabAroused.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganRace
+      Object: 013204:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SexLab
+      Object: 000D62:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderLargeRace
+      Object: 053477:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderRace
+      Object: 0131F8:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FalmerBlueImod
+      Object: 06B108:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_Parasite
+      Object: 0044FE:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganMatronRace
+      Object: 0F3903:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ChaurusFriendlyFaction
+      Object: 7E7688:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganFaction
+      Object: 03E094:skyrim.esm
+  - Name: SLP_fcts_parasiteChaurusWorm
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusWorm
+      Object: 0012C8:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusWormVag
+      Object: 008600:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numChaurusWormVagInfections
+      Object: 008601:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormInventory
+      Object: 005ABE:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormRendered
+      Object: 005ABD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusWormInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormVagRendered
+      Object: 0085FD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormVagInventory
+      Object: 0085FF:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numChaurusWormInfections
+      Object: 005ABB:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasiteChaurusQueen
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SummonSoundFX
+      Object: 471534:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusActor
+      Object: 42A6FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenBody
+      Object: 2BDDE4:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_gagChaurusQueenInventory
+      Object: 2BDDEB:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusQueenInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenVag
+      Object: 2BDDE0:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenArmorInventory
+      Object: 2BDDE3:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenBodyRendered
+      Object: 2BDDE7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenGag
+      Object: 2BDDE6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusClaw
+      Object: 99AD58:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenSkinInventory
+      Object: 33C72A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusEgg
+      Object: 03AD56:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusSpawnActor
+      Object: 43EB07:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenBodyInventory
+      Object: 2BDDE9:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusHunterActor
+      Object: 43EB09:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_gagChaurusQueenRendered
+      Object: 2BDDEA:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_skinChaurusQueenNaked
+      Object: 383540:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusQueenVagInventory
+      Object: 2BDDDF:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusWormVag
+      Object: 008600:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SmallSpiderEgg
+      Object: 09151B:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenSkin
+      Object: 33C726:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusQueenVagRendered
+      Object: 2BDDDD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenArmor
+      Object: 2BDDE5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenArmorRendered
+      Object: 2BDDE1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusFledgelingActor
+      Object: 42A6FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusBlade
+      Object: A23881:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusClaw
+      Object: A23882:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusBlade
+      Object: 99AD54:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedFlare
+      Object: 38D745:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenSkinRendered
+      Object: 33C728:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasiteBarnacles
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessBarnaclesInventory
+      Object: 008607:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BarnaclesInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteBarnacles
+      Object: 0085F4:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessBarnaclesRendered
+      Object: 008605:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numBarnaclesInfections
+      Object: 0085F6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasites
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SummonSoundFX
+      Object: 471534:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedSpiderBreeding
+      Object: 3D45CB:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessTentacleMonsterRendered
+      Object: 006032:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenBody
+      Object: 2BDDE4:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GlowingMushrooms
+      Object: 07EE01:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormInventory
+      Object: 005ABE:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessBarnaclesRendered
+      Object: 008605:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctOutfits
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SmallSpiderEgg
+      Object: 09151B:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessTentacleMonsterInventory
+      Object: 006034:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteEstrus
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedSpawnChaurus
+      Object: 42A6FD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenVag
+      Object: 2BDDE0:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenArmorInventory
+      Object: 2BDDE3:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SexLab
+      Object: 000D62:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusSpawnActor
+      Object: 43EB07:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedChaurusBreeding
+      Object: 3D45C9:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenBodyRendered
+      Object: 2BDDE7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenGag
+      Object: 2BDDE6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenArmorRendered
+      Object: 2BDDE1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numEstrusSlimeInfections
+      Object: 0090D5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_skinChaurusQueenNaked
+      Object: 383540:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenSkinInventory
+      Object: 33C72A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusWorm
+      Object: 0012C8:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerGagRendered
+      Object: 00D1A5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenBodyInventory
+      Object: 2BDDE9:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_ZAPFuroTubOn
+      Object: 309D1A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TentacleMonsterQuest
+      Object: 6F462E:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numFaceHuggerInfections
+      Object: 0085F7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessChaurusQueenSkinRendered
+      Object: 33C728:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numTentacleMonsterInfections
+      Object: 006030:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusHunterActor
+      Object: 43EB09:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormRendered
+      Object: 005ABD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_gagChaurusQueenRendered
+      Object: 2BDDEA:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteFaceHuggerGag
+      Object: 00D1A1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenArmor
+      Object: 2BDDE5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusWormInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderFollowerAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormVagRendered
+      Object: 0085FD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderPenisRendered
+      Object: 004A80:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrollFat
+      Object: 03AD72:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessBarnaclesInventory
+      Object: 008607:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderEggInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasitesDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusQueenSkin
+      Object: 33C726:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusFledgelingActor
+      Object: 42A6FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteChaurusWorm
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VoicesFX
+      Object: 6EA42B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LastelleCampOutside
+      Object: 03F89C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedFlare
+      Object: 38D745:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numChaurusWormInfections
+      Object: 005ABB:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganRootInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerGagInventory
+      Object: 00D1A7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderPenisInventory
+      Object: 004A81:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteBarnacles
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncChaurusActor
+      Object: 42A6FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numCharmChaurus
+      Object: 053CC8:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFaction
+      Object: 03C9A8:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numEstrusTentaclesInfections
+      Object: 0090D4:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessLivingArmorRendered
+      Object: 008602:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerInventory
+      Object: 00860A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusQueenVagRendered
+      Object: 2BDDDD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteChaurusWormVag
+      Object: 008600:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteChaurusQueen
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_gagChaurusQueenInventory
+      Object: 2BDDEB:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numBarnaclesInfections
+      Object: 0085F6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numCharmSpider
+      Object: 1B642B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BarnaclesCluster
+      Object: 07EDF5:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedCalm
+      Object: 3D45CD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteLivingArmor
+      Object: 0085F5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderFaction
+      Object: 02997F:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusQueenInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BarnaclesInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LivingArmorInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessLivingArmorInventory
+      Object: 008604:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StomachRot
+      Object: 004A6C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderEggRendered
+      Object: 00182B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TentacleMonsterInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_Parasite
+      Object: 0044FE:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteSpiderEgg
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteSprigganRoot
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusFollowerAlias
+      Object: 016E2C:SexLab-Parasites.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteFaceHugger
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusEgg
+      Object: 03AD56:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedSpawnSpider
+      Object: 401EE1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSpiderEggInventory
+      Object: 00182C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numChaurusWormVagInfections
+      Object: 008601:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteLivingArmor
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LastelleRef
+      Object: 01BF35:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteFaceHugger
+      Object: 0085F3:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteBarnacles
+      Object: 0085F4:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteTentacleMonster
+      Object: 006031:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EggSac
+      Object: 00331D:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ArmorCuirass
+      Object: 06C0EC:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_PKG_ZapFuroTub
+      Object: 309D19:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusQueenVagInventory
+      Object: 2BDDDF:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteSpiderEgg
+      Object: 0012C7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numLivingArmorInfections
+      Object: 0085F8:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_harnessFaceHuggerRendered
+      Object: 008608:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugChaurusWormVagInventory
+      Object: 0085FF:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FaceHuggerInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_ParasiteSpiderPenis
+      Object: 004A84:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_CritterSemen
+      Object: 034C5D:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IngredientChaurusWorm
+      Object: 006023:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ClothingBody
+      Object: 0A8657:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SeedTrack
+      Object: 3D45C7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FalmerBlueImod
+      Object: 06B108:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFollowerFaction
+      Object: 084D1B:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numSpiderEggInfections
+      Object: 0044FD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteTentacleMonster
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasiteEstrus
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numEstrusSlimeInfections
+      Object: 0090D5:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numEstrusTentaclesInfections
+      Object: 0090D4:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 065A31:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SmallSpiderEgg
+      Object: 09151B:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BarnaclesCluster
+      Object: 07EDF5:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteLivingArmor
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 0145EC:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IngredientChaurusWorm
+      Object: 006023:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_ZAPFuroTubOn
+      Object: 309D1A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChaurusEgg
+      Object: 03AD56:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasiteTentacleMonster
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  - Name: SLP_fcts_parasites_devious
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+  - Name: SLP_fcts_parasiteSprigganRoot
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_KW_ParasiteSprigganRootGag
+      Object: 80ADA6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_SP_SprigganRootArmor
+      Object: 97C745:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctDevious
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_KW_ParasiteSprigganRootBody
+      Object: 80ADAA:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_GV_numInfections
+      Object: 0044FC:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WetFX
+      Object: 0F23A6:skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootBodyRendered
+      Object: 80ADAE:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctUtils
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DummyAlias
+      Object: 00B13A:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootArmsInventory
+      Object: 80ADB3:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_KW_ParasiteSprigganRootArms
+      Object: 80ADA8:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootArmsRendered
+      Object: 80ADB1:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootGagInventory
+      Object: 80ADAD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganRootInfectedAlias
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterFX
+      Object: 90D125:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _SLP_KW_ParasiteSprigganRootFeet
+      Object: 80ADA9:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootFeetRendered
+      Object: 80ADB4:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootFeetInventory
+      Object: 80ADB6:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootBodyInventory
+      Object: 80ADB0:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SLP_plugSprigganRootGagRendered
+      Object: 80ADAB:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SprigganFlare
+      Object: 8293BD:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KynesBlessingQuest
+      Object: 00603B:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QueenOfChaurusQuest
+      Object: 016E2C:SexLab-Parasites.esp
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 0
+    Scripts:
+    - Name: SLP_parasiteOrganicBaseEvent
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_OrganicVibrate
+        Object: 0012C6:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_Parasite
+        Object: 0044FE:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: libs
+        Object: 00F624:Devious Devices - Integration.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_LivingArmor
+        Object: 0085F5:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_ChaurusWormVag
+        Object: 008600:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_SpiderEgg
+        Object: 0012C7:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptIntProperty
+        Name: DefaultProbability
+        Data: 70
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_FaceHugger
+        Object: 0085F3:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_ChaurusWorm
+        Object: 0012C8:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_SpiderPenis
+        Object: 004A84:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_FaceHuggerGag
+        Object: 00D1A1:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_TentacleMonster
+        Object: 006031:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptStringProperty
+        Name: name
+        Data: parasite Active Event
+    - Name: SLP_PlayerAlias
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: IngredientChaurusEgg
+        Object: 03AD56:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctOutfits
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numInfections
+        Object: 0044FC:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BarnaclesInfectedAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 4
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LivingArmorInfectedAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 5
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SexLab
+        Object: 000D62:SexLab.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: GlowingMushroom
+        Object: 07EE01:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TentacleMonsterInfectedAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 6
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numSpiderEggInfections
+        Object: 0044FD:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: slaUtil
+        Object: 04290F:SexLabAroused.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_NordicRuinLocType
+        Object: 0130F2:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numChaurusWormVagInfections
+        Object: 008601:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FireSalts
+        Object: 03AD5E:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: IngredientSpiderEgg
+        Object: 09151B:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_FalmerHiveLocType
+        Object: 0130E4:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numTentacleMonsterInfections
+        Object: 006030:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: KynesBlessingQuest
+        Object: 00603B:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PlayerAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 0
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EggSac
+        Object: 00331D:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_CritterSemen
+        Object: 034C5D:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numChaurusWormInfections
+        Object: 005ABB:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_DwarvenRuinLocType
+        Object: 0130F0:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ChaurusWormInfectedAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 3
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SpiderFollowerAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 2
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_OutdoorLocType
+        Object: 0130F3:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numLivingArmorInfections
+        Object: 0085F8:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SpiderEggInfectedAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 1
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_BlackreachLocation
+        Object: 018EE8:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: libs
+        Object: 00F624:Devious Devices - Integration.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FaceHuggerInfectedAlias
+        Object: 000D62:SexLab-Parasites.esp
+        Alias: 7
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: IngredientChaurusWorm
+        Object: 006023:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DwarvenOil
+        Object: 0F11C0:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numFaceHuggerInfections
+        Object: 0085F7:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_MineLocType
+        Object: 018EF1:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PlayerFollowerFaction
+        Object: 084D1B:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TrollFat
+        Object: 03AD72:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_DraugrCryptLocType
+        Object: 0130E2:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_GV_numBarnaclesInfections
+        Object: 0085F6:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SLP_CaveLocType
+        Object: 0130EF:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctUtils
+        Object: 000D62:SexLab-Parasites.esp
+    - Name: SLP_parasiteVibratingEffect
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_OrganicVibrate
+        Object: 0012C6:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_Parasite
+        Object: 0044FE:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: libs
+        Object: 00F624:Devious Devices - Integration.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_LivingArmor
+        Object: 0085F5:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_ChaurusWormVag
+        Object: 008600:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_SpiderEgg
+        Object: 0012C7:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptIntProperty
+        Name: DefaultProbability
+        Data: 40
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_FaceHugger
+        Object: 0085F3:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_ChaurusWorm
+        Object: 0012C8:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_SpiderPenis
+        Object: 004A84:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_FaceHuggerGag
+        Object: 00D1A1:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLPKP_TentacleMonster
+        Object: 006031:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptStringProperty
+        Name: name
+        Data: parasite Passive Event
+  - Property:
+      Name: ''
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 4
+    Scripts:
+    - Name: SLP_aliasBarnacles
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MassParalysis
+        Object: 0B62E6:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DLC2ExpSpiderShockCloakAb
+        Object: 026D66:Dragonborn.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+  - Property:
+      Name: ''
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 5
+    Scripts:
+    - Name: SLP_aliasLivingArmor
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MassParalysis
+        Object: 0B62E6:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Stoneflesh
+        Object: 05AD5D:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA02PoisonCloakDmg
+        Object: 0F23C8:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CritterFX
+        Object: 023BB6:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SchockCloak
+        Object: 03AEA3:skyrim.esm
+  - Property:
+      Name: ''
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 6
+    Scripts:
+    - Name: SLP_aliasTentacleMonster
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: crSprigganCallCreatures
+        Object: 0CB12D:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CritterFX
+        Object: 03A479:Dragonborn.esm
+  - Property:
+      Name: ''
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 10
+    Scripts:
+    - Name: SLP_aliasSprigganRoot
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_SP_SprigganRootArmor
+        Object: 97C745:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_SP_SprigganDefenseCloak
+        Object: 912228:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CritterFX
+        Object: 90D125:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Oakflesh
+        Object: 05AD5C:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_SP_SprigganAttack
+        Object: 912228:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctUtils
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_SP_SprigganSwarm
+        Object: 0F23D2:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: crSprigganCallCreatures
+        Object: 0CB12D:skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SLP_SP_SprigganCallCreatures
+        Object: 8293BD:SexLab-Parasites.esp
+  - Property:
+      Name: ''
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 7
+    Scripts:
+    - Name: SLP_aliasFaceHugger
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CritterFX
+        Object: 01EA7C:skyrim.esm
+  - Property:
+      Name: ''
+      Object: 000D62:SexLab-Parasites.esp
+      Alias: 9
+    Scripts:
+    - Name: SLP_aliasChaurusQueen
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SeedSpawnSpider
+        Object: 401EE1:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ChaurusBody
+        Object: 42A6F7:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: fctParasites
+        Object: 000D62:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CritterFX
+        Object: 90D124:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ChaurusMask
+        Object: 42A6F5:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ChaurusArmor
+        Object: 42A6F3:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CallSpawns
+        Object: 45D11B:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SeedSpawnChaurus
+        Object: 42A6FD:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ChaurusClaw
+        Object: 99AD58:SexLab-Parasites.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ChaurusBlade
+        Object: 99AD54:SexLab-Parasites.esp
+Name:
+  TargetLanguage: English
+  Value: Parasites controller quest
+Flags:
+- StartGameEnabled
+- AllowRepeatedStages
+- 0x10
+- WarnOnAliasFillFailure
+QuestFormVersion: 77
+Stages:
+- Flags:
+  - StartUpStage
+- Index: 10
+Aliases:
+- Name: SLP_PlayerAlias
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDisabled
+  ForcedReference: 000014:skyrim.esm
+  PackageData:
+  - 309D19:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 8
+  Name: SLP_ParasiteFriendly
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Factions:
+  - 7E7688:SexLab-Parasites.esp
+  - 7E7687:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 1
+  Name: SLP_SpiderEggInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Factions:
+  - 7E7687:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 3
+  Name: SLP_ChaurusWormInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Factions:
+  - 7E7688:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 4
+  Name: SLP_BarnaclesInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Keywords:
+  - 0A9B1E:skyrim.esm
+  VoiceTypes: Null
+- ID: 5
+  Name: SLP_LivingArmorInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Keywords:
+  - 0A9B1F:skyrim.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: SLP_TentacleMonsterInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Keywords:
+  - 0A9B1E:skyrim.esm
+  VoiceTypes: Null
+- ID: 10
+  Name: SLP_SprigganRootInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Keywords:
+  - 0A9B1E:skyrim.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: SLP_FaceHuggerInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Keywords:
+  - 0A9B1F:skyrim.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: SLP_ChaurusQueenInfected
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Factions:
+  - 7E7688:SexLab-Parasites.esp
+  - 7E7687:SexLab-Parasites.esp
+  VoiceTypes: Null
+- ID: 2
+  Name: SLP_SpiderEggFollower
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  Factions:
+  - 7E7687:SexLab-Parasites.esp
+  PackageData:
+  - 05C84B:skyrim.esm
+  - 0BFB6B:skyrim.esm
+  VoiceTypes: Null
