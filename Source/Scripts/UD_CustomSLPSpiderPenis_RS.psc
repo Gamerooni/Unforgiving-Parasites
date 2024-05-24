@@ -106,11 +106,17 @@ Function _dealBarbDamage(float multiplier = 1.0, bool silent=false)
     endif
 EndFunction
 
+Function onSpecialButtonPressed(float fMult)
+    UDmain.Log("special button pressed")
+    parent.onSpecialButtonPressed(fMult)
+EndFunction
+
 Function OnRemoveDevicePost(Actor akActor)
     parent.OnRemoveDevicePost(akActor)
     if WearerIsPlayer()
         libs.NotifyPlayer("The spider penis's barbs shredded your pussy as they popped out one-by-one. Your now-misshapen opening feels strangely hollow.")
     endif
+    fctParasites.cureParasiteByString(getWearer(), "SpiderPenis")
 EndFunction
 
 ; Can't cut all the way in there

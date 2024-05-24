@@ -1,6 +1,7 @@
 FormKey: 00182D:SexLab-Parasites.esp
 EditorID: _SLP_plugSpiderEgg_scriptInstance
 FormVersion: 43
+ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:
     Model:
@@ -25,6 +26,7 @@ Keywords:
 - 0044FE:SexLab-Parasites.esp
 - 003894:Devious Devices - Assets.esm
 - 00FACB:Devious Devices - Assets.esm
+- 05D9CA:Devious Devices - Integration.esm
 Description:
   TargetLanguage: English
   Value: A slimy cluster of Spider egglings (script)

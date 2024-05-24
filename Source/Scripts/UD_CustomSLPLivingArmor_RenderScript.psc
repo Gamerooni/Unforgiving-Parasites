@@ -24,3 +24,8 @@ Function onDeviceMenuInitPost(bool[] aControlFilter)
     parent.onDeviceMenuInitPost(aControlFilter)
     UDCDmain.currentDeviceMenu_allowSpecialMenu = False
 EndFunction
+
+Function onRemoveDevicePost(Actor akActor)
+    fctParasites.cureParasiteByString(getWearer(), "LivingArmor")
+    parent.onRemoveDevicePost(akActor)
+EndFunction
