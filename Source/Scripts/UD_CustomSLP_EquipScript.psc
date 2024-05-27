@@ -5,6 +5,32 @@ import UnforgivingDevicesMain
 
 SLP_fcts_parasites Property fctParasites  Auto
 
+function _setupFaceHuggerQuest()
+	deviceQuest.SetObjectiveCompleted(00)
+if libs.PlayerRef.WornHasKeyword(zad_DeviousPlug)
+	deviceQuest.setStage(20)
+	deviceQuest.SetObjectivedisplayed(20)
+else
+	deviceQuest.setStage(10)
+	deviceQuest.SetObjectivedisplayed(10)
+Endif
+EndFunction
+
+
+Function _resetFaceHuggerQuest()
+  deviceQuest.SetObjectiveDisplayed(10,false)
+  deviceQuest.SetObjectiveCompleted(10,false)
+  deviceQuest.SetObjectiveDisplayed(20,false)
+  deviceQuest.SetObjectiveCompleted(20,false)
+  deviceQuest.SetObjectiveDisplayed(30,false)
+  deviceQuest.SetObjectiveCompleted(30,false)
+  deviceQuest.SetObjectiveDisplayed(80,false)
+  deviceQuest.SetObjectiveCompleted(80,false)
+  deviceQuest.SetObjectiveDisplayed(100,false)
+  deviceQuest.SetObjectiveCompleted(100,false)
+  deviceQuest.Reset()
+EndFunction
+
 Function EquipPreTentacle(actor akActor, bool silent=false)
     if !silent
 		if IsPlayer(akActor)
@@ -110,6 +136,104 @@ Int Function EquipFilterSpiderEgg(actor akActor, bool silent=false)
     return 0
 EndFunction
 
+Function EquipPreBarnacles(actor akActor, bool silent=false)
+	if !silent
+		if IsPlayer(akActor)
+			libs.NotifyActor("Glowing spores attach themselves to your skin and start throbbing as they exude sweet fluids.", akActor, true)
+		Else
+			libs.NotifyActor(GetMessageName(akActor) +" yelps as the glowing spores spread across her body.", akActor, true)
+			
+		EndIf
+	EndIf
+EndFunction
+
+int Function EquipFilterBarnacles(actor akActor, bool silent=false)
+	ActorBase 	pActorBase  
+	if akActor == none
+		akActor == libs.PlayerRef
+	EndIf
+	pActorBase = akActor.GetActorBase()
+
+	if ! akActor.IsEquipped(deviceRendered)
+		if akActor!=libs.PlayerRef && ShouldEquipSilently(akActor)
+			libs.Log("Avoiding FTM duplication bug (Harness).")
+			return 0
+		EndIf
+		if akActor.WornHasKeyword(libs.zad_DeviousCorset)
+			MultipleItemFailMessage("Corset")
+			return 2
+		Endif
+		if (pActorBase.GetSex()==0)
+			libs.NotifyActor("The spores refuse to attach themselves around a male.", akActor, true)
+			return 2
+		Endif
+	Endif
+	return 0
+EndFunction
+
+Function EquipPreChaurusQueenArmor(actor akActor, bool silent=false)
+	if !silent
+		if akActor == libs.PlayerRef
+			libs.NotifyActor("The Seed wraps you in a protective layer of woven mucus and chitin.", akActor, true)
+			
+		EndIf
+	EndIf
+EndFunction
+
+int Function EquipFilterChaurusQueenArmor(actor akActor, bool silent=false)
+	ActorBase 	pActorBase  
+	if akActor == none
+		akActor == libs.PlayerRef
+	EndIf
+	pActorBase = akActor.GetActorBase()
+
+	if ! akActor.IsEquipped(deviceRendered)
+		if akActor!=libs.PlayerRef && ShouldEquipSilently(akActor)
+			libs.Log("Avoiding FTM duplication bug (Harness).")
+			return 0
+		EndIf
+		if akActor.WornHasKeyword(libs.zad_DeviousCorset)
+			MultipleItemFailMessage("Corset")
+			return 2
+		Endif
+		if (pActorBase.GetSex()==0)
+			; libs.NotifyActor("The spores refuse to attach themselves around a male.", akActor, true)
+			return 2
+		Endif
+	Endif
+	return 0
+EndFunction
+
+Function EquipPreFaceHugger(actor akActor, bool silent=false)
+	libs.StoreExposureRate(akActor)
+	string msg = ""
+	if akActor == libs.PlayerRef
+		; Quest setup
+		if deviceQuest.GetStage() >= 10; && menuDisable==false)
+			libs.Log("Resetting... (Stage>=10)")
+			_resetFaceHuggerQuest()
+		EndIf
+		_setupFaceHuggerQuest()
+		; Dialogue
+		if Aroused.GetActorExposure(akActor) < libs.ArousalThreshold("Desire")
+			msg = "With serence confidence, you bring the squirming critter closer to your crotch."
+		elseif Aroused.GetActorExposure(akActor) < libs.ArousalThreshold("Horny")
+			msg = "With more confidence than foresight you press the squirming critter between your legs."
+		elseif Aroused.GetActorExposure(akActor) < libs.ArousalThreshold("Desperate")
+			msg = "No longer fighting against your urges, you coax the squirmy critter to wrap around your waist."
+		else
+			msg = "In blind and feverish madness, you press and rub yourself against the squirmy critter. Its legs wrap around your waist and click shut."
+		endif
+	Else
+		msg = akActor.GetLeveledActorBase().GetName() + " moans as you let the critter wrap itself around her hips."
+	EndIf
+	if !silent
+		libs.NotifyActor(msg, akActor, true)
+	EndIf
+EndFunction
+
+
+
 Function OnEquippedPre(actor akActor, bool silent=false)
     if deviceInventory.haskeyword(fctParasites._SLP_ParasiteTentacleMonster) || deviceInventory.haskeyword(fctParasites._SLP_ParasiteLivingArmor)
         EquipPreTentacle(akActor, silent)
@@ -119,6 +243,12 @@ Function OnEquippedPre(actor akActor, bool silent=false)
 		;return ; We don't want to do the plug equip
 	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteSpiderEgg)
 		EquipPreSpiderEgg(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteBarnacles)
+		EquipPreBarnacles(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenArmor)
+		EquipPreChaurusQueenArmor(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteFaceHugger)
+		EquipPreFaceHugger(akActor, silent)
     endif
     Parent.OnEquippedPre(akActor, true)
 EndFunction
@@ -128,6 +258,10 @@ int Function OnEquippedFilter(actor akActor, bool silent=false)
         return EquipFilterTentacle(akActor, silent)
 	ElseIf deviceInventory.HasKeyword(fctParasites._SLP_ParasiteSpiderEgg)
 		EquipFilterSpiderEgg(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteBarnacles)
+		EquipFilterBarnacles(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenArmor) || deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenBody)
+		EquipFilterChaurusQueenArmor(akActor, silent)
     endif
     return Parent.OnEquippedFilter(akActor, silent)
 EndFunction

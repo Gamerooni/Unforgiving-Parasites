@@ -65,7 +65,8 @@ EndFunction
 ;=====OVERRIDES=====
 Function InitPost()
     parent.InitPost()
-    UD_ActiveEffectName == "Insertion"
+    UD_ActiveEffectName = "Insertion"
+    UD_DeviceType = "Spider Egg Plug"
     UD_Cooldown = 90
 EndFunction
 
@@ -247,16 +248,26 @@ Function OnCritFailure()
     parent.OnCritFailure()
 EndFunction
 
-Function removeDevice(Actor akActor)
-    if _getArousalAdjustment() > 0.8
-        UDmain.ShowSingleMessageBox("The eggs pop out of your hole one-by-one, each one pulling out the next by a thread of the foamy and slimy lubricant that kept them together.")
-        parent.removeDevice(akActor)
-    Else
-        libs.SexLab.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
-        fctParasites.cureParasiteByString(akActor, "SpiderEgg")
-        ;SexLabUtil.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
-    endif
+Function OnRemoveDevicePre(Actor akActor)
+    UDmain.ShowSingleMessageBox("The eggs pop out of your hole one-by-one, each one pulling out the next by a thread of the foamy and slimy lubricant that kept them together.")
+    parent.OnRemoveDevicePre(akActor)
 EndFunction
+
+Function onRemoveDevicePost(Actor akActor)
+    libs.SexLab.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
+    fctParasites.cureParasiteByString(akActor, "SpiderEggAll")
+EndFunction
+
+; Function removeDevice(Actor akActor)
+;     if _getArousalAdjustment() > 0.8
+;         UDmain.ShowSingleMessageBox("The eggs pop out of your hole one-by-one, each one pulling out the next by a thread of the foamy and slimy lubricant that kept them together.")
+;         parent.removeDevice(akActor)
+;     Else
+;         libs.SexLab.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
+;         fctParasites.cureParasiteByString(akActor, "SpiderEgg")
+;         ;SexLabUtil.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
+;     endif
+; EndFunction
 
 bool Function canBeActivated()
     if parent.canBeActivated() || (getPlugInflateLevel() <= 4 && getRelativeElapsedCooldownTime() >= 0.3)

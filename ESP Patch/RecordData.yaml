@@ -1,6 +1,6 @@
 SpriggitSource:
   PackageName: Spriggit.Yaml.Skyrim
-  Version: 0.19.0
+  Version: 0.20.0
 ModKey: SexLab-Parasited-UD.esp
 GameRelease: SkyrimSE
 ModHeader:
@@ -8,7 +8,7 @@ ModHeader:
   - Light
   Stats:
     Version: 1.7
-    NumRecords: 37
+    NumRecords: 39
     NextFormID: 2048
   Author: ''
   MasterReferences:
