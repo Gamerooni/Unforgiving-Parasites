@@ -61,7 +61,6 @@ VirtualMachineAdapter:
       Object: 063004:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceKey
-      Object: 01775F:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_OnPutOnDevice
       Object: 07AA14:Devious Devices - Integration.esm

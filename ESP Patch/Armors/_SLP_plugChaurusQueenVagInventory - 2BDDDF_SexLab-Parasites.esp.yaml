@@ -138,6 +138,8 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceKey
 Name:
   TargetLanguage: English
   Value: Vaginal Chaurus Queen

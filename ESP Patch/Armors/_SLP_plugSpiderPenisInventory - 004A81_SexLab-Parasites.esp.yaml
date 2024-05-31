@@ -134,6 +134,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 062FFE:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: DestroyOnRemove
+      Data: True
 Name:
   TargetLanguage: English
   Value: Detached Spider Penis

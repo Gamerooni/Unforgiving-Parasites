@@ -1,5 +1,7 @@
 Scriptname UD_CustomSLPChaurusQueenSkin_RS extends UD_CustomHarness_RenderScript
 
+; remove locks and keys
+
 SLP_fcts_parasites Property fctParasites  Auto
 
 Function InitPostPost()

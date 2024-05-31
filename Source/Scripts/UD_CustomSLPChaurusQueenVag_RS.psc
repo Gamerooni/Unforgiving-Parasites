@@ -3,6 +3,8 @@ Scriptname UD_CustomSLPChaurusQueenVag_RS extends UD_CustomInflatablePlug_Render
 ; needs more work on minigame etc.
 ; needs proper inflation events
 ; needs new menu for inflation stuff
+; needs more work on difficulty
+; needs to not return item on removal. ever.
 
 import UD_Native
 
