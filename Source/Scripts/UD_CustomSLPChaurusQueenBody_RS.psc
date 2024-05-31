@@ -13,3 +13,8 @@ Function OnRemoveDevicePost(Actor akActor)
     parent.onRemoveDevicePost(akActor)
     fctParasites.cureParasiteByString(getWearer(), "ChaurusQueenBody")
 EndFunction 
+
+;the funniest possible way to stop the UD Patcher from chucking locks onto this device
+Int Function CreateLock(Int aiDifficulty, Int aiAccess, Int aiShields, String asName, Int aiTimelock = 0, Bool abAdd = False)
+    return 0x00000000
+EndFunction
