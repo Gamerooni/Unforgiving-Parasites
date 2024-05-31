@@ -193,24 +193,6 @@ Function activateDevice()
     endif
 EndFunction
 
-; Function OnMinigameTick(Float abUpdateTime)
-;     if inflateMinigame_on
-;         inflateprogress += RandomFloat(8.2,12.0)*UDCDmain.getStruggleDifficultyModifier()*UDmain.UD_baseUpdateTime*getMinigameMult(1)
-;         if inflateprogress > UD_PumpDifficulty
-;             stopMinigame()
-;         endif    
-;     endif
-    
-;     if deflateMinigame_on
-;         deflateprogress += RandomFloat(3.5,8.0)*UDCDmain.getStruggleDifficultyModifier()*UDmain.UD_baseUpdateTime*getMinigameMult(1)
-;         if deflateprogress > UD_PumpDifficulty
-;             stopMinigame()
-;         endif    
-;     endif
-    
-;     parent.OnMinigameTick(abUpdateTime)
-; EndFunction
-
 Function OnMinigameStart()
     setMinigameMult(1, getMinigameMult(1) * getAccesibility())
     string sMsg = ""
@@ -254,20 +236,10 @@ Function OnRemoveDevicePre(Actor akActor)
 EndFunction
 
 Function onRemoveDevicePost(Actor akActor)
+    parent.onRemoveDevicePost(akActor)
     libs.SexLab.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
     fctParasites.cureParasiteByString(akActor, "SpiderEggAll")
 EndFunction
-
-; Function removeDevice(Actor akActor)
-;     if _getArousalAdjustment() > 0.8
-;         UDmain.ShowSingleMessageBox("The eggs pop out of your hole one-by-one, each one pulling out the next by a thread of the foamy and slimy lubricant that kept them together.")
-;         parent.removeDevice(akActor)
-;     Else
-;         libs.SexLab.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
-;         fctParasites.cureParasiteByString(akActor, "SpiderEgg")
-;         ;SexLabUtil.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
-;     endif
-; EndFunction
 
 bool Function canBeActivated()
     if parent.canBeActivated() || (getPlugInflateLevel() <= 4 && getRelativeElapsedCooldownTime() >= 0.3)
