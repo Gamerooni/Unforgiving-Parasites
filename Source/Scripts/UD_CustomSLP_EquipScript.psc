@@ -113,7 +113,7 @@ EndFunction
 
 Int Function EquipFilterSpiderEgg(actor akActor, bool silent=false)
 	; FTM optimization
-    if silent && akActor != libs.PlayerRef
+    if silent && !IsPlayer(akActor)
         return 0
     EndIf    
     
@@ -122,7 +122,7 @@ Int Function EquipFilterSpiderEgg(actor akActor, bool silent=false)
             ; open belts allow putting in anal plugs.
             return 0
         EndIf
-        if akActor == libs.PlayerRef && !silent
+        if IsPlayer(akActor) && !silent
             libs.NotifyActor("Fortunately, the belt you are wearing prevents you from filling yourself with spider eggs.", akActor, true)
         ElseIf  !silent
             libs.NotifyActor("The belt " + GetActorName(akActor) + " is wearing makes it impossible to fill her with spider eggs.", akActor, true)
@@ -150,7 +150,7 @@ EndFunction
 int Function EquipFilterBarnacles(actor akActor, bool silent=false)
 	ActorBase 	pActorBase  
 	if akActor == none
-		akActor == libs.PlayerRef
+		akActor = libs.PlayerRef
 	EndIf
 	pActorBase = akActor.GetActorBase()
 
@@ -173,9 +173,24 @@ EndFunction
 
 Function EquipPreChaurusQueenArmor(actor akActor, bool silent=false)
 	if !silent
-		if akActor == libs.PlayerRef
+		if IsPlayer(akActor)
 			libs.NotifyActor("The Seed wraps you in a protective layer of woven mucus and chitin.", akActor, true)
-			
+		EndIf
+	EndIf
+EndFunction
+
+Function EquipPreChaurusQueenBody(actor akActor, bool silent=false)
+	if !silent
+		if IsPlayer(akActor)
+			libs.NotifyActor("The Seed's protection turns into thick scales and heavy spikes.", akActor, true)
+		EndIf
+	EndIf
+EndFunction
+
+Function EquipPreChaurusQueenSkin(actor akActor, bool silent=false)
+	if !silent
+		if IsPlayer(akActor)
+			libs.NotifyActor("The Seed digs roots into your skin, and invades your breasts. New glands force their way in among the old, and start exuding a sweet and sticky liquid.", akActor, true)
 		EndIf
 	EndIf
 EndFunction
@@ -183,7 +198,7 @@ EndFunction
 int Function EquipFilterChaurusQueenArmor(actor akActor, bool silent=false)
 	ActorBase 	pActorBase  
 	if akActor == none
-		akActor == libs.PlayerRef
+		akActor = libs.PlayerRef
 	EndIf
 	pActorBase = akActor.GetActorBase()
 
@@ -207,7 +222,7 @@ EndFunction
 Function EquipPreFaceHugger(actor akActor, bool silent=false)
 	libs.StoreExposureRate(akActor)
 	string msg = ""
-	if akActor == libs.PlayerRef
+	if IsPlayer(akActor)
 		; Quest setup
 		if deviceQuest.GetStage() >= 10; && menuDisable==false)
 			libs.Log("Resetting... (Stage>=10)")
@@ -232,7 +247,55 @@ Function EquipPreFaceHugger(actor akActor, bool silent=false)
 	EndIf
 EndFunction
 
+Function EquipPreChaurusQueenGag(actor akActor, bool silent=false)
+	if !silent
+		if IsPlayer(akActor)
+			libs.NotifyPlayer("Thick scales quickly form a protective layer around your face.", true)
+		EndIf
+	EndIf
+EndFunction
 
+Function EquipPreChaurusQueenVag(actor akActor, bool silent=false)
+	string msg = ""
+	if IsPlayer(akActor)
+		if Aroused.GetActorExposure(akActor) < libs.ArousalThreshold("Desire")
+			msg = "The Seed in your womb stirs and fills your vagina snugly, leaving your lips slightly parted and wet."
+		elseif Aroused.GetActorExposure(akActor) < libs.ArousalThreshold("Horny")
+			msg = "The Seed in your womb extends past your vagina and keeps your lips spread wide."
+		elseif Aroused.GetActorExposure(akActor) < libs.ArousalThreshold("Desperate")
+			msg = "The Seed in your womb spreads your vagina wide open."
+		else
+			msg = "You can feel the Seed in your womb fill your vagina and squirm between your thighs."
+		endif
+	EndIf
+	if !silent
+		libs.NotifyActor(msg, akActor, true)
+	EndIf
+EndFunction
+
+int Function EquipFilterChaurusQueenVag(actor akActor, bool silent=false)
+	; FTM optimization
+	if silent && !IsPlayer(akActor)
+		return 2
+	EndIf
+	if !silent && !IsPlayer(akActor)
+		libs.NotifyActor("Without the Seed Stone inside them, the parasite rejects " + akActor.GetLeveledActorBase().GetName() + " as a host.", akActor, true)
+		return 2
+	EndIf
+	if akActor.WornHasKeyword(libs.zad_DeviousBelt)
+		if akActor == libs.PlayerRef && !silent
+			libs.NotifyActor("You can feel the Seed churn and push inside you, but the belt you are wearing is keeping it deep inside your womb.", akActor, true)
+		EndIf
+		return 2
+	Endif
+	if akActor.WornHasKeyword(libs.zad_DeviousPlug)
+		if akActor == libs.PlayerRef && !silent
+			libs.NotifyActor("You can feel the Seed churn and push inside you, but your holes are already full.", akActor, true)
+		EndIf
+		return 2
+	Endif
+	return 0
+EndFunction
 
 Function OnEquippedPre(actor akActor, bool silent=false)
     if deviceInventory.haskeyword(fctParasites._SLP_ParasiteTentacleMonster) || deviceInventory.haskeyword(fctParasites._SLP_ParasiteLivingArmor)
@@ -247,6 +310,14 @@ Function OnEquippedPre(actor akActor, bool silent=false)
 		EquipPreBarnacles(akActor, silent)
 	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenArmor)
 		EquipPreChaurusQueenArmor(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenBody)
+		EquipPreChaurusQueenBody(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenSkin)
+		EquipPreChaurusQueenSkin(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenGag)
+		EquipPreChaurusQueenGag(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenVag)
+		EquipPreChaurusQueenVag(akActor, silent)
 	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteFaceHugger)
 		EquipPreFaceHugger(akActor, silent)
     endif
@@ -260,8 +331,10 @@ int Function OnEquippedFilter(actor akActor, bool silent=false)
 		EquipFilterSpiderEgg(akActor, silent)
 	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteBarnacles)
 		EquipFilterBarnacles(akActor, silent)
-	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenArmor) || deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenBody)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenArmor) || deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenBody) || deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenSkin)
 		EquipFilterChaurusQueenArmor(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenVag)
+		EquipFilterChaurusQueenVag(akActor, silent)
     endif
     return Parent.OnEquippedFilter(akActor, silent)
 EndFunction
