@@ -3,7 +3,7 @@ EditorID: _SLP_bootsSprigganInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_SprigganFeetScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
       Name: LockJamChance
@@ -140,6 +140,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 062FFE:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 ObjectBounds:
   First: -7, -7, -13
   Second: 6, 8, 12
@@ -167,6 +170,7 @@ Keywords:
 - 80ADA7:SexLab-Parasites.esp
 - 80ADA9:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Fungal growths on your legs.

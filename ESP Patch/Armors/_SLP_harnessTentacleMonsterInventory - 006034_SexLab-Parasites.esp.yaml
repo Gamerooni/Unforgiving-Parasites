@@ -3,7 +3,7 @@ EditorID: _SLP_harnessTentacleMonsterInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_TentacleMonsterScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
       Name: LockJamChance
@@ -145,6 +145,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 73B449:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Tera Anemone Intinere
@@ -169,6 +172,7 @@ Keywords:
 - 0044FE:SexLab-Parasites.esp
 - 006031:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Commonly known as the Tentacle Monster, this parasite preys on unsuspecting victims near Chaurus egg sacs.

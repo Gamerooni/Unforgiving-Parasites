@@ -3,7 +3,7 @@ EditorID: _SLP_plugSpiderPenisInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_SpiderPenisScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -137,6 +137,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptBoolProperty
       Name: DestroyOnRemove
       Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Detached Spider Penis
@@ -161,6 +164,7 @@ Keywords:
 - 0044FE:SexLab-Parasites.esp
 - 004A84:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: A barbed male reproductive organ left by a Spider inside a mate to prevent further coupling.

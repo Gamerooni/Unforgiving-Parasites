@@ -4,6 +4,22 @@ EditorID: _SLP_harnessLivingArmor_scriptInstance
 FormVersion: 43
 SkyrimMajorRecordFlags:
 - NotPlayable
+VirtualMachineAdapter:
+  Scripts:
+  - Name: UD_CustomSLPLivingArmor_RenderScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 008604:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_DeviceKeyword
+      Object: 017C43:Devious Devices - Assets.esm
 Name:
   TargetLanguage: English
   Value: Tentacle Armor
@@ -41,6 +57,9 @@ Keywords:
 - 01EDFA:Devious Devices - Integration.esm
 - 02CB86:Devious Devices - Integration.esm
 - 050C84:Devious Devices - Integration.esm
+- 11A352:UnforgivingDevices.esp
+- 13A977:UnforgivingDevices.esp
+- 1579BE:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.

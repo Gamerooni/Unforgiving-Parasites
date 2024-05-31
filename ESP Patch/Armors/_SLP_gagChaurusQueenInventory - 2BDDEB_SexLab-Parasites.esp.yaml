@@ -3,7 +3,7 @@ EditorID: _SLP_gagChaurusQueenInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_ChaurusQueenGagScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -176,6 +176,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 062FFE:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Chaurus Queen Mask
@@ -201,6 +204,7 @@ Keywords:
 - 0429FB:Devious Devices - Integration.esm
 - 2BDDE6:SexLab-Parasites.esp
 - 3CA3C1:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: The crown of the Chaurus Queen

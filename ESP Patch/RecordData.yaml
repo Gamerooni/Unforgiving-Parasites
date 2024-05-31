@@ -1,16 +1,11 @@
 SpriggitSource:
   PackageName: Spriggit.Yaml.Skyrim
   Version: 0.20.0
-ModKey: SexLab-Parasited-UD.esp
+ModKey: SexLab-Parasites-UD.esp
 GameRelease: SkyrimSE
 ModHeader:
-  Flags:
-  - Light
   Stats:
-    Version: 1.7
-    NumRecords: 39
-    NextFormID: 2048
-  Author: ''
+    NumRecords: 36
   MasterReferences:
   - Master: Skyrim.esm
     FileSize: 0
@@ -23,6 +18,8 @@ ModHeader:
   - Master: Devious Devices - Integration.esm
     FileSize: 0
   - Master: ZaZAnimationPack.esm
+    FileSize: 0
+  - Master: UnforgivingDevices.esp
     FileSize: 0
   - Master: SexLab-Parasites.esp
     FileSize: 0

@@ -3,7 +3,7 @@ EditorID: _SLP_harnessChaurusQueenBodyInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_ChaurusQueenBodyScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
       Name: LockJamChance
@@ -149,6 +149,9 @@ VirtualMachineAdapter:
       Object: 062FFE:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceKey
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Chaurus Queen Body
@@ -175,6 +178,7 @@ Keywords:
 - 2BDDE4:SexLab-Parasites.esp
 - 0A9B1F:Skyrim.esm
 - 3CA3C1:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Thick protective chitin scales growing around your body.

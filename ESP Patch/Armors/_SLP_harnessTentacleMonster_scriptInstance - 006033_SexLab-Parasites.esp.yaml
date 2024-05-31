@@ -4,6 +4,22 @@ EditorID: _SLP_harnessTentacleMonster_scriptInstance
 FormVersion: 43
 SkyrimMajorRecordFlags:
 - NotPlayable
+VirtualMachineAdapter:
+  Scripts:
+  - Name: UD_CustomSLPTentacleMonster_RS
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 006034:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_DeviceKeyword
+      Object: 017C43:Devious Devices - Assets.esm
 ObjectBounds:
   First: -11, -15, -4
   Second: 11, 15, 4
@@ -44,6 +60,9 @@ Keywords:
 - 0012C6:SexLab-Parasites.esp
 - 01EDFA:Devious Devices - Integration.esm
 - 050C84:Devious Devices - Integration.esm
+- 11A352:UnforgivingDevices.esp
+- 13A977:UnforgivingDevices.esp
+- 1579BE:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.

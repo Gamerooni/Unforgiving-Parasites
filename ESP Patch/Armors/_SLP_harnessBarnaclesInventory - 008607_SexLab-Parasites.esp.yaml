@@ -3,7 +3,7 @@ EditorID: _SLP_harnessBarnaclesInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_BarnaclesScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
       Name: LockJamChance
@@ -149,6 +149,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 062FFE:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 ObjectBounds:
   First: -5, 5, 117
   Second: 0, 9, 124
@@ -176,6 +179,7 @@ Keywords:
 - 0044FE:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
 - 0085F4:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: These strange spores sprout on the skin after long term exposure to the toxic atmosphere of Blackreach or deep caves.

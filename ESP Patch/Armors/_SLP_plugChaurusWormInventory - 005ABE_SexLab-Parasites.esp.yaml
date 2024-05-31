@@ -3,7 +3,7 @@ EditorID: _SLP_plugChaurusWormInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_ChaurusWormScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -137,6 +137,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Chaurus Worm
@@ -161,6 +164,7 @@ Keywords:
 - 0044FE:SexLab-Parasites.esp
 - 0012C8:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: A throbbing, slimy worm commonly found in the bowels of Chaurus victims.

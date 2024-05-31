@@ -3,7 +3,7 @@ EditorID: _SLP_harnessChaurusQueenSkinInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_ChaurusQueenSkinScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
       Name: LockJamChance
@@ -147,6 +147,9 @@ VirtualMachineAdapter:
       Object: 062FFE:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceKey
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Chaurus Queen Skin
@@ -172,6 +175,7 @@ Keywords:
 - 0429FB:Devious Devices - Integration.esm
 - 33C726:SexLab-Parasites.esp
 - 3CA3C1:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: The transformation from the Seed Stone goes deep. The insect-like buds prodding through your chest are a hint at how the Seed is rewiring you inside.

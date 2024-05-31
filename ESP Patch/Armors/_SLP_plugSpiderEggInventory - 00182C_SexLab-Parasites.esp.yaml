@@ -3,7 +3,7 @@ EditorID: _SLP_plugSpiderEggInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_SpiderEggScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -137,6 +137,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 062FFE:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Spider Egg Cluster
@@ -161,6 +164,7 @@ Keywords:
 - 0012C7:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
 - 0044FE:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: A slimy cluster of Spider egglings. Once inside you, they strech from deep inside your womb to the entrance of your vagina.

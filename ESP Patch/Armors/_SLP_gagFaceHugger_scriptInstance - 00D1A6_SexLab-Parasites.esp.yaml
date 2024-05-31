@@ -1,6 +1,22 @@
 FormKey: 00D1A6:SexLab-Parasites.esp
 EditorID: _SLP_gagFaceHugger_scriptInstance
 FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: UD_CustomSLPFaceHugger_RS
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 00D1A7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_DeviceKeyword
+      Object: 007EB8:Devious Devices - Assets.esm
 ObjectEffect: 00D1A8:SexLab-Parasites.esp
 WorldModel:
   Male:
@@ -29,6 +45,9 @@ Keywords:
 - 0012C6:SexLab-Parasites.esp
 - 01EDFA:Devious Devices - Integration.esm
 - 01DDCD:Devious Devices - Integration.esm
+- 11A352:UnforgivingDevices.esp
+- 13A977:UnforgivingDevices.esp
+- 1579BE:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.

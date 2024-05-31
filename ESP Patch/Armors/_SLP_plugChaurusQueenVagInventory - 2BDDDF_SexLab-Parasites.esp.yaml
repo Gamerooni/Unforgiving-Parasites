@@ -3,7 +3,7 @@ EditorID: _SLP_plugChaurusQueenVagInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_ChaurusQueenVagScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -140,6 +140,9 @@ VirtualMachineAdapter:
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceKey
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Vaginal Chaurus Queen
@@ -165,6 +168,7 @@ Keywords:
 - 0429FB:Devious Devices - Integration.esm
 - 2BDDE0:SexLab-Parasites.esp
 - 3CA3C1:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: A throbbing, slimy extension of the meta parasite.

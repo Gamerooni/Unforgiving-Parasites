@@ -3,7 +3,7 @@ EditorID: _SLP_gagSprigganInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_SprigganGagScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -175,6 +175,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 ObjectBounds:
   First: -11, -8, 1
   Second: 11, 10, 85
@@ -203,6 +206,7 @@ Keywords:
 - 0429FB:Devious Devices - Integration.esm
 - 80ADA7:SexLab-Parasites.esp
 - 80ADA6:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Spriggan Fungal growth on the face.

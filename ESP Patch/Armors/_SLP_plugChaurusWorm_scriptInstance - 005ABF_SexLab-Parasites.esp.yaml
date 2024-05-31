@@ -1,6 +1,22 @@
 FormKey: 005ABF:SexLab-Parasites.esp
 EditorID: _SLP_plugChaurusWorm_scriptInstance
 FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SLP_ChaurusWormScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 005ABE:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_DeviceKeyword
+      Object: 01DD7D:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
 WorldModel:
   Male:
     Model:
@@ -24,6 +40,9 @@ Keywords:
 - 0429FB:Devious Devices - Integration.esm
 - 003894:Devious Devices - Assets.esm
 - 00FACA:Devious Devices - Assets.esm
+- 11A352:UnforgivingDevices.esp
+- 13A977:UnforgivingDevices.esp
+- 1579BE:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.

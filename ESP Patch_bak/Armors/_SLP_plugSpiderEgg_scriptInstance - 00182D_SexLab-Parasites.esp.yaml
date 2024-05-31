@@ -1,0 +1,34 @@
+FormKey: 00182D:SexLab-Parasites.esp
+EditorID: _SLP_plugSpiderEgg_scriptInstance
+FormVersion: 43
+ObjectEffect: 05D9CC:Devious Devices - Integration.esm
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\plugSpiderEggs\plugSpiderEggs_gnd.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - 0x8000000
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 003331:Devious Devices - Assets.esm
+- 0063CA:Devious Devices - Assets.esm
+- 02F16E:SexLab.esm
+- 0FF9FB:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 01DD7C:Devious Devices - Assets.esm
+- 0012C7:SexLab-Parasites.esp
+- 0012C6:SexLab-Parasites.esp
+- 0429FB:Devious Devices - Integration.esm
+- 0044FE:SexLab-Parasites.esp
+- 003894:Devious Devices - Assets.esm
+- 00FACB:Devious Devices - Assets.esm
+- 05D9CA:Devious Devices - Integration.esm
+Description:
+  TargetLanguage: English
+  Value: A slimy cluster of Spider egglings (script)
+Armature:
+- 001832:SexLab-Parasites.esp

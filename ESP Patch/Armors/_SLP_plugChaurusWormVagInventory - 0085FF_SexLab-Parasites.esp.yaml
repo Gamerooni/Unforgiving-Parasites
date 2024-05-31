@@ -3,7 +3,7 @@ EditorID: _SLP_plugChaurusWormVagInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_ChaurusWormVagScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Aroused
@@ -137,6 +137,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_UnEquipFailMsg
       Object: 083630:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Vaginal Chaurus Worm
@@ -161,6 +164,7 @@ Keywords:
 - 0429FB:Devious Devices - Integration.esm
 - 008600:SexLab-Parasites.esp
 - 0044FE:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: A throbbing, slimy worm sometimes found in the womb of Chaurus victims.

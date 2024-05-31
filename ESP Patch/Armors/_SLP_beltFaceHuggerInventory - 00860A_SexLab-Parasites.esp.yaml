@@ -3,7 +3,7 @@ EditorID: _SLP_beltFaceHuggerInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_FaceHuggerScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -168,6 +168,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: LockShieldTimerMax
       Data: 48
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Hip Hugger
@@ -193,6 +196,7 @@ Keywords:
 - 0085F3:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
 - 00FACA:Devious Devices - Assets.esm
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: These nasty crawlers hug their victim's hips tight while they fill their womb with semen.

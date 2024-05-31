@@ -3,7 +3,7 @@ EditorID: _SLP_gagFaceHuggerInventory
 FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_FaceHuggerGagScript
+  - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
@@ -173,6 +173,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 73B449:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
 Name:
   TargetLanguage: English
   Value: Face Hugger
@@ -197,6 +200,7 @@ Keywords:
 - 0044FE:SexLab-Parasites.esp
 - 00D1A1:SexLab-Parasites.esp
 - 0429FB:Devious Devices - Integration.esm
+- 1553DD:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: These nasty crawlers hug their victim's face tight while they fill their stomach with semen and make speaking impossible.
