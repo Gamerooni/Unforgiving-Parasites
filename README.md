@@ -4,12 +4,14 @@ Unforgiving Devices rework of Sexlab Parasites.
 This is just my attempt to experiment with UD's various features to see what's possible, and SL Parasites needed a conversion anyway.
 
 On the to-do:
- - custom menus for the various plugs (they shouldn't say stuff like "Vibrate" or "Inflate")
-- Go over everything and ensure there are no auto-patched locks (there shouldn't be a padlock on a tentacle skinsuit)
+ - ~~custom menus for the various plugs (they shouldn't say stuff like "Vibrate" or "Inflate")~~
+- ~~Go over everything and ensure there are no auto-patched locks (there shouldn't be a padlock on a tentacle skinsuit)~~
+  - sorta done - just need to make sure I don't forget to do this on every device
 - FaceHugger and FaceHuggerGag
 - ChaurusWorm and ChaurusWormVag
 - The entire spriggan set
-- custom sounds for vibration events
+- ~~custom sounds for vibration events~~
+  - sorta done - just need to test
 - tons of testing to ensure the overall quest still works
 
 Uses:

@@ -221,6 +221,11 @@ Function sendDeflateMessage()
     Udmain.Print(getDeviceName() + ", to everyone's great shock, makes " + getWearerName() + " less thick. Any less thick and they will be like overmilked instant oats. (you shouldn't be seeing this message)")
 EndFunction
 
+;the funniest possible way to stop the UD Patcher from chucking locks onto this device
+Int Function CreateLock(Int aiDifficulty, Int aiAccess, Int aiShields, String asName, Int aiTimelock = 0, Bool abAdd = False)
+    return 0x00000000
+EndFunction
+
 ;============================================================================================================================
 ;unused override function, theese are from base script. Extending different script means you also have to add their overrride functions                                                
 ;theese function should be on every object instance, as not having them may cause multiple function calls to default class

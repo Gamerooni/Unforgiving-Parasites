@@ -11,7 +11,6 @@ import UD_Native
 ; - XXXXXforce the struggle minigame
 ; - XXXXXrandom activation
 ; XXXXXAdd custom sounds
-; add vibration strength value
 
 ; Bring everything out into a parent script
 ;  - initpostpost parasite application
@@ -205,42 +204,45 @@ EndFunction
 ;theese function should be on every object instance, as not having them may cause multiple function calls to default class
 ;more about reason here https://www.creationkit.com/index.php?title=Function_Reference, and Notes on using Parent section
 ;============================================================================================================================
+Function InitPostPost()
+    parent.InitPostPost()
+EndFunction
 bool Function proccesSpecialMenu(int msgChoice)
     return parent.proccesSpecialMenu(msgChoice)
 EndFunction
-
+Function onDeviceMenuInitPost(bool[] aControlFilter)
+    parent.onDeviceMenuInitPost(aControlFilter)
+EndFunction
+Function onDeviceMenuInitPostWH(bool[] aControlFilter)
+    parent.onDeviceMenuInitPostWH(aControlFilter)
+EndFunction
 int Function getPlugInflateLevel()
     return parent.getPlugInflateLevel()
 EndFunction
-
-Function inflatePlug(int increase)
-    return parent.inflatePlug(increase) 
+string Function addInfoString(string str = "")
+    parent.addInfoString(str)
 EndFunction
-
-Function deflatePlug(int decrease)
-    return parent.deflatePlug(decrease)
+Function inflate(bool silent = false, int iInflateNum = 1)
+    parent.inflate(true, iInflateNum)
 EndFunction
-
-Function updateWidget(bool force = false)
-    parent.updateWidget(force)
+Function deflate(bool silent = False)
+    parent.deflate(true)
 EndFunction
-
-Function onUpdatePost(float timePassed)
-    parent.onUpdatePost(timePassed)
+Function activateDevice()
+    parent.activateDevice()
 EndFunction
-
-bool Function OnCritDevicePre()
-    return parent.OnCritDevicePre()
+Function onRemoveDevicePost(Actor akActor)
+    parent.onRemoveDevicePost(akActor)
 EndFunction
-
+Function OnCritFailure()
+    parent.OnCritFailure()
+EndFunction
 Function OnMinigameEnd()
     parent.OnMinigameEnd()
 EndFunction
-
-Function OnMinigameTick(Float abUpdateTime)
-    parent.OnMinigameTick(abUpdateTime)
+bool Function struggleMinigame(int type = -1, Bool abSilent = False)
+    parent.struggleMinigame(type, abSilent)
 EndFunction
-
-Function patchDevice()
-    parent.patchDevice()
+bool Function struggleMinigameWH(Actor akHelper,int aiType = -1)
+    parent.struggleMinigameWH(akHelper, aiType)
 EndFunction
