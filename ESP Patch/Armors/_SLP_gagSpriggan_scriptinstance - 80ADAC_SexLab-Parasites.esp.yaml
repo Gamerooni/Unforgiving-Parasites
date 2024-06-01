@@ -1,22 +1,23 @@
 FormKey: 80ADAC:SexLab-Parasites.esp
 EditorID: _SLP_gagSpriggan_scriptinstance
-FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
   - Name: SLP_SprigganGagScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptProperty
+      Name: UD_LockList
+    - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UD_DeviceKeyword
-      Object: 007EB8:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 80ADAD:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: UD_DeviceKeyword
+      Object: 007EB8:Devious Devices - Assets.esm
 ObjectEffect: 8386C3:SexLab-Parasites.esp
 WorldModel:
   Male:

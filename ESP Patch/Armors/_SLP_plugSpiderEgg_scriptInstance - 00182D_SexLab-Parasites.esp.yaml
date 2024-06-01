@@ -1,22 +1,27 @@
 FormKey: 00182D:SexLab-Parasites.esp
 EditorID: _SLP_plugSpiderEgg_scriptInstance
-FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLPSpiderEgg_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
+      Name: UD_SpecialMenuInteractionWH
+      Object: 000800:SexLab-Parasites-UD.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 00182C:SexLab-Parasites.esp
+      Name: UD_SpecialMenuInteraction
+      Object: 000800:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 01DD7C:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 00182C:SexLab-Parasites.esp
 ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:

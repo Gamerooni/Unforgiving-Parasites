@@ -1,22 +1,21 @@
 FormKey: 33C729:SexLab-Parasites.esp
 EditorID: _SLP_harnessChaurusQueenSkin_scriptInstance
-FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLPChaurusQueenSkin_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 33C72A:SexLab-Parasites.esp
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 00CA39:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 33C72A:SexLab-Parasites.esp
 ObjectEffect: 4FF211:SexLab-Parasites.esp
 WorldModel:
   Male:

@@ -1,22 +1,21 @@
 FormKey: 00D1A6:SexLab-Parasites.esp
 EditorID: _SLP_gagFaceHugger_scriptInstance
-FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLPFaceHugger_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 00D1A7:SexLab-Parasites.esp
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 007EB8:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 00D1A7:SexLab-Parasites.esp
 ObjectEffect: 00D1A8:SexLab-Parasites.esp
 WorldModel:
   Male:

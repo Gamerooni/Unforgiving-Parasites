@@ -1,0 +1,13 @@
+FormKey: 005901:SexLab-Parasites-UD.esp
+VersionControl: 12481
+EditorID: SLP_UD_ParasiteVibrateDescriptor
+Type: Standard
+Category: 0172A1:Skyrim.esm
+SoundFiles:
+- Data\Sound\fx\UD_SLP\365246__cally06__mud-squelching.wav
+OutputModel: 0FE240:Skyrim.esm
+LoopAndRumble:
+  Loop: Loop
+  RumbleValues: 255
+PercentFrequencyShift: 0.8666666666666667
+Priority: 96

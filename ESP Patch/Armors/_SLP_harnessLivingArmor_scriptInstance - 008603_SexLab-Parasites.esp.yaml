@@ -1,7 +1,6 @@
 FormKey: 008603:SexLab-Parasites.esp
 MajorRecordFlagsRaw: 4
 EditorID: _SLP_harnessLivingArmor_scriptInstance
-FormVersion: 43
 SkyrimMajorRecordFlags:
 - NotPlayable
 VirtualMachineAdapter:
@@ -9,17 +8,17 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPLivingArmor_RenderScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 008604:SexLab-Parasites.esp
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 017C43:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 008604:SexLab-Parasites.esp
 Name:
   TargetLanguage: English
   Value: Tentacle Armor
@@ -31,7 +30,7 @@ WorldModel:
       Data: 0x020000000000000000000000
   Female:
     Model:
-      File: devious\devices\harnessBody_go.nif
+      File: Devious\Devices\harnessBody_go.nif
       Data: 0x020000000000000000000000
 BodyTemplate:
   FirstPersonFlags:

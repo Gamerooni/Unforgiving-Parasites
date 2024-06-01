@@ -5,9 +5,17 @@ ModKey: SexLab-Parasites-UD.esp
 GameRelease: SkyrimSE
 ModHeader:
   Stats:
-    NumRecords: 36
+    NumRecords: 45
+    NextFormID: 22787
+  Author: DEFAULT
   MasterReferences:
   - Master: Skyrim.esm
+    FileSize: 0
+  - Master: Update.esm
+    FileSize: 0
+  - Master: Dawnguard.esm
+    FileSize: 0
+  - Master: Dragonborn.esm
     FileSize: 0
   - Master: SexLab.esm
     FileSize: 0
@@ -17,9 +25,14 @@ ModHeader:
     FileSize: 0
   - Master: Devious Devices - Integration.esm
     FileSize: 0
+  - Master: Devious Devices - Expansion.esm
+    FileSize: 0
+  - Master: Devious Devices - Contraptions.esm
+    FileSize: 0
   - Master: ZaZAnimationPack.esm
     FileSize: 0
   - Master: UnforgivingDevices.esp
     FileSize: 0
   - Master: SexLab-Parasites.esp
     FileSize: 0
+  INTV: 1

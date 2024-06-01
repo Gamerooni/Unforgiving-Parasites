@@ -1,22 +1,21 @@
 FormKey: 005ABF:SexLab-Parasites.esp
 EditorID: _SLP_plugChaurusWorm_scriptInstance
-FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
   - Name: SLP_ChaurusWormScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 005ABE:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 01DD7D:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: deviceInventory
+      Object: 005ABE:SexLab-Parasites.esp
 WorldModel:
   Male:
     Model:

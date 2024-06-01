@@ -1,22 +1,24 @@
 FormKey: 004A82:SexLab-Parasites.esp
 EditorID: _SLP_plugSpiderPenis_scriptInstance
-FormVersion: 43
 VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLPSpiderPenis_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: UD_DeviceKeyword
+      Object: 01DD7C:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 004A81:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: UD_DeviceKeyword
-      Object: 01DD7C:Devious Devices - Assets.esm
+      Name: UD_VibSound
+      Object: 005902:SexLab-Parasites-UD.esp
 WorldModel:
   Male:
     Model:
