@@ -12,7 +12,22 @@ import UD_Native
 ; - XXXXXoncritfailure checksentient
 ; - XXXXXforce the struggle minigame
 ; - XXXXXrandom activation
-; Add custom sounds
+; XXXXXAdd custom sounds
+; add vibration strength value
+
+; Bring everything out into a parent script
+;  - initpostpost parasite application
+;  - devicemenuinitpost turning off charging
+;  - getAccessibility
+;  - addInfoString
+;  - inflate
+;  - deflate
+;  - activateDevice
+;  - onMinigameStart?
+;  - critfailure effects
+;  - onRemoveDevicePre flavour text
+;  - onRemoveDevicePost add cum and remove parasite
+;  - struggleminigame
 
 float _dwarvenOilAdjust = 0.2
 
@@ -116,30 +131,30 @@ Function inflate(bool silent = false, int iInflateNum = 1)
                 if WearerIsPlayer()
                     UDmain.Print("You succesfully pushed " + getDeviceName() + " deeper in",1)
                     string sMsg = ""
-                    if currentVal == 0
-                        sMsg = "The eggs hang mostly outside your vagina like a loose sack, their alien membrane smacking against your thighs."
-                    elseif currentVal == 1
-                        sMsg = "More eggs rest firmly within you, but the rest dangle obscenely outside. The way they brush against your thighs and leave them slimy is getting on your nerves. It wouldn't hurt to push them in a bit further, right?"
-                    ; elseif currentVal == 1
-                    ;     libs.notify("Your plug is a bit inflated but doesn't stimulate you too much - just enough to make you long for more. You could give the pump a healthy squeeze!", messagebox = true)
-                    elseif currentVal == 2
-                        sMsg = "Half the egg cluster is inside you. You feel completely full. The slimy eggs softly shift and settle, not unpleasantly. You feel you should be revulsed, but you're not. You get a twinge of pleasure as you imagine pushing them in further."
-                    ; elseif currentVal == 2
-                    ;     libs.notify("Your plug is inflated. Its gentle movements inside you please you without causing you discomfort. You are getting more horny and wonder if you should inflate it even more?", messagebox = true)
-                    elseif currentVal == 3
-                        sMsg = "The cluster of eggs within your quim press against your insides. They remind you of their presence every time you move, shifting around and kneading every sensitive spot."
-                        ; elseif currentVal == 3
-                    ;     libs.notify("Your fairly inflated plug is impossible to ignore as it moves around inside of you, constantly pleasing you and making you more horny as you already are.", messagebox = true)
-                    elseif currentVal == 4
-                        sMsg = "You cannot possibly fit any more eggs within you. They press your vagina apart and stretch it to its breaking point. With every step, you're filled with pain and blinding pleasure - you struggle holding back your squeals. Of delight?"
-                    ; elseif currentVal == 4
-                    ;     libs.notify("Your plug is almost inflated to capacity. You cannot move at all without shifting it around inside of you, making you squeal in an odd sensation of pleasurable pain.", messagebox = true)
-                    else
-                        sMsg = "The eggs fill you completely, as solid as a rivet. You don't know how you haven't burst, but the pain makes you wonder if maybe you had. Your guts feel like a furnace of searing agony - but that's nothing compared to the throbbing ecstasy spreading from your crotch."
-                    ; else
-                    ;     libs.notify("Your plug is fully inflated and almost bursting inside you. It's causing you more discomfort than anything. But no matter what - you won't be able to remove it from your body anytime soon.", messagebox = true)      
-                    UDMain.ShowSingleMessageBox(sMsg)   
-                    EndIf    
+                        if currentVal == 0
+                                sMsg = "The eggs hang mostly outside your vagina like a loose sack, their alien membrane smacking against your thighs."
+                                elseif currentVal == 1
+                                    sMsg = "More eggs rest firmly within you, but the rest dangle obscenely outside. The way they brush against your thighs and leave them slimy is getting on your nerves. It wouldn't hurt to push them in a bit further, right?"
+                                ; elseif currentVal == 1
+                                ;     libs.notify("Your plug is a bit inflated but doesn't stimulate you too much - just enough to make you long for more. You could give the pump a healthy squeeze!", messagebox = true)
+                                    elseif currentVal == 2
+                                        sMsg = "Half the egg cluster is inside you. You feel completely full. The slimy eggs softly shift and settle, not unpleasantly. You feel you should be revulsed, but you're not. You get a twinge of pleasure as you imagine pushing them in further."
+                                    ; elseif currentVal == 2
+                                    ;     libs.notify("Your plug is inflated. Its gentle movements inside you please you without causing you discomfort. You are getting more horny and wonder if you should inflate it even more?", messagebox = true)
+                                        elseif currentVal == 3
+                                            sMsg = "The cluster of eggs within your quim press against your insides. They remind you of their presence every time you move, shifting around and kneading every sensitive spot."
+                                            ; elseif currentVal == 3
+                                        ;     libs.notify("Your fairly inflated plug is impossible to ignore as it moves around inside of you, constantly pleasing you and making you more horny as you already are.", messagebox = true)
+                                        elseif currentVal == 4
+                                            sMsg = "You cannot possibly fit any more eggs within you. They press your vagina apart and stretch it to its breaking point. With every step, you're filled with pain and blinding pleasure - you struggle holding back your squeals. Of delight?"
+                                        ; elseif currentVal == 4
+                                        ;     libs.notify("Your plug is almost inflated to capacity. You cannot move at all without shifting it around inside of you, making you squeal in an odd sensation of pleasurable pain.", messagebox = true)
+                                else
+                                    sMsg = "The eggs fill you completely, as solid as a rivet. You don't know how you haven't burst, but the pain makes you wonder if maybe you had. Your guts feel like a furnace of searing agony - but that's nothing compared to the throbbing ecstasy spreading from your crotch."
+                                ; else
+                                ;     libs.notify("Your plug is fully inflated and almost bursting inside you. It's causing you more discomfort than anything. But no matter what - you won't be able to remove it from your body anytime soon.", messagebox = true)      
+                                UDMain.ShowSingleMessageBox(sMsg)   
+                        EndIf    
                 elseif WearerIsFollower()
                     UDmain.Print(getWearerName() + "s " + getDeviceName() + " inflated!",2)
                 endif

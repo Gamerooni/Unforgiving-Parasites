@@ -100,6 +100,7 @@ EndFunction
 
 ; taunt player and regenerate if minigame failed
 Function OnMinigameEnd()
+    parent.OnMinigameEnd()
     if !IsUnlocked && WearerIsPlayer()
         libs.NotifyPlayer(_getArousalFailMessage(), true)
         _regeneratePenis()
