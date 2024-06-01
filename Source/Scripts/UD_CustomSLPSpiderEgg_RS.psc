@@ -1,6 +1,4 @@
-Scriptname UD_CustomSLPSpiderEgg_RS extends UD_CustomInflatablePlug_RenderScript
-
-SLP_fcts_parasites Property fctParasites Auto
+Scriptname UD_CustomSLPSpiderEgg_RS extends UD_CustomSLPPlug_RenderScript
 
 import UnforgivingDevicesMain
 import UD_Native
@@ -29,37 +27,28 @@ import UD_Native
 ;  - onRemoveDevicePost add cum and remove parasite
 ;  - struggleminigame
 
+
+;Just the normal ordinary dwarven oil from skyrim
+Ingredient Property DwarvenOil Auto
+
+
+;Accessibility multiplier if we have no Dwarven Oil (DO)
 float _dwarvenOilAdjust = 0.2
-
-;=====PARENT DUMB VAR OVERRIDE=====
-float deflateprogress = 0.0
-bool deflateMinigame_on = false
-
-float inflateprogress = 0.0
-bool inflateMinigame_on = false
-
-int _inflateLevel = 0 ;for npcs
 
 
 ;=====HELPER FUNCTIONS=====
-int Function _getDexterity()
-    int iDexterity = 10 + (libs.PlayerRef.GetActorValue("Pickpocket") as Int) / 10
-    return iDexterity
-EndFunction
 
-float Function _getArousalAdjustment()
-    return 1.0 - fRange((UDOM.getArousal(getWearer()) - _getDexterity())/80.0, 0.0, 1.0)
-EndFunction
-
+;Whether we know about the ol' DO trick
 bool function _dwarvenOilKnown()
     return StorageUtil.GetIntValue(libs.PlayerRef, "_SLP_iSpiderEggsKnown")==1
 EndFunction
 
+;Whether anyone involved in the struggle has any DO
 bool function _isDwarvenOilPresent()
-    Ingredient _dwarvenOil = Game.GetFormFromFile(0x000F11C0, "Skyrim.esm") as Ingredient
-    return getWearer().GetItemCount(_dwarvenOil) > 0 || getHelper().GetItemCount(_dwarvenOil) > 0
+    return getWearer().GetItemCount(DwarvenOil) > 0 || (getHelper() && getHelper().GetItemCount(DwarvenOil) > 0)
 endfunction
 
+;Black box to give us a multiplier regarding our DO proclivities
 float function _getDwarvenOilAdjust()
     if _dwarvenOilKnown() && _isDwarvenOilPresent()
         return 1.0
@@ -68,162 +57,49 @@ float function _getDwarvenOilAdjust()
     endif
 EndFunction
 
-Function _retaliatoryInflate(float fMult = 1.0)
-    if Round(fMult * (1.0 - _getArousalAdjustment()) * 90.0) > RandomInt(1,99)
-        UDCDmain.activateDevice(self)
-        if WearerIsPlayer()
-            UDmain.ShowSingleMessageBox("The eggs sense your tampering and retaliate!")
-        endif
-    endif
-EndFunction
-
 ;=====OVERRIDES=====
 Function InitPost()
     parent.InitPost()
     UD_ActiveEffectName = "Insertion"
-    UD_DeviceType = "Spider Egg Plug"
+    UD_DeviceType = "Spider Egg Cluster"
     UD_Cooldown = 90
 EndFunction
 
-Function InitPostPost()
-    parent.InitPostPost()
-    fctParasites.applyParasiteByString(GetWearer(), "SpiderEgg" )
-    inflatePlug(RandomInt(1, 3))
+;Manually set parasite name to spideregg, manually add dwarven oil
+Function safeCheck()
+    if !SLPParasiteApplyName
+        SLPParasiteApplyName = "SpiderEgg"
+    endif
+    if !SLPParasiteCureName
+        SLPParasiteCureName = "SpiderEggAll"
+    endif
+    if !DwarvenOil
+        DwarvenOil = Game.GetFormFromFile(0x000F11C0, "Skyrim.esm") as Ingredient
+    endif
+    parent.safeCheck()
 EndFunction
 
-;Deactivate soulgem charging
-Function onDeviceMenuInitPost(bool[] aControlFilter)
-    parent.onDeviceMenuInitPost(aControlFilter)
-    UDCDmain.currentDeviceMenu_switch1 = False
-EndFunction
-
-;Deactivate soulgem charging
-Function onDeviceMenuInitPostWH(bool[] aControlFilter)
-    parent.onDeviceMenuInitPostWH(aControlFilter)
-    UDCDmain.currentDeviceMenu_switch1 = False
-EndFunction
-
+;Adjust accessibility by whether we know about DO and have it on hand
 float Function getAccesibility()
-    return parent.getAccesibility() * _getArousalAdjustment() * _getDwarvenOilAdjust()
+    return parent.getAccesibility() * _getDwarvenOilAdjust()
 EndFunction
 
-string Function addInfoString(string str = "")
-    str += "Insertion level: " + getPlugInflateLevel() + "\n"
-    ; can't do below because deflateprogress isn't available
-    ; if getPlugInflateLevel() > 0
-    ;     str += "Egg pressure: " + Math.Ceiling(100.0 - 100.0*deflateprogress/UD_PumpDifficulty) + " %\n"
-    ; endif
-    return str
-EndFunction
-
-Function inflate(bool silent = false, int iInflateNum = 1)
-    int currentVal = getPlugInflateLevel() + iInflateNum
-        if !silent
-            if haveHelper()
-                if WearerIsPlayer()
-                    UDmain.Print(getHelperName() + " helped you insert the " + getDeviceName() + " deeper!",1)
-                elseif WearerIsFollower() && HelperIsPlayer()
-                    UDmain.Print("You helped push " + getWearerName() + "s " + getDeviceName() + " deeper in!",1)
-                elseif WearerIsFollower()
-                    UDmain.Print(getHelperName() + " helped pushing " + getWearerName() + "s " + getDeviceName() + " further in!",1)
-                endif            
-            else
-                if WearerIsPlayer()
-                    UDmain.Print("You succesfully pushed " + getDeviceName() + " deeper in",1)
-                    string sMsg = ""
-                        if currentVal == 0
-                                sMsg = "The eggs hang mostly outside your vagina like a loose sack, their alien membrane smacking against your thighs."
-                                elseif currentVal == 1
-                                    sMsg = "More eggs rest firmly within you, but the rest dangle obscenely outside. The way they brush against your thighs and leave them slimy is getting on your nerves. It wouldn't hurt to push them in a bit further, right?"
-                                ; elseif currentVal == 1
-                                ;     libs.notify("Your plug is a bit inflated but doesn't stimulate you too much - just enough to make you long for more. You could give the pump a healthy squeeze!", messagebox = true)
-                                    elseif currentVal == 2
-                                        sMsg = "Half the egg cluster is inside you. You feel completely full. The slimy eggs softly shift and settle, not unpleasantly. You feel you should be revulsed, but you're not. You get a twinge of pleasure as you imagine pushing them in further."
-                                    ; elseif currentVal == 2
-                                    ;     libs.notify("Your plug is inflated. Its gentle movements inside you please you without causing you discomfort. You are getting more horny and wonder if you should inflate it even more?", messagebox = true)
-                                        elseif currentVal == 3
-                                            sMsg = "The cluster of eggs within your quim press against your insides. They remind you of their presence every time you move, shifting around and kneading every sensitive spot."
-                                            ; elseif currentVal == 3
-                                        ;     libs.notify("Your fairly inflated plug is impossible to ignore as it moves around inside of you, constantly pleasing you and making you more horny as you already are.", messagebox = true)
-                                        elseif currentVal == 4
-                                            sMsg = "You cannot possibly fit any more eggs within you. They press your vagina apart and stretch it to its breaking point. With every step, you're filled with pain and blinding pleasure - you struggle holding back your squeals. Of delight?"
-                                        ; elseif currentVal == 4
-                                        ;     libs.notify("Your plug is almost inflated to capacity. You cannot move at all without shifting it around inside of you, making you squeal in an odd sensation of pleasurable pain.", messagebox = true)
-                                else
-                                    sMsg = "The eggs fill you completely, as solid as a rivet. You don't know how you haven't burst, but the pain makes you wonder if maybe you had. Your guts feel like a furnace of searing agony - but that's nothing compared to the throbbing ecstasy spreading from your crotch."
-                                ; else
-                                ;     libs.notify("Your plug is fully inflated and almost bursting inside you. It's causing you more discomfort than anything. But no matter what - you won't be able to remove it from your body anytime soon.", messagebox = true)      
-                                UDMain.ShowSingleMessageBox(sMsg)   
-                        EndIf    
-                elseif WearerIsFollower()
-                    UDmain.Print(getWearerName() + "s " + getDeviceName() + " inflated!",2)
-                endif
-            endif
-        endif
-    parent.inflate(true, iInflateNum)
-EndFunction
-
-Function deflate(bool silent = False)
-    if !silent
-        if haveHelper()
-            if WearerIsPlayer()
-                UDmain.Print(getHelperName() + " helped you to push out some" + getDeviceName() + "!",1)
-            elseif PlayerInMinigame()
-                UDmain.Print("You helped to push out some of" + getWearerName() + "s " + getDeviceName() + "!",1)
-            endif
-        else
-            if WearerIsPlayer()
-                UDmain.Print("You succesfully pushed out some of your "+getDeviceName()+"!",1)
-            elseif PlayerInMinigame()
-                UDmain.Print(getWearerName() + "s " + getDeviceName()+ " partially pushed out!",1)
-            endif
-        endif
-    endif
-    return parent.deflate(true)
-EndFunction
-
+;If we have DO, we can deflate like a normal plug
 bool Function canDeflate()
-    if iInRange(getPlugInflateLevel(),1,2) && _dwarvenOilKnown() && _isDwarvenOilPresent()
-        return True
-    else
-    ; else
-    ;     if WearerIsPlayer()
-    ;         debug.MessageBox("Plug is already deflated")
-    ;     elseif WearerIsFollower()
-    ;         UDmain.Print(getWearerName() + "s "+ getDeviceName() + " is already mostly pushed out",1)
-    ;     endif
-    ;     return False
-    ; endif
-    ; if WearerIsPlayer()
-    ;     debug.MessageBox("Plug is too big to be deflated at the moment!")
-    ; elseif WearerIsFollower()
-    ;     UDmain.Print(getWearerName() + "s "+ getDeviceName() + " are too far in to be pushed out at this moment!",1)
-    ; endif
-        return False
-    endif
-EndFunction
-
-Function activateDevice()
-    resetCooldown(fRange(_getArousalAdjustment(), 0.3, 1.0))
-    bool loc_canInflate = _inflateLevel <= 4
-    bool loc_canVibrate = canVibrate() && !isVibrating()
-    if loc_canInflate
-        if WearerIsPlayer()
-            Udmain.Print("Your "+ getDeviceName()+" contract into a tight ball, then shoot further into you!")
-        elseif WearerIsFollower()
-            UDmain.Print(getWearerName() + "s "+ getDeviceName() + " suddenly shoot further into her!",3)
+    if iInRange(getPlugInflateLevel(),1,4) && _dwarvenOilKnown()
+        if _isDwarvenOilPresent()
+            return True
+        else
+            debug.MessageBox("You're lacking the Dwarven Oil to calm the eggs")
         endif
-        inflatePlug(1)
     endif
-    if loc_canVibrate
-        vibrate()
-    endif
+    return parent.canDeflate()
 EndFunction
 
 Function OnMinigameStart()
     setMinigameMult(1, getMinigameMult(1) * getAccesibility())
     string sMsg = ""
-    bool bRetaliate = false
+    bool bRetaliate = true
     if _dwarvenOilKnown()
         if _isDwarvenOilPresent()
             UDOM.UpdateArousal(getWearer(), 2)
@@ -236,25 +112,16 @@ Function OnMinigameStart()
             else
                 sMsg = "You rub the Dwarven Oil into your hands and lower them down to your pussy. You squirm together with the eggs as you lubricate yourself."
             endif
+            bRetaliate = false
         else
             sMsg = "You recall that it's unwise to begin this without Dwarven Oil."
-            bRetaliate = true;;_retaliatoryInflate()
         endif
-    else
-        bRetaliate = true;_retaliatoryInflate()
     endif
     if sMsg != ""
         UDmain.Print(sMsg)
     endif
-    if bRetaliate
-        _retaliatoryInflate()
-    endif
+    setRetaliate(bRetaliate)
     parent.OnMinigameStart()
-EndFunction
-
-Function OnCritFailure()
-    _retaliatoryInflate(0.75)
-    parent.OnCritFailure()
 EndFunction
 
 Function OnRemoveDevicePre(Actor akActor)
@@ -262,17 +129,74 @@ Function OnRemoveDevicePre(Actor akActor)
     parent.OnRemoveDevicePre(akActor)
 EndFunction
 
-Function onRemoveDevicePost(Actor akActor)
-    parent.onRemoveDevicePost(akActor)
-    libs.SexLab.AddCum(akActor, Vaginal = true, Oral = false, Anal = true)
-    fctParasites.cureParasiteByString(akActor, "SpiderEggAll")
+
+;===========CUSTOM OVERRIDES===========
+
+Function sendRetaliationMessage()
+    if WearerIsPlayer() && UD_SLP_RetaliateMessagePlayer
+        UDmain.ShowSingleMessageBox("The eggs sense your tampering and squirm and writhe to avoid it!")
+    elseif UDCDmain.AllowNPCMessage(GetWearer(), true) && UD_SLP_RetaliateMessageNPC
+        UDmain.Print("The eggs sense " + getWearerName() + "'s tampering and become lively!", 3)
+    endif
 EndFunction
 
-bool Function canBeActivated()
-    if parent.canBeActivated() || (getPlugInflateLevel() <= 4 && getRelativeElapsedCooldownTime() >= 0.3)
-        return true
+Function sendInflateMessage(int iInflateNum = 1)
+    int currentVal = getPlugInflateLevel() + iInflateNum
+    if haveHelper()
+        if WearerIsPlayer()
+            UDmain.Print(getHelperName() + " helped you insert the " + getDeviceName() + " deeper!",1)
+        elseif WearerIsFollower() && HelperIsPlayer()
+            UDmain.Print("You helped push " + getWearerName() + "s " + getDeviceName() + " deeper in!",1)
+        elseif WearerIsFollower()
+            UDmain.Print(getHelperName() + " helped pushing " + getWearerName() + "s " + getDeviceName() + " further in!",1)
+        endif            
     else
-        return false
+        if WearerIsPlayer()
+            UDmain.Print("You succesfully pushed " + getDeviceName() + " deeper in",1)
+            string sMsg = ""
+                if currentVal == 0
+                        sMsg = "The eggs hang mostly outside your vagina like a loose sack, their alien membrane smacking against your thighs."
+                        elseif currentVal == 1
+                            sMsg = "More eggs rest firmly within you, but the rest dangle obscenely outside. The way they brush against your thighs and leave them slimy is getting on your nerves. It wouldn't hurt to push them in a bit further, right?"
+                        ; elseif currentVal == 1
+                        ;     libs.notify("Your plug is a bit inflated but doesn't stimulate you too much - just enough to make you long for more. You could give the pump a healthy squeeze!", messagebox = true)
+                            elseif currentVal == 2
+                                sMsg = "Half the egg cluster is inside you. You feel completely full. The slimy eggs softly shift and settle, not unpleasantly. You feel you should be revulsed, but you're not. You get a twinge of pleasure as you imagine pushing them in further."
+                            ; elseif currentVal == 2
+                            ;     libs.notify("Your plug is inflated. Its gentle movements inside you please you without causing you discomfort. You are getting more horny and wonder if you should inflate it even more?", messagebox = true)
+                                elseif currentVal == 3
+                                    sMsg = "The cluster of eggs within your quim press against your insides. They remind you of their presence every time you move, shifting around and kneading every sensitive spot."
+                                    ; elseif currentVal == 3
+                                ;     libs.notify("Your fairly inflated plug is impossible to ignore as it moves around inside of you, constantly pleasing you and making you more horny as you already are.", messagebox = true)
+                                elseif currentVal == 4
+                                    sMsg = "You cannot possibly fit any more eggs within you. They press your vagina apart and stretch it to its breaking point. With every step, you're filled with pain and blinding pleasure - you struggle holding back your squeals. Of delight?"
+                                ; elseif currentVal == 4
+                                ;     libs.notify("Your plug is almost inflated to capacity. You cannot move at all without shifting it around inside of you, making you squeal in an odd sensation of pleasurable pain.", messagebox = true)
+                        else
+                            sMsg = "The eggs fill you completely, as solid as a rivet. You don't know how you haven't burst, but the pain makes you wonder if maybe you had. Your guts feel like a furnace of searing agony - but that's nothing compared to the throbbing ecstasy spreading from your crotch."
+                        ; else
+                        ;     libs.notify("Your plug is fully inflated and almost bursting inside you. It's causing you more discomfort than anything. But no matter what - you won't be able to remove it from your body anytime soon.", messagebox = true)      
+                        UDMain.ShowSingleMessageBox(sMsg)   
+                EndIf    
+        elseif WearerIsFollower()
+            UDmain.Print(getWearerName() + "s " + getDeviceName() + " slid deeper into them!",3)
+        endif
+    endif
+EndFunction
+
+Function sendDeflateMessage()
+    if haveHelper()
+        if WearerIsPlayer()
+            UDmain.Print(getHelperName() + " helped you to push out some" + getDeviceName() + "!",1)
+        elseif PlayerInMinigame()
+            UDmain.Print("You helped to push out some of" + getWearerName() + "s " + getDeviceName() + "!",1)
+        endif
+    else
+        if WearerIsPlayer()
+            UDmain.Print("You succesfully pushed out some of your "+getDeviceName()+"!",1)
+        elseif PlayerInMinigame()
+            UDmain.Print(getWearerName() + "s " + getDeviceName()+ " partially pushed out!",1)
+        endif
     endif
 EndFunction
 

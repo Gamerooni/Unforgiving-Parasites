@@ -4,8 +4,10 @@ import UD_Native
 
 SLP_fcts_parasites Property fctParasites Auto
 
-; Name of the parasite (to be used to apply and cure it)
-string Property SLPParasiteName Auto
+; Name of the parasite (to be used to apply it)
+string Property SLPParasiteApplyName Auto
+; Name of the parasite (to be used to cure it)
+string Property SLPParasiteCureName Auto
 ; What the device says if it retaliates against the player
 string Property UD_SLP_RetaliateMessagePlayer Auto
 ; What the device says if it retaliates against an NPC
@@ -27,14 +29,22 @@ Function InitPost()
     parent.InitPost()
     UD_DeviceType = "Parasite Plug"
     UD_ActiveEffectName = "Parasitic Stimulation"
-    SLPParasiteName = "DEFAULT PARASITE"
 EndFunction
 
 ;Apply the parasite, inflate the plug
 Function InitPostPost()
     parent.InitPostPost()
-    fctParasites.applyParasiteByString(GetWearer(), SLPParasiteName)
+    fctParasites.applyParasiteByString(GetWearer(), SLPParasiteApplyName)
     inflatePlug(RandomInt(1, 3))
+EndFunction
+
+Function safeCheck()
+    parent.safeCheck()
+    if SLPParasiteApplyName && !SLPParasiteCureName
+        SLPParasiteCureName = SLPParasiteApplyName
+    elseif SLPParasiteCureName && !SLPParasiteApplyName
+        SLPParasiteApplyName = SLPParasiteCureName
+    endif
 EndFunction
 
 ;Lower accessibility based on arousal
@@ -61,7 +71,7 @@ EndFunction
 
 Function inflate(bool silent = false, int iInflateNum = 1)
     if !silent
-        sendInflateMessage()
+        sendInflateMessage(iInflateNum)
     endif
     parent.inflate(true, iInflateNum)
 EndFunction
@@ -119,7 +129,7 @@ Function onRemoveDevicePost(Actor akActor)
         loc_anal = false
     endif
     libs.SexLab.AddCum(akActor, Vaginal = loc_vaginal, Oral = false, Anal = loc_vaginal)
-    fctParasites.cureParasiteByString(akActor, SLPParasiteName)
+    fctParasites.cureParasiteByString(akActor, SLPParasiteCureName)
 EndFunction
 
 ; Save the arousal at the beginning for later use. retaliate.
@@ -162,7 +172,7 @@ endFunction
 
 ;Creates a message to the player based on their current arousal when they fail a minigame. This placeholder is naturally empty
 string Function getArousalFailMessage()
-    return "you cry about it"
+    return "you cry about it (you're not supposed to be seeing this message)"
 EndFunction
 
 ;Sets whether the device will retaliate
@@ -182,13 +192,14 @@ EndFunction
 Function retaliate(float fMult = 1.0)
     if willRetaliate(fMult)
         if UDCDmain.activateDevice(self)
-            if WearerIsPlayer() && UD_SLP_RetaliateMessagePlayer
-                UDmain.ShowSingleMessageBox(UD_SLP_RetaliateMessagePlayer)
-            elseif UDCDmain.AllowNPCMessage(GetWearer(), true) && UD_SLP_RetaliateMessageNPC
-                UDmain.Print(UD_SLP_RetaliateMessageNPC, 3)
-            endif
+            sendRetaliationMessage()
         endif
     endif
+EndFunction
+
+;The message the device will send upon retaliation
+Function sendRetaliationMessage()
+    Udmain.Print("uh oh, stinky (you're not supposed to be seeing this message)")
 EndFunction
 
 ;The message the device will send upon activation
@@ -201,7 +212,7 @@ Function sendActivationMessage()
 EndFunction
 
 ;The message the device will send upon inflation
-Function sendInflateMessage()
+Function sendInflateMessage(int iInflateNum = 1)
     Udmain.Print(getDeviceName() + " makes " + getWearerName() + " thicker than a bowl of oatmeal! (you shouldn't be seeing this message)")
 EndFunction
 
@@ -229,9 +240,6 @@ bool Function deflateMinigame()
 EndFunction
 bool Function canBeActivated()
     Parent.canBeActivated()
-EndFunction
-Function safeCheck()
-    parent.safeCheck()
 EndFunction
 Function patchDevice()
     parent.patchDevice()
