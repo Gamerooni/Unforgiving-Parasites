@@ -13,4 +13,9 @@ On the to-do:
 - tons of testing to ensure the overall quest still works
 
 Uses:
-https://freesound.org/people/Cally06/sounds/365246/
+
+Slimy squelching flesh(comp,lmtr,dnsx2,Eq,lmtr).wav by newlocknew -- https://freesound.org/s/536830/ -- License: Attribution 4.0
+
+Mud Squelching.wav by Cally06 -- https://freesound.org/s/365246/ -- License: Attribution NonCommercial 3.0
+
+squelch.wav by OutofPhaze -- https://freesound.org/s/423927/ -- License: Creative Commons 0
