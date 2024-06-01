@@ -19,6 +19,12 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_VibSound
       Object: 005902:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_SpecialMenuInteraction
+      Object: 000800:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_SpecialMenuInteractionWH
+      Object: 000800:SexLab-Parasites-UD.esp
 WorldModel:
   Male:
     Model:

@@ -4,7 +4,7 @@ EditorID: SLP_UD_ParasiteVibrateDescriptor
 Type: Standard
 Category: 0172A1:Skyrim.esm
 SoundFiles:
-- Data\Sound\fx\UD_SLP\365246__cally06__mud-squelching.wav
+- Data\Sound\fx\UD_SLP\test.wav
 OutputModel: 0FE240:Skyrim.esm
 LoopAndRumble:
   Loop: Loop

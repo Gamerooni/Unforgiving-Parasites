@@ -66,6 +66,18 @@ Function InitPostPost()
     fctParasites.applyParasiteByString(getWearer(), "SpiderPenis" )
 EndFunction
 
+;Deactivate soulgem charging
+Function onDeviceMenuInitPost(bool[] aControlFilter)
+    parent.onDeviceMenuInitPost(aControlFilter)
+    UDCDmain.currentDeviceMenu_switch1 = False
+EndFunction
+
+;Deactivate soulgem charging
+Function onDeviceMenuInitPostWH(bool[] aControlFilter)
+    parent.onDeviceMenuInitPostWH(aControlFilter)
+    UDCDmain.currentDeviceMenu_switch1 = False
+EndFunction
+
 bool Function struggleMinigame(int type = -1, Bool abSilent = False)
     return forceOutPlugMinigame()
 EndFunction
@@ -105,11 +117,6 @@ Function OnMinigameTick3()
     if (RandomInt() < 80)
         _dealBarbDamage()
     endif
-EndFunction
-
-Function onSpecialButtonPressed(float fMult)
-    UDmain.Log("special button pressed")
-    parent.onSpecialButtonPressed(fMult)
 EndFunction
 
 Function OnRemoveDevicePost(Actor akActor)

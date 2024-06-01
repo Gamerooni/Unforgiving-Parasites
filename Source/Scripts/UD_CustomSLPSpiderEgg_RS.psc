@@ -76,6 +76,18 @@ Function InitPostPost()
     inflatePlug(RandomInt(1, 3))
 EndFunction
 
+;Deactivate soulgem charging
+Function onDeviceMenuInitPost(bool[] aControlFilter)
+    parent.onDeviceMenuInitPost(aControlFilter)
+    UDCDmain.currentDeviceMenu_switch1 = False
+EndFunction
+
+;Deactivate soulgem charging
+Function onDeviceMenuInitPostWH(bool[] aControlFilter)
+    parent.onDeviceMenuInitPostWH(aControlFilter)
+    UDCDmain.currentDeviceMenu_switch1 = False
+EndFunction
+
 float Function getAccesibility()
     return parent.getAccesibility() * _getArousalAdjustment() * _getDwarvenOilAdjust()
 EndFunction

@@ -5,14 +5,8 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPSpiderEgg_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: UD_SpecialMenuInteractionWH
-      Object: 000800:SexLab-Parasites-UD.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UD_SpecialMenuInteraction
-      Object: 000800:SexLab-Parasites-UD.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
@@ -22,6 +16,15 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 00182C:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_VibSound
+      Object: 005902:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_SpecialMenuInteraction
+      Object: 000800:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_SpecialMenuInteractionWH
+      Object: 000800:SexLab-Parasites-UD.esp
 ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:
@@ -51,6 +54,7 @@ Keywords:
 - 11A352:UnforgivingDevices.esp
 - 13A977:UnforgivingDevices.esp
 - 1579BE:UnforgivingDevices.esp
+- 01DDC6:Devious Devices - Integration.esm
 Description:
   TargetLanguage: English
   Value: A slimy cluster of Spider egglings (script)
