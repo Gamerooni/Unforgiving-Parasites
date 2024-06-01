@@ -8,6 +8,53 @@ SLP_fcts_parasites Property fctParasites Auto
 
 import UD_Native
 
+; Calculate barb damage based on wearer's arousal (between 1 and 11)
+float Function _getBarbDamage()
+    return RandomFloat(0.5, 1.0) * (UDOM.getArousal(getWearer()) + 10) / 10.0
+EndFunction
+
+Function _dealBarbDamage(float multiplier = 1.0, bool silent=false)
+    float totalDamage = _getBarbDamage() * multiplier
+    float maxDamage = getWearer().GetAV("Health") - 10.0
+    getWearer().DamageActorValue("Health",  fRange(totalDamage, 0.0, maxDamage))
+    if (!silent && totalDamage > 10 )
+        libs.SexlabMoan(GetWearer(), round(UDOM.getArousal(getWearer())))
+    endif
+EndFunction
+
+float Function _getArousalMultiplier()
+    int iDexterity = 20 + (libs.PlayerRef.GetActorValue("Pickpocket") as Int) / 5
+    return fRange(1.0 - (UDOM.getArousal(getWearer()) - iDexterity) / 70.0, 0.0, 1.0)
+EndFunction
+
+float startMinigameArousal = 0.0
+string Function _getArousalFailMessage()
+    float fArousal = startMinigameArousal;libs.Aroused.GetActorExposure(getWearer())
+    string msg = ""
+    if (fArousal < libs.ArousalThreshold("Desire"))
+        msg = "Your fingers slipped, and the penis buried itself futher inside you. Your juices flow even faster. You will have to give it another try when you are not so horny."
+    elseif (fArousal < libs.ArousalThreshold("Horny"))
+        msg = "As you gently nudged the penis's bulbous base, its barbs shot out in all directions and held it in place."
+    elseif (fArousal < libs.ArousalThreshold("Desperate"))
+        msg = "Your fingers tried to grip the penis's hilt, but your slippery juices gave them no purchase. The barbs dug further into your membrane."
+    Else
+        msg = "The moment your hand entered your abused hole, you own eager womb clenched painfully around the penis - barbs and all. Your vagina is sealed shut."
+    endif
+    return msg
+EndFunction
+
+Function _regeneratePenis()
+    UDmain.Log("penis regenerated", 5)
+    if onMendPre(1.0) && GetRelativeDurability() > 0.0
+        refillDurability(_getRegenerateAmount())
+    endif
+EndFunction
+
+; Calculate the amount to regenerate based on condition and wearer arousal (between 0% and 50%)
+Float Function _getRegenerateAmount()
+    return (UDOM.getArousal(getWearer())/100.0 * getRelativeCondition()) * getMaxDurability() / 2
+EndFunction
+
 Function InitPost()
     parent.InitPost()
     UD_ActiveEffectName = "Spider Barbs"
@@ -34,29 +81,8 @@ float Function getAccesibility()
     return _getArousalMultiplier() * parent.getAccesibility()
 EndFunction
 
-float Function _getArousalMultiplier()
-    int iDexterity = 20 + (libs.PlayerRef.GetActorValue("Pickpocket") as Int) / 5
-    return fRange(1.0 - (libs.Aroused.GetActorArousal(GetWearer()) - iDexterity) / 70.0, 0.0, 1.0)
-EndFunction
-
-int startMinigameArousal = 0
-string Function _getArousalFailMessage()
-    int iArousal = startMinigameArousal;libs.Aroused.GetActorExposure(getWearer())
-    string msg = ""
-    if (iArousal < libs.ArousalThreshold("Desire"))
-        msg = "Your fingers slipped, and the penis buried itself futher inside you. Your juices flow even faster. You will have to give it another try when you are not so horny."
-    elseif (iArousal < libs.ArousalThreshold("Horny"))
-        msg = "As you gently nudged the penis's bulbous base, its barbs shot out in all directions and held it in place."
-    elseif (iArousal < libs.ArousalThreshold("Desperate"))
-        msg = "Your fingers tried to grip the penis's hilt, but your slippery juices gave them no purchase. The barbs dug further into your membrane."
-    Else
-        msg = "The moment your hand entered your abused hole, you own eager womb clenched painfully around the penis - barbs and all. Your vagina is sealed shut."
-    endif
-    return msg
-EndFunction
-
 Function OnMinigameStart()
-    startMinigameArousal = libs.Aroused.GetActorExposure(getWearer())
+    startMinigameArousal = UDOM.getArousal(getWearer())
     parent.OnMinigameStart()
 EndFunction
 
@@ -71,38 +97,13 @@ EndFunction
 ; Deal damage and regenerate if crit fail
 Function OnCritFailure()
     _regeneratePenis()
-    _dealBarbDamage(2.0)
-EndFunction
-
-Function _regeneratePenis()
-    UDmain.Print("penis regenerated", 3, true)
-    if onMendPre(1.0) && GetRelativeDurability() > 0.0
-        refillDurability(_getRegenerateAmount())
-    endif
-EndFunction
-
-; Calculate the amount to regenerate based on condition and wearer arousal (between 0% and 50%)
-Float Function _getRegenerateAmount()
-    return (libs.Aroused.GetActorExposure(getWearer())/100.0 * getRelativeCondition()) * getMaxDurability() / 2
+    _dealBarbDamage(6.0)
 EndFunction
 
 ; 80% chance for the wearer to take damage
 Function OnMinigameTick3()
     if (RandomInt() < 80)
         _dealBarbDamage()
-    endif
-EndFunction
-
-; Calculate barb damage based on wearer's arousal (between 1 and 11)
-float Function _getBarbDamage()
-    return RandomFloat(0.5, 1.0) * (libs.Aroused.GetActorExposure(getWearer()) + 10) / 100.0 * 10.0
-EndFunction
-
-Function _dealBarbDamage(float multiplier = 1.0, bool silent=false)
-    float totalDamage = _getBarbDamage() * multiplier
-    getWearer().DamageActorValue("Health", totalDamage)
-    if (!silent && totalDamage > 10 )
-        libs.SexlabMoan(GetWearer(), libs.Aroused.GetActorExposure(getWearer()))
     endif
 EndFunction
 

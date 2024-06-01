@@ -22,9 +22,9 @@ string Function _getArousalFailMessage()
     if (iArousal < libs.ArousalThreshold("Desire"))
         msg = "Your fingers slip. The seed extends and throbs in response, and your juices gush from the stimulation."
     elseif (iArousal < libs.ArousalThreshold("Horny"))
-        msg = "As you push and tug, the Seed - coated in your lubrication - slips away and grows thicker. Your lips are spread further apart."
+        msg = "As you push and tug, the Seed - coated in your lubrication - slips away and grows thicker. It forces your lips even further apart."
     elseif (iArousal < libs.ArousalThreshold("Desperate"))
-        msg = "You reach into your sopping-wet opening and pull at the slimy worm. It inflates like a rivet inside your whole vagina; it's impossible to push on."
+        msg = "You reach into your sopping-wet opening and pull at the slimy worm. It inflates and fastens like a rivet; it's impossible to push on."
     Else
         msg = "The moment your hand tried to push the Seed back in, you own eager vagina clenches around the worm, with streams of your slimy fluid shooting out from the pressure."
     endif
