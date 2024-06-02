@@ -83,22 +83,14 @@ Function deflate(bool silent = False)
     parent.deflate(true)
 EndFunction
 
-;Normal deflate function, except with custom flavour text and stricter requirements
+;We'll have to struggle for every deflation
 bool Function canDeflate()
-    if iInRange(getPlugInflateLevel(),1,2)
-        return True
-    elseif getPlugInflateLevel() == 0
+    if getPlugInflateLevel() == 0
         if WearerIsPlayer()
             debug.MessageBox(getDeviceName() + " could not fill you any less.")
         elseif WearerIsFollower()
             UDmain.Print(getWearerName() + "s "+ getDeviceName() + " cannot fill them any less.",1)
         endif
-        return False
-    endif
-    if WearerIsPlayer()
-        debug.MessageBox(getDeviceName() + " stretches your hole too far. You can't do anything about it!")
-    elseif WearerIsFollower()
-        UDmain.Print(getWearerName() + "s "+ getDeviceName() + " is stuck fast inside them!",1)
     endif
     return False
 EndFunction

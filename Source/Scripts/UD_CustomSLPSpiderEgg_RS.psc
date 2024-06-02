@@ -85,11 +85,15 @@ EndFunction
 
 ;If we have DO, we can deflate like a normal plug
 bool Function canDeflate()
-    if iInRange(getPlugInflateLevel(),1,4) && _dwarvenOilKnown()
-        if _isDwarvenOilPresent()
-            return True
+    if _dwarvenOilKnown()
+        if iInRange(getPlugInflateLevel(),1,2)
+            if _isDwarvenOilPresent()
+                return True
+            else
+                debug.MessageBox("You're lacking the Dwarven Oil to calm the eggs")
+            endif
         else
-            debug.MessageBox("You're lacking the Dwarven Oil to calm the eggs")
+            UDmain.ShowSingleMessageBox("The eggs have gone too far in! You'll need to coax them out first.")
         endif
     endif
     return parent.canDeflate()

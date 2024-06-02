@@ -16,3 +16,20 @@ bool Function HasKeywords(actor akActor)
         return parent.HasKeywords(akActor)
     endif
 EndFunction
+
+
+;====================================
+;=========PARENT OVERRIDES===========
+;====================================
+
+Int Function GetChanceModified(actor akActor, int chanceMod)
+	parent.GetChanceModified(akActor, chanceMod)
+EndFunction
+
+Bool Function Filter(actor akActor, int chanceMod=0)
+	parent.Filter(akActor, chanceMod)
+EndFunction
+
+Function Execute(actor akActor)
+    parent.Execute(akActor)
+EndFunction
