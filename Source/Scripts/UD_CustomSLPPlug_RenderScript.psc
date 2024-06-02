@@ -141,7 +141,7 @@ EndFunction
 Function OnMinigameEnd()
     parent.OnMinigameEnd()
     if !IsUnlocked && WearerIsPlayer()
-        libs.NotifyPlayer(getArousalFailMessage(), true)
+        libs.NotifyPlayer(getArousalFailMessage(startMinigameArousal), true)
     endif
 EndFunction
 
@@ -163,7 +163,7 @@ float Function getArousalAdjustment()
 endFunction
 
 ;Creates a message to the player based on their current arousal when they fail a minigame. This placeholder is naturally empty
-string Function getArousalFailMessage()
+string Function getArousalFailMessage(float fArousal)
     return "you cry about it (you're not supposed to be seeing this message)"
 EndFunction
 
@@ -191,14 +191,18 @@ EndFunction
 
 ;The message the device will send upon retaliation
 Function sendRetaliationMessage()
-    Udmain.Print("uh oh, stinky (you're not supposed to be seeing this message)")
+    if WearerIsPlayer()
+        Udmain.ShowSingleMessageBox("The " + getDeviceName() + " senses your tampering and retaliates!")
+    elseif UDcdmain.AllowNPCMessage(getWearer(), true)
+        Udmain.Print("The " + getDeviceName() + " senses " + getWearerName() + " tampering and retaliates!")
+    endif
 EndFunction
 
 ;The message the device will send upon activation
 Function sendActivationMessage()
     if WearerIsPlayer()
         Udmain.Print("Your " + getDeviceName() + " contracts into a tight coil, writhes, and begins to spread you even wider!")
-    elseif WearerIsFollower()
+    elseif UDCDMain.AllowNPCMessage(getWearer(), false)
         UDmain.Print(getWearerName() + "'s "+ getDeviceName() + " suddenly spreads her even wider!",3)
     endif
 EndFunction
@@ -210,7 +214,9 @@ EndFunction
 
 ;The message the device will send upon deflation
 Function sendDeflateMessage()
-    Udmain.Print(getDeviceName() + ", to everyone's great shock, makes " + getWearerName() + " less thick. Any less thick and they will be like overmilked instant oats. (you shouldn't be seeing this message)")
+    if WearerIsPlayer()
+        UDMain.Print("The " + getDeviceName() + " relieves some of the pressure in your hole.")
+    endif
 EndFunction
 
 ;the funniest possible way to stop the UD Patcher from chucking locks onto this device

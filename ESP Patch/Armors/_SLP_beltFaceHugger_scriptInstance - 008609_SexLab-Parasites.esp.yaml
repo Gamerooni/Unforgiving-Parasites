@@ -62,6 +62,7 @@ Keywords:
 - 11A352:UnforgivingDevices.esp
 - 13A977:UnforgivingDevices.esp
 - 1579BE:UnforgivingDevices.esp
+- 05D9CA:Devious Devices - Integration.esm
 Description:
   TargetLanguage: English
   Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.

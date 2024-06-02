@@ -25,6 +25,7 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_SpecialMenuInteractionWH
       Object: 000800:SexLab-Parasites-UD.esp
+ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:
     Model:
@@ -49,6 +50,8 @@ Keywords:
 - 11A352:UnforgivingDevices.esp
 - 13A977:UnforgivingDevices.esp
 - 1579BE:UnforgivingDevices.esp
+- 0063CA:Devious Devices - Assets.esm
+- 05D9CA:Devious Devices - Integration.esm
 Description:
   TargetLanguage: English
   Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.
