@@ -25,6 +25,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_SpecialMenuInteractionWH
       Object: 000800:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Chaos
+      Data: 50
 ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:
