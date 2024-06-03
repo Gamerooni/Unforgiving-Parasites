@@ -13,6 +13,11 @@ string Property UD_SLP_RetaliateMessagePlayer Auto
 ; What the device says if it retaliates against an NPC
 string Property UD_SLP_RetaliateMessageNPC Auto
 
+; The ingredient to cure the parasite, if any
+Ingredient Property SLP_CureIngredient Auto
+; The difficulty multiplier if there's no cure. Default is 0.2
+Float Property SLP_CureMultiplier Auto
+
 ; The below is designed with UD_Chaos in mind
 
 
@@ -49,10 +54,14 @@ Function safeCheck()
     elseif SLPParasiteCureName && !SLPParasiteApplyName
         SLPParasiteApplyName = SLPParasiteCureName
     endif
+    if !SLP_CureMultiplier
+        SLP_CureMultiplier = 0.2
+    endif
 EndFunction
 
 ;Lower accessibility based on arousal
 float Function getAccesibility()
+    ; TODO: maybe implement ingredientadjust?
     return parent.getAccesibility() * getArousalAdjustment()
 EndFunction
 
@@ -95,6 +104,10 @@ bool Function canDeflate()
         elseif WearerIsFollower()
             UDmain.Print(getWearerName() + "s "+ getDeviceName() + " cannot fill them any less.",1)
         endif
+    ; if we have the cure, we apply it
+    elseif iInRange(getPlugInflateLevel(),1,2) && doesCureExist() && knowsCureIngredient() && hasCureIngredient()
+        Udmain.Print(getCureApplyText())
+        return true
     endif
     return False
 EndFunction
@@ -130,8 +143,23 @@ EndFunction
 
 ; Save the arousal at the beginning for later use. retaliate.
 Function OnMinigameStart()
+    bool bNoCure = false
+    if doesCureExist()
+        bNoCure = true
+        if knowsCureIngredient()
+            if hasCureIngredient()
+                bNoCure = false
+                Udmain.ShowSingleMessageBox(getCureApplyText())
+            Else
+                Udmain.ShowSingleMessageBox(getCureFailText())
+            endif
+        endif
+    endif
+    ; if cure is applied, don't retaliate
+    setRetaliate(bNoCure)
     startMinigameArousal = UDOM.getArousal(getWearer())
     retaliate()
+    ; Also change minigame difficulty here
     parent.OnMinigameStart()
 EndFunction
 
@@ -240,6 +268,53 @@ Function sendDeflateMessage()
     if WearerIsPlayer()
         UDMain.Print("The " + getDeviceName() + " relieves some of the pressure in your hole.")
     endif
+EndFunction
+
+string Function getCureName()
+    return SLP_CureIngredient.GetName()
+EndFunction
+
+;Whether there exists a cure for this device at all
+bool Function doesCureExist()
+    return SLP_CureIngredient
+EndFunction
+
+;Whether the player knows about the cure ingredient
+bool Function knowsCureIngredient()
+    return true
+EndFunction
+
+;Whether the wearer or helper has the ingredient in their inventories
+bool Function hasCureIngredient()
+    return getWearer().GetItemCount(SLP_CureIngredient) > 0 || (getHelper() && getHelper().GetItemCount(SLP_CureIngredient) > 0)
+EndFunction
+
+;If cure is known and present (or doesn't exist), return 1, else returns the cure multiplier
+float Function getCureMultiplier()
+    if !doesCureExist() || (knowsCureIngredient() && hasCureIngredient())
+        return 1.0
+    else
+        return SLP_CureMultiplier
+    endif
+EndFunction
+
+;If the player knows the cure but has no cure
+string Function getCureFailText()
+    return "You recall it's unwise to begin this without " + getCureName()
+EndFunction
+
+string Function getCureApplyText()
+    string sMsg = ""
+    if haveHelper()
+        if WearerIsPlayer()
+            sMsg = getHelperName() + " spreads the " + getCureName() + " around your groin. You almost moan as their fingers slip past the " + getDeviceName() + " and into your pussy."
+        elseif PlayerInMinigame()
+            sMsg = "You spread " + getCureName() + " around " + getWearerName() + "'s vagina. When your hand pushes past the " + getDeviceName() + " and into their vagina, they twitch and gasp."
+        endif
+    else
+        sMsg = "You rub the " + getCureName() + " into your hands and lower them down to your pussy. You squirm in sync with the " + getDeviceName() + " as you lubricate yourself."
+    endif
+    return sMsg
 EndFunction
 
 ;the funniest possible way to stop the UD Patcher from chucking locks onto this device

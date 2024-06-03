@@ -27,34 +27,7 @@ import UD_Native
 ;  - struggleminigame
 
 
-;Just the normal ordinary dwarven oil from skyrim
-Ingredient Property DwarvenOil Auto
-
-
-;Accessibility multiplier if we have no Dwarven Oil (DO)
-float _dwarvenOilAdjust = 0.2
-
-
 ;=====HELPER FUNCTIONS=====
-
-;Whether we know about the ol' DO trick
-bool function _dwarvenOilKnown()
-    return StorageUtil.GetIntValue(libs.PlayerRef, "_SLP_iSpiderEggsKnown")==1
-EndFunction
-
-;Whether anyone involved in the struggle has any DO
-bool function _isDwarvenOilPresent()
-    return getWearer().GetItemCount(DwarvenOil) > 0 || (getHelper() && getHelper().GetItemCount(DwarvenOil) > 0)
-endfunction
-
-;Black box to give us a multiplier regarding our DO proclivities
-float function _getDwarvenOilAdjust()
-    if _dwarvenOilKnown() && _isDwarvenOilPresent()
-        return 1.0
-    else
-        return _dwarvenOilAdjust
-    endif
-EndFunction
 
 ;=====OVERRIDES=====
 Function InitPost()
@@ -72,59 +45,11 @@ Function safeCheck()
     if !SLPParasiteCureName
         SLPParasiteCureName = "SpiderEggAll"
     endif
-    if !DwarvenOil
-        DwarvenOil = Game.GetFormFromFile(0x000F11C0, "Skyrim.esm") as Ingredient
+    ;dwarven oil
+    if !SLP_CureIngredient
+        SLP_CureIngredient = Game.GetFormFromFile(0x000F11C0, "Skyrim.esm") as Ingredient
     endif
     parent.safeCheck()
-EndFunction
-
-;Adjust accessibility by whether we know about DO and have it on hand
-float Function getAccesibility()
-    return parent.getAccesibility() * _getDwarvenOilAdjust()
-EndFunction
-
-;If we have DO, we can deflate like a normal plug
-bool Function canDeflate()
-    if _dwarvenOilKnown()
-        if iInRange(getPlugInflateLevel(),1,2)
-            if _isDwarvenOilPresent()
-                return True
-            else
-                debug.MessageBox("You're lacking the Dwarven Oil to calm the eggs")
-            endif
-        else
-            UDmain.ShowSingleMessageBox("The eggs have gone too far in! You'll need to coax them out first.")
-        endif
-    endif
-    return parent.canDeflate()
-EndFunction
-
-Function OnMinigameStart()
-    setMinigameMult(1, getMinigameMult(1) * getAccesibility())
-    string sMsg = ""
-    bool bRetaliate = true
-    if _dwarvenOilKnown()
-        if _isDwarvenOilPresent()
-            UDOM.UpdateArousal(getWearer(), 2)
-            if haveHelper()
-                if WearerIsPlayer()
-                    sMsg = getHelperName() + " spreads the Dwarven Oil around your groin. You almost moan as their fingers slip past the eggs and into your pussy."
-                elseif PlayerInMinigame()
-                    sMsg = "You spread Dwarven Oil around "+ getWearerName() + "'s vagina. When your hand pushes past the eggs and into their vagina, they twitch and gasp."
-                endif
-            else
-                sMsg = "You rub the Dwarven Oil into your hands and lower them down to your pussy. You squirm together with the eggs as you lubricate yourself."
-            endif
-            bRetaliate = false
-        else
-            sMsg = "You recall that it's unwise to begin this without Dwarven Oil."
-        endif
-    endif
-    if sMsg != ""
-        UDmain.Print(sMsg)
-    endif
-    setRetaliate(bRetaliate)
-    parent.OnMinigameStart()
 EndFunction
 
 Function OnRemoveDevicePre(Actor akActor)
@@ -182,7 +107,7 @@ Function sendDeflateMessage()
 EndFunction
 
 string Function getArousalFailMessage(float fArousal)
-    if fArousal <= 10 && _dwarvenOilKnown() && _isDwarvenOilPresent()
+    if fArousal <= 10 && knowsCureIngredient() && hasCureIngredient()
         return "Your fingers slipped, and the eggs only burrowed deeper inside you."
     elseif fArousal < 40
         return "The eggs clustered around your finger the moment it touched them, clogging your hole and sending waves of pain and pleasure with every twitch of your hand."
@@ -191,6 +116,10 @@ string Function getArousalFailMessage(float fArousal)
     else
         return "As desperately as you struggled to pull the glistening eggs out of your abused hole, your eager womb swallowed them back up each time with greedy abandon. It clenches painfully around them; they're now buried deep inside you."
     endif
+EndFunction
+
+bool Function knowsCureIngredient()
+    return StorageUtil.GetIntValue(libs.PlayerRef, "_SLP_iSpiderEggsKnown")==1
 EndFunction
 
 ;============================================================================================================================
@@ -239,4 +168,43 @@ bool Function struggleMinigame(int type = -1, Bool abSilent = False)
 EndFunction
 bool Function struggleMinigameWH(Actor akHelper,int aiType = -1)
     parent.struggleMinigameWH(akHelper, aiType)
+EndFunction
+float Function getAccesibility()
+    return parent.getAccesibility()
+EndFunction
+Function OnMinigameStart()
+    parent.OnMinigameStart()
+EndFunction
+bool Function canDeflate()
+    return parent.canDeflate()
+EndFunction
+float Function getArousalAdjustment()
+    parent.getArousalAdjustment()
+EndFunction
+Function setRetaliate(bool newRetaliate)
+    parent.setRetaliate(newRetaliate)
+EndFunction
+bool Function willRetaliate(float fMult = 1.0)
+    parent.willRetaliate(fMult)
+EndFunction
+Function retaliate(float fMult = 1.0)
+    parent.retaliate(fMult)
+EndFunction
+string Function getCureName()
+    return SLP_CureIngredient.GetName()
+EndFunction
+bool Function doesCureExist()
+    parent.doesCureExist()
+EndFunction
+bool Function hasCureIngredient()
+    parent.hasCureIngredient()
+EndFunction
+float Function getCureMultiplier()
+    parent.getCureMultiplier()
+EndFunction
+string Function getCureFailText()
+    parent.getCureFailText()
+EndFunction
+string Function getCureApplyText()
+    parent.getCureApplyText()
 EndFunction
