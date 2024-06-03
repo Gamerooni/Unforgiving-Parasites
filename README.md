@@ -34,6 +34,7 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
 ### Post release
 - Basic LL mod page
 - tons of testing to ensure the overall quest still works
+- possibly incorporate some of the SL Parasites fixes I've seen around?
 - Balance each one of the plugs with differing stats and effects (so it's not just the same plug reskinned)
 - Go hard on testing and normalizing all the sounds
 - Automatic CI/CD
