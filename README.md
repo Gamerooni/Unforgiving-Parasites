@@ -14,6 +14,13 @@ On the to-do:
   - sorta done - just need to test
 - Change from accessibility to some other form of difficulty for the devices
 - tons of testing to ensure the overall quest still works
+- Automatic CI/CD
+  - Trimmed READMEs, etc.
+  - Spriggit <=> .esp (both ways - I make edits in both places)
+  - scripts to .pex
+  - build script to make it into FOMOD
+    - with script sources and MO files as options
+- Documentation about what this mod does somewhere (maybe as a nexus page or GH wiki?)
 
 Uses:
 

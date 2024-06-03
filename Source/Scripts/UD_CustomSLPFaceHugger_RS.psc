@@ -9,7 +9,9 @@ import UD_Native
 
 ; add FHU stuff in the OnInflate func
 
-; maybe change from accessibility to some other form of difficulty for minigame calculations?
+
+; FIGURE OUT WHY THE VIBRATION EVENT AND ICONS DON'T PROPERLY WORK
+; ----I give up lol. Nothing seems to let them pop up. No clue what's up with that. Oh well, I'll patch it out later if need be.
 
 ;==========PROPERTIES==========
 
@@ -57,7 +59,7 @@ Function safeCheck()
 EndFunction
 
 string Function addInfoString(string str = "")
-    str += "Fluid level: " + getPlugInflateLevel() + "\n"
+    str += "Proboscis depth: " + getPlugInflateLevel() + "\n"
     return str
 EndFunction
 

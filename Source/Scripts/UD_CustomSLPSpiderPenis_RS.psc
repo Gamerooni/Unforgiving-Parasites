@@ -6,6 +6,8 @@ Scriptname UD_CustomSLPSpiderPenis_RS extends UD_CustomSLPPlug_RenderScript
 
 import UD_Native
 
+;==========LOCAL FUNCS==========
+
 ; Calculate barb damage based on wearer's arousal (between 1 and 11)
 float Function _getBarbDamage()
     return RandomFloat(0.5, 1.0) * (UDOM.getArousal(getWearer()) + 10) / 10.0
@@ -13,7 +15,8 @@ EndFunction
 
 Function _dealBarbDamage(float multiplier = 1.0, bool silent=false)
     float totalDamage = _getBarbDamage() * multiplier
-    float maxDamage = getWearer().GetAV("Health") - 10.0
+    ; leave behind at least 20% of the healthbar + 20 extra
+    float maxDamage = fRange(getWearer().GetAV("Health") * 0.8 - 20, 0.0, 100.0)
     getWearer().DamageActorValue("Health",  fRange(totalDamage, 0.0, maxDamage))
     if (!silent && totalDamage > 10 )
         libs.SexlabMoan(GetWearer(), round(UDOM.getArousal(getWearer())))
@@ -33,10 +36,19 @@ Function _regeneratePenis()
 EndFunction
 
 
+;==========OVERRIDES==========
+
 Function InitPost()
     parent.InitPost()
     UD_ActiveEffectName = "Spider Penis Barbs"
     UD_DeviceType = "Spider Penis"
+EndFunction
+
+Function safeCheck()
+    if !SLPParasiteApplyName
+        SLPParasiteApplyName = "SpiderPenis"
+    endif
+    parent.safeCheck()
 EndFunction
 
 ;Disable option to inflate the Spider Penis (you can't make it barb you)
@@ -93,6 +105,8 @@ bool Function canBeCutted()
 EndFunction
 
 
+;==========HELPER FUNCTIONS===========
+
 string Function getArousalFailMessage(float fArousal)
     string msg = ""
     if (fArousal < libs.ArousalThreshold("Desire"))
@@ -135,4 +149,49 @@ Function sendActivationMessage()
     elseif UDCDMain.AllowNPCMessage(getWearer(), false)
         UDmain.Print(getWearerName() + "'s "+ getDeviceName() + " digs it barbs deeper into her vagina, spreading it wide around the phallus!",3)
     endif
+EndFunction
+
+;============================================================================================================================
+;unused override function, theese are from base script. Extending different script means you also have to add their overrride functions                                                
+;theese function should be on every object instance, as not having them may cause multiple function calls to default class
+;more about reason here https://www.creationkit.com/index.php?title=Function_Reference, and Notes on using Parent section
+;============================================================================================================================
+Function InitPostPost()
+    parent.InitPostPost()
+EndFunction
+float Function getAccesibility()
+    return parent.getAccesibility()
+EndFunction
+Function inflate(bool silent = false, int iInflateNum = 1)
+    parent.inflate(silent, iInflateNum)
+EndFunction
+Function deflate(bool silent = False)
+    parent.deflate(silent)
+EndFunction
+Function activateDevice()
+    return parent.activateDevice()
+EndFunction
+Function OnCritFailure()
+    parent.OnCritFailure()
+EndFunction
+bool Function struggleMinigame(int type = -1, Bool abSilent = False)
+    return parent.struggleMinigame(type, abSilent)
+EndFunction
+bool Function struggleMinigameWH(Actor akHelper,int aiType = -1)
+    return parent.struggleMinigameWH(akHelper, aiType)
+EndFunction
+Function setRetaliate(bool newRetaliate)
+    return parent.setRetaliate(newRetaliate)
+EndFunction
+bool Function willRetaliate(float fMult = 1.0)
+    return parent.willRetaliate(fMult)
+EndFunction
+bool Function canDeflate()
+    parent.canDeflate()
+EndFunction
+Function OnMinigameStart()
+    parent.OnMinigameStart()
+EndFunction
+float Function getArousalAdjustment()
+    parent.getArousalAdjustment()
 EndFunction
