@@ -17,6 +17,8 @@ string Property UD_SLP_RetaliateMessageNPC Auto
 Ingredient Property SLP_CureIngredient Auto
 ; The difficulty multiplier if there's no cure. Default is 0.2
 Float Property SLP_CureMultiplier Auto
+; Flavour text for the inflation
+String Property SLP_InflationType Auto
 
 ; The below is designed with UD_Chaos in mind
 
@@ -38,6 +40,7 @@ Function InitPost()
     parent.InitPost()
     UD_DeviceType = "Parasite Plug"
     UD_ActiveEffectName = "Parasitic Stimulation"
+    SLP_InflationType = "Insertion level"
 EndFunction
 
 ;Apply the parasite, inflate the plug
@@ -78,7 +81,10 @@ Function onDeviceMenuInitPostWH(bool[] aControlFilter)
 EndFunction
 
 string Function addInfoString(string str = "")
-    str += "Insertion level: " + getPlugInflateLevel() + "\n"
+    if doesCureExist() && knowsCureIngredient()
+        str += "Remedy: " + getCureName() + "\n"
+    endif
+    str += SLP_InflationType + ": " + getPlugInflateLevel() + "\n"
     return str
 EndFunction
 
@@ -142,6 +148,8 @@ Function onRemoveDevicePost(Actor akActor)
 EndFunction
 
 ; Save the arousal at the beginning for later use. retaliate.
+; Also use up the cure
+; TODO: maybe make some orgasm/arousal/horny increases from applying the cure?
 Function OnMinigameStart()
     bool bNoCure = false
     if doesCureExist()
@@ -160,6 +168,7 @@ Function OnMinigameStart()
     startMinigameArousal = UDOM.getArousal(getWearer())
     retaliate()
     ; Also change minigame difficulty here
+    setMinigameDmgMult(getMinigameMult(0) * getArousalAdjustment() * getCureMultiplier())
     parent.OnMinigameStart()
 EndFunction
 

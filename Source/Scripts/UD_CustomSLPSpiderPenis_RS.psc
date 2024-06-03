@@ -42,6 +42,7 @@ Function InitPost()
     parent.InitPost()
     UD_ActiveEffectName = "Spider Penis Barbs"
     UD_DeviceType = "Spider Penis"
+    SLP_InflationType = "Barb distension level"
 EndFunction
 
 Function safeCheck()
@@ -63,11 +64,6 @@ Function onDeviceMenuInitPostWH(bool[] aControlFilter)
     parent.onDeviceMenuInitPostWH(aControlFilter)
     UDCDmain.currentDeviceMenu_switch3 = False
     UDCDmain.currentDeviceMenu_switch5 = False
-EndFunction
-
-string Function addInfoString(string str = "")
-    str += "Barb distension level: " + getPlugInflateLevel() + "\n"
-    return str
 EndFunction
 
 Function OnVibrationStart()

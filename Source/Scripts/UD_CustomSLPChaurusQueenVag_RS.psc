@@ -17,22 +17,14 @@ Function InitPost()
     parent.InitPost()
     UD_DeviceType = "Chaurus Queen Seed"
     UD_ActiveEffectName = "Seed Growth"
+    SLP_InflationType = "Seed expansion level"
 EndFunction
 
 Function safeCheck()
     if !SLPParasiteApplyName
         SLPParasiteApplyName = "ChaurusQueenVag"
     endif
-    ;Troll Fat
-    ; if !SLP_CureIngredient
-    ;     SLP_CureIngredient = Game.GetFormFromFile(0x0003AD72, "Skyrim.esm") as Ingredient
-    ; endif
     parent.safeCheck()
-EndFunction
-
-string Function addInfoString(string str = "")
-    str += "Seed expansion level: " + getPlugInflateLevel() + "\n"
-    return str
 EndFunction
 
 
