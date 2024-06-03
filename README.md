@@ -12,6 +12,7 @@ On the to-do:
 - The entire spriggan set
 - ~~custom sounds for vibration events~~
   - sorta done - just need to test
+- Change from accessibility to some other form of difficulty for the devices
 - tons of testing to ensure the overall quest still works
 
 Uses:

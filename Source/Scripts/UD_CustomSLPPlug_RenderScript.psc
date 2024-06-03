@@ -209,7 +209,26 @@ EndFunction
 
 ;The message the device will send upon inflation
 Function sendInflateMessage(int iInflateNum = 1)
-    Udmain.Print(getDeviceName() + " makes " + getWearerName() + " thicker than a bowl of oatmeal! (you shouldn't be seeing this message)")
+    int currentVal = getPlugInflateLevel() + iInflateNum
+    int iLogLevel = 1
+    string msg = ""
+    if haveHelper()
+        if WearerIsPlayer()
+            msg = getHelperName() + " helped you insert the " + getDeviceName() + " deeper!"
+        elseif WearerIsFollower() && HelperIsPlayer()
+            msg = "You helped push " + getWearerName() + "'s " + getDeviceName() + " deeper in!"
+        elseif WearerIsFollower()
+            msg = getHelperName() + " helped pushing " + getWearerName() + "'s " + getDeviceName() + " further in!"
+        endif            
+    else
+        if WearerIsPlayer()
+            msg = "You succesfully pushed " + getDeviceName() + " deeper in"
+        elseif WearerIsFollower()
+            msg = getWearerName() + "'s " + getDeviceName() + " slid deeper into them!"
+            iLogLevel = 3
+        endif
+    endif
+    UDmain.Print(msg, iLogLevel)
 EndFunction
 
 ;The message the device will send upon deflation
