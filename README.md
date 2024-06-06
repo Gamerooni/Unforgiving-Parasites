@@ -20,19 +20,33 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
 ### Before alpha release
  - ~~custom menus for the various plugs (they shouldn't say stuff like "Vibrate" or "Inflate")~~
 - ~~Go over everything and ensure there are no auto-patched locks (there shouldn't be a padlock on a tentacle skinsuit)~~
-  - sorta done - just need to make sure I don't forget to do this on every device
-- ~~FaceHugger~~ and FaceHuggerGag
-- ChaurusWorm and ChaurusWormVag
-- The entire spriggan set
+  - ~~sorta done - just need to make sure I don't forget to do this on every device~~
+    - Test to ensure no locks work
+- ~~FaceHugger~~ ~~and FaceHuggerGag~~
+- ~~ChaurusWorm and ChaurusWormVag~~
+- ~~The entire spriggan set~~
 - ~~custom sounds for vibration events~~
   - ~~sorta done - just need to test~~
   - LATER ~~must normalise all the sounds to make sure it's all consistent~~
 - ~~Change from accessibility to some other form of difficulty for the devices~~
 - ~~Basic documentation and readme~~
+- Finish off / polish off some devices
+  - ChaurusWorm
+  - ChaurusWormVag
+  - FaceHuggerGag
 - A minor round of testing to ensure each and every device works with every event
+  - ChaurusWorm
+  - ChaurusWormVag
+  - FaceHuggerGag
+  - SprigganArms
+  - SprigganBoots
+  - SprigganBody
+  - SprigganGag
+- A final round of testing to ensure every device works perfectly
 
 ### Post release
 - Basic LL mod page
+- Invidiviual vib events for each device
 - tons of testing to ensure the overall quest still works
 - possibly incorporate some of the SL Parasites fixes I've seen around?
 - Balance each one of the plugs with differing stats and effects (so it's not just the same plug reskinned)

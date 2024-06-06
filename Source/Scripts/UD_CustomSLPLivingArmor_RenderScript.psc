@@ -29,3 +29,9 @@ Function onRemoveDevicePost(Actor akActor)
     fctParasites.cureParasiteByString(getWearer(), "LivingArmor")
     parent.onRemoveDevicePost(akActor)
 EndFunction
+
+;the funniest possible way to stop the UD Patcher from chucking locks onto this device
+Int Function CreateLock(Int aiDifficulty, Int aiAccess, Int aiShields, String asName, Int aiTimelock = 0, Bool abAdd = False)
+    Udmain.Log("attempt to put a lock on " + getDeviceName() + "thwarted", 5)
+    return 0x00000000
+EndFunction
