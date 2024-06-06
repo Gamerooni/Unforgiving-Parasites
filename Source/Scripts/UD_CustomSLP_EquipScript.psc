@@ -297,6 +297,72 @@ int Function EquipFilterChaurusQueenVag(actor akActor, bool silent=false)
 	return 0
 EndFunction
 
+;===
+;TWEAK THE TEXT ON THE BELOW 4 ITEMS
+;===
+
+Function EquipPreChaurusWorm(actor akActor, bool silent=false)
+	string msg = ""
+	float fArousal = UDmain.UDOM.getActorArousal(akActor)
+	if IsPlayer(akActor)
+		if fArousal < libs.ArousalThreshold("Desire")
+			msg = "The worm fits snugly inside your hole, spreading a wave of pleasure deep into your belly."
+		elseif fArousal < libs.ArousalThreshold("Horny")
+			msg = "You carefully let the worm crawl its way into your opening, your lust growing with every inch it slides in."
+		elseif fArousal < libs.ArousalThreshold("Desperate")
+			msg = "You eagerly spread your lips to let the worm ease its way deep into your quivering hole, making you squeal with delight in the resulting waves of pleasure."
+		else
+			msg = "Barely in control of control your own body, you thrust the worm almost forcefully into your wet opening."
+		endif
+	else
+		msg = getactorname(akActor) + " shudders as you let the worm crawl deep inside her."
+	EndIf
+	if !silent
+		libs.NotifyActor(msg, akActor, true)
+	EndIf
+EndFunction
+
+int Function EquipFilterChaurusWorm(actor akActor, bool silent=false)
+	; FTM optimization
+	bool bIsPlayer = IsPlayer(akActor)
+	string sMsg = ""
+	if silent && !bIsPlayer
+		return 0
+	EndIf
+	if akActor.WornHasKeyword(zad_DeviousBelt)
+		if !silent
+			if !bIsPlayer
+				sMsg = "Try as you might, the belt you are wearing prevents you from inserting the slimy worm inside you."
+			Else
+				sMsg = "The belt " + GetActorName(akActor) + " is wearing prevents you from inserting the slimy worm."
+			EndIf
+			libs.NotifyActor(sMsg, akActor, true)
+		endif
+		return 2
+	Endif
+	return 0
+EndFunction
+
+Function EquipPreSprigganBody(actor akActor, bool silent=false)
+	string sMsg = ""
+	if !silent
+		if IsPlayer(akActor)
+			sMsg = "Fungal growths quickly spread around your skin."
+		Else
+			sMsg = getActorName(akActor) +" cries out as fungal growths spread quickly."
+		EndIf
+		libs.NotifyActor(sMsg, akActor, true)
+	EndIf
+EndFunction
+
+Function EquipPreSprigganGag(actor akActor, bool silent=false)
+	if !silent
+		if IsPlayer(akActor)
+			libs.NotifyPlayer("Thick growths quickly form a protective layer around your face.", true)
+		EndIf
+	EndIf
+EndFunction
+
 Function OnEquippedPre(actor akActor, bool silent=false)
     if deviceInventory.haskeyword(fctParasites._SLP_ParasiteTentacleMonster) || deviceInventory.haskeyword(fctParasites._SLP_ParasiteLivingArmor)
         EquipPreTentacle(akActor, silent)
@@ -320,6 +386,12 @@ Function OnEquippedPre(actor akActor, bool silent=false)
 		EquipPreChaurusQueenVag(akActor, silent)
 	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteFaceHugger)
 		EquipPreFaceHugger(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusWorm) || deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusWormVag)
+		EquipPreChaurusWorm(akActor, silent)
+	elseif deviceInventory.HasKeywordString("_SLP_ParasiteSprigganGag")
+		EquipPreSprigganGag(akActor, silent)
+	elseif deviceInventory.HasKeywordString("_SLP_ParasiteSprigganBody")
+		EquipPreSprigganBody(akActor, silent)
     endif
     Parent.OnEquippedPre(akActor, true)
 EndFunction
@@ -335,6 +407,8 @@ int Function OnEquippedFilter(actor akActor, bool silent=false)
 		EquipFilterChaurusQueenArmor(akActor, silent)
 	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusQueenVag)
 		EquipFilterChaurusQueenVag(akActor, silent)
+	elseif deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusWorm) || deviceInventory.HasKeyword(fctParasites._SLP_ParasiteChaurusWormVag)
+		EquipFilterChaurusWorm(akActor, silent)
     endif
     return Parent.OnEquippedFilter(akActor, silent)
 EndFunction

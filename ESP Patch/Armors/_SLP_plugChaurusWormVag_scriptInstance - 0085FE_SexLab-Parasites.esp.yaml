@@ -2,7 +2,7 @@ FormKey: 0085FE:SexLab-Parasites.esp
 EditorID: _SLP_plugChaurusWormVag_scriptInstance
 VirtualMachineAdapter:
   Scripts:
-  - Name: UD_CustomSLPChaurusQueenVag_RS
+  - Name: UD_CustomSLPChaurusWormVag_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: libs

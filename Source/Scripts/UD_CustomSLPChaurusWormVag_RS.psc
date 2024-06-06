@@ -1,4 +1,4 @@
-Scriptname UD_CustomSLPChaurusWorm_RS extends UD_CustomSLPPlug_RenderScript
+Scriptname UD_CustomSLPChaurusWormVag_RS extends UD_CustomSLPPlug_RenderScript
 
 import UD_Native
 
@@ -6,18 +6,20 @@ import UD_Native
 
 ; DON'T FORGET TO ADD TO EQUIP SCRIPT AND ESP
 
+; DON'T FORGET TO SWITCH DESCRIPTIONS FROM VAGINAL TO ANAL
+
 ;=====HELPER FUNCTIONS=====
 
 ;=====OVERRIDES=====
 Function InitPost()
     parent.InitPost()
     UD_ActiveEffectName = "Worm Squirming"
-    UD_DeviceType = "Chaurus Anal worm"
+    UD_DeviceType = "Chaurus Vaginal Worm"
 EndFunction
 
 Function safeCheck()
     if !SLPParasiteApplyName
-        SLPParasiteApplyName = "ChaurusWorm"
+        SLPParasiteApplyName = "ChaurusWormVag"
     endif
     ;troll fat
     if !SLP_CureIngredient

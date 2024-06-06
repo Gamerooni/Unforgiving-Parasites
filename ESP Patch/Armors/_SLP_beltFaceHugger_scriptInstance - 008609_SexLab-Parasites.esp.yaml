@@ -28,11 +28,19 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptIntProperty
       Name: UD_Chaos
       Data: 50
-ObjectEffect: 05D9CC:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_DeviceAbilities
+      Objects:
+      - Name: ''
+        Object: 00D1A3:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptIntListProperty
+      Name: UD_DeviceAbilities_Flags
+      Data:
+      - 0
 ObjectBounds:
   First: -11, -8, 1
   Second: 11, 10, 85
-ObjectEffect: 00D1A3:SexLab-Parasites.esp
+ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:
     Model:

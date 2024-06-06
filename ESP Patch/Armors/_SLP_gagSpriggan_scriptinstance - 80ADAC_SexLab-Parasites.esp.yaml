@@ -2,7 +2,7 @@ FormKey: 80ADAC:SexLab-Parasites.esp
 EditorID: _SLP_gagSpriggan_scriptinstance
 VirtualMachineAdapter:
   Scripts:
-  - Name: SLP_SprigganGagScript
+  - Name: UD_CustomSLPSprigganGag_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
