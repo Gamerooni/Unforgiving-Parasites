@@ -16,6 +16,24 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 00D1A7:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_durability_damage_base
+      Data: 0.4
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_base_stat_drain
+      Data: 5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_CutChance
+      Data: 5
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Level
+      Data: -2
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistMagicka
+      Data: 0.8
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistPhysical
+      Data: -0.25
 ObjectEffect: 00D1A8:SexLab-Parasites.esp
 WorldModel:
   Male:
@@ -39,14 +57,13 @@ Keywords:
 - 02F16E:SexLab.esm
 - 0FF9FB:Skyrim.esm
 - 0429FB:Devious Devices - Integration.esm
+- 01EDFA:Devious Devices - Integration.esm
+- 1579BE:UnforgivingDevices.esp
+- 01DDCD:Devious Devices - Integration.esm
+- 0012C6:SexLab-Parasites.esp
+- 11A352:UnforgivingDevices.esp
 - 0044FE:SexLab-Parasites.esp
 - 00D1A1:SexLab-Parasites.esp
-- 0012C6:SexLab-Parasites.esp
-- 01EDFA:Devious Devices - Integration.esm
-- 01DDCD:Devious Devices - Integration.esm
-- 11A352:UnforgivingDevices.esp
-- 13A977:UnforgivingDevices.esp
-- 1579BE:UnforgivingDevices.esp
 Description:
   TargetLanguage: English
   Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.

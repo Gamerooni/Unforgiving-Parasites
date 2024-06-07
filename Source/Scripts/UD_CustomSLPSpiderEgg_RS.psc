@@ -143,7 +143,7 @@ int Function getPlugInflateLevel()
     return parent.getPlugInflateLevel()
 EndFunction
 string Function addInfoString(string str = "")
-    parent.addInfoString(str)
+    return parent.addInfoString(str)
 EndFunction
 Function inflate(bool silent = false, int iInflateNum = 1)
     parent.inflate(true, iInflateNum)
@@ -164,10 +164,10 @@ Function OnMinigameEnd()
     parent.OnMinigameEnd()
 EndFunction
 bool Function struggleMinigame(int type = -1, Bool abSilent = False)
-    parent.struggleMinigame(type, abSilent)
+    return parent.struggleMinigame(type, abSilent)
 EndFunction
 bool Function struggleMinigameWH(Actor akHelper,int aiType = -1)
-    parent.struggleMinigameWH(akHelper, aiType)
+    return parent.struggleMinigameWH(akHelper, aiType)
 EndFunction
 float Function getAccesibility()
     return parent.getAccesibility()
@@ -179,13 +179,13 @@ bool Function canDeflate()
     return parent.canDeflate()
 EndFunction
 float Function getArousalAdjustment()
-    parent.getArousalAdjustment()
+    return parent.getArousalAdjustment()
 EndFunction
 Function setRetaliate(bool newRetaliate)
     parent.setRetaliate(newRetaliate)
 EndFunction
 bool Function willRetaliate(float fMult = 1.0)
-    parent.willRetaliate(fMult)
+    return parent.willRetaliate(fMult)
 EndFunction
 Function retaliate(float fMult = 1.0)
     parent.retaliate(fMult)
@@ -194,17 +194,17 @@ string Function getCureName()
     return SLP_CureIngredient.GetName()
 EndFunction
 bool Function doesCureExist()
-    parent.doesCureExist()
+    return parent.doesCureExist()
 EndFunction
 bool Function hasCureIngredient()
-    parent.hasCureIngredient()
+    return parent.hasCureIngredient()
 EndFunction
 float Function getCureMultiplier()
-    parent.getCureMultiplier()
+    return parent.getCureMultiplier()
 EndFunction
 string Function getCureFailText()
-    parent.getCureFailText()
+    return parent.getCureFailText()
 EndFunction
 string Function getCureApplyText()
-    parent.getCureApplyText()
+    return parent.getCureApplyText()
 EndFunction

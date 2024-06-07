@@ -165,7 +165,7 @@ Function deflate(bool silent = False)
     parent.deflate(silent)
 EndFunction
 Function activateDevice()
-    return parent.activateDevice()
+    parent.activateDevice()
 EndFunction
 Function OnCritFailure()
     parent.OnCritFailure()
@@ -183,11 +183,11 @@ bool Function willRetaliate(float fMult = 1.0)
     return parent.willRetaliate(fMult)
 EndFunction
 bool Function canDeflate()
-    parent.canDeflate()
+    return parent.canDeflate()
 EndFunction
 Function OnMinigameStart()
     parent.OnMinigameStart()
 EndFunction
 float Function getArousalAdjustment()
-    parent.getArousalAdjustment()
+    return parent.getArousalAdjustment()
 EndFunction

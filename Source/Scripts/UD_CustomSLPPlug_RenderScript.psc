@@ -34,6 +34,12 @@ float startMinigameArousal = 0.0
 ;whether the device will retaliate in response to the player's meddling
 bool shouldRetaliate = true
 
+;whether the current minigame is a struggle minigame or something else
+bool isStruggle = false
+
+;whether the most recent deflate has been successful
+bool isDeflateSuccessful = false
+
 ;==========OVERRIDES==========
 
 Function InitPost()
@@ -41,13 +47,15 @@ Function InitPost()
     UD_DeviceType = "Parasite Plug"
     UD_ActiveEffectName = "Parasitic Stimulation"
     SLP_InflationType = "Insertion level"
+    UD_PumpDifficulty = 250
 EndFunction
 
-;Apply the parasite, inflate the plug
+;Apply the parasite, inflate the plug, make cooldown shorter
 Function InitPostPost()
     parent.InitPostPost()
     fctParasites.applyParasiteByString(GetWearer(), SLPParasiteApplyName)
     inflatePlug(RandomInt(1, 3))
+    resetCooldown(0.2)
 EndFunction
 
 Function safeCheck()
@@ -63,9 +71,9 @@ Function safeCheck()
 EndFunction
 
 ;Lower accessibility based on arousal
+;Naw scratch that, just make the minigames harder
 float Function getAccesibility()
-    ; TODO: maybe implement ingredientadjust?
-    return parent.getAccesibility() * getArousalAdjustment()
+    return parent.getAccesibility(); * getArousalAdjustment()
 EndFunction
 
 ;Deactivate soulgem charging
@@ -181,19 +189,32 @@ EndFunction
 ; Taunt player if minigame failed
 Function OnMinigameEnd()
     parent.OnMinigameEnd()
+    string sMsg = ""
     if !IsUnlocked && WearerIsPlayer()
-        libs.NotifyPlayer(getArousalFailMessage(startMinigameArousal), true)
+        if isStruggle || !isDeflateSuccessful
+            sMsg = getArousalFailMessage(startMinigameArousal)
+        endif
+        Udmain.ShowSingleMessageBox(sMsg)
     endif
+    isStruggle = false
+    isDeflateSuccessful = false
 EndFunction
 
 ; Always struggle
 bool Function struggleMinigame(int type = -1, Bool abSilent = False)
+    isStruggle = true
     return forceOutPlugMinigame()
 EndFunction
 
 ; always struggle
 bool Function struggleMinigameWH(Actor akHelper,int aiType = -1)
+    isStruggle = true
     return forceOutPlugMinigameWH(akHelper)
+EndFunction
+
+Function OnDeflated()
+    parent.OnDeflated()
+    isDeflateSuccessful = true
 EndFunction
 
 ;==========HELPER FUNCTIONS===========
@@ -339,9 +360,6 @@ EndFunction
 Function OnInflated()
     parent.OnInflated()
 EndFunction
-Function OnDeflated()
-    parent.OnInflated()
-EndFunction
 bool Function inflateMinigame()
     return parent.InflateMinigame()
 EndFunction
@@ -349,7 +367,7 @@ bool Function deflateMinigame()
     return parent.deflateMinigame()
 EndFunction
 bool Function canBeActivated()
-    Parent.canBeActivated()
+    return Parent.canBeActivated()
 EndFunction
 Function patchDevice()
     parent.patchDevice()

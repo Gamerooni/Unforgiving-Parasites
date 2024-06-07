@@ -39,6 +39,27 @@ Function safeCheck()
     parent.safeCheck()
 EndFunction
 
+; this is both a belt and a plug. customplug makes plugs unremovable if there is a belt. so, we must change this. this is copied from customplug but removes the belt stuff
+float Function getAccesibility()
+    float   loc_res         = 1.0
+    bool    loc_haveHelper   = haveHelper()
+
+    if !wearerFreeHands() && (!loc_haveHelper || !HelperFreeHands())
+        loc_res *= 0.25
+    elseif !wearerFreeHands(true) && (!loc_haveHelper || !HelperFreeHands(true))
+        loc_res *= 0.5
+    endif
+    
+    if getWearer().wornhaskeyword(libs.zad_DeviousHobbleSkirt)
+        loc_res *= 0.7
+    elseif getWearer().wornhaskeyword(libs.zad_DeviousHobbleSkirtRelaxed)
+        loc_res *= 0.8
+    elseif getWearer().wornhaskeyword(libs.zad_DeviousSuit)
+        loc_res *= 0.9
+    endif
+    
+    return ValidateAccessibility(loc_res)
+EndFunction
 
 ;==========HELPER FUNCTIONS===========
 
@@ -135,9 +156,6 @@ endFunction
 Function InitPostPost()
     parent.InitPostPost()
 EndFunction
-float Function getAccesibility()
-    return parent.getAccesibility()
-EndFunction
 Function onDeviceMenuInitPost(bool[] aControlFilter)
     parent.onDeviceMenuInitPost(aControlFilter)
 EndFunction
@@ -175,7 +193,7 @@ bool Function willRetaliate(float fMult = 1.0)
     return parent.willRetaliate(fMult)
 EndFunction
 Function retaliate(float fMult = 1.0)
-    return parent.retaliate(fMult)
+    parent.retaliate(fMult)
 EndFunction
 Function sendRetaliationMessage()
     parent.sendRetaliationMessage()

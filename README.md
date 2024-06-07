@@ -30,10 +30,12 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
   - LATER ~~must normalise all the sounds to make sure it's all consistent~~
 - ~~Change from accessibility to some other form of difficulty for the devices~~
 - ~~Basic documentation and readme~~
+- Add deflation success message
 - Finish off / polish off some devices
   - ChaurusWorm
   - ChaurusWormVag
   - FaceHuggerGag
+    - add durability damage base
 - A minor round of testing to ensure each and every device works with every event
   - ChaurusWorm
   - ChaurusWormVag

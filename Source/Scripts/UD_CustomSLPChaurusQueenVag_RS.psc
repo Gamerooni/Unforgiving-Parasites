@@ -103,7 +103,7 @@ Function InitPostPost()
     parent.InitPostPost()
 EndFunction
 float Function getAccesibility()
-    parent.getAccesibility()
+    return parent.getAccesibility()
 EndFunction
 Function onDeviceMenuInitPost(bool[] aControlFilter)
     parent.onDeviceMenuInitPost(aControlFilter)
@@ -139,19 +139,19 @@ Function onRemoveDevicePost(Actor akActor)
     parent.onRemoveDevicePost(akActor)
 EndFunction
 bool Function canDeflate()
-    parent.canDeflate()
+    return parent.canDeflate()
 EndFunction
 Function OnMinigameEnd()
     parent.OnMinigameEnd()
 EndFunction
 float Function getArousalAdjustment()
-    parent.getArousalAdjustment()
+    return parent.getArousalAdjustment()
 EndFunction
 Function setRetaliate(bool newRetaliate)
     parent.setRetaliate(newRetaliate)
 EndFunction
 bool Function willRetaliate(float fMult = 1.0)
-    parent.willRetaliate(fMult)
+    return parent.willRetaliate(fMult)
 EndFunction
 Function retaliate(float fMult = 1.0)
     parent.retaliate(fMult)
@@ -160,20 +160,20 @@ string Function getCureName()
     return SLP_CureIngredient.GetName()
 EndFunction
 bool Function doesCureExist()
-    parent.doesCureExist()
+    return parent.doesCureExist()
 EndFunction
 bool Function knowsCureIngredient()
-    parent.knowsCureIngredient()
+    return parent.knowsCureIngredient()
 EndFunction
 bool Function hasCureIngredient()
-    parent.hasCureIngredient()
+    return parent.hasCureIngredient()
 EndFunction
 float Function getCureMultiplier()
-    parent.getCureMultiplier()
+    return parent.getCureMultiplier()
 EndFunction
 string Function getCureFailText()
-    parent.getCureFailText()
+    return parent.getCureFailText()
 EndFunction
 string Function getCureApplyText()
-    parent.getCureApplyText()
+    return parent.getCureApplyText()
 EndFunction
