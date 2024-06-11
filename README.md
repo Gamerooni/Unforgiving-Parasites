@@ -45,12 +45,13 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
   - ~~SprigganBody~~
   - ~~SprigganGag~~
 - ~~A final round of testing to ensure every device works perfectly~~
-- Add/fix flavour text:
-  - ChaurusWorm
-  - ChaurusWormVag
-  - FacehuggerGag
+- ~~Add/fix flavour text:~~
+  - ~~ChaurusWorm~~
+  - ~~ChaurusWormVag~~
+  - ~~FacehuggerGag~~
 
 ### Post release
+- Change all of below into github issues
 - Basic LL mod page
 - More basic device features
   - ChaurusWorm
@@ -63,6 +64,8 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
 - Balance each one of the plugs with differing stats and effects (so it's not just the same plug reskinned)
   - add cuttability where it would make sense
   - softer and squishier ones would probably be quite strong against physical stuff but weak against magic, and harder ones the opposite
+  - probably slap regeneration onto everything?
+  - look into the other modifiers too, I think there are some good ones lying around
 - Add buffs and debuffs to the player based on which parasite they have and what state the parasite is in
 - Go hard on testing and normalizing all the sounds
 - Automatic CI/CD
@@ -72,6 +75,17 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
   - build script to make it into FOMOD
     - with script sources and MO files as options
 - Documentation about what this mod does somewhere (maybe as a nexus page or GH wiki?)
+
+### Maybe
+- Implement the whole cure thing into UD (i.e. having a certain item will make minigames easier and decrease the likelihood of some events)
+  - probably as a modifier
+- Implement the retaliation thing into UD as well
+  - probably as a modifier
+  - definitely add ways for it to have custom dialogue and/or custom messages
+  - maybe tie it into the cure mechanic
+- Add an option for the Loot Item modifier in UD to equip the item onto the player (e.g. you could have it give you skooma)
+  - not sure if this exists yet, but add something like Midas and make it give items instead of gold
+    - probably overhaul Midas to do that instead
 
 ## Attributions and Credits
 

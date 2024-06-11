@@ -93,7 +93,7 @@ string Function getArousalFailMessage(float fArousal)
     elseif fArousal < 80
         return "Your wet pussy covered your hand in its juices as you struggled to pull the worm out. With every tug, your body quivered in pain and ecstasy, and your grip on the worm became that much looser. When it slips away and burrows back into you, you sigh in relief - you'll get to keep it for that bit longer."
     else
-        return "The worm spread itself apart, massaging your womb through the layer of flesh between it. Your body decided that parting with this creature was a mistake; your rectum clenched, seized, and shot the worm back into you with a dull squelch."
+        return "The worm spread itself apart, sending painful ripples of pressure through your insides as its teeth hooked into your flesh. Your body decided that parting with this creature was a mistake; your vagina clenched, seized, and shot the worm back into you with a dull squelch."
     endif
 EndFunction
 
