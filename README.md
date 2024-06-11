@@ -75,6 +75,7 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
   - build script to make it into FOMOD
     - with script sources and MO files as options
 - Documentation about what this mod does somewhere (maybe as a nexus page or GH wiki?)
+- Convert entirety of SL Parasites (or as much as is beneficial) into UD to make it easier to add more things to it
 
 ### Maybe
 - Implement the whole cure thing into UD (i.e. having a certain item will make minigames easier and decrease the likelihood of some events)
@@ -86,6 +87,7 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
 - Add an option for the Loot Item modifier in UD to equip the item onto the player (e.g. you could have it give you skooma)
   - not sure if this exists yet, but add something like Midas and make it give items instead of gold
     - probably overhaul Midas to do that instead
+- Add a way for a device to have UD spit out alternate equipfilter and equippre text (which would remove the need for the hacky workaround that I currently use)
 
 ## Attributions and Credits
 
