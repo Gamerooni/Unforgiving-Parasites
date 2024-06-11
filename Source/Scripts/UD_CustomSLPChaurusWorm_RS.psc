@@ -51,16 +51,15 @@ Function sendInflateMessage(int iInflateNum = 1)
     if WearerIsPlayer()
         string sMsg = ""
         if currentVal == 0
-            sMsg = "The worm's squirming body hangs mostly outside your ass. It looks like an obscene tail."
-        ;finish the other ones
+            sMsg = "how did you inflate the plug and end up at zero inflation? no, it's a serious question. make a bug report."
         elseif currentVal == 1
-            sMsg = "placeholder"
+            sMsg = "You shimmy the worm's head a bit more into you, its squirming body hanging outside your ass like an obscene tail. Its mouth nibbles at you, trying to squeeze further in."
         elseif currentVal == 2
-            sMsg = "placeholder"
+            sMsg = "You spread your cheeks wide and push at the critter with your palm. It eagerly reciprocates you; its body pulses once, twice, and suddenly you feel something softly nibbling at you from further in. Its tail swings side to side and goes still, locking itself in; your teeth chatter from the unexpected stimulation."
         elseif currentVal == 3
-            sMsg = "placeholder"
+            sMsg = "You reach for the worm. As soon as you touch its lukewarm hide, it wriggles in discomfort. A jolt of pleasure strikes your spine like lightning; your ass clenches of its own accord and, before you can stop it, sucks the worm in further. Its ribbed carapace plays mayhem with your anus on its way in. When it stops, all you want is for it to keep going."
         elseif currentVal == 4
-            sMsg = "You clench your cheeks and thighs and force your rectum to suck the worm even further, helping it along with your hand. The worm wriggles from side-to-side, making you gasp as it stretches your anus wider then, with a pop, it slides further in. You can barely breathe without feeling your body grip the worm. Any more and you think your belly might burst."
+            sMsg = "You clench your cheeks and thighs, and force your rectum to suck the worm even further, helping it along with your hand. The critter wriggles from side-to-side, making you gasp as it stretches your anus wider, then with a pop, it slides further in. You can barely breathe without feeling your body grip the worm. Any more and you think your belly might burst."
         else
             sMsg = "Your fist fully in your ass, you push at the worm. Something gives, something inside you shifts, and the worm wriggles away. You can't feel where it went. Your body was not equipped to sense things that far in. There is a dull throbbing emanating from your bellybutton, waves of pain as your intestines are stretched where they shouldn't. Each one is more pleasant than the last."     
         endif
@@ -68,7 +67,6 @@ Function sendInflateMessage(int iInflateNum = 1)
     endif
 EndFunction
 
-; done
 Function sendDeflateMessage()
     if haveHelper()
         if WearerIsPlayer()
@@ -85,7 +83,6 @@ Function sendDeflateMessage()
     endif
 EndFunction
 
-;done
 string Function getArousalFailMessage(float fArousal)
     if fArousal <= 10 && knowsCureIngredient() && hasCureIngredient()
         return "Your troll fat coated fingers slipped, and the worm wriggled out of their grasp and back into you."

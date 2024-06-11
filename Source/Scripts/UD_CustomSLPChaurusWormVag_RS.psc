@@ -31,7 +31,7 @@ EndFunction
 ; just some extra flavour text
 Function OnRemoveDevicePre(Actor akActor)
     if (IsPlayer(akActor))
-        UDmain.ShowSingleMessageBox("Your ruined anus traces the outline of your fist as you pull your hand out, the worm's tail gripped tight. Your entire body goes taut as the squirming creature fights for the last inch, then, as you pop it out, it all gives way to immense relief.")
+        UDmain.ShowSingleMessageBox("Your ruined vulva traces the outline of your fist as you pull your hand out, the worm's tail gripped tight. Your entire body goes taut as the squirming creature fights for the last inch, then, as you pop it out, it all gives way to immense relief.")
     endif
     parent.OnRemoveDevicePre(akActor)
 EndFunction
@@ -53,41 +53,38 @@ Function sendInflateMessage(int iInflateNum = 1)
     if WearerIsPlayer()
         string sMsg = ""
         if currentVal == 0
-            sMsg = "The worm's squirming body hangs mostly outside your ass. It looks like an obscene tail."
-        ;finish the other ones
+            sMsg = "how did you inflate the plug and end up at zero inflation? no, it's a serious question. make a bug report."
         elseif currentVal == 1
-            sMsg = "placeholder"
+            sMsg = "You shimmy the worm's head a bit more into you, its squirming body slapping against your thighs. Its mouth nibbles at you, trying to squeeze further in."
         elseif currentVal == 2
-            sMsg = "placeholder"
+            sMsg = "You spread your cheeks wide and push at the critter with your palm. It eagerly reciprocates you; its body pulses once, twice, and suddenly you feel something softly nibbling at you from deeper inside. Its tail swings side to side and goes still, locking itself in; your teeth chatter from the unexpected stimulation."
         elseif currentVal == 3
-            sMsg = "placeholder"
+            sMsg = "You reach for the worm. As soon as you touch its lukewarm hide, it wriggles in discomfort. A jolt of pleasure strikes your spine like lightning; your womb clenches of its own accord and, before you can stop it, sucks the worm in further. Its ribbed carapace plays mayhem with your vagina on its way in. When it stops, all you want is for it to keep going."
         elseif currentVal == 4
-            sMsg = "You clench your cheeks and thighs and force your rectum to suck the worm even further, helping it along with your hand. The worm wriggles from side-to-side, making you gasp as it stretches your anus wider then, with a pop, it slides further in. You can barely breathe without feeling your body grip the worm. Any more and you think your belly might burst."
+            sMsg = "You clench your cheeks and thighs, and force your womb to suck the worm even further, helping it along with your hand. The critter wriggles from side-to-side, making you gasp as it stretches you wider, then with a pop, it slides further in. You can barely breathe without feeling your vagina compress around the worm. Any more and you think you might burst."
         else
-            sMsg = "Your fist fully in your ass, you push at the worm. Something gives, something inside you shifts, and the worm wriggles away. You can't feel where it went. Your body was not equipped to sense things that far in. There is a dull throbbing emanating from your bellybutton, waves of pain as your intestines are stretched where they shouldn't. Each one is more pleasant than the last."     
+            sMsg = "Your fist fully in your cunt, you push at the worm. Something gives, something inside you shifts, and the worm wriggles away. You can't feel where it went. Your body was not equipped to sense things that far in. There is a dull throbbing emanating from your bellybutton, waves of pain as your womb is stretched where it shouldn't. Each one is more pleasant than the last."  
         endif
         UDMain.ShowSingleMessageBox(sMsg) 
     endif
 EndFunction
 
-; done
 Function sendDeflateMessage()
     if haveHelper()
         if WearerIsPlayer()
-            UDmain.Print(getHelperName() + " helped you pull " + getDeviceName() + " slightly further out of your ass!",1)
+            UDmain.Print(getHelperName() + " helped you pull " + getDeviceName() + " slightly further out of your pussy!",1)
         elseif PlayerInMinigame()
-            UDmain.Print("You helped pull some of " + getWearerName() + "'s " + getDeviceName() + " out of their ass!",1)
+            UDmain.Print("You helped pull some of " + getWearerName() + "'s " + getDeviceName() + " out of their pussy!",1)
         endif
     else
         if WearerIsPlayer()
-            UDmain.Print("You succesfully pulled your " + getDeviceName() + " further out of your ass!",1)
+            UDmain.Print("You succesfully pulled your " + getDeviceName() + " further out of your pussy!",1)
         elseif PlayerInMinigame()
             UDmain.Print(getWearerName() + "'s " + getDeviceName()+ " has been partially pulled out!",1)
         endif
     endif
 EndFunction
 
-;done
 string Function getArousalFailMessage(float fArousal)
     if fArousal <= 10 && knowsCureIngredient() && hasCureIngredient()
         return "Your troll fat coated fingers slipped, and the worm wriggled out of their grasp and back into you."

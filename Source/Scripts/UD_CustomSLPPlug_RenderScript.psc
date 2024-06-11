@@ -23,9 +23,6 @@ String Property SLP_InflationType Auto
 ; The below is designed with UD_Chaos in mind
 
 
-; maybe change from accessibility to some other form of difficulty for minigame calculations?
-
-
 ;==========LOCAL VARS==========
 
 ;wearer's arousal at the beginning of a minigame

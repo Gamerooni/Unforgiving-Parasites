@@ -52,10 +52,18 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
 
 ### Post release
 - Basic LL mod page
+- More basic device features
+  - ChaurusWorm
+  - ChaurusWormVag
+  - FaceHugger
+  - FaceHuggerGag
 - Invidiviual vib events for each device
 - tons of testing to ensure the overall quest still works
 - possibly incorporate some of the SL Parasites fixes I've seen around?
 - Balance each one of the plugs with differing stats and effects (so it's not just the same plug reskinned)
+  - add cuttability where it would make sense
+  - softer and squishier ones would probably be quite strong against physical stuff but weak against magic, and harder ones the opposite
+- Add buffs and debuffs to the player based on which parasite they have and what state the parasite is in
 - Go hard on testing and normalizing all the sounds
 - Automatic CI/CD
   - Trimmed READMEs, etc.

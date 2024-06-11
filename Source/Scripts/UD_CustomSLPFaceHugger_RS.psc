@@ -63,8 +63,6 @@ EndFunction
 
 ;==========HELPER FUNCTIONS===========
 
-;Having no firesalts makes this nearly impossible
-
 
 string Function getArousalFailMessage(float fArousal)
     if fArousal < 10.0
@@ -86,7 +84,6 @@ Function sendActivationMessage()
     endif
 EndFunction
 
-;Sort of placeholder message for now, until I come up with better stuff
 Function sendInflateMessage(int iInflateNum = 1)
     parent.sendInflateMessage(iInflateNum)
     int currentVal = getPlugInflateLevel() + iInflateNum
@@ -107,7 +104,6 @@ Function sendInflateMessage(int iInflateNum = 1)
         endif
         UDmain.ShowSingleMessageBox(msg)
     Endif
-    ;Udmain.Print(getDeviceName() + " makes " + getWearerName() + " thicker than a bowl of oatmeal! (you shouldn't be seeing this message)")
 EndFunction
 
 ;The message the device will send upon deflation
