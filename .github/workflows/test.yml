@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo "$PWD"
 
       # just uploads the whole repo lol
       - name: Upload a Build Artifact
