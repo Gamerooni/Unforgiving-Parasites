@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # just uploads the whole repo lol
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          # Artifact name
+          name: test
+          # A file, directory or wildcard pattern that describes what to upload
+          path: $GITHUB_WORKSPACE
+          # The desired behavior if no files are found using the provided path.
+          
