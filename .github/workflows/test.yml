@@ -80,11 +80,57 @@ jobs:
         with:
             name: plugin
             path: ${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp
+  compile-scripts:
+    name: Compile Papyrus scripts
+    needs: check-changes
+    if: ${{ needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always()) }}
+    runs-on: windows-latest
+    steps: 
+        - name: Checkout repo scripts
+          uses: actions/checkout@v4
+          with:
+            sparse-checkout: Source/Scripts
 
+        - name: Checkout UD Scripts
+          uses: actions/checkout@v4
+          with:
+            repository: IHateMyKite/PapyrusSourcesDD
+            sparse-checkout: |
+              SRC*
+              AFKPexAnon
+        
+        - name: Checkout SLP Scripts
+          uses: actions/checkout@4
+          with:
+            repository: https://github.com/SkyrimLL/Skyrim
+            sparse-checkout: SE/Parasites/Data/Scripts/source
+
+        # Fetch and extract the tools we need
+        - name: Fetch Caprica 0.3.0
+          shell: bash
+          run: gh release download -O .github/Caprica.7z -p '*.7z' -R Orvid/Caprica v0.3.0
+          env:
+            GH_TOKEN: ${{ github.token }}
+        
+        - name: Extract Caprica EXE file
+          shell: bash
+          run: 7z x .github/Caprica.7z -o.github/Caprica
+
+        # Perform the actions to build a release.
+        - name: Run Caprica
+          shell: bash
+          run: .github/Caprica/Caprica.exe --game skyrim --import ".github/SRC;.github/SRC_SLIF;.github/SRC_OTHER;.github/SRC_LAL;.github/SRC_ZAZ;.github/SRC_PO3;.github/SRC_DD;.github/SRC_SKYUI;.github/SRC_PAPUTIL;.github/SRC_SXL;.github/SRC_MFG;.github/SRC_RM;.github/SRC_FNIS;.github/SRC_SLA;.github/SRC_XPMSE;.github/source" --output "Scripts" "Scripts/source" -R -q
+        
+        - name: Upload Output
+          uses: actions/upload-artifact@v4
+          with: 
+            name: compiled-scripts
+            path: |
+              Scripts/
   package-mod:
     name: Package all necessary files
     runs-on: windows-latest
-    needs: [build-plugin]
+    needs: [build-plugin, compile-scripts]
     permissions: write-all
     steps:
       - name: Checkout
@@ -94,6 +140,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: plugin
+      
+      - name: Download Compiled Scripts
+        uses: actions/download-artifact@v4
+        with: 
+          name: compiled-scripts
+          path: Scripts
 
       - name: Create packing structure
         shell: bash
