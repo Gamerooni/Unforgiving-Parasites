@@ -39,7 +39,7 @@ jobs:
       - name: Run Spriggit
         uses: FlayaN/spriggit-runner-action@fbd43cea737ad3bb6b94f9985fa206691a9017b1
         with: 
-          spriggit_args: deserialize -i "${{ github.workspace }}/ESP Patch" -o ${{ github.workspace }}/SexLab-Parasites-UD-test.esp
+          spriggit_args: deserialize -i "${{ github.workspace }}/ESP Patch" -o ${{ github.workspace }}/SexLab-Parasites-UD.esp
 
       # just uploads the whole repo lol
       - name: Upload a Build Artifact
