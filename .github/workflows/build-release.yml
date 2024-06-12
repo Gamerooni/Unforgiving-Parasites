@@ -25,7 +25,7 @@ on:
       pack-sound:
         description: Include sounds?
         type: boolean
-        default: true
+        default: false
       spriggit_tool_version:
         description: Spriggit version (optional)
         required: false
@@ -235,7 +235,7 @@ jobs:
           cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\FOMOD\1.Base\SexLab-Parasites-UD.esp"
           cp -a "Scripts" "${{ github.workspace }}\FOMOD\1.Base\Scripts"
           cp -a "Source" "${{ github.workspace }}\FOMOD\2.Scripts\Source"
-          cp -a "fomod" "${{ github.workspace }}\FOMOD\fomod"
+          cp -a "fomod" "${{ github.workspace }}\FOMOD"
           ls -R "${{ github.workspace }}\FOMOD"
 
       - name: Include Sounds
