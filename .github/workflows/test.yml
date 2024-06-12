@@ -109,7 +109,17 @@ jobs:
         #   with:
         #     repository: https://github.com/SkyrimLL/Skyrim
         #     sparse-checkout: SE/Parasites/Data/Scripts/source
+        # Fetch and extract the tools we need
+        - name: Fetch Caprica 0.3.0
+          shell: bash
+          run: gh release download -O .github/Caprica.7z -p '*.7z' -R Orvid/Caprica v0.3.0
+          env:
+            GH_TOKEN: ${{ github.token }}
 
+        - name: Extract Caprica EXE file
+          shell: bash
+          run: 7z x .github/Caprica.7z -o.github/Caprica
+          
         - name: Checkout UD Scripts
           shell: bash
           run: |
@@ -131,16 +141,7 @@ jobs:
             git remote add origin https://github.com/SkyrimLL/Skyrim.git
             git sparse-checkout set --no-cone 'SE/Parasites/Data/Scripts/source'
             git pull origin master
-        # Fetch and extract the tools we need
-        - name: Fetch Caprica 0.3.0
-          shell: bash
-          run: gh release download -O .github/Caprica.7z -p '*.7z' -R Orvid/Caprica v0.3.0
-          env:
-            GH_TOKEN: ${{ github.token }}
         
-        - name: Extract Caprica EXE file
-          shell: bash
-          run: 7z x .github/Caprica.7z -o.github/Caprica
 
         # Perform the actions to build a release.
         - name: Run Caprica
