@@ -154,6 +154,7 @@ string Function getCureApplyText()
     else
         sMsg = "You tip a shot of " + getCureName() + " onto the critter, and bend over double as it s proboscis slams against your cheeks and shoots in and out of your throat. It slows down, then stops, occasionally twitching."
     endif
+    return sMsg
 EndFunction
 
 ;============================================================================================================================
