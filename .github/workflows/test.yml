@@ -54,21 +54,30 @@ jobs:
           echo "GitHub Event Inputs: ${{ toJSON(github.event.inputs) }}"
           echo "Inputs: ${{ toJSON(inputs) }}"
 
-
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Copy to Pack Folder
         shell: bash
         run: mkdir ${{ github.workspace }}/to-pack
+
+      - name: Cache Spriggit
+        id: cache-spriggit
+        uses: actions/cache@v4
+        with:
+          path: |
+            .github/spriggit
+          key: ${{ runner.os }}-spriggit
       
       - name: Fetch spriggit
+        if: steps.cache-spriggit.outputs.cache-hit != 'true'
         shell: bash
         run: gh release download -O .github/spriggit.zip -p 'SpriggitLinuxCLI.zip' -R Mutagen-Modding/Spriggit ${{ inputs.spriggit_tool_version }}
         env:
           GH_TOKEN: ${{ github.token }}
           
       - name: Extract Spriggit Zip
+        if: steps.cache-spriggit.outputs.cache-hit != 'true'
         shell: bash
         run: 7z x .github/spriggit.zip -o.github/spriggit
 
@@ -166,6 +175,7 @@ jobs:
             git checkout main
         
         - name: Checkout TESV Flags File
+          if: steps.cache-ss.outputs.cache-hit != 'true'
           shell: bash
           run: |
             cd .github
@@ -256,7 +266,8 @@ jobs:
         with:
           name: |
             plugin
-
+            compiled-scripts
+  
   share-release:
     name: Share release
     needs: [package-mod]
