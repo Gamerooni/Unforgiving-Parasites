@@ -120,7 +120,7 @@ jobs:
           shell: bash
           run: 7z x .github/Caprica.7z -o.github/Caprica
 
-        - name: Checkout UD Scripts
+        - name: Checkout DD Sources
           shell: bash
           run: |
             cd .github
@@ -129,9 +129,22 @@ jobs:
             git init
             git remote add origin https://github.com/IHateMyKite/PapyrusSourcesDD.git
             git sparse-checkout set --no-cone 'SRC*' 'AFKPexAnon'
-            git pull origin main
+            git fetch --depth=1 origin master
+            git checkout main
 
-        - name: Checkout SLP Scripts
+        - name: Checkout UD Sources
+          shell: bash
+          run: |
+            cd .github
+            mkdir PapyrusUD
+            cd PapyrusUD
+            git init
+            git remote add origin https://github.com/IHateMyKite/UnforgivingDevices.git
+            git sparse-checkout set --no-cone 'Scripts/Source'
+            git fetch --depth=1 origin master
+            git checkout main
+
+        - name: Checkout SLP Sources
           shell: bash
           run: |
             cd .github
@@ -140,13 +153,14 @@ jobs:
             git init
             git remote add origin https://github.com/SkyrimLL/Skyrim.git
             git sparse-checkout set --no-cone 'SE/Parasites/Data/Scripts/source'
-            git pull origin main
+            git fetch --depth=1 origin master
+            git checkout main
         
 
         # Perform the actions to build a release.
         - name: Run Caprica
           shell: bash
-          run: .github/Caprica/Caprica.exe --game skyrim --import ".github/PapyrusDD/SRC;.github/PapyrusDD/SRC_SLIF;.github/PapyrusDD/SRC_OTHER;.github/PapyrusDD/SRC_LAL;.github/PapyrusDD/SRC_ZAZ;.github/PapyrusDD/SRC_PO3;.github/PapyrusDD/SRC_DD;.github/PapyrusDD/SRC_SKYUI;.github/PapyrusDD/SRC_PAPUTIL;.github/PapyrusDD/SRC_SXL;.github/PapyrusDD/SRC_MFG;.github/PapyrusDD/SRC_RM;.github/PapyrusDD/SRC_FNIS;.github/PapyrusDD/SRC_SLA;.github/PapyrusDD/SRC_XPMSE;.github/PapyrusSLP/SE/Parasites/Data/Scripts/source" --output "Scripts" "Source/Scripts" -R -q
+          run: .github/Caprica/Caprica.exe --game skyrim --import ".github/PapyrusDD/SRC;.github/PapyrusDD/SRC_SLIF;.github/PapyrusDD/SRC_OTHER;.github/PapyrusDD/SRC_LAL;.github/PapyrusDD/SRC_ZAZ;.github/PapyrusDD/SRC_PO3;.github/PapyrusDD/SRC_DD;.github/PapyrusDD/SRC_SKYUI;.github/PapyrusDD/SRC_PAPUTIL;.github/PapyrusDD/SRC_SXL;.github/PapyrusDD/SRC_MFG;.github/PapyrusDD/SRC_RM;.github/PapyrusDD/SRC_FNIS;.github/PapyrusDD/SRC_SLA;.github/PapyrusDD/SRC_XPMSE;.github/PapyrusSLP/SE/Parasites/Data/Scripts/source;.github/PapyrusUD/Scripts/Source" --output "Scripts" "Source/Scripts" -R -q
         
         - name: Upload Output
           uses: actions/upload-artifact@v4
