@@ -55,7 +55,7 @@ I used [Wenderer](https://next.nexusmods.com/profile/Wenderer/about-me?gameId=11
 
 The Papyrus scripts are compiled by [Orvid](https://github.com/Orvid)'s lightning-fast and very cool [Caprica](https://github.com/Orvid/Caprica) compiler.
 
-You may wonder why there's no `.esp` in this repo. That's because it uses the amazing [Spriggit](https://github.com/Mutagen-Modding/Spriggit) by [Noggog](https://github.com/Noggog)! If you want to develop a mod, definitely check it out - it may save you a headache as your projects get big. I also repurposed the build script that I believe he developed for the Starfield Community Patch for this project.
+You may wonder why there's no `.esp` in this repo. That's because it uses the amazing [Spriggit](https://github.com/Mutagen-Modding/Spriggit) by [Noggog](https://github.com/Noggog)! If you want to develop a mod, definitely check it out - it may save you a headache as your projects get big. I also repurposed for this project the build script that I believe he developed for the Starfield Community Patch.
 
 ### Audio
 Sounds under [CC-BY-NC 3.0](creativecommons.org/licenses/by-nc/3.0/):  
