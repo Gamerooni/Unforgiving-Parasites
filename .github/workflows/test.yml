@@ -183,7 +183,7 @@ jobs:
         # Perform the actions to build a release.
         - name: Run Caprica
           shell: bash
-          run: .github/Caprica/Caprica.exe --game skyrim --import ".github/PapyrusDD/SRC;.github/PapyrusDD/SRC_SLIF;.github/PapyrusDD/SRC_OTHER;.github/PapyrusDD/SRC_LAL;.github/PapyrusDD/SRC_ZAZ;.github/PapyrusDD/SRC_PO3;.github/PapyrusDD/SRC_DD;.github/PapyrusDD/SRC_SKYUI;.github/PapyrusDD/SRC_PAPUTIL;.github/PapyrusDD/SRC_SXL;.github/PapyrusDD/SRC_MFG;.github/PapyrusDD/SRC_RM;.github/PapyrusDD/SRC_FNIS;.github/PapyrusDD/SRC_SLA;.github/PapyrusDD/SRC_XPMSE;.github/PapyrusSLP/SE/Parasites/Data/Scripts/source;.github/PapyrusUD/Scripts/Source" --output "Scripts" --flags="TESV_Papyrus_Flags.flg" "Source/Scripts" -R -q
+          run: .github/Caprica/Caprica.exe --game skyrim --import ".github/PapyrusDD/SRC;.github/PapyrusDD/SRC_SLIF;.github/PapyrusDD/SRC_OTHER;.github/PapyrusDD/SRC_LAL;.github/PapyrusDD/SRC_ZAZ;.github/PapyrusDD/SRC_PO3;.github/PapyrusDD/SRC_DD;.github/PapyrusDD/SRC_SKYUI;.github/PapyrusDD/SRC_PAPUTIL;.github/PapyrusDD/SRC_SXL;.github/PapyrusDD/SRC_MFG;.github/PapyrusDD/SRC_RM;.github/PapyrusDD/SRC_FNIS;.github/PapyrusDD/SRC_SLA;.github/PapyrusDD/SRC_XPMSE;.github/PapyrusDD/SRC_IWW;.github/PapyrusDD/SRC_LLOTHER;.github/PapyrusDD/SRC_UIEXT;.github/PapyrusSLP/SE/Parasites/Data/Scripts/source;.github/PapyrusUD/Scripts/Source" --output "Scripts" --flags="TESV_Papyrus_Flags.flg" "Source/Scripts" -R -q
         
         - name: Upload Output
           uses: actions/upload-artifact@v4
