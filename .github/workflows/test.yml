@@ -105,7 +105,7 @@ jobs:
               AFKPexAnon
         
         - name: Checkout SLP Scripts
-          uses: actions/checkout@4
+          uses: actions/checkout@v4
           with:
             repository: https://github.com/SkyrimLL/Skyrim
             sparse-checkout: SE/Parasites/Data/Scripts/source
