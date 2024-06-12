@@ -134,8 +134,8 @@ jobs:
             mkdir PapyrusDD
             cd PapyrusDD
             git init
-            git remote add origin https://github.com/IHateMyKite/PapyrusSourcesDD.git
-            git sparse-checkout set --no-cone 'SRC*' 'AFKPexAnon'
+            git remote add origin https://github.com/IHateMyKite/PAPYRUS.git
+            git sparse-checkout set --no-cone 'SRC*'
             git fetch --depth=1 origin main
             git checkout main
 
@@ -180,6 +180,24 @@ jobs:
             cd ..
             rm -r temp
 
+        - name: Save Script Sources
+          id: cache-ss-save
+          uses: actions/cache/save@v4
+          with:
+            path: |
+              .github/PapyrusDD
+              .github/PapyrusUD
+              .github/PapyrusSLP
+            key: script-sources
+
+        - name: Save Compiler
+          id: cache-compiler-save
+          uses: actions/cache/save@v4
+          with:
+            path: |
+              .github/Caprica
+            key: ${{ runner.os }}-papyrus-compiler
+            
         # Perform the actions to build a release.
         - name: Run Caprica
           shell: bash
