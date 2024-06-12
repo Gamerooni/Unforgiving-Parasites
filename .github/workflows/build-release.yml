@@ -223,6 +223,7 @@ jobs:
     name: Package all necessary files
     runs-on: windows-latest
     needs: [build-plugin, compile-scripts]
+    if: ${{ needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always()) }}
     permissions: write-all
     steps:
       - name: Checkout
