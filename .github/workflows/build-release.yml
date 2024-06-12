@@ -229,25 +229,25 @@ jobs:
       - name: Create packing structure
         shell: bash
         run: |
-          mkdir "${{ github.workspace }}\FOMOD\1.Base"
-          mkdir "${{ github.workspace }}\FOMOD\2.Scripts"
-          mkdir "${{ github.workspace }}\FOMOD\fomod"
-          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\FOMOD\1.Base\SexLab-Parasites-UD.esp"
-          cp -a "Scripts" "${{ github.workspace }}\FOMOD\1.Base\Scripts"
-          cp -a "Source" "${{ github.workspace }}\FOMOD\2.Scripts\Source"
-          cp -a "fomod" "${{ github.workspace }}\FOMOD"
-          ls -R "${{ github.workspace }}\FOMOD"
+          mkdir "${{ github.workspace }}\to-pack\1.Base"
+          mkdir "${{ github.workspace }}\to-pack\2.Scripts"
+          mkdir "${{ github.workspace }}\to-pack\fomod"
+          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\to-pack\1.Base\SexLab-Parasites-UD.esp"
+          cp -a "Scripts" "${{ github.workspace }}\to-pack\1.Base\Scripts"
+          cp -a "Source" "${{ github.workspace }}\to-pack\2.Scripts\Source"
+          cp -a "fomod" "${{ github.workspace }}\to-pack\fomod"
+          ls -R "${{ github.workspace }}\to-pack"
 
       - name: Include Sounds
         if: ${{inputs.pack-sound == true}}
         shell: bash
         run: |
-          cp -a "Sound" "${{ github.workspace }}\FOMOD\1.Base\Sound"
+          cp -a "Sound" "${{ github.workspace }}\to-pack\1.Base\Sound"
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
         with:
-          files: FOMOD/
+          files: to-pack/
           dest: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
 
       - name: Upload Output
