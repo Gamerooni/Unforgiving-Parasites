@@ -286,8 +286,8 @@ jobs:
       - name: Delete existing release
         uses: dev-drprasad/delete-tag-and-release@v1.0
         with:
-          tag-name: ${{inputs.version || 'nightly'}}
-          github-token: $${{ github.token }}
+          tag_name: ${{inputs.version || 'nightly'}}
+          github_token: $${{ github.token }}
           delete_release: true
       
       - name: Create Release
