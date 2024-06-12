@@ -271,6 +271,7 @@ jobs:
   
   share-release:
     name: Share release
+    permissions: write-all
     needs: [package-mod]
     if: ${{ inputs.publish-release == true && (needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always())) }}
     runs-on: ubuntu-latest
