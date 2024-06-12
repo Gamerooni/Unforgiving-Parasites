@@ -235,7 +235,8 @@ jobs:
           cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\to-pack\1.Base\SexLab-Parasites-UD.esp"
           cp -a "Scripts" "${{ github.workspace }}\to-pack\1.Base\Scripts"
           cp -a "Source" "${{ github.workspace }}\to-pack\2.Scripts\Source"
-          cp -a "fomod" "${{ github.workspace }}\to-pack\fomod"
+          cp -a "FOMOD Files\fomod" "${{ github.workspace }}\to-pack\fomod"
+          cp -a "FOMOD Files\images" "${{ github.workspace }}\to-pack\images"
           ls -R "${{ github.workspace }}\to-pack"
 
       - name: Include Sounds

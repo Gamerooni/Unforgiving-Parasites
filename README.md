@@ -51,6 +51,12 @@ This project builds on the original [Sexlab Parasites](https://github.com/Skyrim
 
 The project also uses the wonderful [Unforgiving Devices](https://github.com/IHateMyKite/UnforgivingDevices) by @IHateMyKite as the framework for its changes.
 
+I used [Wenderer](https://next.nexusmods.com/profile/Wenderer/about-me?gameId=1151)'s excellent [FOMOD creation tool](https://www.nexusmods.com/fallout4/mods/6821) to create the FOMOD `.xml`s.
+
+The Papyrus scripts are compiled by [Orvid](https://github.com/Orvid)'s lightning-fast and very cool [Caprica](https://github.com/Orvid/Caprica) compiler.
+
+You may wonder why there's no `.esp` in this repo. That's because it uses the amazing [Spriggit](https://github.com/Mutagen-Modding/Spriggit) by [Noggog](https://github.com/Noggog)! If you want to develop a mod, definitely check it out - it may save you a headache as your projects get big.
+
 ### Audio
 Sounds under [CC-BY-NC 3.0](creativecommons.org/licenses/by-nc/3.0/):  
 [Mud Squelching.wav](freesound.org/s/365246) by [Cally06](freesound.org/people/Cally06)
