@@ -129,7 +129,7 @@ jobs:
             git init
             git remote add origin https://github.com/IHateMyKite/PapyrusSourcesDD.git
             git sparse-checkout set --no-cone 'SRC*' 'AFKPexAnon'
-            git fetch --depth=1 origin master
+            git fetch --depth=1 origin main
             git checkout main
 
         - name: Checkout UD Sources
@@ -141,7 +141,7 @@ jobs:
             git init
             git remote add origin https://github.com/IHateMyKite/UnforgivingDevices.git
             git sparse-checkout set --no-cone 'Scripts/Source'
-            git fetch --depth=1 origin master
+            git fetch --depth=1 origin main
             git checkout main
 
         - name: Checkout SLP Sources
@@ -153,7 +153,7 @@ jobs:
             git init
             git remote add origin https://github.com/SkyrimLL/Skyrim.git
             git sparse-checkout set --no-cone 'SE/Parasites/Data/Scripts/source'
-            git fetch --depth=1 origin master
+            git fetch --depth=1 origin main
             git checkout main
         
 
