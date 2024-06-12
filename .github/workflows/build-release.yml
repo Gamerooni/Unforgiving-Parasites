@@ -22,6 +22,10 @@ on:
         description: Publish Release?
         type: boolean
         default: true
+      pack-sound:
+        description: Include sounds?
+        type: boolean
+        default: true
       spriggit_tool_version:
         description: Spriggit version (optional)
         required: false
@@ -243,12 +247,24 @@ jobs:
       - name: Create packing structure
         shell: bash
         run: |
+          mkdir "${{ github.workspace }}\mod"
+          mkdir "${{ github.workspace }}\mod\Data"
+          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\mod\Data\SexLab-Parasites-UD.esp"
+          cp -a "Scripts" "${{ github.workspace }}\mod\Data\Scripts"
           mkdir "${{ github.workspace }}\to-pack"
-          mkdir "${{ github.workspace }}\to-pack\Data"
-          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\to-pack\Data\SexLab-Parasites-UD.esp"
-          cp -r "Sound" "${{ github.workspace }}\to-pack\Data\Sound"
-          cp -r "Scripts" "${{ github.workspace }}\to-pack\Data\Scripts"
+          mkdir "${{ github.workspace }}\to-pack\1.Base"
+          mkdir "${{ github.workspace }}\to-pack\2.Scripts"
+          mkdir "${{ github.workspace }}\to-pack\fomod"
+          cp -a "mod" "${{ github.workspace }}\to-pack\1.Base"
+          cp -a "Source\Scripts" "${{ github.workspace }}\to-pack\2.Scripts"
+          cp -a "fomod" "${{ github.workspace }}\to-pack\fomod"
           ls -R "${{ github.workspace }}\to-pack"
+
+      - name: Include Sounds
+        if: ${{inputs.pack-sound == true}}
+        shell: bash
+        run: |
+          cp -a "Sound" "${{ github.workspace }}\to-pack\1.Base\Sound"
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
