@@ -232,7 +232,6 @@ jobs:
           mkdir "${{ github.workspace }}\to-pack"
           mkdir "${{ github.workspace }}\to-pack\1.Base"
           mkdir "${{ github.workspace }}\to-pack\2.Scripts"
-          mkdir "${{ github.workspace }}\to-pack\fomod"
           cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\to-pack\1.Base\SexLab-Parasites-UD.esp"
           cp -a "Scripts" "${{ github.workspace }}\to-pack\1.Base\Scripts"
           cp -a "Source" "${{ github.workspace }}\to-pack\2.Scripts\Source"
