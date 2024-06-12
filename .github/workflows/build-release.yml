@@ -229,6 +229,7 @@ jobs:
       - name: Create packing structure
         shell: bash
         run: |
+          mkdir "${{ github.workspace }}\to-pack"
           mkdir "${{ github.workspace }}\to-pack\1.Base"
           mkdir "${{ github.workspace }}\to-pack\2.Scripts"
           mkdir "${{ github.workspace }}\to-pack\fomod"
