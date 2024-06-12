@@ -1,0 +1,60 @@
+FormKey: 2BDDE2:SexLab-Parasites.esp
+EditorID: _SLP_harnessChaurusQueenArmor_scriptInstance
+VirtualMachineAdapter:
+  Scripts:
+  - Name: UD_CustomSLPChaurusQueenArmor_RS
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_DeviceKeyword
+      Object: 017C43:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 2BDDE3:SexLab-Parasites.esp
+ObjectEffect: 4FF20F:SexLab-Parasites.esp
+WorldModel:
+  Male:
+    Model:
+      File: armor\KyneBlessing\harnessBarnacles\parasH_1.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: armor\KyneBlessing\harnessBarnacles\parasH_1.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Hands
+  - Forearms
+  - Feet
+  - Calves
+  - 0x20000
+  - 0x10000000
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 003894:Devious Devices - Assets.esm
+- 017C43:Devious Devices - Assets.esm
+- 02F16E:SexLab.esm
+- 0FF9FB:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 0429FB:Devious Devices - Integration.esm
+- 0044FE:SexLab-Parasites.esp
+- 2BDDE5:SexLab-Parasites.esp
+- 0A9B1F:Skyrim.esm
+- 3CA3C1:SexLab-Parasites.esp
+- 11A352:UnforgivingDevices.esp
+- 13A977:UnforgivingDevices.esp
+- 1579BE:UnforgivingDevices.esp
+Description:
+  TargetLanguage: English
+  Value: Item reference reserved for scripts interaction. This should not appear in your inventory. Check your Devious Devices mod configuration.
+Armature:
+- 2A4449:SexLab-Parasites.esp
+- 36A036:SexLab-Parasites.esp
+ArmorRating: 30
