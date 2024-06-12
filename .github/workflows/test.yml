@@ -119,7 +119,7 @@ jobs:
         - name: Extract Caprica EXE file
           shell: bash
           run: 7z x .github/Caprica.7z -o.github/Caprica
-          
+
         - name: Checkout UD Scripts
           shell: bash
           run: |
@@ -129,7 +129,7 @@ jobs:
             git init
             git remote add origin https://github.com/IHateMyKite/PapyrusSourcesDD.git
             git sparse-checkout set --no-cone 'SRC*' 'AFKPexAnon'
-            git pull origin master
+            git pull origin main
 
         - name: Checkout SLP Scripts
           shell: bash
@@ -140,7 +140,7 @@ jobs:
             git init
             git remote add origin https://github.com/SkyrimLL/Skyrim.git
             git sparse-checkout set --no-cone 'SE/Parasites/Data/Scripts/source'
-            git pull origin master
+            git pull origin main
         
 
         # Perform the actions to build a release.
