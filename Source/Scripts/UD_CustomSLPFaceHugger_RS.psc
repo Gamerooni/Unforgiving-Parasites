@@ -138,6 +138,7 @@ string Function getCureApplyText()
     else
         sMsg = "You tip a shot of " + getCureName() + " onto the critter, and almost bend over double as its proboscis begins to slam back and forth against your insides. It slows down, then stops, occasionally twitching."
     endif
+    return sMsg
 EndFunction
 
 
@@ -165,7 +166,7 @@ Function deflate(bool silent = False)
     parent.deflate(silent)
 EndFunction
 Function activateDevice()
-    return parent.activateDevice()
+    parent.activateDevice()
 EndFunction
 Function onRemoveDevicePost(Actor akActor)
     parent.onRemoveDevicePost(akActor)
@@ -183,7 +184,7 @@ bool Function struggleMinigameWH(Actor akHelper,int aiType = -1)
     return parent.struggleMinigameWH(akHelper, aiType)
 EndFunction
 Function setRetaliate(bool newRetaliate)
-    return parent.setRetaliate(newRetaliate)
+    parent.setRetaliate(newRetaliate)
 EndFunction
 bool Function willRetaliate(float fMult = 1.0)
     return parent.willRetaliate(fMult)

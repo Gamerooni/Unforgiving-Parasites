@@ -39,7 +39,7 @@ bool Function OnUpdateHourPost()
     return parent.OnUpdateHourPost()
 EndFunction
 float Function getAccesibility()
-    parent.getAccesibility()
+    return parent.getAccesibility()
 EndFunction
 Function patchDevice()
     parent.patchDevice()

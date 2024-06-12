@@ -23,11 +23,11 @@ EndFunction
 ;====================================
 
 Int Function GetChanceModified(actor akActor, int chanceMod)
-	parent.GetChanceModified(akActor, chanceMod)
+	return parent.GetChanceModified(akActor, chanceMod)
 EndFunction
 
 Bool Function Filter(actor akActor, int chanceMod=0)
-	parent.Filter(akActor, chanceMod)
+	return parent.Filter(akActor, chanceMod)
 EndFunction
 
 Function Execute(actor akActor)

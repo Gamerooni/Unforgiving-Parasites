@@ -1,0 +1,313 @@
+#MOSTLY COPIED FROM STARFIELD COMMUNITY PATCH
+
+name: Build Release
+
+on:
+
+  # Run the nightly at midnight every night
+  schedule:
+    - cron: '0 0 * * *'
+
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (defaults to "Nightly")'
+        required: false
+      publish-release:
+        description: Publish Release?
+        type: boolean
+        default: true
+      spriggit_tool_version:
+        description: Spriggit version (optional)
+        required: false
+
+jobs:
+  # possibly change this to check for spriggit and papyrus individually
+  check-changes:
+    name: Check for recent changes
+    if: ${{ github.event_name != 'workflow_dispatch'}}
+    runs-on: ubuntu-latest
+    outputs: 
+      should_run: ${{ steps.should_run.outputs.should_run }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for changes last 24 hours
+        id: should_run
+        shell: bash
+        run: |
+          git log --since="1 days ago" --name-only
+          echo "should_run=$(git log --since="1 days ago" --name-only | grep "" -c)" >> "$GITHUB_OUTPUT"
+  build-plugin:
+    name: Build ESP from Spriggit files
+    needs: check-changes
+    if: ${{ needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always()) }}
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Inputs
+        run: |
+          echo "GitHub Event Inputs: ${{ toJSON(github.event.inputs) }}"
+          echo "Inputs: ${{ toJSON(inputs) }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Copy to Pack Folder
+        shell: bash
+        run: mkdir ${{ github.workspace }}/to-pack
+
+      - name: Cache Spriggit
+        id: cache-spriggit
+        uses: actions/cache@v4
+        with:
+          path: |
+            .github/spriggit
+          key: ${{ runner.os }}-spriggit
+      
+      - name: Fetch spriggit
+        if: steps.cache-spriggit.outputs.cache-hit != 'true'
+        shell: bash
+        run: gh release download -O .github/spriggit.zip -p 'SpriggitLinuxCLI.zip' -R Mutagen-Modding/Spriggit ${{ inputs.spriggit_tool_version }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          
+      - name: Extract Spriggit Zip
+        if: steps.cache-spriggit.outputs.cache-hit != 'true'
+        shell: bash
+        run: 7z x .github/spriggit.zip -o.github/spriggit
+
+      - name: fix spriggit permission
+        shell: bash
+        run: chmod +x .github/spriggit/Spriggit.CLI
+
+      - name: run spriggit
+        shell: bash
+        run: .github/spriggit/Spriggit.CLI deserialize --InputPath "ESP Patch" --OutputPath "${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp"
+
+      - name: Upload plugin
+        uses: actions/upload-artifact@v4
+        with:
+            name: plugin
+            path: ${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp
+  compile-scripts:
+    name: Compile Papyrus scripts
+    needs: check-changes
+    if: ${{ needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always()) }}
+    runs-on: windows-latest
+    steps: 
+        - name: Checkout repo scripts
+          uses: actions/checkout@v4
+          with:
+            sparse-checkout: Source/Scripts
+
+        - name: Cache Script Sources
+          id: cache-ss
+          uses: actions/cache@v4
+          with:
+            path: |
+              .github/PapyrusDD
+              .github/PapyrusUD
+              .github/PapyrusSLP
+            key: script-sources
+
+        - name: Cache Complier
+          id: cache-com
+          uses: actions/cache@v4
+          with:
+            path: |
+              .github/Caprica
+            key: ${{ runner.os }}-papyrus-compiler
+
+        - name: Fetch Caprica 0.3.0
+          if: steps.cache-com.outputs.cache-hit != 'true'
+          shell: bash
+          run: gh release download -O .github/Caprica.7z -p '*.7z' -R Orvid/Caprica v0.3.0
+          env:
+            GH_TOKEN: ${{ github.token }}
+
+        - name: Extract Caprica EXE file
+          if: steps.cache-com.outputs.cache-hit != 'true'
+          shell: bash
+          run: 7z x .github/Caprica.7z -o.github/Caprica
+
+        - name: Checkout DD Sources
+          if: steps.cache-ss.outputs.cache-hit != 'true'
+          shell: bash
+          run: |
+            cd .github
+            mkdir PapyrusDD
+            cd PapyrusDD
+            git init
+            git remote add origin https://github.com/IHateMyKite/PAPYRUS.git
+            git sparse-checkout set --no-cone 'SRC*'
+            git fetch --depth=1 origin main
+            git checkout main
+
+        - name: Checkout UD Sources
+          if: steps.cache-ss.outputs.cache-hit != 'true'
+          shell: bash
+          run: |
+            cd .github
+            mkdir PapyrusUD
+            cd PapyrusUD
+            git init
+            git remote add origin https://github.com/IHateMyKite/UnforgivingDevices.git
+            git sparse-checkout set --no-cone 'Scripts/Source'
+            git fetch --depth=1 origin main
+            git checkout main
+
+        - name: Checkout SLP Sources
+          if: steps.cache-ss.outputs.cache-hit != 'true'
+          shell: bash
+          run: |
+            cd .github
+            mkdir PapyrusSLP
+            cd PapyrusSLP
+            git init
+            git remote add origin https://github.com/SkyrimLL/Skyrim.git
+            git sparse-checkout set --no-cone 'SE/Parasites/Data/Scripts/source'
+            git fetch --depth=1 origin main
+            git checkout main
+        
+        - name: Checkout TESV Flags File
+          if: steps.cache-ss.outputs.cache-hit != 'true'
+          shell: bash
+          run: |
+            cd .github
+            mkdir temp
+            cd temp
+            git init
+            git remote add origin https://github.com/Rukan/Grimy-Skyrim-Papyrus-Source.git
+            git sparse-checkout set --no-cone 'TESV_Papyrus_Flags.flg'
+            git fetch --depth=1 origin master
+            git checkout master
+            mv TESV_Papyrus_Flags.flg ../PapyrusDD/SRC/TESV_Papyrus_Flags.flg
+            cd ..
+            rm -r temp
+
+        - name: Save Script Sources
+          id: cache-ss-save
+          uses: actions/cache/save@v4
+          with:
+            path: |
+              .github/PapyrusDD
+              .github/PapyrusUD
+              .github/PapyrusSLP
+            key: script-sources
+
+        - name: Save Compiler
+          id: cache-compiler-save
+          uses: actions/cache/save@v4
+          with:
+            path: |
+              .github/Caprica
+            key: ${{ runner.os }}-papyrus-compiler
+
+        # Perform the actions to build a release.
+        - name: Run Caprica
+          shell: bash
+          run: .github/Caprica/Caprica.exe --game skyrim --import ".github/PapyrusDD/SRC;.github/PapyrusDD/SRC_OTHER;.github/PapyrusDD/SRC_LAL;.github/PapyrusDD/SRC_ZAZ;.github/PapyrusDD/SRC_PO3;.github/PapyrusDD/SRC_DD;.github/PapyrusDD/SRC_SKYUI;.github/PapyrusDD/SRC_PAPUTIL;.github/PapyrusDD/SRC_SXL;.github/PapyrusDD/SRC_MFG;.github/PapyrusDD/SRC_RM;.github/PapyrusDD/SRC_FNIS;.github/PapyrusDD/SRC_SLA;.github/PapyrusDD/SRC_XPMSE;.github/PapyrusDD/SRC_IWW;.github/PapyrusDD/SRC_LLOTHER;.github/PapyrusDD/SRC_UIEXT;.github/PapyrusSLP/SE/Parasites/Data/Scripts/source;.github/PapyrusUD/Scripts/Source" --output "Scripts" --flags="TESV_Papyrus_Flags.flg" "Source/Scripts" -R -q
+        
+        - name: Upload Output
+          uses: actions/upload-artifact@v4
+          with: 
+            name: compiled-scripts
+            path: |
+              Scripts/
+  package-mod:
+    name: Package all necessary files
+    runs-on: windows-latest
+    needs: [build-plugin, compile-scripts]
+    permissions: write-all
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Download Compiled Plugin
+        uses: actions/download-artifact@v4
+        with:
+          name: plugin
+      
+      - name: Download Compiled Scripts
+        uses: actions/download-artifact@v4
+        with: 
+          name: compiled-scripts
+          path: Scripts
+
+      - name: Create packing structure
+        shell: bash
+        run: |
+          mkdir "${{ github.workspace }}\to-pack"
+          mkdir "${{ github.workspace }}\to-pack\Data"
+          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\to-pack\Data\SexLab-Parasites-UD.esp"
+          cp -r "Sound" "${{ github.workspace }}\to-pack\Data\Sound"
+          cp -r "Scripts" "${{ github.workspace }}\to-pack\Data\Scripts"
+          ls -R "${{ github.workspace }}\to-pack"
+
+      - name: Zip release files
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: to-pack/
+          dest: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
+
+      - name: Upload Output
+        uses: actions/upload-artifact@v4
+        with:
+          name: UnforgivingParasites-${{inputs.version || 'nightly'}}
+          path: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
+
+      - name: Remove temporary artifacts
+        uses: geekyeggo/delete-artifact@v4
+        with:
+          name: |
+            plugin
+            compiled-scripts
+  
+  share-release:
+    name: Share release
+    needs: [package-mod]
+    if: ${{ inputs.publish-release == true && (needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always())) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+  
+      - name: Download release artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: UnforgivingParasites-${{inputs.version || 'nightly'}}
+
+      - name: Delete existing release
+        uses: dev-drprasad/delete-tag-and-release@v1.0
+        with:
+          tag-name: ${{inputs.version || 'nightly'}}
+          github-token: $${{ github.token }}
+          delete_release: true
+      
+      - name: Create Release
+        id: create_release
+        uses: ncipollo/release-action@v1.13.0
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          allowUpdates: true
+          name: ${{inputs.version || 'nightly'}}
+          draft: false
+          body: 'Latest release of Unforgiving Parasites'
+          tag: ${{inputs.version || 'nightly'}}
+          prerelease: true
+          makeLatest: false
+          removeArtifacts: true
+          replaceArtifacts: true
+          artifactErrorsFailBuild: true
+          artifacts: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
+
+      - name: Remove temporary artifacts
+        uses: geekyeggo/delete-artifact@v2
+        with:
+          name: UnforgivingParasites-${{inputs.version || 'nightly'}}

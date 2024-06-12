@@ -2,3 +2,6 @@
 .vscode.bak
 *.code-workspace
 SSEEdit*
+*.ppj
+*.esp
+/Scripts

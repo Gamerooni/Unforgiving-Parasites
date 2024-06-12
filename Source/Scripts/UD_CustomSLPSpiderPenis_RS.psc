@@ -177,7 +177,7 @@ bool Function struggleMinigameWH(Actor akHelper,int aiType = -1)
     return parent.struggleMinigameWH(akHelper, aiType)
 EndFunction
 Function setRetaliate(bool newRetaliate)
-    return parent.setRetaliate(newRetaliate)
+    parent.setRetaliate(newRetaliate)
 EndFunction
 bool Function willRetaliate(float fMult = 1.0)
     return parent.willRetaliate(fMult)

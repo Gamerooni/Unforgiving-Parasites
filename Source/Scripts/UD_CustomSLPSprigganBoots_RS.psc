@@ -33,5 +33,5 @@ EndFunction
 ;more about reason here https://www.creationkit.com/index.php?title=Function_Reference, and Notes on using Parent section
 ;============================================================================================================================
 float Function getAccesibility()
-    parent.getAccesibility()
+    return parent.getAccesibility()
 EndFunction
