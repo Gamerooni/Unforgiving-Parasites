@@ -47,15 +47,15 @@ Finally, static parasites are just that - static. They're stuck on you forever, 
 ## Attributions and Credits
 
 ### Code
-This project builds on the original [Sexlab Parasites](https://github.com/SkyrimLL/SkLLmods/tree/master/Parasites) by @deepbluefrog. The concept and all the original code belongs to them.
+This project builds on the original [Sexlab Parasites](https://github.com/SkyrimLL/Skyrim/tree/main/SE/Parasites) by [deepbluefrog](https://github.com/SkyrimLL). The concept and all the original code belongs to them.
 
-The project also uses the wonderful [Unforgiving Devices](https://github.com/IHateMyKite/UnforgivingDevices) by @IHateMyKite as the framework for its changes.
+The project also uses the wonderful [Unforgiving Devices](https://github.com/IHateMyKite/UnforgivingDevices) by [IHateMyKite](https://github.com/IHateMyKite) as the framework for its changes.
 
 I used [Wenderer](https://next.nexusmods.com/profile/Wenderer/about-me?gameId=1151)'s excellent [FOMOD creation tool](https://www.nexusmods.com/fallout4/mods/6821) to create the FOMOD `.xml`s.
 
 The Papyrus scripts are compiled by [Orvid](https://github.com/Orvid)'s lightning-fast and very cool [Caprica](https://github.com/Orvid/Caprica) compiler.
 
-You may wonder why there's no `.esp` in this repo. That's because it uses the amazing [Spriggit](https://github.com/Mutagen-Modding/Spriggit) by [Noggog](https://github.com/Noggog)! If you want to develop a mod, definitely check it out - it may save you a headache as your projects get big.
+You may wonder why there's no `.esp` in this repo. That's because it uses the amazing [Spriggit](https://github.com/Mutagen-Modding/Spriggit) by [Noggog](https://github.com/Noggog)! If you want to develop a mod, definitely check it out - it may save you a headache as your projects get big. I also repurposed the build script that I believe he developed for the Starfield Community Patch for this project.
 
 ### Audio
 Sounds under [CC-BY-NC 3.0](creativecommons.org/licenses/by-nc/3.0/):  
