@@ -305,7 +305,7 @@ jobs:
           prerelease: true
           makeLatest: false
           removeArtifacts: true
-          replaceArtifacts: true
+          replacesArtifacts: true
           artifactErrorsFailBuild: true
           artifacts: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
 
