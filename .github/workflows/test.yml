@@ -97,6 +97,7 @@ jobs:
             sparse-checkout: Source/Scripts
 
         - name: Cache Script Sources
+          id: cache-ss
           uses: actions/cache@v4
           with:
             path: |
@@ -106,6 +107,7 @@ jobs:
             key: script-sources
 
         - name: Cache Complier
+          id: cache-com
           uses: actions/cache@v4
           with:
             path: |
@@ -113,16 +115,19 @@ jobs:
             key: ${{ runner.os }}-papyrus-compiler
 
         - name: Fetch Caprica 0.3.0
+          if: steps.cache-com.outputs.cache-hit != 'true'
           shell: bash
           run: gh release download -O .github/Caprica.7z -p '*.7z' -R Orvid/Caprica v0.3.0
           env:
             GH_TOKEN: ${{ github.token }}
 
         - name: Extract Caprica EXE file
+          if: steps.cache-com.outputs.cache-hit != 'true'
           shell: bash
           run: 7z x .github/Caprica.7z -o.github/Caprica
 
         - name: Checkout DD Sources
+          if: steps.cache-ss.outputs.cache-hit != 'true'
           shell: bash
           run: |
             cd .github
@@ -135,6 +140,7 @@ jobs:
             git checkout main
 
         - name: Checkout UD Sources
+          if: steps.cache-ss.outputs.cache-hit != 'true'
           shell: bash
           run: |
             cd .github
@@ -147,6 +153,7 @@ jobs:
             git checkout main
 
         - name: Checkout SLP Sources
+          if: steps.cache-ss.outputs.cache-hit != 'true'
           shell: bash
           run: |
             cd .github
@@ -167,8 +174,8 @@ jobs:
             git init
             git remote add origin https://github.com/Rukan/Grimy-Skyrim-Papyrus-Source.git
             git sparse-checkout set --no-cone 'TESV_Papyrus_Flags.flg'
-            git fetch --depth=1 origin main
-            git checkout main
+            git fetch --depth=1 origin master
+            git checkout master
             mv TESV_Papyrus_Flags.flg ../PapyrusDD/SRC/TESV_Papyrus_Flags.flg
             cd ..
             rm -r temp
