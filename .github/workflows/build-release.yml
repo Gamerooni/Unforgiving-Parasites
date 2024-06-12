@@ -194,24 +194,6 @@ jobs:
             cd ..
             rm -r temp
 
-        - name: Save Script Sources
-          id: cache-ss-save
-          uses: actions/cache/save@v4
-          with:
-            path: |
-              .github/PapyrusDD
-              .github/PapyrusUD
-              .github/PapyrusSLP
-            key: script-sources
-
-        - name: Save Compiler
-          id: cache-compiler-save
-          uses: actions/cache/save@v4
-          with:
-            path: |
-              .github/Caprica
-            key: ${{ runner.os }}-papyrus-compiler
-
         # Perform the actions to build a release.
         - name: Run Caprica
           shell: bash
@@ -247,29 +229,25 @@ jobs:
       - name: Create packing structure
         shell: bash
         run: |
-          mkdir "${{ github.workspace }}\mod"
-          mkdir "${{ github.workspace }}\mod\Data"
-          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\mod\Data\SexLab-Parasites-UD.esp"
-          cp -a "Scripts" "${{ github.workspace }}\mod\Data\Scripts"
-          mkdir "${{ github.workspace }}\to-pack"
-          mkdir "${{ github.workspace }}\to-pack\1.Base"
-          mkdir "${{ github.workspace }}\to-pack\2.Scripts"
-          mkdir "${{ github.workspace }}\to-pack\fomod"
-          cp -a "mod" "${{ github.workspace }}\to-pack\1.Base"
-          cp -a "Source\Scripts" "${{ github.workspace }}\to-pack\2.Scripts"
-          cp -a "fomod" "${{ github.workspace }}\to-pack\fomod"
-          ls -R "${{ github.workspace }}\to-pack"
+          mkdir "${{ github.workspace }}\FOMOD\1.Base"
+          mkdir "${{ github.workspace }}\FOMOD\2.Scripts"
+          mkdir "${{ github.workspace }}\FOMOD\fomod"
+          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\FOMOD\1.Base\SexLab-Parasites-UD.esp"
+          cp -a "Scripts" "${{ github.workspace }}\FOMOD\1.Base\Scripts"
+          cp -a "Source" "${{ github.workspace }}\FOMOD\2.Scripts\Source"
+          cp -a "fomod" "${{ github.workspace }}\FOMOD\fomod"
+          ls -R "${{ github.workspace }}\FOMOD"
 
       - name: Include Sounds
         if: ${{inputs.pack-sound == true}}
         shell: bash
         run: |
-          cp -a "Sound" "${{ github.workspace }}\to-pack\1.Base\Sound"
+          cp -a "Sound" "${{ github.workspace }}\FOMOD\1.Base\Sound"
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
         with:
-          files: to-pack/
+          files: FOMOD/
           dest: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
 
       - name: Upload Output
