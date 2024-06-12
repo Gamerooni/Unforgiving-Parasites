@@ -36,10 +36,34 @@ jobs:
           echo test, and deploy your project.
           echo "$PWD"
 
-      - name: Run Spriggit
-        uses: FlayaN/spriggit-runner-action@fbd43cea737ad3bb6b94f9985fa206691a9017b1
-        with: 
-          spriggit_args: deserialize -i "${{ github.workspace }}/ESP Patch" -o ${{ github.workspace }}/SexLab-Parasites-UD.esp
+      - name: Copy to Pack Folder
+        shell: bash
+        run: |
+          mkdir ${{ github.workspace }}/to-pack
+        # cp -r Docs/ ${{ github.workspace }}/to-pack/Docs/
+      
+      # Copied from Starfield Community Patch
+      - name: Fetch spriggit
+        shell: bash
+        run: gh release download -O .github/spriggit.zip -p 'SpriggitLinuxCLI.zip' -R Mutagen-Modding/Spriggit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          
+      - name: Extract Spriggit Zip
+        shell: bash
+        run: 7z x .github/spriggit.zip -o.github/spriggit
+
+      - name: fix spriggit permission
+        shell: bash
+        run: chmod +x .github/spriggit/Spriggit.CLI
+
+      - name: run spriggit
+        shell: bash
+        run: .github/spriggit/Spriggit.CLI deserialize --InputPath "spriggit" --OutputPath "${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp"
+      # - name: Run Spriggit
+      #   uses: FlayaN/spriggit-runner-action@fbd43cea737ad3bb6b94f9985fa206691a9017b1
+      #   with: 
+      #     spriggit_args: deserialize -i "${{ github.workspace }}/ESP Patch" -o ${{ github.workspace }}/SexLab-Parasites-UD.esp
 
       # just uploads the whole repo lol
       - name: Upload a Build Artifact
@@ -48,6 +72,6 @@ jobs:
           # Artifact name
           name: test
           # A file, directory or wildcard pattern that describes what to upload
-          path: .
+          path: ${{ github.workspace }}/to-pack
           # The desired behavior if no files are found using the provided path.
           
