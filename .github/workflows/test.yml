@@ -59,7 +59,7 @@ jobs:
 
       - name: run spriggit
         shell: bash
-        run: .github/spriggit/Spriggit.CLI deserialize --InputPath "spriggit" --OutputPath "${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp"
+        run: .github/spriggit/Spriggit.CLI deserialize --InputPath "ESP Patch" --OutputPath "${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp"
       # - name: Run Spriggit
       #   uses: FlayaN/spriggit-runner-action@fbd43cea737ad3bb6b94f9985fa206691a9017b1
       #   with: 
