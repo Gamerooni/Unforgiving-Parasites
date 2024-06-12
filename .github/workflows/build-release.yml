@@ -244,6 +244,11 @@ jobs:
         shell: bash
         run: |
           cp -a "Sound" "${{ github.workspace }}\to-pack\1.Base\Sound"
+      
+      - name: Craft info.xml
+        shell: bash
+        run: |
+          echo '<Name>Unforgiving Parasites</Name><Author>'"${{ github.repository_owner}}"'</Author><Version>'"${{ inputs.version }}"'</Version><Website>'"${{ github.repositoryUrl }}"'</Website><Description>Expansion of Sexlab Parasites to work with Unforgiving Devices</Description><Groups><element>quests and Adventures</element></Groups></fomod>' >> ${{ github.workspace }}\to-pack\fomod\info.xml
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
