@@ -252,7 +252,7 @@ jobs:
       - name: Edit info.xml
         uses: Mudlet/xmlstarlet-action@master
         with:
-          args: ed -L --update '/fomod/Version' -v '${{inputs.version || 'nightly'}}' ${{ github.workspace }}/to-pack/fomod/info.xml
+          args: ed -L --update '/fomod/Version' -v '${{inputs.version || 'nightly'}}' "to-pack/fomod/info.xml"
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
