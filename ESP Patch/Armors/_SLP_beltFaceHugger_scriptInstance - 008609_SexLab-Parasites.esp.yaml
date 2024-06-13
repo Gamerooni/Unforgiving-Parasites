@@ -37,6 +37,21 @@ VirtualMachineAdapter:
       Name: UD_DeviceAbilities_Flags
       Data:
       - 0
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_CutChance
+      Data: 5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_durability_damage_base
+      Data: 0.3
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistMagicka
+      Data: 0.85
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Level
+      Data: -2
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistPhysical
+      Data: 0.6
 ObjectBounds:
   First: -11, -8, 1
   Second: 11, 10, 85

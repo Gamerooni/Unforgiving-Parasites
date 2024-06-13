@@ -19,6 +19,24 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 008604:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_CutChance
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_durability_damage_base
+      Data: 0.01
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Level
+      Data: -2
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistMagicka
+      Data: 0.8
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistPhysical
+      Data: 0.99
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_VibSound
+      Object: 005902:SexLab-Parasites-UD.esp
 Name:
   TargetLanguage: English
   Value: Tentacle Armor

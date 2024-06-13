@@ -19,6 +19,21 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 006034:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Level
+      Data: -2
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_durability_damage_base
+      Data: 0.01
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistPhysical
+      Data: 0.99
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistMagicka
+      Data: 0.8
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_CutChance
+      Data: 1
 ObjectBounds:
   First: -11, -15, -4
   Second: 11, 15, 4

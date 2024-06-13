@@ -28,6 +28,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptIntProperty
       Name: UD_Chaos
       Data: 50
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Level
+      Data: 17
 ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:

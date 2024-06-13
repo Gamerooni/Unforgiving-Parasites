@@ -33,7 +33,10 @@ VirtualMachineAdapter:
       Data: 0.8
     - MutagenObjectType: ScriptFloatProperty
       Name: UD_ResistPhysical
-      Data: -0.25
+      Data: 0.55
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_VibSound
+      Object: 005902:SexLab-Parasites-UD.esp
 ObjectEffect: 00D1A8:SexLab-Parasites.esp
 WorldModel:
   Male:
