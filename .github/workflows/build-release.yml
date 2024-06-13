@@ -211,7 +211,7 @@ jobs:
               Scripts/
   package-mod:
     name: Package all necessary files
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: [build-plugin, compile-scripts]
     if: ${{ needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always()) }}
     permissions: write-all
@@ -233,26 +233,26 @@ jobs:
       - name: Create packing structure
         shell: bash
         run: |
-          mkdir "${{ github.workspace }}\to-pack"
-          mkdir "${{ github.workspace }}\to-pack\1.Base"
-          mkdir "${{ github.workspace }}\to-pack\2.Scripts"
-          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}\to-pack\1.Base\SexLab-Parasites-UD.esp"
-          cp -a "Scripts" "${{ github.workspace }}\to-pack\1.Base\Scripts"
-          cp -a "Source" "${{ github.workspace }}\to-pack\2.Scripts\Source"
-          cp -a "FOMOD Files\fomod" "${{ github.workspace }}\to-pack\fomod"
-          cp -a "FOMOD Files\images" "${{ github.workspace }}\to-pack\images"
-          ls -R "${{ github.workspace }}\to-pack"
+          mkdir "${{ github.workspace }}/to-pack"
+          mkdir "${{ github.workspace }}/to-pack/1.Base"
+          mkdir "${{ github.workspace }}/to-pack/2.Scripts"
+          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}/to-pack/1.Base/SexLab-Parasites-UD.esp"
+          cp -a "Scripts" "${{ github.workspace }}/to-pack/1.Base/Scripts"
+          cp -a "Source" "${{ github.workspace }}/to-pack/2.Scripts/Source"
+          cp -a "FOMOD Files/fomod" "${{ github.workspace }}/to-pack/fomod"
+          cp -a "FOMOD Files/images" "${{ github.workspace }}/to-pack/images"
+          ls -R "${{ github.workspace }}/to-pack"
 
       - name: Include Sounds
         if: ${{inputs.pack-sound == true}}
         shell: bash
         run: |
-          cp -a "Sound" "${{ github.workspace }}\to-pack\1.Base\Sound"
+          cp -a "Sound" "${{ github.workspace }}/to-pack/1.Base/Sound"
       
       - name: Edit info.xml
         uses: Mudlet/xmlstarlet-action@master
         with:
-          args: ed -L --update 'fomod/Version' -v '${{inputs.version || 'nightly'}}' '${{ github.workspace }}\to-pack\fomod\info.xml'
+          args: ed -L --update 'fomod/Version' -v '${{inputs.version || 'nightly'}}' '${{ github.workspace }}/to-pack/fomod/info.xml'
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
