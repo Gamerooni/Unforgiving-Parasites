@@ -117,7 +117,7 @@ jobs:
               .github/PapyrusDD
               .github/PapyrusUD
               .github/PapyrusSLP
-            key: script-sources
+            key: script-sources-clean
 
         - name: Cache Complier
           id: cache-com
@@ -151,6 +151,7 @@ jobs:
             git sparse-checkout set --no-cone 'SRC*'
             git fetch --depth=1 origin main
             git checkout main
+            rm -rf .git
 
         - name: Checkout UD Sources
           if: steps.cache-ss.outputs.cache-hit != 'true'
@@ -164,6 +165,7 @@ jobs:
             git sparse-checkout set --no-cone 'Scripts/Source'
             git fetch --depth=1 origin main
             git checkout main
+            rm -rf .git
 
         - name: Checkout SLP Sources
           if: steps.cache-ss.outputs.cache-hit != 'true'
@@ -177,6 +179,7 @@ jobs:
             git sparse-checkout set --no-cone 'SE/Parasites/Data/Scripts/source'
             git fetch --depth=1 origin main
             git checkout main
+            rm -rf .git
         
         - name: Checkout TESV Flags File
           if: steps.cache-ss.outputs.cache-hit != 'true'
@@ -190,6 +193,7 @@ jobs:
             git sparse-checkout set --no-cone 'TESV_Papyrus_Flags.flg'
             git fetch --depth=1 origin master
             git checkout master
+            rm -rf .git
             mv TESV_Papyrus_Flags.flg ../PapyrusDD/SRC/TESV_Papyrus_Flags.flg
             cd ..
             rm -r temp
@@ -248,7 +252,9 @@ jobs:
       - name: Craft info.xml
         shell: bash
         run: |
-          echo '<Name>Unforgiving Parasites</Name><Author>'"${{ github.repository_owner}}"'</Author><Version>'"${{ inputs.version }}"'</Version><Website>'"${{ github.repositoryUrl }}"'</Website><Description>Expansion of Sexlab Parasites to work with Unforgiving Devices</Description><Groups><element>quests and Adventures</element></Groups></fomod>' >> ${{ github.workspace }}\to-pack\fomod\info.xml
+          INFO_XML = '<Name>Unforgiving Parasites</Name><Author>'"${{ github.repository_owner}}"'</Author><Version>'"${{ inputs.version }}"'</Version><Website>'"${{ github.repositoryUrl }}"'</Website><Description>Expansion of Sexlab Parasites to work with Unforgiving Devices</Description><Groups><element>quests and Adventures</element></Groups></fomod>'
+          echo $INFO_XML
+          echo $INFO_XML >> ${{ github.workspace }}\to-pack\fomod\info.xml
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
