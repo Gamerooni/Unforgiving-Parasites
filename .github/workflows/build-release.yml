@@ -25,7 +25,7 @@ on:
       pack-sound:
         description: Include sounds?
         type: boolean
-        default: false
+        default: true
       spriggit_tool_version:
         description: Spriggit version (optional)
         required: false
