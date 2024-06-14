@@ -52,6 +52,28 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: UD_ResistPhysical
       Data: 0.6
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm1
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm2
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm3
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: UD_ModifiersDataStr
+      Data:
+      - 200
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersRef
+      Objects:
+      - Name: ''
+        Object: 16FFFF:UnforgivingDevices.esp
+        Alias: 1
 ObjectBounds:
   First: -11, -8, 1
   Second: 11, 10, 85

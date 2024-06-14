@@ -37,6 +37,28 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_VibSound
       Object: 005902:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm1
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm2
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm3
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: UD_ModifiersDataStr
+      Data:
+      - 200
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersRef
+      Objects:
+      - Name: ''
+        Object: 16FFFF:UnforgivingDevices.esp
+        Alias: 1
 ObjectEffect: 00D1A8:SexLab-Parasites.esp
 WorldModel:
   Male:
