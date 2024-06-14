@@ -5,32 +5,20 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: callForHelpMsg
-      Object: 02F141:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 00D1A7:SexLab-Parasites.esp
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
       Data: gag
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceQuest
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: deviceRendered
       Object: 00D1A6:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DisableLockManipulation
-      Data: True
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Lockpick
-      Object: 00000A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: UDCDmain
       Object: 15E73C:UnforgivingDevices.esp
@@ -67,9 +55,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_OnPutOnDevice
       Object: 73B44F:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Aroused
-      Object: 04290F:SexLabAroused.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceEscapeMsg
       Object: 73B451:SexLab-Parasites.esp

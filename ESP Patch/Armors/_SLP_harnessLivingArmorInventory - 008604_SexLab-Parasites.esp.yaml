@@ -4,21 +4,21 @@ VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLP_EquipScript
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockJamChance
-      Data: 33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 008604:SexLab-Parasites.esp
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
       Data: Living Armor
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockPickEscapeChance
-      Data: 15
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceRendered
       Object: 008603:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Aroused
-      Object: 04290F:SexLabAroused.esm
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: UDCDmain
       Object: 15E73C:UnforgivingDevices.esp
@@ -34,39 +34,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviousDevice
       Object: 017C43:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 008604:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CatastrophicFailureChance
-      Data: 100
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Lockpick
-      Object: 00000A:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CutDeviceEscapeChance
-    - MutagenObjectType: ScriptFloatProperty
-      Name: BaseEscapeChance
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceKey
-    - MutagenObjectType: ScriptBoolProperty
-      Name: JammedLock
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceQuest
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: KeyBreakChance
-      Data: 25
-    - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DisableLockManipulation
-      Data: True
 Name:
   TargetLanguage: English
   Value: Gum Osta Itinere

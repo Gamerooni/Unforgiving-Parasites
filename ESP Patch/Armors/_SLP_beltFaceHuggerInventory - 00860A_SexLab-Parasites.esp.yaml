@@ -4,32 +4,34 @@ VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLP_EquipScript
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CutDeviceEscapeChance
     - MutagenObjectType: ScriptObjectProperty
-      Name: UDCDmain
-      Object: 15E73C:UnforgivingDevices.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockShieldTimerMin
-      Data: 5
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockJamChance
-      Data: 33
+      Name: deviceInventory
+      Object: 00860A:SexLab-Parasites.esp
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
       Data: Horny crawler
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockPickEscapeChance
-      Data: 15
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CatastrophicFailureChance
-      Data: 100
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceRendered
       Object: 008609:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: EquipConflictingDevices
+      Objects:
+      - Name: ''
+        Object: 02AFA3:Devious Devices - Assets.esm
+      - Name: ''
+        Object: 01DD7C:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Aroused
-      Object: 04290F:SexLabAroused.esm
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SexLab
+      Object: 000D62:SexLab.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeCutSuccessMSG
       Object: 73B445:SexLab-Parasites.esp
@@ -45,9 +47,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleFailureMSG
       Object: 73B448:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 00860A:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleMSG
       Object: 73B449:SexLab-Parasites.esp
@@ -67,20 +66,11 @@ VirtualMachineAdapter:
       Name: zad_DD_OnNoKeyMSG
       Object: 73B44E:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Lockpick
-      Object: 00000A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_OnPutOnDevice
       Object: 73B44F:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: SexLab
-      Object: 000D62:SexLab.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceEscapeMsg
       Object: 73B451:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceQuest
-      Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceMsg
       Object: 00860E:SexLab-Parasites.esp
@@ -90,47 +80,18 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceRemoveMsg
       Object: 001830:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockShieldTimerMax
-      Data: 48
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviousDevice
       Object: 003330:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectListProperty
-      Name: EquipConflictingDevices
-      Objects:
-      - Name: ''
-        Object: 02AFA3:Devious Devices - Assets.esm
-      - Name: ''
-        Object: 01DD7C:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_EquipConflictFailMsg
       Object: 73B456:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptBoolProperty
-      Name: JammedLock
-      Data: True
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_UnEquipFailMsg
       Object: 73B445:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: ZazAPCAO104
       Object: 004E88:ZaZAnimationPack.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DisableLockManipulation
-      Data: True
-    - MutagenObjectType: ScriptFloatProperty
-      Name: KeyBreakChance
-      Data: 2
-    - MutagenObjectType: ScriptFloatProperty
-      Name: UnlockCooldown
-    - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: BaseEscapeChance
 Name:
   TargetLanguage: English
   Value: Hip Hugger

@@ -4,6 +4,9 @@ VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLP_EquipScript
     Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 005ABE:SexLab-Parasites.esp
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
       Data: Chaurus Worm
@@ -11,35 +14,23 @@ VirtualMachineAdapter:
       Name: deviceRendered
       Object: 005ABF:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Aroused
-      Object: 04290F:SexLabAroused.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 005ABE:SexLab-Parasites.esp
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: JammedLock
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UDCDmain
-      Object: 15E73C:UnforgivingDevices.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: squeezeMsg
       Object: 005AC0:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceMsg
       Object: 00182F:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceMsgMagic
       Object: 001831:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Lockpick
-      Object: 00000A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceRemoveMsg
       Object: 001830:SexLab-Parasites.esp
@@ -47,14 +38,8 @@ VirtualMachineAdapter:
       Name: zad_DeviousBelt
       Object: 003330:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceQuest
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviousDevice
       Object: 01DD7D:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DisableLockManipulation
-      Data: True
 Name:
   TargetLanguage: English
   Value: Chaurus Worm
