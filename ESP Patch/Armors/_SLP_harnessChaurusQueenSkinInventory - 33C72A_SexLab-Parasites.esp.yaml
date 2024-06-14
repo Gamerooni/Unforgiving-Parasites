@@ -4,58 +4,27 @@ VirtualMachineAdapter:
   Scripts:
   - Name: UD_CustomSLP_EquipScript
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockJamChance
-      Data: 100
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 33C72A:SexLab-Parasites.esp
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
       Data: Chaurus Queen Skin
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockPickEscapeChance
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceRendered
       Object: 33C729:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Aroused
-      Object: 04290F:SexLabAroused.esm
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: UDCDmain
       Object: 15E73C:UnforgivingDevices.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviousDevice
       Object: 00CA39:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: BaseEscapeChance
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 33C72A:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Lockpick
-      Object: 00000A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceKey
-    - MutagenObjectType: ScriptBoolProperty
-      Name: JammedLock
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: fctParasites
-      Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: KeyBreakChance
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CatastrophicFailureChance
-      Data: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceQuest
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DisableLockManipulation
-      Data: True
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CutDeviceEscapeChance
 Name:
   TargetLanguage: English
   Value: Chaurus Queen Skin

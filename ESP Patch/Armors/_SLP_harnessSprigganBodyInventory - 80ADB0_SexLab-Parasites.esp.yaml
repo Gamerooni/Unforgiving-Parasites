@@ -5,62 +5,26 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: UDCDmain
-      Object: 15E73C:UnforgivingDevices.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockJamChance
-      Data: 33
+      Name: deviceInventory
+      Object: 80ADB0:SexLab-Parasites.esp
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
       Data: Spriggan Body
-    - MutagenObjectType: ScriptFloatProperty
-      Name: LockPickEscapeChance
     - MutagenObjectType: ScriptObjectProperty
       Name: deviceRendered
       Object: 80ADAF:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Aroused
-      Object: 04290F:SexLabAroused.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: AllowLockPick
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DeviousDevice
-      Object: 017C43:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 80ADB0:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptBoolProperty
-      Name: AllowStandardTools
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Lockpick
-      Object: 00000A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceKey
-    - MutagenObjectType: ScriptBoolProperty
-      Name: JammedLock
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceQuest
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: BaseEscapeChance
-    - MutagenObjectType: ScriptFloatProperty
-      Name: KeyBreakChance
-      Data: 25
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CatastrophicFailureChance
-      Data: 100
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DisableLockManipulation
-      Data: True
-    - MutagenObjectType: ScriptFloatProperty
-      Name: CutDeviceEscapeChance
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviousDevice
+      Object: 017C43:Devious Devices - Assets.esm
 Name:
   TargetLanguage: English
   Value: Spriggan Body
