@@ -5,17 +5,17 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPChaurusQueenArmor_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: deviceInventory
+      Object: 2BDDE3:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 017C43:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 2BDDE3:SexLab-Parasites.esp
 ObjectEffect: 4FF20F:SexLab-Parasites.esp
 WorldModel:
   Male:

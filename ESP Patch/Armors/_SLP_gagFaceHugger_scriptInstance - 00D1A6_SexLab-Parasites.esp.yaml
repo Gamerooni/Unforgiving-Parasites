@@ -5,38 +5,29 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPFaceHuggerGag_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: deviceInventory
+      Object: 00D1A7:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: UD_DeviceKeyword
-      Object: 007EB8:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 00D1A7:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: UD_durability_damage_base
-      Data: 0.4
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: UD_base_stat_drain
       Data: 5
     - MutagenObjectType: ScriptFloatProperty
       Name: UD_CutChance
       Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_DeviceKeyword
+      Object: 007EB8:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_durability_damage_base
+      Data: 0.4
     - MutagenObjectType: ScriptIntProperty
       Name: UD_Level
       Data: -2
-    - MutagenObjectType: ScriptFloatProperty
-      Name: UD_ResistMagicka
-      Data: 0.8
-    - MutagenObjectType: ScriptFloatProperty
-      Name: UD_ResistPhysical
-      Data: 0.55
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UD_VibSound
-      Object: 005902:SexLab-Parasites-UD.esp
     - MutagenObjectType: ScriptObjectListProperty
       Name: UD_ModifiersDataForm1
       Objects:
@@ -59,6 +50,15 @@ VirtualMachineAdapter:
       - Name: ''
         Object: 16FFFF:UnforgivingDevices.esp
         Alias: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistMagicka
+      Data: 0.8
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistPhysical
+      Data: 0.55
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_VibSound
+      Object: 005902:SexLab-Parasites-UD.esp
 ObjectEffect: 00D1A8:SexLab-Parasites.esp
 WorldModel:
   Male:
