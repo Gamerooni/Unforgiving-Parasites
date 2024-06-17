@@ -1,6 +1,6 @@
 SpriggitSource:
   PackageName: Spriggit.Yaml.Skyrim
-  Version: 0.23
+  Version: 0.23.0
 ModKey: SexLab-Parasites-UD.esp
 GameRelease: SkyrimSE
 ModHeader:
