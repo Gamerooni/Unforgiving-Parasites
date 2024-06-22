@@ -5,19 +5,19 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPSprigganGag_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptProperty
-      Name: UD_LockList
+      Name: deviceInventory
+      Object: 80ADAD:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 80ADAD:SexLab-Parasites.esp
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 007EB8:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptProperty
+      Name: UD_LockList
 ObjectEffect: 8386C3:SexLab-Parasites.esp
 WorldModel:
   Male:

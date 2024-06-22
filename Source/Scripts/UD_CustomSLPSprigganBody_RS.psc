@@ -26,3 +26,19 @@ Int Function CreateLock(Int aiDifficulty, Int aiAccess, Int aiShields, String as
     Udmain.Log("attempt to put a lock on " + getDeviceName() + "thwarted", 5)
     return 0x00000000
 EndFunction
+
+;Deactivate useless struggle
+Function onDeviceMenuInitPost(bool[] aControlFilter)
+    parent.onDeviceMenuInitPost(aControlFilter)
+    if !UDCDmain.currentDeviceMenu_allowstruggling ;canBeStruggled()
+        UDCDMain.disableStruggleCondVar(false)
+    endif
+EndFunction
+
+;Deactivate useless struggle
+Function onDeviceMenuInitPostWH(bool[] aControlFilter)
+    parent.onDeviceMenuInitPostWH(aControlFilter)
+    if !UDCDmain.currentDeviceMenu_allowstruggling ;canBeStruggled()
+        UDCDMain.disableStruggleCondVar(false)
+    endif
+EndFunction

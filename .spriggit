@@ -1,5 +1,6 @@
 {
-  "PackageName": "Spriggit.Yaml",
-  "Version": "0.20",
-  "Release": "SkyrimSE"
+  "PackageName": "Spriggit.Yaml.Skyrim",
+  "Version": "0.23",
+  "Release": "SkyrimSE",
+  "ModKey": "SexLab-Parasites-UD.esp"
 }
