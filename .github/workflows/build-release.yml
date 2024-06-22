@@ -34,7 +34,7 @@ jobs:
   # possibly change this to check for spriggit and papyrus individually
   check-changes:
     name: Check for recent changes
-    if: ${{ github.event_name != 'workflow_dispatch'}}
+    if: ${{ github.event_name != 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     outputs: 
       should_run: ${{ steps.should_run.outputs.should_run }}
