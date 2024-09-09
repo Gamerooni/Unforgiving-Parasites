@@ -180,7 +180,7 @@ EndFunction
 ; Retaliate.
 Function OnCritFailure()
     parent.OnCritFailure()
-    retaliate(0.5)
+    retaliate(0.5 * (1 - getArousalAdjustment()))
 EndFunction
 
 ; Taunt player if minigame failed
