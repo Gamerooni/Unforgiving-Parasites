@@ -5,29 +5,20 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPFaceHugger_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: deviceInventory
+      Object: 00860A:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: UD_DeviceKeyword
-      Object: 003330:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 00860A:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UD_VibSound
-      Object: 005902:SexLab-Parasites-UD.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UD_SpecialMenuInteraction
-      Object: 000800:SexLab-Parasites-UD.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UD_SpecialMenuInteractionWH
-      Object: 000800:SexLab-Parasites-UD.esp
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptIntProperty
       Name: UD_Chaos
       Data: 50
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_CutChance
+      Data: 5
     - MutagenObjectType: ScriptObjectListProperty
       Name: UD_DeviceAbilities
       Objects:
@@ -37,6 +28,52 @@ VirtualMachineAdapter:
       Name: UD_DeviceAbilities_Flags
       Data:
       - 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_DeviceKeyword
+      Object: 003330:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_durability_damage_base
+      Data: 0.3
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Level
+      Data: -2
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm1
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm2
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm3
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: UD_ModifiersDataStr
+      Data:
+      - 200
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersRef
+      Objects:
+      - Name: ''
+        Object: 16FFFF:UnforgivingDevices.esp
+        Alias: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistMagicka
+      Data: 0.85
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistPhysical
+      Data: 0.6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_SpecialMenuInteraction
+      Object: 000800:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_SpecialMenuInteractionWH
+      Object: 000800:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_VibSound
+      Object: 005902:SexLab-Parasites-UD.esp
 ObjectBounds:
   First: -11, -8, 1
   Second: 11, 10, 85

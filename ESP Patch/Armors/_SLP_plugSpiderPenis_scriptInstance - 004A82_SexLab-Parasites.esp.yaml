@@ -5,29 +5,51 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPSpiderPenis_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: deviceInventory
+      Object: 004A81:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Chaos
+      Data: 50
+    - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 01DD7C:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 004A81:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UD_VibSound
-      Object: 005902:SexLab-Parasites-UD.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm1
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm2
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersDataForm3
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptStringListProperty
+      Name: UD_ModifiersDataStr
+      Data:
+      - 200
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: UD_ModifiersRef
+      Objects:
+      - Name: ''
+        Object: 16FFFF:UnforgivingDevices.esp
+        Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_SpecialMenuInteraction
       Object: 000800:SexLab-Parasites-UD.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_SpecialMenuInteractionWH
       Object: 000800:SexLab-Parasites-UD.esp
-    - MutagenObjectType: ScriptIntProperty
-      Name: UD_Chaos
-      Data: 50
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UD_VibSound
+      Object: 005902:SexLab-Parasites-UD.esp
 ObjectEffect: 05D9CC:Devious Devices - Integration.esm
 WorldModel:
   Male:

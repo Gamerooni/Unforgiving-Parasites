@@ -27,6 +27,22 @@ Int Function CreateLock(Int aiDifficulty, Int aiAccess, Int aiShields, String as
     return 0x00000000
 EndFunction
 
+;Deactivate useless struggle
+Function onDeviceMenuInitPost(bool[] aControlFilter)
+    parent.onDeviceMenuInitPost(aControlFilter)
+    if !UDCDmain.currentDeviceMenu_allowstruggling ;canBeStruggled()
+        UDCDMain.disableStruggleCondVar(false)
+    endif
+EndFunction
+
+;Deactivate useless struggle
+Function onDeviceMenuInitPostWH(bool[] aControlFilter)
+    parent.onDeviceMenuInitPostWH(aControlFilter)
+    if !UDCDmain.currentDeviceMenu_allowstruggling ;canBeStruggled()
+        UDCDMain.disableStruggleCondVar(false)
+    endif
+EndFunction
+
 ;============================================================================================================================
 ;unused override function, theese are from base script. Extending different script means you also have to add their overrride functions                                                
 ;theese function should be on every object instance, as not having them may cause multiple function calls to default class

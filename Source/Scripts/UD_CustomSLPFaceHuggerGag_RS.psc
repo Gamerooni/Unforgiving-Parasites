@@ -16,6 +16,9 @@ Float Property SLP_CureMultiplier Auto
 ;wearer's arousal at the beginning of a minigame
 float startMinigameArousal = 0.0
 
+;whether the device will retaliate in response to the player's meddling
+bool shouldRetaliate = true
+
 string SLPDeviceName = "FaceHuggerGag"
 
 ;==========OVERRIDES==========
@@ -43,6 +46,7 @@ EndFunction
 
 Function onRemoveDevicePost(Actor akActor)
     parent.onRemoveDevicePost(akActor)
+    libs.SexLab.AddCum(akActor, Vaginal = false, Oral = true, Anal = false)
     fctParasites.cureParasiteByString(akActor, SLPDeviceName)
 EndFunction
 
@@ -69,10 +73,25 @@ Function OnMinigameStart()
             endif
         endif
     endif
+    ; if cure is applied, don't retaliate
+    setRetaliate(bNoCure)
     startMinigameArousal = UDOM.getArousal(getWearer())
-    ; Also change minigame difficulty here
-    setMinigameDmgMult(getMinigameMult(0) * getArousalAdjustment() * getCureMultiplier())
+    retaliate()
+    ; Minigames get harder based on:
+    ;  - arousal (on top of accessibility's arousal)
+    ;  - whether the cure's active
+    ;  - the plug's inflate level (on top of its accessibility)
+    ; The condition multipliers are also greatly affected by whether the cure is active
+    setMinigameOffensiveVar(true, 0.0, fRange(_condition_mult_add - 0.5 + getCureMultiplier(), -1.0, 5.0), true, getMinigameMult(0) * (getArousalAdjustment() + 0.5) / 1.5 * getCureMultiplier())
+    ; We also make crits far less common and far more weak if there is no cure
+    setMinigameCustomCrit((UD_StruggleCritChance * getCureMultiplier() * 2) as int, 0.75, 1.0 * getCureMultiplier() * 2)
     parent.OnMinigameStart()
+EndFunction
+
+; Retaliate.
+Function OnCritFailure()
+    parent.OnCritFailure()
+    retaliate(0.5)
 EndFunction
 
 ; Taunt player if minigame failed
@@ -97,6 +116,59 @@ EndFunction
 float Function getArousalAdjustment()
     return 1.0 - fRange((UDOM.getArousal(getWearer()) - UDmain.UDSKILL.GetAgilitySkill(getWearer()))/80.0, 0.0, 1.0)
 endFunction
+
+string Function getArousalFailMessage(float fArousal)
+    if fArousal <= 10 && knowsCureIngredient() && hasCureIngredient()
+        return "Before you could remove the Hugger, the salts wore off. Its legs scrambled for purchase across your skull - and they found it."
+    elseif fArousal < 40
+        return "As you began to pull the Hugger away, a musky slime oozed from gaps in its carapace. It mixed with your saliva and overpowered your senses. Blindly, you tried to unhook its legs, but your slime-covered hands were of little help."
+    elseif fArousal < 80
+        return "As you touched the Hugger's carapace, it sent a stream of odd-tasting fluid into your mouth. The more you touched, the more it forced you to swallow. Its tail began to constrict your neck; the fluid had nowhere to go. Mouth and nostrils full, you had no choice - you had to let it be."
+    else
+        return "Sensing your arousal, the hugger's tail wound around your throat and constricted it in a most exhilirating embrace, wrapping tightly around its own proboscis. Its appendage probed deeper down your throat; you couldn't feel it beyond a dull ache. With a sigh of relief, you let go - you're glad that this won't end anytime soon."
+    endif
+EndFunction
+
+;Sets whether the device will retaliate
+Function setRetaliate(bool newRetaliate)
+    shouldRetaliate = newRetaliate
+EndFunction
+
+;calculates the chance the device will retaliate. if `shouldRetaliate` is false it'll do nothing; else it'll take a chance on `getArousalAdjustment`
+bool Function willRetaliate(float fMult = 1.0)
+    if shouldRetaliate && Round(fMult * (1.0 - getArousalAdjustment()) * 90.0) > RandomInt(1,99)
+        return true
+    endif
+    return false
+EndFunction
+
+Function mendDevice(float afMult = 1.0)
+    if onMendPre(afMult) && GetRelativeDurability() > 0.0
+        Float   loc_amount  = (1 - 0.1*UD_condition)*afMult*UDCDmain.getStruggleDifficultyModifier() * UD_DefaultHealth / 2
+        refillDurability(loc_amount)
+        refillCuttingProgress(afMult * 50)
+        onMendPost(loc_amount)
+    endif
+EndFunction
+
+;What the device will do if it retaliates. effect scales with `fMult`
+Function retaliate(float fMult = 1.0)
+    if willRetaliate(fMult)
+        libs.SexLab.AddCum(getWearer(), Vaginal = false, Oral = true, Anal = false)
+        UDOM.UpdateArousal(getWearer(), 20 * fMult)
+        mendDevice((2 - getArousalAdjustment()) / 2)
+        sendRetaliationMessage()
+    endif
+EndFunction
+
+;The message the device will send upon retaliation
+Function sendRetaliationMessage()
+    if WearerIsPlayer()
+        Udmain.ShowSingleMessageBox("The " + getDeviceName() + " senses your tampering and clamps around your head!")
+    elseif UDcdmain.AllowNPCMessage(getWearer(), true)
+        Udmain.Print("The " + getDeviceName() + " senses " + getWearerName() + " tampering and retaliates!")
+    endif
+EndFunction
 
 string Function getCureName()
     return SLP_CureIngredient.GetName()
@@ -139,7 +211,7 @@ string Function getArousalFailMessage(float fArousal)
     elseif fArousal < 80.0
         return "Your drooling mouth coated the critter in a thin layer of slick. You struggled to find purchase on it and pull it out; meanwhile, the Hugger squirmed further in to taste more of you."
     else
-        return "As you tugged at the critter's legs, your eager throat instead strained to suck and swallow it down as far as it would go. Sticky fluid rolled into your stomach; too deep for you to even taste it. You couldn't breathe; your body was too entranced by the Hugger to even consider it."
+        return "As you tugged at the critter's legs, your eager throat instead strained to suck and swallow its phallic appendage. Sticky fluid rolled into your stomach; too deep for you to even have a taste. You couldn't breathe; your body was too entranced by the Hugger to even consider it."
     endif
 EndFunction
 
@@ -152,7 +224,7 @@ string Function getCureApplyText()
             sMsg = "You sprinkle the Fire Salts onto " + getWearerName() + "'s critter. She yelps as a flurry of quick movements momentarily distends her mouth and throat."
         endif
     else
-        sMsg = "You tip a shot of " + getCureName() + " onto the critter, and bend over double as it s proboscis slams against your cheeks and shoots in and out of your throat. It slows down, then stops, occasionally twitching."
+        sMsg = "You tip a shot of " + getCureName() + " onto the critter. You bend over double as its proboscis slams against your cheeks, and shoots in and out of your throat. It slows down, then it stops, occasionally twitching."
     endif
     return sMsg
 EndFunction

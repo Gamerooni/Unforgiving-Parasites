@@ -5,23 +5,14 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLP_EquipScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: callForHelpMsg
-      Object: 02F141:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: deviceInventory
       Object: 00D1A7:SexLab-Parasites.esp
     - MutagenObjectType: ScriptStringProperty
       Name: deviceName
       Data: gag
     - MutagenObjectType: ScriptObjectProperty
-      Name: deviceQuest
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: deviceRendered
       Object: 00D1A6:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DisableLockManipulation
-      Data: True
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
@@ -29,17 +20,8 @@ VirtualMachineAdapter:
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Lockpick
-      Object: 00000A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: UDCDmain
       Object: 15E73C:UnforgivingDevices.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_EscapeCutFailureMSG
-      Object: 063005:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_EscapeCutMSG
-      Object: 063004:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeCutSuccessMSG
       Object: 73B445:SexLab-Parasites.esp
@@ -50,12 +32,6 @@ VirtualMachineAdapter:
       Name: zad_DD_EscapeLockPickFailureMSG
       Object: 73B447:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_EscapeLockPickMSG
-      Object: 063001:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_EscapeLockPickSuccessMSG
-      Object: 063003:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleFailureMSG
       Object: 73B448:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
@@ -64,15 +40,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_EscapeStruggleSuccessMSG
       Object: 73B44A:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_KeyBreakJamMSG
-      Object: 063012:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_KeyBreakMSG
-      Object: 063011:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Aroused
-      Object: 04290F:SexLabAroused.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_OnEquipDeviceMSG
       Object: 73B44B:SexLab-Parasites.esp
@@ -86,26 +53,8 @@ VirtualMachineAdapter:
       Name: zad_DD_OnNoKeyMSG
       Object: 73B44E:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_OnNotEnoughKeysMSG
-      Object: 06300E:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_DD_OnPutOnDevice
       Object: 73B44F:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_RepairLockFailureMSG
-      Object: 06300B:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_RepairLockMSG
-      Object: 063009:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_RepairLockNotJammedMSG
-      Object: 063008:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_RepairLockSuccessMSG
-      Object: 06300A:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_DD_UnlockFailJammedMSG
-      Object: 063007:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_DeviceEscapeMsg
       Object: 73B451:SexLab-Parasites.esp
@@ -122,38 +71,17 @@ VirtualMachineAdapter:
       Name: zad_DeviousDevice
       Object: 007EB8:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: zad_EquipConflictFailMsg
-      Object: 08362E:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_EquipRequiredFailMsg
-      Object: 08362F:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_GagArmsTiedMsg
-      Object: 02F147:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_GagBruteForceArmsTiedMsg
-      Object: 02F148:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_GagBruteForceMsg
       Object: 73B457:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: zad_GagEquipMsg
-      Object: 02F142:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: zad_GagPickLockFailMsg
       Object: 73B459:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_GagPickLockSuccessMsg
-      Object: 02F146:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_GagPreEquipMsg
       Object: 73B45A:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: zad_GagRemovedMsg
       Object: 73B45B:SexLab-Parasites.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: zad_UnEquipFailMsg
-      Object: 083630:Devious Devices - Integration.esm
 Name:
   TargetLanguage: English
   Value: Face Hugger

@@ -8,10 +8,6 @@ SLP_fcts_parasites Property fctParasites Auto
 string Property SLPParasiteApplyName Auto
 ; Name of the parasite (to be used to cure it)
 string Property SLPParasiteCureName Auto
-; What the device says if it retaliates against the player
-string Property UD_SLP_RetaliateMessagePlayer Auto
-; What the device says if it retaliates against an NPC
-string Property UD_SLP_RetaliateMessageNPC Auto
 
 ; The ingredient to cure the parasite, if any
 Ingredient Property SLP_CureIngredient Auto
@@ -63,14 +59,13 @@ Function safeCheck()
         SLPParasiteApplyName = SLPParasiteCureName
     endif
     if !SLP_CureMultiplier
-        SLP_CureMultiplier = 0.2
+        SLP_CureMultiplier = 0.1
     endif
 EndFunction
 
 ;Lower accessibility based on arousal
-;Naw scratch that, just make the minigames harder
 float Function getAccesibility()
-    return parent.getAccesibility(); * getArousalAdjustment()
+    return parent.getAccesibility() * (getArousalAdjustment() + 3) / 4
 EndFunction
 
 ;Deactivate soulgem charging
@@ -117,7 +112,7 @@ bool Function canDeflate()
         endif
     ; if we have the cure, we apply it
     elseif iInRange(getPlugInflateLevel(),1,2) && doesCureExist() && knowsCureIngredient() && hasCureIngredient()
-        Udmain.Print(getCureApplyText())
+        ;Udmain.Print(getCureApplyText())
         return true
     endif
     return False
@@ -172,26 +167,28 @@ Function OnMinigameStart()
     setRetaliate(bNoCure)
     startMinigameArousal = UDOM.getArousal(getWearer())
     retaliate()
-    ; Also change minigame difficulty here
-    setMinigameDmgMult(getMinigameMult(0) * getArousalAdjustment() * getCureMultiplier())
+    ; Minigames get harder based on:
+    ;  - arousal (on top of accessibility's arousal)
+    ;  - whether the cure's active
+    ;  - the plug's inflate level (on top of its accessibility)
+    setMinigameDmgMult(getMinigameMult(0) * (getArousalAdjustment() + 0.5) / 1.5 * getCureMultiplier() / (1 + getPlugInflateLevel()) * 2)
+    ; We also make crits far less common and far more weak if there is no cure
+    setMinigameCustomCrit((UD_StruggleCritChance * getCureMultiplier() * 2) as int, 0.75, 1.0 * getCureMultiplier() * 2)
     parent.OnMinigameStart()
 EndFunction
 
 ; Retaliate.
 Function OnCritFailure()
     parent.OnCritFailure()
-    retaliate(0.5)
+    retaliate(0.5 * (1 - getArousalAdjustment()))
 EndFunction
 
 ; Taunt player if minigame failed
 Function OnMinigameEnd()
     parent.OnMinigameEnd()
     string sMsg = ""
-    if !IsUnlocked && WearerIsPlayer()
-        if isStruggle || !isDeflateSuccessful
-            sMsg = getArousalFailMessage(startMinigameArousal)
-        endif
-        Udmain.ShowSingleMessageBox(sMsg)
+    if WearerIsPlayer() && !isUnlocked && (isStruggle || !isDeflateSuccessful)
+        UDmain.ShowSingleMessageBox(getArousalFailMessage(startMinigameArousal))
     endif
     isStruggle = false
     isDeflateSuccessful = false

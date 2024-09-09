@@ -8,17 +8,32 @@ VirtualMachineAdapter:
   - Name: UD_CustomSLPTentacleMonster_RS
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: deviceInventory
+      Object: 006034:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: fctParasites
       Object: 000D62:SexLab-Parasites.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_CutChance
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
       Object: 017C43:Devious Devices - Assets.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: deviceInventory
-      Object: 006034:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_durability_damage_base
+      Data: 0.01
+    - MutagenObjectType: ScriptIntProperty
+      Name: UD_Level
+      Data: -2
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistMagicka
+      Data: 0.8
+    - MutagenObjectType: ScriptFloatProperty
+      Name: UD_ResistPhysical
+      Data: 0.99
 ObjectBounds:
   First: -11, -15, -4
   Second: 11, 15, 4
