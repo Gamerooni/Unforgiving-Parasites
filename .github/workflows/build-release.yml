@@ -46,7 +46,7 @@ jobs:
         id: get-date
         uses: Kaven-Universe/github-action-current-date-time@v1
         with:
-          format: "yyyy-MM-dd"
+          format: "YYYY-MM-DD"
       - name: Get version
         id: get-version
         shell: bash
