@@ -61,9 +61,9 @@ EndFunction
 ;===========CUSTOM OVERRIDES===========
 
 Function sendRetaliationMessage()
-    if WearerIsPlayer() && UD_SLP_RetaliateMessagePlayer
+    if WearerIsPlayer()
         UDmain.ShowSingleMessageBox("The eggs sense your tampering and squirm and writhe to avoid it!")
-    elseif UDCDmain.AllowNPCMessage(GetWearer(), true) && UD_SLP_RetaliateMessageNPC
+    elseif UDCDmain.AllowNPCMessage(GetWearer(), true)
         UDmain.Print("The eggs sense " + getWearerName() + "'s tampering and become lively!", 3)
     endif
 EndFunction

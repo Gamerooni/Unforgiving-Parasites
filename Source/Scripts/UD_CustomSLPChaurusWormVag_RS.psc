@@ -40,9 +40,9 @@ EndFunction
 ;===========CUSTOM OVERRIDES===========
 
 Function sendRetaliationMessage()
-    if WearerIsPlayer() && UD_SLP_RetaliateMessagePlayer
+    if WearerIsPlayer()
         UDmain.ShowSingleMessageBox("The worm comes to life and starts to burrow into you away from your hand!")
-    elseif UDCDmain.AllowNPCMessage(GetWearer(), true) && UD_SLP_RetaliateMessageNPC
+    elseif UDCDmain.AllowNPCMessage(GetWearer(), true)
         UDmain.Print("The worm senses " + getWearerName() + "'s tampering and becomes lively!", 3)
     endif
 EndFunction
