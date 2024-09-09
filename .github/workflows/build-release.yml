@@ -50,7 +50,7 @@ jobs:
       - name: Get version
         id: get-version
         shell: bash
-        run: echo "VERSION=${{ inputs.version || format('nightly-', steps.get-date.outputs.time) }}" >> "$GITHUB_OUTPUT"
+        run: echo "VERSION=${{ inputs.version || format('nightly-{0}', steps.get-date.outputs.time) }}" >> "$GITHUB_OUTPUT"
   check-changes:
     name: Check for recent changes
     if: ${{ github.event_name != 'workflow_dispatch' }}
