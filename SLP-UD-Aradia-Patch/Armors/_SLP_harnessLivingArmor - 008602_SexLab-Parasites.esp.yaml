@@ -1,0 +1,37 @@
+FormKey: 008602:SexLab-Parasites.esp
+EditorID: _SLP_harnessLivingArmor
+FormVersion: 43
+Name:
+  TargetLanguage: English
+  Value: Gum Osta Itinere
+WorldModel:
+  Male:
+    Model:
+      File: Aradia Living Armor JE\BodyWorld.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Forearms
+  - Calves
+  - 0x10000000
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 0C27BD:Skyrim.esm
+- 0FF9FB:Skyrim.esm
+- 02F16E:SexLab.esm
+- 003894:Devious Devices - Assets.esm
+- 017C43:Devious Devices - Assets.esm
+- 0429FB:Devious Devices - Integration.esm
+- 05AEA8:Devious Devices - Integration.esm
+- 0044FE:SexLab-Parasites.esp
+- 0085F5:SexLab-Parasites.esp
+Description:
+  TargetLanguage: English
+  Value: Commonly known as the Living Armor, this parasite often mimics Creepy Clusters and preys on unsuspecting alchemists.
+Armature:
+- 0085FC:SexLab-Parasites.esp
+Value: 450
+Weight: 5

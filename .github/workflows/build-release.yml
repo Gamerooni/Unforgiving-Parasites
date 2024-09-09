@@ -30,8 +30,27 @@ on:
         description: Spriggit version (optional)
         required: false
 
+env:
+  ESP_NAMES: ("SexLab-Parasites-UD" "SLP-UD-Aradia-Patch")
+
 jobs:
   # possibly change this to check for spriggit and papyrus individually
+  get-date:
+    name: Set date and version
+    runs-on: ubuntu-latest
+    outputs:
+      date: ${{ steps.get-date.outputs.time }}
+      version: ${{ steps.get-version.outputs.VERSION }}
+    steps:
+      - name: Get Date
+        id: get-date
+        uses: Kaven-Universe/github-action-current-date-time@v1
+        with:
+          format: "YYYY-MM-DD"
+      - name: Get version
+        id: get-version
+        shell: bash
+        run: echo "VERSION=${{ inputs.version || format('nightly-{0}', steps.get-date.outputs.time) }}" >> "$GITHUB_OUTPUT"
   check-changes:
     name: Check for recent changes
     if: ${{ github.event_name != 'workflow_dispatch' }}
@@ -91,13 +110,18 @@ jobs:
 
       - name: run spriggit
         shell: bash
-        run: .github/spriggit/Spriggit.CLI deserialize --InputPath "ESP Patch" --OutputPath "${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp"
+        run: |
+          esps=${{ env.ESP_NAMES }}
+          for esp in ${esps[@]}
+          do
+              .github/spriggit/Spriggit.CLI deserialize --InputPath "$esp" --OutputPath "${{ github.workspace }}/to-pack/$esp.esp"
+          done
 
-      - name: Upload plugin
+      - name: Upload plugins
         uses: actions/upload-artifact@v4
         with:
             name: plugin
-            path: ${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp
+            path: ${{ github.workspace }}/to-pack/*
   compile-scripts:
     name: Compile Papyrus scripts
     needs: check-changes
@@ -212,7 +236,7 @@ jobs:
   package-mod:
     name: Package all necessary files
     runs-on: ubuntu-latest
-    needs: [build-plugin, compile-scripts]
+    needs: [build-plugin, compile-scripts, get-date]
     if: ${{ needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always()) }}
     permissions: write-all
     steps:
@@ -233,10 +257,13 @@ jobs:
       - name: Create packing structure
         shell: bash
         run: |
+          esps=${{ env.ESP_NAMES }}
           mkdir "${{ github.workspace }}/to-pack"
           mkdir "${{ github.workspace }}/to-pack/1.Base"
           mkdir "${{ github.workspace }}/to-pack/2.Scripts"
-          cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}/to-pack/1.Base/SexLab-Parasites-UD.esp"
+          mkdir "${{ github.workspace }}/to-pack/3.Patch"
+          cp ${esps[0]}.esp "${{ github.workspace }}/to-pack/1.Base/${esps[0]}.esp"
+          cp ${esps[1]}.esp "${{ github.workspace }}/to-pack/3.Patch/${esps[1]}.esp"
           cp -a "Scripts" "${{ github.workspace }}/to-pack/1.Base/Scripts"
           cp -a "Source" "${{ github.workspace }}/to-pack/2.Scripts/Source"
           cp -a "FOMOD Files/fomod" "${{ github.workspace }}/to-pack/fomod"
@@ -252,19 +279,19 @@ jobs:
       - name: Edit info.xml
         uses: Mudlet/xmlstarlet-action@master
         with:
-          args: ed -L --update "/fomod/Version" -v ${{inputs.version || 'nightly'}} to-pack/fomod/info.xml
+          args: ed -L --update "/fomod/Version" -v ${{ needs.get-date.outputs.version }} to-pack/fomod/info.xml
 
       - name: Zip release files
         uses: vimtor/action-zip@v1.2
         with:
           files: to-pack/
-          dest: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
+          dest: UnforgivingParasites-${{ needs.get-date.outputs.version }}.zip
 
       - name: Upload Output
         uses: actions/upload-artifact@v4
         with:
-          name: UnforgivingParasites-${{inputs.version || 'nightly'}}
-          path: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
+          name: UnforgivingParasites-${{ needs.get-date.outputs.version }}
+          path: UnforgivingParasites-${{ needs.get-date.outputs.version }}.zip
 
       - name: Remove temporary artifacts
         uses: geekyeggo/delete-artifact@v4
@@ -276,7 +303,7 @@ jobs:
   share-release:
     name: Share release
     permissions: write-all
-    needs: [package-mod]
+    needs: [package-mod, get-date]
     if: ${{ inputs.publish-release == true && (needs.check-changes.outputs.should_run >= 1 || (github.event_name == 'workflow_dispatch' && always())) }}
     runs-on: ubuntu-latest
     steps:
@@ -286,12 +313,12 @@ jobs:
       - name: Download release artifact
         uses: actions/download-artifact@v4
         with:
-          name: UnforgivingParasites-${{inputs.version || 'nightly'}}
+          name: UnforgivingParasites-${{ needs.get-date.outputs.version }}
 
       - name: Delete existing release
         uses: dev-drprasad/delete-tag-and-release@v1.0
         with:
-          tag_name: ${{inputs.version || 'nightly'}}
+          tag_name: ${{ needs.get-date.outputs.version }}
           github_token: ${{ github.token }}
           delete_release: true
       
@@ -302,18 +329,18 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           allowUpdates: true
-          name: ${{inputs.version || 'nightly'}}
+          name: ${{ needs.get-date.outputs.version }}
           draft: false
           body: 'Latest release of Unforgiving Parasites'
-          tag: ${{inputs.version || 'nightly'}}
+          tag: ${{ needs.get-date.outputs.version }}
           prerelease: true
           makeLatest: false
           removeArtifacts: true
           replacesArtifacts: true
           artifactErrorsFailBuild: true
-          artifacts: UnforgivingParasites-${{inputs.version || 'nightly'}}.zip
+          artifacts: UnforgivingParasites-${{ needs.get-date.outputs.version }}.zip
 
       - name: Remove temporary artifacts
         uses: geekyeggo/delete-artifact@v2
         with:
-          name: UnforgivingParasites-${{inputs.version || 'nightly'}}
+          name: UnforgivingParasites-${{ needs.get-date.outputs.version }}
