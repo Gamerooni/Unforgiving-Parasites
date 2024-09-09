@@ -1,0 +1,67 @@
+FormKey: 008604:SexLab-Parasites.esp
+EditorID: _SLP_harnessLivingArmorInventory
+FormVersion: 43
+VirtualMachineAdapter:
+  Scripts:
+  - Name: UD_CustomSLP_EquipScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceInventory
+      Object: 008604:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptStringProperty
+      Name: deviceName
+      Data: Living Armor
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deviceRendered
+      Object: 008603:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fctParasites
+      Object: 000D62:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UDCDmain
+      Object: 15E73C:UnforgivingDevices.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviceMsg
+      Object: 00860D:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviceMsgMagic
+      Object: 001831:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviceRemoveMsg
+      Object: 001830:SexLab-Parasites.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: zad_DeviousDevice
+      Object: 017C43:Devious Devices - Assets.esm
+Name:
+  TargetLanguage: English
+  Value: Gum Osta Itinere
+WorldModel:
+  Male:
+    Model:
+      File: Aradia Living Armor JE\BodyWorld.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: Aradia Living Armor JE\BodyWorld.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 0C27BD:Skyrim.esm
+- 0FF9FB:Skyrim.esm
+- 02F16E:SexLab.esm
+- 02B5F0:Devious Devices - Integration.esm
+- 0429FB:Devious Devices - Integration.esm
+- 0044FE:SexLab-Parasites.esp
+- 0085F5:SexLab-Parasites.esp
+- 1553DD:UnforgivingDevices.esp
+Description:
+  TargetLanguage: English
+  Value: Commonly known as the Living Armor, this parasite often mimics Creepy Clusters and preys on unsuspecting alchemists.
+Value: 450
+Weight: 1

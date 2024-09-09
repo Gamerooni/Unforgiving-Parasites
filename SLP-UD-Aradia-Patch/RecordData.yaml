@@ -1,32 +1,26 @@
 SpriggitSource:
   PackageName: Spriggit.Yaml.Skyrim
-  Version: 0.23.0
-ModKey: SexLab-Parasites-UD.esp
+  Version: 0.28.0
+ModKey: SLP-UD-Aradia-Patch.esp
 GameRelease: SkyrimSE
 ModHeader:
+  Flags:
+  - Small
   Stats:
-    NumRecords: 41
-    NextFormID: 22787
-  Author: DEFAULT
+    Version: 1.7
+  Author: ''
   MasterReferences:
-  - Master: Dawnguard.esm
-    FileSize: 0
   - Master: Devious Devices - Assets.esm
     FileSize: 0
   - Master: Devious Devices - Integration.esm
     FileSize: 0
-  - Master: Dragonborn.esm
-    FileSize: 0
   - Master: SexLab.esm
-    FileSize: 0
-  - Master: SexLabAroused.esm
     FileSize: 0
   - Master: Skyrim.esm
     FileSize: 0
-  - Master: ZaZAnimationPack.esm
-    FileSize: 0
   - Master: SexLab-Parasites.esp
+    FileSize: 0
+  - Master: SexLab-Parasites-UD.esp
     FileSize: 0
   - Master: UnforgivingDevices.esp
     FileSize: 0
-  INTV: 1

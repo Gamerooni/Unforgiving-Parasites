@@ -12,7 +12,6 @@ MenuButtons:
     Value: Charge
   Conditions:
   - MutagenObjectType: ConditionFloat
-    Unknown1: 0x000000
     Data:
       MutagenObjectType: GetVMQuestVariableConditionData
       Quest: 15E73C:UnforgivingDevices.esp
@@ -24,7 +23,6 @@ MenuButtons:
     Value: Insert deeper
   Conditions:
   - MutagenObjectType: ConditionFloat
-    Unknown1: 0x000000
     Data:
       MutagenObjectType: GetVMQuestVariableConditionData
       Quest: 15E73C:UnforgivingDevices.esp
@@ -36,7 +34,6 @@ MenuButtons:
     Value: Insert deep (FULL)
   Conditions:
   - MutagenObjectType: ConditionFloat
-    Unknown1: 0x000000
     Data:
       MutagenObjectType: GetVMQuestVariableConditionData
       Quest: 15E73C:UnforgivingDevices.esp
@@ -48,7 +45,6 @@ MenuButtons:
     Value: Coax out
   Conditions:
   - MutagenObjectType: ConditionFloat
-    Unknown1: 0x000000
     Data:
       MutagenObjectType: GetVMQuestVariableConditionData
       Quest: 15E73C:UnforgivingDevices.esp

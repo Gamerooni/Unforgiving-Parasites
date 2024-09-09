@@ -30,6 +30,9 @@ on:
         description: Spriggit version (optional)
         required: false
 
+env:
+  ESP_NAMES: ("SexLab-Parasites-UD" "SLP-UD-Aradia-Patch")
+
 jobs:
   # possibly change this to check for spriggit and papyrus individually
   check-changes:
@@ -91,13 +94,17 @@ jobs:
 
       - name: run spriggit
         shell: bash
-        run: .github/spriggit/Spriggit.CLI deserialize --InputPath "ESP Patch" --OutputPath "${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp"
+        run: |
+          for esp in ${${{ env.ESP_NAMES }}[@]}
+          do
+              .github/spriggit/Spriggit.CLI deserialize --InputPath "$esp" --OutputPath "${{ github.workspace }}/to-pack/$esp.esp"
+          done
 
-      - name: Upload plugin
+      - name: Upload plugins
         uses: actions/upload-artifact@v4
         with:
             name: plugin
-            path: ${{ github.workspace }}/to-pack/SexLab-Parasites-UD.esp
+            path: ${{ github.workspace }}/to-pack/*
   compile-scripts:
     name: Compile Papyrus scripts
     needs: check-changes
@@ -236,7 +243,9 @@ jobs:
           mkdir "${{ github.workspace }}/to-pack"
           mkdir "${{ github.workspace }}/to-pack/1.Base"
           mkdir "${{ github.workspace }}/to-pack/2.Scripts"
+          mkdir "${{ github.workspace }}/to-pack/3.Patch"
           cp "SexLab-Parasites-UD.esp" "${{ github.workspace }}/to-pack/1.Base/SexLab-Parasites-UD.esp"
+          cp "SLP-UD-Aradia-Patch.esp" "${{ github.workspace }}/to-pack/3.Patch/SLP-UD-Aradia-Patch.esp"
           cp -a "Scripts" "${{ github.workspace }}/to-pack/1.Base/Scripts"
           cp -a "Source" "${{ github.workspace }}/to-pack/2.Scripts/Source"
           cp -a "FOMOD Files/fomod" "${{ github.workspace }}/to-pack/fomod"
