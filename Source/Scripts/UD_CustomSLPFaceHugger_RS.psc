@@ -9,10 +9,6 @@ import UD_Native
 
 ; add FHU stuff in the OnInflate func
 
-
-; FIGURE OUT WHY THE VIBRATION EVENT AND ICONS DON'T PROPERLY WORK
-; ----I give up lol. Nothing seems to let them pop up. No clue what's up with that. Oh well, I'll patch it out later if need be.
-
 ;==========PROPERTIES==========
 
 ;==========LOCAL VARS==========

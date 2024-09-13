@@ -30,7 +30,7 @@ VirtualMachineAdapter:
       - 0
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_DeviceKeyword
-      Object: 003330:Devious Devices - Assets.esm
+      Object: 01DD7C:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: UD_durability_damage_base
       Data: 0.3
