@@ -49,7 +49,7 @@ VirtualMachineAdapter:
       Object: 000800:SexLab-Parasites-UD.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_VibSound
-      Object: 005902:SexLab-Parasites-UD.esp
+      Object: 000802:SexLab-Parasites-UD.esp
 ObjectEffect: 05D9C4:Devious Devices - Integration.esm
 WorldModel:
   Male:

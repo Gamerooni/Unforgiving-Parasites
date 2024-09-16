@@ -58,7 +58,7 @@ VirtualMachineAdapter:
       Data: 0.99
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_VibSound
-      Object: 005902:SexLab-Parasites-UD.esp
+      Object: 000802:SexLab-Parasites-UD.esp
 Name:
   TargetLanguage: English
   Value: Tentacle Armor

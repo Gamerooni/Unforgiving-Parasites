@@ -4,6 +4,8 @@ SpriggitSource:
 ModKey: SexLab-Parasites-UD.esp
 GameRelease: SkyrimSE
 ModHeader:
+  Flags:
+  - Small
   Author: DEFAULT
   MasterReferences:
   - Master: Dawnguard.esm

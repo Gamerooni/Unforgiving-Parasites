@@ -73,7 +73,7 @@ VirtualMachineAdapter:
       Object: 000800:SexLab-Parasites-UD.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: UD_VibSound
-      Object: 005902:SexLab-Parasites-UD.esp
+      Object: 000802:SexLab-Parasites-UD.esp
 ObjectBounds:
   First: -11, -8, 1
   Second: 11, 10, 85
